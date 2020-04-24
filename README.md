@@ -11,6 +11,10 @@ physics environment easily using:
 
     onshape-to-robot-bullet [directory]
 
+This will open a windows like the following one, including sliders to change the degree of freedom positions:
+
+![.imgs/bullet.png](bullet window)
+
 ## Re-running the imports yourself
 
 ### Instructions
