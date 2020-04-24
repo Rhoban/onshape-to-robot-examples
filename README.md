@@ -35,13 +35,23 @@ design.
 
 ## Robots
 
+## 2 wheels
+
+<a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-2wheels.png">
+<img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-2wheels.png" width=256>
+</a>
+
+* [Onshape link](https://cad.onshape.com/documents/862948a6ea6d38343e1d3272/w/98cee18311a3b8d7c10abc42/e/9332fc5299824befd8ebf702)
+* [config.json](2wheels/config.json)
+* Very simple design and minimalistic configuration
+
 ### Quadruped
 
 <a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png">
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png" width=256>
 </a>
 
-* [OnShape link](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
+* [Onshape link](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
 * [config.json](quadruped/config.json)
 * 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot).
 * Full pure shape approximation (OpenSCAD) for collisions

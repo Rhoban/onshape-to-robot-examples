@@ -1,0 +1,93 @@
+<robot name="onshape">
+<link name="body_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://body.stl"/>
+</geometry>
+<material name="body_material">
+<color rgba="0.8 0.8 0.8 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://body.stl"/>
+</geometry>
+<material name="body_material">
+<color rgba="0.8 0.8 0.8 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0375 0.0253843 0.0225241" rpy="0 0 0"/>
+<mass value="2.23874" />
+<inertia ixx="0.00206023" ixy="4.48497e-10"  ixz="6.47006e-11" iyy="0.00150691" iyz="-0.00028761" izz="0.00254354" />
+</inertial>
+</link>
+
+<link name="wheel_1">
+<visual>
+<origin xyz="0.02 -0.0325 -0.025" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.262745 0.282353 0.301961 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0035 0 3.46945e-18" rpy="-0 1.5708 0" />
+<geometry>
+<cylinder length="0.002" radius="0.045" />
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0.004 0 -3.46945e-18" rpy="0 0 0"/>
+<mass value="0.335419" />
+<inertia ixx="0.000345298" ixy="0"  ixz="0" iyy="0.000174367" iyz="0" izz="0.000174367" />
+</inertial>
+</link>
+
+<joint name="wheel1" type="revolute">
+<origin xyz="-0.02 0.0325 0.025" rpy="0 -0 0" />
+<parent link="body_1" />
+<child link="wheel_1" />
+<axis xyz="-1 0 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="wheel_2">
+<visual>
+<origin xyz="0.012 -0.0325 -0.025" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.262745 0.282353 0.301961 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.0045 6.93889e-18 3.46945e-18" rpy="-0 1.5708 0" />
+<geometry>
+<cylinder length="0.002" radius="0.045" />
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.004 6.93889e-18 -3.46945e-18" rpy="0 0 0"/>
+<mass value="0.335419" />
+<inertia ixx="0.000345298" ixy="0"  ixz="0" iyy="0.000174367" iyz="0" izz="0.000174367" />
+</inertial>
+</link>
+
+<joint name="wheel2" type="revolute">
+<origin xyz="0.095 0.0325 0.025" rpy="0 -0 0" />
+<parent link="body_1" />
+<child link="wheel_2" />
+<axis xyz="1 0 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>
