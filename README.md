@@ -13,7 +13,7 @@ physics environment easily using:
 
 This will open a windows like the following one, including sliders to change the degree of freedom positions:
 
-![.imgs/bullet.png](bullet window)
+![bullet window](.imgs/bullet.png)
 
 ## Re-running the imports yourself
 
