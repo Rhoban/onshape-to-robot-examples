@@ -28,7 +28,7 @@ If you want to export the robots yourself, you need to have the rights to access
 re-run the import for the examples in this repository, you will have to make your own copy of the document. Fortunately,
 this is quite simple because it is just about clicking on that button on top left:
 
-![make a copy](.imgs/make-a-copy.png)
+![make a copy](.imgs/make-copy.png)
 
 Then, change the `documentId` in `config.json` of the robot to match the new document created where you own the robot
 design.
@@ -37,7 +37,7 @@ design.
 
 ### Quadruped
 
-![Quadruped image](.imgs/quadruped.png)
+![Quadruped image](.imgs/robot-quadruped.png)
 [Onshape link](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
 
 This is a 12 DOF quadruped robot, with design similar to the [Metabot open-source project](https://github.com/rhoban/metabot).
