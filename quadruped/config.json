@@ -1,7 +1,7 @@
 {
     "documentId": "11a7f59e37f711d732274fca",
-    "outputFormat": "sdf",
+    "outputFormat": "urdf",
     "drawFrames": false,
-    "drawCollisions": false
-    //"useScads": true
+    "drawCollisions": false,
+    "useScads": true
 }
