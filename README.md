@@ -41,8 +41,8 @@ design.
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png" width=256>
 </a>
 
-[Onshape link](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
-
+* [OnShape link](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
+* [config.json](quadruped/config.json)
 * 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot).
 * Full pure shape approximation (OpenSCAD) for collisions
 * Frames in the trunk (`trunk_frame`) and in the tip of one leg (`tip_frame`)
