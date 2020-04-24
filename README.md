@@ -37,7 +37,9 @@ design.
 
 ### Quadruped
 
-![Quadruped image](.imgs/robot-quadruped.png)
+<a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png">
+<img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png" width=256>
+</a>
 
 [Onshape link](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
 
