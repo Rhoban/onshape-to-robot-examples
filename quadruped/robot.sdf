@@ -1,0 +1,849 @@
+<sdf version="1.6">
+<model name="onshape">
+<link name="body_1">
+<frame name="body_1_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="body_1_0_body_visual">
+<pose>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh><uri>package://body.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="body_1_0_body_collision_1">
+<pose>0 0 0.0011 0 -0 0</pose>
+<geometry>
+<box><size>0.03 0.03 0.002</size></box>
+</geometry>
+</collision>
+<visual name="body_1_1_horn_visual">
+<pose>3.46945e-18 -0.0485 0.0143 0 -0 1.49355</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="body_1_2_motor_visual">
+<pose>0.0485 4.33681e-18 0.0143 0 -0 -1.5708</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="body_1_2_motor_collision_1">
+<pose>0.0405 4.33681e-18 0.0143 0 -0 -1.5708</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="body_1_3_motor_visual">
+<pose>-0.0485 2.56739e-16 0.0143 6.87729e-22 3.74562e-16 1.5708</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="body_1_3_motor_collision_1">
+<pose>-0.0405 2.57627e-16 0.0143 6.87729e-22 3.74562e-16 1.5708</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="body_1_4_horn_visual">
+<pose>0.0485 -1.94242e-17 0.0143 0 -0 1.45228</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="body_1_5_horn_visual">
+<pose>-0.0485 6.93889e-17 0.0143 0 -0 1.49355</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="body_1_6_motor_visual">
+<pose>-9.54098e-18 0.0485 0.0143 0 -0 8.32667e-16</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="body_1_6_motor_collision_1">
+<pose>-2.87964e-18 0.0405 0.0143 0 -0 8.32667e-16</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="body_1_7_body_visual">
+<pose>0 3.46945e-18 0.0286 3.14159 -0 0</pose>
+<geometry>
+<mesh><uri>package://body.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="body_1_7_body_collision_1">
+<pose>0 3.46945e-18 0.0275 3.14159 -0 0</pose>
+<geometry>
+<box><size>0.03 0.03 0.002</size></box>
+</geometry>
+</collision>
+<visual name="body_1_8_motor_visual">
+<pose>1.73472e-18 -0.0485 0.0143 0 -0 -3.14159</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="body_1_8_motor_collision_1">
+<pose>1.24486e-18 -0.0405 0.0143 0 -0 -3.14159</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="body_1_9_horn_visual">
+<pose>-9.66308e-18 0.0485 0.0143 0 -0 1.49355</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<inertial>
+<pose frame="body_1_frame">-1.59281e-16 6.414e-17 0.0143384 0 0 0</pose>
+<mass>0.0808736</mass>
+<inertia><ixx>7.37408e-05</ixx><ixy>1.86671e-19</ixy><ixz>-1.67366e-21</ixz><iyy>7.37408e-05</iyy><iyz>-1.90582e-21</iyz><izz>0.000135878</izz></inertia>
+</inertial>
+</link>
+
+<link name="trunk">
+<pose>0 0 0 0 0 0</pose>
+<inertial>
+<pose>0 0 0 0 0 0</pose>
+<mass>1e-9</mass>
+<inertia>
+<ixx>0</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0</iyy><iyz>0</iyz><izz>0</izz>
+</inertia>
+</inertial>
+</link>
+<joint name="trunk_frame" type="floating">
+<pose>-1.46437e-18 8.91964e-20 0.0148 0 -0 0</pose>
+<parent>body_1</parent>
+<child>trunk</child>
+</joint>
+
+<link name="doubleu_1">
+<frame name="doubleu_1_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="doubleu_1_0_u_visual">
+<pose>-0.0665 2.5327e-16 0.01545 -1.5708 3.03402e-16 1.5708</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_1_0_u_collision_1">
+<pose>-0.0676 2.53086e-16 0.01545 -1.5708 3.03402e-16 1.5708</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<visual name="doubleu_1_1_u_visual">
+<pose>-0.0711 2.77556e-16 0.01545 -2.22045e-16 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_1_1_u_collision_1">
+<pose>-0.07 2.778e-16 0.01545 -2.22045e-16 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<inertial>
+<pose frame="doubleu_1_frame">-0.0688 2.69024e-16 0.01545 0 0 0</pose>
+<mass>0.00830698</mass>
+<inertia><ixx>1.53589e-06</ixx><ixy>1.39891e-21</ixy><ixz>-4.33802e-22</ixz><iyy>2.49451e-06</iyy><iyz>-1.99352e-22</iyz><izz>3.46232e-06</izz></inertia>
+</inertial>
+</link>
+
+<link name="platesblock_1">
+<pose>0.2 0 0 0 0 0</pose>
+<frame name="platesblock_1_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="platesblock_1_0_horn_visual">
+<pose>-0.1521 2.5327e-16 0.01545 -1.5708 -0.986922 3.14159</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="platesblock_1_1_horn_visual">
+<pose>-0.0891 -2.08167e-17 0.01545 1.5708 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="platesblock_1_2_motor_visual">
+<pose>-0.1521 -2.04697e-17 0.01545 1.5708 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_1_2_motor_collision_1">
+<pose>-0.1441 -2.93871e-17 0.01545 1.5708 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_1_3_motor_visual">
+<pose>-0.0891 -8.67362e-17 0.01545 1.5708 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_1_3_motor_collision_1">
+<pose>-0.0971 -8.66266e-17 0.01545 1.5708 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_1_4_plate_visual">
+<pose>-0.0831 -1.14492e-16 0.00115 1.02716e-15 1.55431e-15 3.14159</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_1_4_plate_collision_1">
+<pose>-0.1206 -6.77443e-17 0.00235 1.02716e-15 1.55431e-15 3.14159</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_1_5_plate_visual">
+<pose>-0.0831 3.46945e-18 0.02745 7.41349e-16 1.38778e-15 3.14159</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_1_5_plate_collision_1">
+<pose>-0.1206 1.01989e-17 0.02865 7.41349e-16 1.38778e-15 3.14159</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<inertial>
+<pose frame="platesblock_1_frame">-0.1206 -3.71788e-05 0.01545 0 0 0</pose>
+<mass>0.0417755</mass>
+<inertia><ixx>5.63169e-06</ixx><ixy>-5.60048e-09</ixy><ixz>1.86781e-12</ixz><iyy>3.05137e-05</iyy><iyz>-4.68143e-21</iyz><izz>2.82895e-05</izz></inertia>
+</inertial>
+</link>
+
+<link name="leg_1">
+<frame name="leg_1_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="leg_1_0_leg_visual">
+<pose>-0.1521 2.60209e-16 0.01545 3.14159 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://leg.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="leg_1_0_leg_collision_1">
+<pose>-0.1871 0.016 0.01545 3.14159 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_1_0_leg_collision_2">
+<pose>-0.1871 -0.016 0.01545 3.14159 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_1_0_leg_collision_3">
+<pose>-0.2421 2.93227e-16 0.01545 3.14159 -1.5708 0</pose>
+<geometry>
+<sphere><radius>0.015</radius></sphere>
+</geometry>
+</collision>
+<inertial>
+<pose frame="leg_1_frame">-0.205479 2.94423e-16 0.01545 0 0 0</pose>
+<mass>0.0154162</mass>
+<inertia><ixx>3.58407e-06</ixx><ixy>-6.36999e-22</ixy><ixz>5.5435e-21</ixz><iyy>1.88204e-05</iyy><iyz>-1.43334e-21</iyz><izz>2.13816e-05</izz></inertia>
+</inertial>
+</link>
+
+<joint name="leg1_c" type="revolute">
+<pose>-0.1521 0.015 0.01545 3.14159 -1.5708 0</pose>
+<parent>platesblock_1</parent>
+<child>leg_1</child>
+<axis>
+<xyz>0 1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg1_b" type="revolute">
+<pose>-0.0891 0.015 0.01545 1.5708 1.5708 0</pose>
+<parent>doubleu_1</parent>
+<child>platesblock_1</child>
+<axis>
+<xyz>0 0 1</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg1_a" type="revolute">
+<pose>-0.0485 2.51367e-16 -0.0007 -1.5708 3.03402e-16 1.5708</pose>
+<parent>body_1</parent>
+<child>doubleu_1</child>
+<axis>
+<xyz>0 1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<link name="doubleu_2">
+<frame name="doubleu_2_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="doubleu_2_0_u_visual">
+<pose>-3.03577e-18 -0.0665 0.0143 -1.5708 5.02497e-24 -3.14159</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_2_0_u_collision_1">
+<pose>-2.98997e-18 -0.0676 0.0143 -1.5708 5.02497e-24 -3.14159</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<visual name="doubleu_2_1_u_visual">
+<pose>-6.57027e-17 -0.0711 0.0143 -1.5708 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_2_1_u_collision_1">
+<pose>-6.57637e-17 -0.07 0.0143 -1.5708 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<inertial>
+<pose frame="doubleu_2_frame">-3.81567e-17 -0.0688 0.0143 0 0 0</pose>
+<mass>0.00830698</mass>
+<inertia><ixx>3.17322e-06</ixx><ixy>-2.96433e-21</ixy><ixz>-1.23602e-23</ixz><iyy>2.2146e-06</iyy><iyz>5.14452e-23</iyz><izz>2.1049e-06</izz></inertia>
+</inertial>
+</link>
+
+<link name="platesblock_2">
+<frame name="platesblock_2_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="platesblock_2_0_plate_visual">
+<pose>3.68195e-16 -0.0831 0.0263 1.93307e-16 5.54916e-17 -1.5708</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_2_0_plate_collision_1">
+<pose>4.26687e-16 -0.1206 0.0275 1.93307e-16 5.54916e-17 -1.5708</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_2_1_plate_visual">
+<pose>1.97758e-16 -0.0831 -1.55084e-15 3.54195e-16 8.32648e-16 -1.5708</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_2_1_plate_collision_1">
+<pose>1.61795e-16 -0.1206 0.0012 3.54195e-16 8.32648e-16 -1.5708</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_2_2_horn_visual">
+<pose>3.21488e-16 -0.1521 0.0143 -1.5708 -1.26624 -1.5708</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="platesblock_2_3_horn_visual">
+<pose>1.77375e-16 -0.0891 0.0143 1.5708 -3.00181e-16 1.5708</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="platesblock_2_4_motor_visual">
+<pose>3.04574e-16 -0.1521 0.0143 3.14159 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_2_4_motor_collision_1">
+<pose>3.28814e-16 -0.1441 0.0143 3.14159 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_2_5_motor_visual">
+<pose>1.82146e-16 -0.0891 0.0143 -1.66533e-16 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_2_5_motor_collision_1">
+<pose>1.74596e-16 -0.0971 0.0143 -1.66533e-16 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<inertial>
+<pose frame="platesblock_2_frame">3.71788e-05 -0.1206 0.0143 0 0 0</pose>
+<mass>0.0417755</mass>
+<inertia><ixx>2.99696e-05</ixx><ixy>1.23769e-07</ixy><ixz>-1.21995e-20</ixz><iyy>4.63737e-06</iyy><iyz>1.86781e-12</iyz><izz>2.98279e-05</izz></inertia>
+</inertial>
+</link>
+
+<link name="leg_2">
+<frame name="leg_2_frame"><pose>1 0 0 0 -0 0</pose></frame>
+<visual name="leg_2_0_leg_visual">
+<pose>1.82276e-16 -0.1521 0.0143 -1.5708 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://leg.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="leg_2_0_leg_collision_1">
+<pose>-0.016 -0.1871 0.0143 -1.5708 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_2_0_leg_collision_2">
+<pose>0.016 -0.1871 0.0143 -1.5708 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_2_0_leg_collision_3">
+<pose>5.1126e-16 -0.2421 0.0143 -1.5708 -1.5708 0</pose>
+<geometry>
+<sphere><radius>0.015</radius></sphere>
+</geometry>
+</collision>
+<inertial>
+<pose frame="leg_2_frame">3.62764e-16 -0.205479 0.0143 0 0 0</pose>
+<mass>0.0154162</mass>
+<inertia><ixx>3.58407e-06</ixx><ixy>-1.31196e-20</ixy><ixz>6.92902e-21</ixz><iyy>2.13816e-05</iyy><iyz>-1.36228e-19</iyz><izz>1.88204e-05</izz></inertia>
+</inertial>
+</link>
+
+<joint name="leg2_c" type="revolute">
+<pose>-0.015 -0.1521 0.0143 -1.5708 -1.5708 0</pose>
+<parent>platesblock_2</parent>
+<child>leg_2</child>
+<axis>
+<xyz>0 1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg2_b" type="revolute">
+<pose>-0.015 -0.0891 0.0143 1.5708 -3.00181e-16 1.5708</pose>
+<parent>doubleu_2</parent>
+<child>platesblock_2</child>
+<axis>
+<xyz>0 0 1</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg2_a" type="revolute">
+<pose>-3.78517e-18 -0.0485 -0.0007 -1.5708 5.02497e-24 -3.14159</pose>
+<parent>body_1</parent>
+<child>doubleu_2</child>
+<axis>
+<xyz>0 1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<link name="doubleu_3">
+<frame name="doubleu_3_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="doubleu_3_0_u_visual">
+<pose>0.0711 1.21431e-17 0.01545 -6.11483e-32 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_3_0_u_collision_1">
+<pose>0.07 1.21431e-17 0.01545 -6.11483e-32 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<visual name="doubleu_3_1_u_visual">
+<pose>0.0665 5.20417e-18 0.01545 1.5708 -4.93038e-32 1.5708</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_3_1_u_collision_1">
+<pose>0.0676 5.20417e-18 0.01545 1.5708 -4.93038e-32 1.5708</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<inertial>
+<pose frame="doubleu_3_frame">0.0688 1.25197e-17 0.01545 0 0 0</pose>
+<mass>0.00830698</mass>
+<inertia><ixx>1.53589e-06</ixx><ixy>-1.98875e-22</ixy><ixz>-3.87004e-22</ixz><iyy>2.49451e-06</iyy><iyz>1.73729e-23</iyz><izz>3.46232e-06</izz></inertia>
+</inertial>
+</link>
+
+<link name="platesblock_3">
+<frame name="platesblock_3_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="platesblock_3_0_plate_visual">
+<pose>0.0831 -2.22045e-16 0.02745 1.04043e-15 -8.88178e-16 -6.93889e-17</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_3_0_plate_collision_1">
+<pose>0.1206 -2.2587e-16 0.02865 1.04043e-15 -8.88178e-16 -6.93889e-17</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_3_1_motor_visual">
+<pose>0.1521 -2.89699e-17 0.01545 -1.5708 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_3_1_motor_collision_1">
+<pose>0.1441 -3.87028e-17 0.01545 -1.5708 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_3_2_motor_visual">
+<pose>0.0891 -1.9082e-17 0.01545 -1.5708 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_3_2_motor_collision_1">
+<pose>0.0971 -1.77497e-17 0.01545 -1.5708 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_3_3_horn_visual">
+<pose>0.1521 -1.42247e-17 0.01545 -1.5708 -0.0772446 1.41089e-15</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="platesblock_3_4_plate_visual">
+<pose>0.0831 6.93889e-18 0.00115 4.64812e-16 1.66533e-16 -5.41234e-16</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_3_4_plate_collision_1">
+<pose>0.1206 -1.39043e-17 0.00235 4.64812e-16 1.66533e-16 -5.41234e-16</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_3_5_horn_visual">
+<pose>0.0891 1.00614e-16 0.01545 1.5708 -2.38367e-17 -3.14159</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<inertial>
+<pose frame="platesblock_3_frame">0.1206 3.71788e-05 0.01545 0 0 0</pose>
+<mass>0.0417755</mass>
+<inertia><ixx>5.61111e-06</ixx><ixy>-9.37348e-10</ixy><ixz>-1.86781e-12</ixz><iyy>3.05342e-05</iyy><iyz>7.78364e-21</iyz><izz>2.82895e-05</izz></inertia>
+</inertial>
+</link>
+
+<link name="leg_3">
+<frame name="leg_3_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="leg_3_0_leg_visual">
+<pose>0.1521 -5.75928e-17 0.01545 1.39792e-15 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://leg.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="leg_3_0_leg_collision_1">
+<pose>0.1871 -0.016 0.01545 1.39792e-15 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_3_0_leg_collision_2">
+<pose>0.1871 0.016 0.01545 1.39792e-15 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_3_0_leg_collision_3">
+<pose>0.2421 6.82203e-17 0.01545 1.39792e-15 -1.5708 0</pose>
+<geometry>
+<sphere><radius>0.015</radius></sphere>
+</geometry>
+</collision>
+<inertial>
+<pose frame="leg_3_frame">0.205479 2.39557e-18 0.01545 0 0 0</pose>
+<mass>0.0154162</mass>
+<inertia><ixx>3.58407e-06</ixx><ixy>-9.57745e-21</ixy><ixz>1.78406e-20</ixz><iyy>1.88204e-05</iyy><iyz>8.90741e-22</iyz><izz>2.13816e-05</izz></inertia>
+</inertial>
+</link>
+
+<link name="tip">
+<pose>0 0 0 0 0 0</pose>
+<inertial>
+<pose>0 0 0 0 0 0</pose>
+<mass>1e-9</mass>
+<inertia>
+<ixx>0</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0</iyy><iyz>0</iyz><izz>0</izz>
+</inertia>
+</inertial>
+</link>
+<joint name="tip_frame" type="floating">
+<pose>0.2526 8.63986e-17 0.01795 4.51646e-16 3.10862e-15 1.39792e-15</pose>
+<parent>leg_3</parent>
+<child>tip</child>
+</joint>
+
+<joint name="leg3_c" type="revolute">
+<pose>0.1521 -0.015 0.01545 1.39792e-15 -1.5708 0</pose>
+<parent>platesblock_3</parent>
+<child>leg_3</child>
+<axis>
+<xyz>0 1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg3_b" type="revolute">
+<pose>0.0891 -0.015 0.01545 1.5708 -2.38367e-17 -3.14159</pose>
+<parent>doubleu_3</parent>
+<child>platesblock_3</child>
+<axis>
+<xyz>0 0 1</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg3_a" type="revolute">
+<pose>0.0485 5.20417e-18 -0.0007 1.5708 -4.93038e-32 1.5708</pose>
+<parent>body_1</parent>
+<child>doubleu_3</child>
+<axis>
+<xyz>0 -1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<link name="doubleu_4">
+<frame name="doubleu_4_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="doubleu_4_0_u_visual">
+<pose>-2.47198e-17 0.0665 0.01545 1.5708 5.00173e-19 -3.14159</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_4_0_u_collision_1">
+<pose>-2.56357e-17 0.0676 0.01545 1.5708 5.00173e-19 -3.14159</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<visual name="doubleu_4_1_u_visual">
+<pose>-6.93889e-17 0.0711 0.01545 1.5708 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://u.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="doubleu_4_1_u_collision_1">
+<pose>-6.84883e-17 0.07 0.01545 1.5708 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.002</size></box>
+</geometry>
+</collision>
+<inertial>
+<pose frame="doubleu_4_frame">-5.08419e-17 0.0688 0.01545 0 0 0</pose>
+<mass>0.00830698</mass>
+<inertia><ixx>3.17322e-06</ixx><ixy>2.56001e-21</ixy><ixz>5.96951e-22</ixz><iyy>2.2146e-06</iyy><iyz>-8.41455e-22</iyz><izz>2.1049e-06</izz></inertia>
+</inertial>
+</link>
+
+<link name="platesblock_4">
+<frame name="platesblock_4_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="platesblock_4_0_plate_visual">
+<pose>0.0015 0.0831 0.02745 9.72814e-16 -6.77544e-21 1.5708</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_4_0_plate_collision_1">
+<pose>0.0015 0.1206 0.02865 9.72814e-16 -6.77544e-21 1.5708</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_4_1_plate_visual">
+<pose>0.0015 0.0831 0.00115 3.77624e-16 -6.10629e-16 1.5708</pose>
+<geometry>
+<mesh><uri>package://plate.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_4_1_plate_collision_1">
+<pose>0.0015 0.1206 0.00235 3.77624e-16 -6.10629e-16 1.5708</pose>
+<geometry>
+<box><size>0.073 0.015 0.002</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_4_2_horn_visual">
+<pose>0.0015 0.0891 0.01545 1.5708 -3.1145e-16 -1.5708</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="platesblock_4_3_horn_visual">
+<pose>0.0015 0.1521 0.01545 -1.5708 1.3082 1.5708</pose>
+<geometry>
+<mesh><uri>package://horn.stl</uri></mesh>
+</geometry>
+<material><ambient>0.917647 0.917647 0.917647 1</ambient><diffuse>0.917647 0.917647 0.917647 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<visual name="platesblock_4_4_motor_visual">
+<pose>0.0015 0.0891 0.01545 -3.14159 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_4_4_motor_collision_1">
+<pose>0.0015 0.0971 0.01545 -3.14159 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<visual name="platesblock_4_5_motor_visual">
+<pose>0.0015 0.1521 0.01545 -2.21582e-15 -1.5708 0</pose>
+<geometry>
+<mesh><uri>package://motor.stl</uri></mesh>
+</geometry>
+<material><ambient>0.470588 0.470588 0.470588 1</ambient><diffuse>0.470588 0.470588 0.470588 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="platesblock_4_5_motor_collision_1">
+<pose>0.0015 0.1441 0.01545 -2.21582e-15 -1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.03 0.022</size></box>
+</geometry>
+</collision>
+<inertial>
+<pose frame="platesblock_4_frame">0.00146282 0.1206 0.01545 0 0 0</pose>
+<mass>0.0417755</mass>
+<inertia><ixx>2.99698e-05</ixx><ixy>-1.242e-07</ixy><ixz>1.55842e-22</ixz><iyy>4.6371e-06</iyy><iyz>-1.86781e-12</iyz><izz>2.98279e-05</izz></inertia>
+</inertial>
+</link>
+
+<link name="leg_4">
+<frame name="leg_4_frame"><pose>0 0 0 0 -0 0</pose></frame>
+<visual name="leg_4_0_leg_visual">
+<pose>0.0015 0.1521 0.01545 1.5708 1.5708 0</pose>
+<geometry>
+<mesh><uri>package://leg.stl</uri></mesh>
+</geometry>
+<material><ambient>0.972549 0.529412 0.00392157 1</ambient><diffuse>0.972549 0.529412 0.00392157 1</diffuse><specular>0.1 0.1 0.1 1</specular><emissive>0 0 0 0</emissive></material>
+</visual>
+<collision name="leg_4_0_leg_collision_1">
+<pose>-0.0145 0.1871 0.01545 1.5708 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_4_0_leg_collision_2">
+<pose>0.0175 0.1871 0.01545 1.5708 1.5708 0</pose>
+<geometry>
+<box><size>0.02 0.002 0.09</size></box>
+</geometry>
+</collision>
+<collision name="leg_4_0_leg_collision_3">
+<pose>0.0015 0.2421 0.01545 1.5708 1.5708 0</pose>
+<geometry>
+<sphere><radius>0.015</radius></sphere>
+</geometry>
+</collision>
+<inertial>
+<pose frame="leg_4_frame">0.0015 0.205479 0.01545 0 0 0</pose>
+<mass>0.0154162</mass>
+<inertia><ixx>3.58407e-06</ixx><ixy>-6.37727e-21</ixy><ixz>4.8891e-21</ixz><iyy>2.13816e-05</iyy><iyz>-5.91527e-21</iyz><izz>1.88204e-05</izz></inertia>
+</inertial>
+</link>
+
+<joint name="leg4_c" type="revolute">
+<pose>0.0165 0.1521 0.01545 1.5708 1.5708 0</pose>
+<parent>platesblock_4</parent>
+<child>leg_4</child>
+<axis>
+<xyz>0 -1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg4_b" type="revolute">
+<pose>0.015 0.0891 0.01545 1.5708 -3.1145e-16 -1.5708</pose>
+<parent>doubleu_4</parent>
+<child>platesblock_4</child>
+<axis>
+<xyz>0 0 1</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+<joint name="leg4_a" type="revolute">
+<pose>-9.72372e-18 0.0485 -0.0007 1.5708 5.00173e-19 -3.14159</pose>
+<parent>body_1</parent>
+<child>doubleu_4</child>
+<axis>
+<xyz>0 -1 0</xyz>
+<limit><effort>1</effort><velocity>20</velocity></limit>
+</axis>
+</joint>
+
+
+</model>
+</sdf>
