@@ -15,24 +15,6 @@ This will open a windows like the following one, including sliders to change the
 
 ![bullet window](.imgs/bullet.png)
 
-## Re-running the imports yourself
-
-### Instructions
-
-Read the instructions from the [onshape-to-robot repository](https://github.com/Rhoban/onshape-to-robot), especially
-be sure to have the API key registered and set as environment variable before running `onshape-to-robot`.
-
-### Why do I get `ERROR (403) while using OnShape API` ?
-
-If you want to export the robots yourself, you need to have the rights to access to the assembly. Thus, if you want to
-re-run the import for the examples in this repository, you will have to make your own copy of the document. Fortunately,
-this is quite simple because it is just about clicking on that button on top left:
-
-![make a copy](.imgs/make-copy.png)
-
-Then, change the `documentId` in `config.json` of the robot to match the new document created where you own the robot
-design.
-
 ## Robots
 
 ## 2 wheels
@@ -56,3 +38,21 @@ design.
 * 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot).
 * Full pure shape approximation (OpenSCAD) for collisions
 * Frames in the trunk (`trunk_frame`) and in the tip of one leg (`tip_frame`)
+
+## Re-running the imports yourself
+
+### Instructions
+
+Read the instructions from the [onshape-to-robot repository](https://github.com/Rhoban/onshape-to-robot), especially
+be sure to have the API key registered and set as environment variable before running `onshape-to-robot`.
+
+### Why do I get `ERROR (403) while using OnShape API` ?
+
+If you want to export the robots yourself, you need to have the rights to access to the assembly. Thus, if you want to
+re-run the import for the examples in this repository, you will have to make your own copy of the document. Fortunately,
+this is quite simple because it is just about clicking on that button on top left:
+
+![make a copy](.imgs/make-copy.png)
+
+Then, change the `documentId` in `config.json` of the robot to match the new document created where you own the robot
+design.
