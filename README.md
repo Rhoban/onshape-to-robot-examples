@@ -23,6 +23,7 @@ This will open a windows like the following one, including sliders to change the
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-2wheels.png" width=256>
 </a>
 
+* Give it a try: `onshape-to-robot-bullet 2wheels`
 * [Onshape design](https://cad.onshape.com/documents/862948a6ea6d38343e1d3272/w/98cee18311a3b8d7c10abc42/e/9332fc5299824befd8ebf702)
 * [config.json](2wheels/config.json)
 * Very simple design and minimalistic configuration
@@ -36,6 +37,7 @@ This will open a windows like the following one, including sliders to change the
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png" width=256>
 </a>
 
+* Give it a try: `onshape-to-robot-bullet quadruped`
 * [Onshape design](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
 * [config.json](quadruped/config.json)
 * 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot) using
@@ -49,6 +51,7 @@ This will open a windows like the following one, including sliders to change the
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-dog.png" width=256>
 </a>
 
+* Give it a try: `onshape-to-robot-bullet dog`
 * [Onshape design](https://cad.onshape.com/documents/adaeaba919da3242f78691a7/w/d80460ae3edd273c69c822a5/e/c8ebe3aba51c8ed2734fad87)
 * [config.json](dog/config.json)
 * 12 DOF dog robot, made for fun with [MX-64](http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/) servos (was actually built)
@@ -61,6 +64,7 @@ This will open a windows like the following one, including sliders to change the
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-sigmaban2019.png" width=256>
 </a>
 
+* Give it a try: `onshape-to-robot-bullet sigmaban2019`
 * [Onshape design](https://cad.onshape.com/documents/41654e89e61a392d020b728c/w/d555ceec170d351622b789de/e/4c9a04a707c36ac7ad2ca0f8)
 * [config.json](sigmaban2019/config.json)
 * 20 DOF humanoid robot, snapshot of 2019 Sigmaban model from team [Rhoban][https://www.youtube.com/watch?v=tF0cr0PYjsk),
@@ -80,6 +84,7 @@ and [MX-106](http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/), since it is p
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-field.png" width=256>
 </a>
 
+* Give it a try: `onshape-to-robot-bullet field`
 * [Onshape design](https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9)
 * [config.json](field/config.json)
 * This is not actually a robot, but an environment that is designed in Onshape and can be converted into an URDF file
