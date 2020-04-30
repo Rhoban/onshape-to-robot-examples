@@ -26,6 +26,9 @@ This will open a windows like the following one, including sliders to change the
 * [Onshape design](https://cad.onshape.com/documents/862948a6ea6d38343e1d3272/w/98cee18311a3b8d7c10abc42/e/9332fc5299824befd8ebf702)
 * [config.json](2wheels/config.json)
 * Very simple design and minimalistic configuration
+* **Note: joints names ends with `_speed`, which makes `onshape-to-robot` use speed control by default**
+* **Note2: here, `wheel2` has the `_inv` suffix, which changes its direction making both wheels spin in same direction
+  when same sign of order is given**
 
 ### Quadruped
 
