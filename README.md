@@ -71,6 +71,17 @@ and [MX-106](http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/), since it is p
 (`camera_frame), the head base (`head_base_frame`) and some location to use Vive tracker for ground-truth
 (`vive_frame`).
 
+### Field
+
+<a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-field.png">
+<img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-field.png" width=256>
+</a>
+
+* [Onshape design](https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9)
+* [config.json](field/config.json)
+* This is not actually a robot, but an environment that is designed in Onshape and can be converted into an URDF file
+* Note that the `noDynamics` is set to `true` in the configuration, making it a static environment
+
 ## Re-running the imports yourself
 
 ### Instructions

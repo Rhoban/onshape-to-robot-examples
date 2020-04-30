@@ -1,0 +1,414 @@
+<robot name="onshape">
+<link name="field_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://field.stl"/>
+</geometry>
+<material name="field_material">
+<color rgba="0.372549 0.654902 0.239216 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://field.stl"/>
+</geometry>
+<material name="field_material">
+<color rgba="0.372549 0.654902 0.239216 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="table4_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table4.stl"/>
+</geometry>
+<material name="table4_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table4.stl"/>
+</geometry>
+<material name="table4_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="0310c999-4296-4db8-9f39-83df45833534" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="table4_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="penaltyopponent_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://penaltyopponent.stl"/>
+</geometry>
+<material name="penaltyopponent_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://penaltyopponent.stl"/>
+</geometry>
+<material name="penaltyopponent_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="6a2a839b-5e2c-4478-a103-f1c1f69f211d" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="penaltyopponent_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="goalsally_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsally.stl"/>
+</geometry>
+<material name="goalsally_material">
+<color rgba="0.737255 0.937255 0.917647 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsally.stl"/>
+</geometry>
+<material name="goalsally_material">
+<color rgba="0.737255 0.937255 0.917647 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="214b5820-0449-45be-a81b-332eed3c51f5" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="goalsally_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="table2_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table2.stl"/>
+</geometry>
+<material name="table2_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table2.stl"/>
+</geometry>
+<material name="table2_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="db882b0d-06d5-4f69-ba80-12af02025efd" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="table2_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="table3_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table3.stl"/>
+</geometry>
+<material name="table3_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table3.stl"/>
+</geometry>
+<material name="table3_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="e8f8e501-26f0-40bc-9401-a50023d60e52" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="table3_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="goalsopponent_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsopponent.stl"/>
+</geometry>
+<material name="goalsopponent_material">
+<color rgba="0.882353 0.572549 0.478431 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsopponent.stl"/>
+</geometry>
+<material name="goalsopponent_material">
+<color rgba="0.882353 0.572549 0.478431 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="4f383524-a167-4cbd-a1bc-ad6fa655fc4b" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="goalsopponent_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="table_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table.stl"/>
+</geometry>
+<material name="table_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://table.stl"/>
+</geometry>
+<material name="table_material">
+<color rgba="0.447059 0.243137 0 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="c16b3023-a020-4846-9529-9f5a85b979a0" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="table_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="goalsallyback_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsallyback.stl"/>
+</geometry>
+<material name="goalsallyback_material">
+<color rgba="0 0.356863 0.329412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsallyback.stl"/>
+</geometry>
+<material name="goalsallyback_material">
+<color rgba="0 0.356863 0.329412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="9aa094e6-9425-42d6-bb35-2fb61ac98efc" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="goalsallyback_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="goalsopponentback_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsopponentback.stl"/>
+</geometry>
+<material name="goalsopponentback_material">
+<color rgba="0.458824 0.105882 0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://goalsopponentback.stl"/>
+</geometry>
+<material name="goalsopponentback_material">
+<color rgba="0.458824 0.105882 0 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="fda29d22-884a-4018-923e-5919f2ec4442" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="goalsopponentback_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="penaltyally_1">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://penaltyally.stl"/>
+</geometry>
+<material name="penaltyally_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://penaltyally.stl"/>
+</geometry>
+<material name="penaltyally_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="d389819a-6b39-4795-bd4e-0864f09296de" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="penaltyally_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="lines_1">
+<visual>
+<origin xyz="-3.06664e-16 -6.37325e-14 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://lines.stl"/>
+</geometry>
+<material name="lines_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-3.06664e-16 -6.37325e-14 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://lines.stl"/>
+</geometry>
+<material name="lines_material">
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<joint name="ccd0940d-cd18-4f6a-8444-c234a5fc23ea" type="fixed">
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<parent link="field_1" />
+<child link="lines_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>
