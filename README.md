@@ -35,9 +35,22 @@ This will open a windows like the following one, including sliders to change the
 
 * [Onshape design](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
 * [config.json](quadruped/config.json)
-* 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot).
+* 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot) using
+[XL-320](http://emanual.robotis.com/docs/en/dxl/x/xl320/) servos.
 * Full pure shape approximation (OpenSCAD) for collisions
 * Frames in the trunk (`trunk_frame`) and in the tip of one leg (`tip_frame`)
+
+### Dog
+
+<a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-dog.png">
+<img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-dog.png" width=256>
+</a>
+
+* [Onshape design](https://cad.onshape.com/documents/adaeaba919da3242f78691a7/w/d80460ae3edd273c69c822a5/e/c8ebe3aba51c8ed2734fad87)
+* [config.json](dog/config.json)
+* 12 DOF dog robot, made for fun with [MX-64](http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/) servos (was actually built)
+* No pure shape approximation (pure STLs)
+* Dynamics is overridden for MX-64 and MX-106, since it is provided by constructor
 
 ### Sigmaban2019
 
@@ -50,7 +63,8 @@ This will open a windows like the following one, including sliders to change the
 * 20 DOF humanoid robot, snapshot of 2019 Sigmaban model from team [Rhoban][https://www.youtube.com/watch?v=tF0cr0PYjsk),
 used at RoboCup kid size
 * Full pure shape approximation (OpenSCAD) for collisions
-* Dynamics is overridden for MX-64 and MX-106, since it is provided by constructor
+* Dynamics is overridden for [MX-64][http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/)
+and [MX-106](http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/), since it is provided by constructor
 * Pure shapes are rendered for speed, you can set `drawCollisions` do false and re-run import to have real meshes visual
   * (To lighten the repository, meshes were not committed)
 * Frames in the trunk (`trunk_frame`), in feet (`right_foot_frame`, `left_foot_frame`), the camera
