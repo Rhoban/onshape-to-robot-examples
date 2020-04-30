@@ -21,42 +21,46 @@ This will open a windows like the following one, including sliders to change the
 
 ## Robots
 
-## 2 wheels
+### 2 wheels
 
 <a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-2wheels.png">
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-2wheels.png" width=256>
 </a>
 
+Description: Very simple design and minimalistic configuration
+
 * Give it a try: `onshape-to-robot-bullet 2wheels`
 * [Onshape design](https://cad.onshape.com/documents/862948a6ea6d38343e1d3272/w/98cee18311a3b8d7c10abc42/e/9332fc5299824befd8ebf702)
 * [config.json](2wheels/config.json)
-* Very simple design and minimalistic configuration
 * **Note: joints names ends with `_speed`, which makes `onshape-to-robot` use speed control by default**
 * **Note2: here, `wheel2` has the `_inv` suffix, which changes its direction making both wheels spin in same direction
   when same sign of order is given**
 
-## Adjustable height arm
+### Adjustable height arm
 
 <a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-adjustable_height_arm.png">
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-adjustable_height_arm.png" width=256>
 </a>
 
+Description: Robot with 4 degrees of freedom, one prismatic (linear) joint and 3 rotations
+
 * Give it a try: `onshape-to-robot-bullet -f adjustable_height_arm` (note that `-f` is passed to fix the base to the ground)
 * [Onshape design](https://cad.onshape.com/documents/6a6e5b10ef079339c2ddde84/w/207da6d79692e0bbf50113f2/e/9f3edd12689fa0c486a7d0d7)
 * [config.json](adjustable_height_arm/config.json)
-* Robot with 4 degrees of freedom, one prismatic (linear) joint and 3 rotations
 * There is one frame (`frame_tip`) attached to the tip of the arm
 
-## Omnidirectional
+### Omnidirectional
 
 <a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-omnidirectional.png">
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-omnidirectional.png" width=256>
 </a>
 
+Description: Example of (not implemented) omnidirectional robot using omni wheels (holonomic)
+
 * Give it a try: `onshape-to-robot-bullet omnidirectional`
 * [Onshape design](https://cad.onshape.com/documents/11c3398e78edfadf952cbdbc/w/4428506b5bb6358b44ff6764/e/975412fdc0fd0ba9ca2cf7b6)
 * [config.json](omnidirectional/config.json)
-* Example of (not implemented) omnidirectional robot using omni wheels (holonomic)
+* Each small wheel is a degree of freedom. This is not very hard to do, even though a little tedious.
 * There is a frame (`frame_body`) in the very center of the robot. A visual arrow is part of the plate to indicate the
   front (axis X) of the robot.
 
@@ -67,11 +71,12 @@ This will open a windows like the following one, including sliders to change the
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png" width=256>
 </a>
 
+Description: 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot) using
+[XL-320](http://emanual.robotis.com/docs/en/dxl/x/xl320/) servos.
+
 * Give it a try: `onshape-to-robot-bullet quadruped`
 * [Onshape design](https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50)
 * [config.json](quadruped/config.json)
-* 12 DOF quadruped robot, design similar to the [Metabot open-source project](https://github.com/rhoban/metabot) using
-[XL-320](http://emanual.robotis.com/docs/en/dxl/x/xl320/) servos.
 * Full pure shape approximation (OpenSCAD) for collisions
 * Frames in the trunk (`trunk_frame`) and in the tip of one leg (`tip_frame`)
 
@@ -81,10 +86,11 @@ This will open a windows like the following one, including sliders to change the
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-dog.png" width=256>
 </a>
 
+Description: 12 DOF dog robot, made for fun with [MX-64](http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/) servos (was actually built)
+
 * Give it a try: `onshape-to-robot-bullet dog`
 * [Onshape design](https://cad.onshape.com/documents/adaeaba919da3242f78691a7/w/d80460ae3edd273c69c822a5/e/c8ebe3aba51c8ed2734fad87)
 * [config.json](dog/config.json)
-* 12 DOF dog robot, made for fun with [MX-64](http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/) servos (was actually built)
 * No pure shape approximation (pure STLs)
 * Dynamics is overridden for MX-64 and MX-106, since it is provided by constructor
 
@@ -94,11 +100,12 @@ This will open a windows like the following one, including sliders to change the
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-sigmaban2019.png" width=256>
 </a>
 
+Description: 20 DOF humanoid robot, snapshot of 2019 Sigmaban model from team [Rhoban][https://www.youtube.com/watch?v=tF0cr0PYjsk),
+used at RoboCup kid size
+
 * Give it a try: `onshape-to-robot-bullet sigmaban2019`
 * [Onshape design](https://cad.onshape.com/documents/41654e89e61a392d020b728c/w/d555ceec170d351622b789de/e/4c9a04a707c36ac7ad2ca0f8)
 * [config.json](sigmaban2019/config.json)
-* 20 DOF humanoid robot, snapshot of 2019 Sigmaban model from team [Rhoban][https://www.youtube.com/watch?v=tF0cr0PYjsk),
-used at RoboCup kid size
 * Full pure shape approximation (OpenSCAD) for collisions
 * Dynamics is overridden for [MX-64][http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/)
 and [MX-106](http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/), since it is provided by constructor
