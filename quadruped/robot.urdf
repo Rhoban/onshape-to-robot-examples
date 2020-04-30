@@ -1,116 +1,35 @@
 <robot name="onshape">
 <link name="body_1">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://body.stl"/>
-</geometry>
-<material name="body_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="0 0 0.0011" rpy="0 -0 0" />
 <geometry>
 <box size="0.03 0.03 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="3.46945e-18 -0.0485 0.0143" rpy="0 -0 1.49355" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="0.0485 4.33681e-18 0.0143" rpy="0 -0 -1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="0.0405 4.33681e-18 0.0143" rpy="0 -0 -1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-0.0485 2.56739e-16 0.0143" rpy="6.87729e-22 3.74562e-16 1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0405 2.57627e-16 0.0143" rpy="6.87729e-22 3.74562e-16 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0.0485 -1.94242e-17 0.0143" rpy="0 -0 1.45228" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="-0.0485 6.93889e-17 0.0143" rpy="0 -0 1.49355" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="-9.54098e-18 0.0485 0.0143" rpy="0 -0 8.32667e-16" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-2.87964e-18 0.0405 0.0143" rpy="0 -0 8.32667e-16" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0 3.46945e-18 0.0286" rpy="3.14159 -0 0" />
-<geometry>
-<mesh filename="package://body.stl"/>
-</geometry>
-<material name="body_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="0 3.46945e-18 0.0275" rpy="3.14159 -0 0" />
 <geometry>
 <box size="0.03 0.03 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="1.73472e-18 -0.0485 0.0143" rpy="0 -0 -3.14159" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="1.24486e-18 -0.0405 0.0143" rpy="0 -0 -3.14159" />
 <geometry>
@@ -118,12 +37,12 @@
 </geometry>
 </collision>
 <visual>
-<origin xyz="-9.66308e-18 0.0485 0.0143" rpy="0 -0 1.49355" />
+<origin xyz="0 0 0" rpy="0 -0 0" />
 <geometry>
-<mesh filename="package://horn.stl"/>
+<mesh filename="package://body_1.stl"/>
 </geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
+<material name="body_1_material">
+<color rgba="0.546445 0.490703 0.424602 1.0"/>
 </material>
 </visual>
 <inertial>
@@ -148,36 +67,27 @@
 </joint>
 
 <link name="doubleu_1">
-<visual>
-<origin xyz="4.93038e-32 -0.01615 0.018" rpy="0 1.07805e-47 0" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="4.93193e-32 -0.01615 0.0191" rpy="0 1.07805e-47 0" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="2.50522e-17 -0.01615 0.0226" rpy="3.14159 4.93038e-32 1.5708" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="2.51132e-17 -0.01615 0.0215" rpy="3.14159 4.93038e-32 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://doubleu_1.stl"/>
+</geometry>
+<material name="doubleu_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="1.55355e-17 -0.01615 0.0203" rpy="0 0 0"/>
 <mass value="0.00830698" />
@@ -186,84 +96,39 @@
 </link>
 
 <link name="platesblock_1">
-<visual>
-<origin xyz="1.37911e-15 -0.063 0.015" rpy="1.30136e-16 1.57211e-15 -2.55772" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="0 0 0.015" rpy="-1.08551e-32 -1.36939e-31 -1.25513e-32" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="1.42074e-15 -0.063 0.015" rpy="-1.33671e-15 1.74617e-15 -3.14159" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="1.41924e-15 -0.055 0.015" rpy="-1.33671e-15 1.74617e-15 -3.14159" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-2.77556e-17 1.38778e-17 0.015" rpy="2.3574e-16 -1.52412e-15 -1.45338e-16" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-1.91483e-17 -0.008 0.015" rpy="2.3574e-16 -1.52412e-15 -1.45338e-16" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0.0143 0.006 0.015" rpy="1.5708 1.42923e-15 -1.5708" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="0.0131 -0.0315 0.015" rpy="1.5708 1.42923e-15 -1.5708" />
 <geometry>
 <box size="0.073 0.015 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-0.012 0.006 0.015" rpy="1.5708 3.74518e-16 -1.5708" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0132 -0.0315 0.015" rpy="1.5708 3.74518e-16 -1.5708" />
 <geometry>
 <box size="0.073 0.015 0.002" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://platesblock_1.stl"/>
+</geometry>
+<material name="platesblock_1_material">
+<color rgba="0.5601 0.491944 0.411121 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="6.99111e-16 -0.0315 0.0150372" rpy="0 0 0"/>
 <mass value="0.0417755" />
@@ -272,15 +137,6 @@
 </link>
 
 <link name="leg_1">
-<visual>
-<origin xyz="1.73472e-18 0.015 0" rpy="1.6482e-33 -1.97058e-46 4.39656e-35" />
-<geometry>
-<mesh filename="package://leg.stl"/>
-</geometry>
-<material name="leg_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="1.73472e-18 -0.001 -0.035" rpy="1.6482e-33 -1.97058e-46 4.39656e-35" />
 <geometry>
@@ -299,6 +155,15 @@
 <sphere radius="0.015" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://leg_1.stl"/>
+</geometry>
+<material name="leg_1_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="-1.64136e-17 0.015 -0.0533786" rpy="0 0 0"/>
 <mass value="0.0154162" />
@@ -334,36 +199,27 @@
 </joint>
 
 <link name="doubleu_2">
-<visual>
-<origin xyz="0 -0.015 0.018" rpy="1.11412e-41 3.08149e-33 -2.74824e-41" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-3.38964e-36 -0.015 0.0191" rpy="1.11412e-41 3.08149e-33 -2.74824e-41" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="6.28584e-17 -0.015 0.0226" rpy="3.14159 -1.95509e-20 1.5708" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="6.28737e-17 -0.015 0.0215" rpy="3.14159 -1.95509e-20 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://doubleu_2.stl"/>
+</geometry>
+<material name="doubleu_2_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="3.46144e-17 -0.015 0.0203" rpy="0 0 0"/>
 <mass value="0.00830698" />
@@ -372,84 +228,39 @@
 </link>
 
 <link name="platesblock_2">
-<visual>
-<origin xyz="0.006 0.012 0.015" rpy="1.5708 7.49401e-16 3.14159" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0315 0.0132 0.015" rpy="1.5708 7.49401e-16 3.14159" />
 <geometry>
 <box size="0.073 0.015 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0.006 -0.0143 0.015" rpy="1.5708 3.26128e-15 -3.14159" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0315 -0.0131 0.015" rpy="1.5708 3.26128e-15 -3.14159" />
 <geometry>
 <box size="0.073 0.015 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-0.063 -1.53176e-15 0.015" rpy="-2.42627e-15 2.27333e-15 1.87535" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="0 0 0.015" rpy="-6.81219e-32 -5.3841e-32 -4.72377e-33" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="-0.063 -1.5335e-15 0.015" rpy="-3.03461e-15 1.42889e-15 1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.055 -1.53767e-15 0.015" rpy="-3.03461e-15 1.42889e-15 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0 0 0.015" rpy="3.26128e-15 -1.42889e-15 -1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.008 -3.37156e-18 0.015" rpy="3.26128e-15 -1.42889e-15 -1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://platesblock_2.stl"/>
+</geometry>
+<material name="platesblock_2_material">
+<color rgba="0.5601 0.491944 0.411121 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="-0.0315 -7.53638e-16 0.0150372" rpy="0 0 0"/>
 <mass value="0.0417755" />
@@ -458,15 +269,6 @@
 </link>
 
 <link name="leg_2">
-<visual>
-<origin xyz="0 0.015 2.77556e-17" rpy="5.6587e-32 -1.73656e-32 1.88918e-32" />
-<geometry>
-<mesh filename="package://leg.stl"/>
-</geometry>
-<material name="leg_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="2.58766e-36 -0.001 -0.035" rpy="5.6587e-32 -1.73656e-32 1.88918e-32" />
 <geometry>
@@ -485,6 +287,15 @@
 <sphere radius="0.015" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://leg_2.stl"/>
+</geometry>
+<material name="leg_2_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="-1.81483e-17 0.015 -0.0533786" rpy="0 0 0"/>
 <mass value="0.0154162" />
@@ -520,36 +331,27 @@
 </joint>
 
 <link name="doubleu_3">
-<visual>
-<origin xyz="6.93889e-18 0.01615 0.0226" rpy="-3.14159 -1.03799e-25 1.5708" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="6.93889e-18 0.01615 0.0215" rpy="-3.14159 -1.03799e-25 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-7.70372e-34 0.01615 0.018" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-7.70372e-34 0.01615 0.0191" rpy="0 -0 0" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://doubleu_3.stl"/>
+</geometry>
+<material name="doubleu_3_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="6.71318e-18 0.01615 0.0203" rpy="0 0 0"/>
 <mass value="0.00830698" />
@@ -558,69 +360,24 @@
 </link>
 
 <link name="platesblock_3">
-<visual>
-<origin xyz="0.006 0.012 0.015" rpy="1.5708 7.21645e-16 3.14159" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0315 0.0132 0.015" rpy="1.5708 7.21645e-16 3.14159" />
 <geometry>
 <box size="0.073 0.015 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-0.063 -1.37217e-15 0.015" rpy="-1.7486e-15 -1.10428e-17 1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.055 -1.37191e-15 0.015" rpy="-1.7486e-15 -1.10428e-17 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0 -1.73472e-18 0.015" rpy="4.85723e-16 1.10428e-17 -1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.008 -1.54403e-18 0.015" rpy="4.85723e-16 1.10428e-17 -1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-0.063 -1.37217e-15 0.015" rpy="-1.38084e-16 1.51368e-15 3.06435" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="0.006 -0.0143 0.015" rpy="1.5708 1.19349e-15 -3.14159" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0315 -0.0131 0.015" rpy="1.5708 1.19349e-15 -3.14159" />
 <geometry>
@@ -628,12 +385,12 @@
 </geometry>
 </collision>
 <visual>
-<origin xyz="0 0 0.015" rpy="1.94922e-32 -4.5023e-32 4.39379e-34" />
+<origin xyz="0 0 0" rpy="0 -0 0" />
 <geometry>
-<mesh filename="package://horn.stl"/>
+<mesh filename="package://platesblock_3.stl"/>
 </geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
+<material name="platesblock_3_material">
+<color rgba="0.5601 0.491944 0.411121 1.0"/>
 </material>
 </visual>
 <inertial>
@@ -644,15 +401,6 @@
 </link>
 
 <link name="leg_3">
-<visual>
-<origin xyz="-1.73472e-18 0.015 0" rpy="2.25971e-31 -1.37504e-32 -1.41526e-31" />
-<geometry>
-<mesh filename="package://leg.stl"/>
-</geometry>
-<material name="leg_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-1.73472e-18 -0.001 -0.035" rpy="2.25971e-31 -1.37504e-32 -1.41526e-31" />
 <geometry>
@@ -671,6 +419,15 @@
 <sphere radius="0.015" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://leg_3.stl"/>
+</geometry>
+<material name="leg_3_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="-1.9883e-17 0.015 -0.0533786" rpy="0 0 0"/>
 <mass value="0.0154162" />
@@ -720,36 +477,27 @@
 </joint>
 
 <link name="doubleu_4">
-<visual>
-<origin xyz="6.16298e-33 0.01615 0.018" rpy="-7.63834e-38 1.2326e-32 1.47642e-35" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="6.17653e-33 0.01615 0.0191" rpy="-7.63834e-38 1.2326e-32 1.47642e-35" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="4.08389e-17 0.01615 0.0226" rpy="-3.14159 5.55166e-17 1.5708" />
-<geometry>
-<mesh filename="package://u.stl"/>
-</geometry>
-<material name="u_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="4.08541e-17 0.01615 0.0215" rpy="-3.14159 5.55166e-17 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.002" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://doubleu_4.stl"/>
+</geometry>
+<material name="doubleu_4_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="2.36046e-17 0.01615 0.0203" rpy="0 0 0"/>
 <mass value="0.00830698" />
@@ -758,84 +506,39 @@
 </link>
 
 <link name="platesblock_4">
-<visual>
-<origin xyz="0.006 0.012 0.0135" rpy="1.5708 1.73472e-15 3.14159" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0315 0.0132 0.0135" rpy="1.5708 1.73472e-15 3.14159" />
 <geometry>
 <box size="0.073 0.015 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0.006 -0.0143 0.0135" rpy="1.5708 1.27676e-15 3.14159" />
-<geometry>
-<mesh filename="package://plate.stl"/>
-</geometry>
-<material name="plate_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.0315 -0.0131 0.0135" rpy="1.5708 1.27676e-15 3.14159" />
 <geometry>
 <box size="0.073 0.015 0.002" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="0 0 0.0135" rpy="-2.18552e-32 -2.33116e-31 6.70224e-32" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="-0.063 -1.34268e-15 0.0135" rpy="3.01958e-15 -8.49786e-16 -1.83339" />
-<geometry>
-<mesh filename="package://horn.stl"/>
-</geometry>
-<material name="horn_material">
-<color rgba="0.917647 0.917647 0.917647 1.0"/>
-</material>
-</visual>
-<visual>
-<origin xyz="-1.38778e-17 -1.73472e-18 0.0135" rpy="2.93284e-15 -3.66174e-17 -1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.008 6.086e-18 0.0135" rpy="2.93284e-15 -3.66174e-17 -1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
-<visual>
-<origin xyz="-0.063 -1.34441e-15 0.0135" rpy="-3.09012e-15 3.66174e-17 1.5708" />
-<geometry>
-<mesh filename="package://motor.stl"/>
-</geometry>
-<material name="motor_material">
-<color rgba="0.470588 0.470588 0.470588 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="-0.055 -1.35312e-15 0.0135" rpy="-3.09012e-15 3.66174e-17 1.5708" />
 <geometry>
 <box size="0.02 0.03 0.022" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://platesblock_4.stl"/>
+</geometry>
+<material name="platesblock_4_material">
+<color rgba="0.5601 0.491944 0.411121 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="-0.0315 -6.68441e-16 0.0135372" rpy="0 0 0"/>
 <mass value="0.0417755" />
@@ -844,15 +547,6 @@
 </link>
 
 <link name="leg_4">
-<visual>
-<origin xyz="0 -0.015 0" rpy="-1.17202e-31 -0 0" />
-<geometry>
-<mesh filename="package://leg.stl"/>
-</geometry>
-<material name="leg_material">
-<color rgba="0.972549 0.529412 0.00392157 1.0"/>
-</material>
-</visual>
 <collision>
 <origin xyz="7.88861e-34 -0.031 -0.035" rpy="-1.17202e-31 -0 0" />
 <geometry>
@@ -871,6 +565,15 @@
 <sphere radius="0.015" />
 </geometry>
 </collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://leg_4.stl"/>
+</geometry>
+<material name="leg_4_material">
+<color rgba="0.972549 0.529412 0.00392157 1.0"/>
+</material>
+</visual>
 <inertial>
 <origin xyz="-1.81483e-17 -0.015 -0.0533786" rpy="0 0 0"/>
 <mass value="0.0154162" />

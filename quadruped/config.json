@@ -3,5 +3,6 @@
     "outputFormat": "urdf",
     "drawFrames": false,
     "drawCollisions": false,
-    "useScads": true
+    "useScads": true,
+    "mergeSTLs": true
 }
