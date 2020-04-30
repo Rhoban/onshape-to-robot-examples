@@ -81,6 +81,7 @@ and [MX-106](http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/), since it is p
 * [config.json](field/config.json)
 * This is not actually a robot, but an environment that is designed in Onshape and can be converted into an URDF file
 * Note that the `noDynamics` is set to `true` in the configuration, making it a static environment
+* This is a model of RoboCup humanoid soccer kid-size (2019) 6 x 9 m field
 
 ## Re-running the imports yourself
 
