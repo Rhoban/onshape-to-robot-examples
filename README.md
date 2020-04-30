@@ -6,6 +6,10 @@ Here you will find several examples of robots that were design to be exported pr
 Have a look at the [design-time considerations](https://github.com/Rhoban/onshape-to-robot#design-time-considerations)
 to understand better the constraints to export your robots to URDF/SDF.
 
+Before testing, in a nutshell, you need `onshape-to-robot`:
+
+    pip install onshape-to-robot
+
 This repository contains both `config.json` file and resulting URDF, SDF and STL files. Thus, they can seen in a
 physics environment easily using:
 
