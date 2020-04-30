@@ -35,6 +35,20 @@ This will open a windows like the following one, including sliders to change the
 * **Note2: here, `wheel2` has the `_inv` suffix, which changes its direction making both wheels spin in same direction
   when same sign of order is given**
 
+## Omnidirectional
+
+<a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-omnidirectional.png">
+<img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-omnidirectional.png" width=256>
+</a>
+
+* Give it a try: `onshape-to-robot-bullet omnidirectional`
+* [Onshape design](https://cad.onshape.com/documents/11c3398e78edfadf952cbdbc/w/4428506b5bb6358b44ff6764/e/975412fdc0fd0ba9ca2cf7b6)
+* [config.json](omnidirectional/config.json)
+* Example of (not implemented) omnidirectional robot using omni wheels (holonomic)
+* There is a frame (`frame_body`) in the very center of the robot. A visual arrow is part of the plate to indicate the
+  front (axis X) of the robot.
+
+
 ### Quadruped
 
 <a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-quadruped.png">

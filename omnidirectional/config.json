@@ -1,0 +1,7 @@
+{
+    "documentId": "11c3398e78edfadf952cbdbc",
+    "assemblyName": "Robot",
+    "outputFormat": "urdf",
+    "useScads": true,
+    "drawCollisions": true
+}

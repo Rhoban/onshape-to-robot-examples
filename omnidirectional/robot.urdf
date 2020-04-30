@@ -1,0 +1,2140 @@
+<robot name="onshape">
+<link name="body_1">
+<collision>
+<origin xyz="-1.73472e-18 -6.93889e-18 2.60209e-18" rpy="0 -0 2.0944" />
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-1.73472e-18 -6.93889e-18 2.60209e-18" rpy="0 -0 2.0944" />
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 6.93889e-18 0" rpy="0 -0 -2.0944" />
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 6.93889e-18 0" rpy="0 -0 -2.0944" />
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="0.647059 0.647059 0.647059 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="plate_material">
+<color rgba="0.682353 0.333333 0.737255 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="plate_material">
+<color rgba="0.682353 0.333333 0.737255 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.023" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="plate_material">
+<color rgba="0.682353 0.333333 0.737255 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="0 0 0.023" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://plate.stl"/>
+</geometry>
+<material name="plate_material">
+<color rgba="0.682353 0.333333 0.737255 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="0.000413137 0.000238525 0.0129604" rpy="0 0 0"/>
+<mass value="0.55184" />
+<inertia ixx="0.000615732" ixy="-4.54339e-06"  ixz="-9.03686e-09" iyy="0.000620978" iyz="-5.21743e-09" izz="0.00118941" />
+</inertial>
+</link>
+
+<link name="body">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+<mass value="1e-9" />
+<inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+<joint name="body_frame" type="floating">
+<origin xyz="0.00418699 0.00241736 0.0145" rpy="0 -0 0.523599" />
+<parent link="body_1" />
+<child link="body" />
+<axis xyz="0 0 0"/>
+</joint>
+
+<link name="wheel_1">
+<collision>
+<origin xyz="-0.0649519 0.0375 -0.013" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.941176 0.87451 0.678431 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.0649519 0.0375 -0.013" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.941176 0.87451 0.678431 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="0.00216506 -0.00125 1.43812e-09" rpy="0 0 0"/>
+<mass value="0.0192491" />
+<inertia ixx="1.19744e-05" ixy="-2.94324e-06"  ixz="-2.17358e-13" iyy="8.5758e-06" iyz="-4.22e-13" izz="6.87651e-06" />
+</inertial>
+</link>
+
+<link name="passivewheel_1">
+<collision>
+<origin xyz="-8.65334e-20 -1.37444e-17 -0.002" rpy="-2.2109e-17 -2.24259e-18 1.48478e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-8.65334e-20 -1.37444e-17 -0.002" rpy="-2.2109e-17 -2.24259e-18 1.48478e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-7.33894e-20 -1.33556e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="4.48199e-25"  ixz="-1.0907e-24" iyy="2.77473e-08" iyz="7.68138e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_1_passive" type="revolute">
+<origin xyz="-0.00458006 -0.0129329 0.0350466" rpy="1.88959 0.167828 -0.468522" />
+<parent link="wheel_1" />
+<child link="passivewheel_1" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_2">
+<collision>
+<origin xyz="-1.38226e-17 6.23173e-35 0.002" rpy="3.11587e-32 -6.45501e-17 -7.99795e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.38226e-17 6.23173e-35 0.002" rpy="3.11587e-32 -6.45501e-17 -7.99795e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.38094e-17 3.88785e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-3.7544e-39"  ixz="3.92767e-24" iyy="2.77473e-08" iyz="2.39064e-39" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_2_passive" type="revolute">
+<origin xyz="0.00116506 -0.00298205 0.0375" rpy="-1.5708 -1.43508e-16 -0.523599" />
+<parent link="wheel_1" />
+<child link="passivewheel_2" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_3">
+<collision>
+<origin xyz="1.38922e-17 2.6865e-20 0.002" rpy="1.06058e-17 -2.2972e-17 5.57501e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38922e-17 2.6865e-20 0.002" rpy="1.06058e-17 -2.2972e-17 5.57501e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.39053e-17 4.1565e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-6.19881e-25"  ixz="1.32457e-24" iyy="2.77473e-08" iyz="8.9216e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_3_passive" type="revolute">
+<origin xyz="0.00700808 0.00713834 0.0362827" rpy="-1.88959 -0.167828 -0.468522" />
+<parent link="wheel_1" />
+<child link="passivewheel_3" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_4">
+<collision>
+<origin xyz="-1.39623e-17 -3.53119e-18 0.002" rpy="-3.70505e-17 9.26482e-18 -5.8578e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.39623e-17 -3.53119e-18 0.002" rpy="-3.70505e-17 9.26482e-18 -5.8578e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.39492e-17 -3.14241e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.50205e-25"  ixz="-1.62648e-24" iyy="2.77473e-08" iyz="-2.67128e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_4_passive" type="revolute">
+<origin xyz="0.012377 0.0164376 0.0315137" rpy="-2.22524 -0.263005 -0.326713" />
+<parent link="wheel_1" />
+<child link="passivewheel_4" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_5">
+<collision>
+<origin xyz="1.12586e-19 -1.7413e-18 0.002" rpy="-4.54039e-17 1.34564e-17 -8.80755e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.12586e-19 -1.7413e-18 0.002" rpy="-4.54039e-17 1.34564e-17 -8.80755e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.2573e-19 -1.35251e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-8.92466e-25"  ixz="9.02911e-25" iyy="2.77473e-08" iyz="-2.31498e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_5_passive" type="revolute">
+<origin xyz="0.0167463 0.0240055 0.02366" rpy="-2.55942 -0.251389 -0.162305" />
+<parent link="wheel_1" />
+<child link="passivewheel_5" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_6">
+<collision>
+<origin xyz="-2.10013e-20 8.31218e-19 0.002" rpy="2.06449e-17 1.31438e-17 -3.67268e-19" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-2.10013e-20 8.31218e-19 0.002" rpy="2.06449e-17 1.31438e-17 -3.67268e-19" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-7.85727e-21 1.22e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.46704e-26"  ixz="-9.35112e-25" iyy="2.77473e-08" iyz="5.0969e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_6_passive" type="revolute">
+<origin xyz="0.0196884 0.0291012 0.0134903" rpy="-2.86413 -0.149286 -0.042335" />
+<parent link="wheel_1" />
+<child link="passivewheel_6" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_7">
+<collision>
+<origin xyz="-1.97215e-34 -1.73472e-18 -0.002" rpy="-1.97215e-31 -9.86076e-32 2.15704e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.97215e-34 -1.73472e-18 -0.002" rpy="-1.97215e-31 -9.86076e-32 2.15704e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.3144e-20 -1.34594e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="2.56509e-39"  ixz="2.09345e-39" iyy="2.77473e-08" iyz="-1.51313e-38" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_7_passive" type="revolute">
+<origin xyz="0.0209151 0.031226 0.002" rpy="1.88738e-15 -6.66134e-16 -4.85723e-16" />
+<parent link="wheel_1" />
+<child link="passivewheel_7" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_8">
+<collision>
+<origin xyz="-1.39158e-17 -1.76166e-18 -0.002" rpy="4.52906e-18 -5.42635e-18 -9.08807e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.39158e-17 -1.76166e-18 -0.002" rpy="4.52906e-18 -5.42635e-18 -9.08807e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.39027e-17 -1.37287e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-3.02658e-25"  ixz="-2.62042e-25" iyy="2.77473e-08" iyz="-1.51839e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_8_passive" type="revolute">
+<origin xyz="0.0203064 0.0301717 -0.00968602" rpy="-0.277462 0.149286 -0.042335" />
+<parent link="wheel_1" />
+<child link="passivewheel_8" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_9">
+<collision>
+<origin xyz="-7.60547e-20 1.61524e-18 -0.002" rpy="-9.81892e-18 5.3587e-17 3.65203e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-7.60547e-20 1.61524e-18 -0.002" rpy="-9.81892e-18 5.3587e-17 3.65203e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-6.29107e-20 2.00403e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.81304e-24"  ixz="-3.6797e-24" iyy="2.77473e-08" iyz="-2.13855e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_9_passive" type="revolute">
+<origin xyz="0.0179219 0.0260417 -0.0204239" rpy="-0.58217 0.251389 -0.162305" />
+<parent link="wheel_1" />
+<child link="passivewheel_9" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_10">
+<collision>
+<origin xyz="2.75535e-17 -2.15212e-18 0.002" rpy="6.82258e-17 -4.15246e-17 8.09012e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.75535e-17 -2.15212e-18 0.002" rpy="6.82258e-17 -4.15246e-17 8.09012e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="2.75667e-17 -1.76333e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="9.51103e-25"  ixz="-7.69204e-25" iyy="2.77473e-08" iyz="2.06328e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_10_passive" type="revolute">
+<origin xyz="0.0139951 0.0192401 -0.0291626" rpy="2.22524 0.263005 -0.326713" />
+<parent link="wheel_1" />
+<child link="passivewheel_10" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_11">
+<collision>
+<origin xyz="4.18559e-20 -3.43295e-18 0.002" rpy="-7.98079e-18 4.98371e-17 -2.49231e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="4.18559e-20 -3.43295e-18 0.002" rpy="-7.98079e-18 4.98371e-17 -2.49231e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="5.49999e-20 -3.04416e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-6.30044e-25"  ixz="-1.8602e-24" iyy="2.77473e-08" iyz="1.15516e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_11_passive" type="revolute">
+<origin xyz="0.00891019 0.0104329 -0.0350466" rpy="1.88959 0.167828 -0.468522" />
+<parent link="wheel_1" />
+<child link="passivewheel_11" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_12">
+<collision>
+<origin xyz="2.75633e-17 -4.93038e-35 0.002" rpy="0 -1.48742e-17 3.08149e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.75633e-17 -4.93038e-35 0.002" rpy="0 -1.48742e-17 3.08149e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="2.75764e-17 3.88785e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="8.55029e-41"  ixz="-1.93935e-24" iyy="2.77473e-08" iyz="-6.84023e-40" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_12_passive" type="revolute">
+<origin xyz="0.00316506 0.000482051 -0.0375" rpy="1.5708 2.76844e-17 -0.523599" />
+<parent link="wheel_1" />
+<child link="passivewheel_12" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_13">
+<collision>
+<origin xyz="7.21753e-20 3.90318e-21 0.002" rpy="-1.58601e-18 -7.60053e-17 -3.40008e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="7.21753e-20 3.90318e-21 0.002" rpy="-1.58601e-18 -7.60053e-17 -3.40008e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="8.53194e-20 3.92688e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-8.22243e-25"  ixz="4.72388e-24" iyy="2.77473e-08" iyz="-2.35274e-26" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_13_passive" type="revolute">
+<origin xyz="-0.00267795 -0.00963834 -0.0362827" rpy="1.252 -0.167828 -0.468522" />
+<parent link="wheel_1" />
+<child link="passivewheel_13" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_14">
+<collision>
+<origin xyz="8.27648e-20 -6.65655e-18 -0.002" rpy="3.53392e-17 1.28571e-16 3.49542e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="8.27648e-20 -6.65655e-18 -0.002" rpy="3.53392e-17 1.28571e-16 3.49542e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="9.59088e-20 -6.26776e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.49204e-24"  ixz="-5.1488e-24" iyy="2.77473e-08" iyz="5.648e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_14_passive" type="revolute">
+<origin xyz="-0.00804689 -0.0189376 -0.0315137" rpy="-2.22524 -0.263005 -0.326713" />
+<parent link="wheel_1" />
+<child link="passivewheel_14" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_15">
+<collision>
+<origin xyz="5.4097e-20 1.39009e-17 -0.002" rpy="2.59376e-17 9.30841e-18 -2.04356e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="5.4097e-20 1.39009e-17 -0.002" rpy="2.59376e-17 9.30841e-18 -2.04356e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="6.7241e-20 1.42897e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-9.19631e-27"  ixz="2.9462e-25" iyy="2.77473e-08" iyz="1.59155e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_15_passive" type="revolute">
+<origin xyz="-0.0124162 -0.0265055 -0.02366" rpy="-2.55942 -0.251389 -0.162305" />
+<parent link="wheel_1" />
+<child link="passivewheel_15" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_16">
+<collision>
+<origin xyz="6.95999e-18 -1.36977e-17 -0.002" rpy="2.08155e-17 2.33252e-17 -9.41875e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="6.95999e-18 -1.36977e-17 -0.002" rpy="2.08155e-17 2.33252e-17 -9.41875e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="6.97313e-18 -1.33089e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.79804e-25"  ixz="-8.49718e-25" iyy="2.77473e-08" iyz="3.51849e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_16_passive" type="revolute">
+<origin xyz="-0.0153582 -0.0316012 -0.0134903" rpy="-2.86413 -0.149286 -0.042335" />
+<parent link="wheel_1" />
+<child link="passivewheel_16" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_17">
+<collision>
+<origin xyz="2.27711e-48 -1.38778e-17 -0.002" rpy="2.46519e-32 -5.69278e-46 -1.54074e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.27711e-48 -1.38778e-17 -0.002" rpy="2.46519e-32 -5.69278e-46 -1.54074e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.3144e-20 -1.3489e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-3.42012e-40"  ixz="5.94735e-53" iyy="2.77473e-08" iyz="1.89141e-39" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_17_passive" type="revolute">
+<origin xyz="-0.0165849 -0.033726 -0.002" rpy="3.14159 -5.55112e-17 8.32667e-17" />
+<parent link="wheel_1" />
+<child link="passivewheel_17" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_18">
+<collision>
+<origin xyz="6.91527e-18 1.37823e-17 0.002" rpy="-8.55049e-18 -1.51043e-17 2.07291e-19" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="6.91527e-18 1.37823e-17 0.002" rpy="-8.55049e-18 -1.51043e-17 2.07291e-19" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="6.92841e-18 1.41711e-17 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="6.34976e-26"  ixz="4.12016e-25" iyy="2.77473e-08" iyz="-1.74364e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_18_passive" type="revolute">
+<origin xyz="-0.0159763 -0.0326717 0.00968602" rpy="-0.277462 0.149286 -0.042335" />
+<parent link="wheel_1" />
+<child link="passivewheel_18" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_19">
+<collision>
+<origin xyz="-6.99736e-18 7.83154e-20 0.002" rpy="1.07489e-16 -1.34964e-18 -1.25099e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-6.99736e-18 7.83154e-20 0.002" rpy="1.07489e-16 -1.34964e-18 -1.25099e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-6.98422e-18 4.67101e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.08884e-24"  ixz="-7.45024e-25" iyy="2.77473e-08" iyz="6.35107e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_19_passive" type="revolute">
+<origin xyz="-0.0135918 -0.0285417 0.0204239" rpy="-0.58217 0.251389 -0.162305" />
+<parent link="wheel_1" />
+<child link="passivewheel_19" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_20">
+<collision>
+<origin xyz="-3.03261e-20 -1.36656e-17 0.002" rpy="3.40716e-18 2.76633e-17 -1.32691e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-3.03261e-20 -1.36656e-17 0.002" rpy="3.40716e-18 2.76633e-17 -1.32691e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.71821e-20 -1.32768e-17 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-6.14637e-25"  ixz="-1.77561e-24" iyy="2.77473e-08" iyz="3.11072e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w1_20_passive" type="revolute">
+<origin xyz="-0.00966493 -0.0217401 0.0291626" rpy="-0.916354 0.263005 -0.326713" />
+<parent link="wheel_1" />
+<child link="passivewheel_20" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="wheel1_speed" type="revolute">
+<origin xyz="0.069282 -0.04 0.013" rpy="0 -0 0" />
+<parent link="body_1" />
+<child link="wheel_1" />
+<axis xyz="-0.866025 0.5 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="wheel_2">
+<collision>
+<origin xyz="-0.069282 0.04 -0.013" rpy="0 -0 -4.43364e-17" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.941176 0.87451 0.678431 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.069282 0.04 -0.013" rpy="0 -0 -4.43364e-17" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.941176 0.87451 0.678431 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-0.00216506 0.00125 1.43812e-09" rpy="0 0 0"/>
+<mass value="0.0192491" />
+<inertia ixx="1.19744e-05" ixy="-2.94324e-06"  ixz="-2.17358e-13" iyy="8.5758e-06" iyz="-4.22e-13" izz="6.87651e-06" />
+</inertial>
+</link>
+
+<link name="passivewheel_21">
+<collision>
+<origin xyz="1.38506e-17 -1.40281e-17 -0.002" rpy="-2.21979e-17 -1.58884e-17 2.11441e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38506e-17 -1.40281e-17 -0.002" rpy="-2.21979e-17 -1.58884e-17 2.11441e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.38637e-17 -1.36393e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.6627e-25"  ixz="4.00778e-25" iyy="2.77473e-08" iyz="-3.17304e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_1_passive" type="revolute">
+<origin xyz="-0.00891019 -0.0104329 0.0350466" rpy="1.88959 -0.167828 -0.578675" />
+<parent link="wheel_2" />
+<child link="passivewheel_21" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_22">
+<collision>
+<origin xyz="-1.16704e-20 -1.22442e-35 0.002" rpy="6.23173e-32 -8.75281e-18 -6.02378e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.16704e-20 -1.22442e-35 0.002" rpy="6.23173e-32 -8.75281e-18 -6.02378e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.47359e-21 3.88785e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="3.76985e-39"  ixz="2.66779e-25" iyy="2.77473e-08" iyz="2.88227e-39" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_2_passive" type="revolute">
+<origin xyz="-0.00316506 -0.000482051 0.0375" rpy="-1.5708 1.89559e-16 -0.523599" />
+<parent link="wheel_2" />
+<child link="passivewheel_22" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_23">
+<collision>
+<origin xyz="-2.80726e-17 1.38151e-17 0.002" rpy="2.48674e-17 -6.04595e-17 -5.28499e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-2.80726e-17 1.38151e-17 0.002" rpy="2.48674e-17 -6.04595e-17 -5.28499e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.80594e-17 1.42039e-17 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.05229e-24"  ixz="-1.43695e-24" iyy="2.77473e-08" iyz="3.47934e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_3_passive" type="revolute">
+<origin xyz="0.00267795 0.00963834 0.0362827" rpy="-1.88959 0.167828 -0.578675" />
+<parent link="wheel_2" />
+<child link="passivewheel_23" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_24">
+<collision>
+<origin xyz="1.44968e-20 -3.3505e-18 0.002" rpy="-2.55867e-17 -1.18157e-17 2.34424e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.44968e-20 -3.3505e-18 0.002" rpy="-2.55867e-17 -1.18157e-17 2.34424e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="2.76409e-20 -2.96171e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="5.45747e-25"  ixz="7.79828e-25" iyy="2.77473e-08" iyz="3.97107e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_4_passive" type="revolute">
+<origin xyz="0.00804689 0.0189376 0.0315137" rpy="-2.22524 0.263005 -0.720484" />
+<parent link="wheel_2" />
+<child link="passivewheel_24" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_25">
+<collision>
+<origin xyz="-1.20354e-20 8.04302e-19 0.002" rpy="-7.77496e-18 -1.26864e-17 2.45234e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.20354e-20 8.04302e-19 0.002" rpy="-7.77496e-18 -1.26864e-17 2.45234e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.10858e-21 1.19309e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="3.78613e-25"  ixz="4.54374e-25" iyy="2.77473e-08" iyz="-1.25566e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_5_passive" type="revolute">
+<origin xyz="0.0124162 0.0265055 0.02366" rpy="-2.55942 0.251389 -0.884893" />
+<parent link="wheel_2" />
+<child link="passivewheel_25" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_26">
+<collision>
+<origin xyz="-1.3912e-17 8.66279e-19 0.002" rpy="6.44137e-17 1.0626e-17 -3.26263e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.3912e-17 8.66279e-19 0.002" rpy="6.44137e-17 1.0626e-17 -3.26263e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.38989e-17 1.25506e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-3.58631e-26"  ixz="-9.9525e-25" iyy="2.77473e-08" iyz="3.13979e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_6_passive" type="revolute">
+<origin xyz="0.0153582 0.0316012 0.0134903" rpy="-2.86413 0.149286 -1.00486" />
+<parent link="wheel_2" />
+<child link="passivewheel_26" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_27">
+<collision>
+<origin xyz="-1.97215e-34 -3.46945e-18 -0.002" rpy="-1.97215e-31 -9.86076e-32 2.15704e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.97215e-34 -3.46945e-18 -0.002" rpy="-1.97215e-31 -9.86076e-32 2.15704e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.3144e-20 -3.08066e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="2.56509e-39"  ixz="2.09345e-39" iyy="2.77473e-08" iyz="-1.51313e-38" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_7_passive" type="revolute">
+<origin xyz="0.0165849 0.033726 0.002" rpy="1.88738e-15 -6.66134e-16 -1.0472" />
+<parent link="wheel_2" />
+<child link="passivewheel_27" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_28">
+<collision>
+<origin xyz="1.38783e-17 -5.59634e-20 -0.002" rpy="-5.22147e-18 4.88249e-18 -4.78549e-19" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38783e-17 -5.59634e-20 -0.002" rpy="-5.22147e-18 4.88249e-18 -4.78549e-19" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.38914e-17 3.32822e-19 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.07718e-25"  ixz="-2.32578e-25" iyy="2.77473e-08" iyz="-1.03215e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_8_passive" type="revolute">
+<origin xyz="0.0159763 0.0326717 -0.00968602" rpy="-0.277462 -0.149286 -1.00486" />
+<parent link="wheel_2" />
+<child link="passivewheel_28" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_29">
+<collision>
+<origin xyz="1.39212e-17 -1.70274e-18 -0.002" rpy="2.34669e-17 2.68506e-17 3.3256e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.39212e-17 -1.70274e-18 -0.002" rpy="2.34669e-17 2.68506e-17 3.3256e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.39343e-17 -1.31396e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.4048e-24"  ixz="-7.13309e-25" iyy="2.77473e-08" iyz="1.59302e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_9_passive" type="revolute">
+<origin xyz="0.0135918 0.0285417 -0.0204239" rpy="-0.58217 -0.251389 -0.884893" />
+<parent link="wheel_2" />
+<child link="passivewheel_29" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_30">
+<collision>
+<origin xyz="-6.24677e-20 -3.26896e-18 0.002" rpy="3.95586e-17 -4.82682e-17 4.62289e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-6.24677e-20 -3.26896e-18 0.002" rpy="3.95586e-17 -4.82682e-17 4.62289e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-4.93237e-20 -2.88017e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="5.53782e-25"  ixz="1.4974e-24" iyy="2.77473e-08" iyz="3.2148e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_10_passive" type="revolute">
+<origin xyz="0.00966493 0.0217401 -0.0291626" rpy="2.22524 -0.263005 -0.720484" />
+<parent link="wheel_2" />
+<child link="passivewheel_30" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_31">
+<collision>
+<origin xyz="1.38321e-17 -3.4402e-18 0.002" rpy="-2.47117e-17 -3.76321e-17 9.30769e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38321e-17 -3.4402e-18 0.002" rpy="-2.47117e-17 -3.76321e-17 9.30769e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.38453e-17 -3.05141e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="9.55002e-25"  ixz="1.20975e-24" iyy="2.77473e-08" iyz="-8.04549e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_11_passive" type="revolute">
+<origin xyz="0.00458006 0.0129329 -0.0350466" rpy="1.88959 -0.167828 -0.578675" />
+<parent link="wheel_2" />
+<child link="passivewheel_31" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_32">
+<collision>
+<origin xyz="1.40483e-17 0 0.002" rpy="-1.2326e-32 2.17773e-17 0" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.40483e-17 0 0.002" rpy="-1.2326e-32 2.17773e-17 0" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.40615e-17 3.88785e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.06879e-41"  ixz="1.29912e-24" iyy="2.77473e-08" iyz="-6.03693e-40" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_12_passive" type="revolute">
+<origin xyz="-0.00116506 0.00298205 -0.0375" rpy="1.5708 -8.33379e-17 -0.523599" />
+<parent link="wheel_2" />
+<child link="passivewheel_32" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_33">
+<collision>
+<origin xyz="-1.38959e-17 -9.9866e-20 0.002" rpy="-1.91628e-17 4.36875e-17 1.12479e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.38959e-17 -9.9866e-20 0.002" rpy="-1.91628e-17 4.36875e-17 1.12479e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.38828e-17 2.88919e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="5.36201e-25"  ixz="-2.39139e-24" iyy="2.77473e-08" iyz="-2.32405e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_13_passive" type="revolute">
+<origin xyz="-0.00700808 -0.00713834 -0.0362827" rpy="1.252 0.167828 -0.578675" />
+<parent link="wheel_2" />
+<child link="passivewheel_33" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_34">
+<collision>
+<origin xyz="-8.13123e-21 -6.82645e-18 -0.002" rpy="-6.29321e-17 -4.77752e-17 -1.73308e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-8.13123e-21 -6.82645e-18 -0.002" rpy="-6.29321e-17 -4.77752e-17 -1.73308e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="5.01277e-21 -6.43766e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.6752e-24"  ixz="2.22709e-24" iyy="2.77473e-08" iyz="-1.52218e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_14_passive" type="revolute">
+<origin xyz="-0.012377 -0.0164376 -0.0315137" rpy="-2.22524 0.263005 -0.720484" />
+<parent link="wheel_2" />
+<child link="passivewheel_34" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_35">
+<collision>
+<origin xyz="-1.07496e-19 1.36837e-17 -0.002" rpy="9.78364e-17 4.00891e-18 -2.57516e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.07496e-19 1.36837e-17 -0.002" rpy="9.78364e-17 4.00891e-18 -2.57516e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-9.43518e-20 1.40725e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.89727e-25"  ixz="-1.6877e-24" iyy="2.77473e-08" iyz="2.09935e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_15_passive" type="revolute">
+<origin xyz="-0.0167463 -0.0240055 -0.02366" rpy="-2.55942 0.251389 -0.884893" />
+<parent link="wheel_2" />
+<child link="passivewheel_35" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_36">
+<collision>
+<origin xyz="-8.32575e-20 -1.2726e-19 -0.002" rpy="-3.11229e-17 5.76895e-17 -1.37229e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-8.32575e-20 -1.2726e-19 -0.002" rpy="-3.11229e-17 5.76895e-17 -1.37229e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-7.01135e-20 2.61525e-19 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-4.15318e-25"  ixz="-3.98057e-24" iyy="2.77473e-08" iyz="-3.28988e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_16_passive" type="revolute">
+<origin xyz="-0.0196884 -0.0291012 -0.0134903" rpy="-2.86413 0.149286 -1.00486" />
+<parent link="wheel_2" />
+<child link="passivewheel_36" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_37">
+<collision>
+<origin xyz="2.27711e-48 -1.38778e-17 -0.002" rpy="2.46519e-32 -5.69278e-46 -1.54074e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.27711e-48 -1.38778e-17 -0.002" rpy="2.46519e-32 -5.69278e-46 -1.54074e-33" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.3144e-20 -1.3489e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-3.42012e-40"  ixz="5.94735e-53" iyy="2.77473e-08" iyz="1.89141e-39" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_17_passive" type="revolute">
+<origin xyz="-0.0209151 -0.031226 -0.002" rpy="3.14159 -5.55112e-17 -1.0472" />
+<parent link="wheel_2" />
+<child link="passivewheel_37" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_38">
+<collision>
+<origin xyz="-1.26768e-20 -1.96246e-19 0.002" rpy="1.40036e-17 -2.55171e-17 -3.24688e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.26768e-20 -1.96246e-19 0.002" rpy="1.40036e-17 -2.55171e-17 -3.24688e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="4.67192e-22 1.92539e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.84005e-26"  ixz="1.07389e-24" iyy="2.77473e-08" iyz="-2.03678e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_18_passive" type="revolute">
+<origin xyz="-0.0203064 -0.0301717 0.00968602" rpy="-0.277462 -0.149286 -1.00486" />
+<parent link="wheel_2" />
+<child link="passivewheel_38" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_39">
+<collision>
+<origin xyz="-3.14697e-20 3.09308e-20 0.002" rpy="3.68679e-17 -6.68594e-17 -2.47558e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-3.14697e-20 3.09308e-20 0.002" rpy="3.68679e-17 -6.68594e-17 -2.47558e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.83256e-20 4.19716e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-9.25127e-25"  ixz="2.838e-24" iyy="2.77473e-08" iyz="2.23482e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_19_passive" type="revolute">
+<origin xyz="-0.0179219 -0.0260417 0.0204239" rpy="-0.58217 -0.251389 -0.884893" />
+<parent link="wheel_2" />
+<child link="passivewheel_39" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_40">
+<collision>
+<origin xyz="3.56879e-20 3.35302e-19 0.002" rpy="-7.07395e-17 2.70452e-17 -2.41104e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="3.56879e-20 3.35302e-19 0.002" rpy="-7.07395e-17 2.70452e-17 -2.41104e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="4.88319e-20 7.24087e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.90815e-24"  ixz="-8.29482e-25" iyy="2.77473e-08" iyz="1.18722e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w3_20_passive" type="revolute">
+<origin xyz="-0.0139951 -0.0192401 0.0291626" rpy="-0.916354 -0.263005 -0.720484" />
+<parent link="wheel_2" />
+<child link="passivewheel_40" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="wheel3_speed" type="revolute">
+<origin xyz="-0.069282 -0.04 0.013" rpy="0 -0 1.0472" />
+<parent link="body_1" />
+<child link="wheel_2" />
+<axis xyz="0.866025 -0.5 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="wheel_3">
+<collision>
+<origin xyz="-0.0649519 0.0375 -0.013" rpy="0 -0 -5.05344e-18" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.941176 0.87451 0.678431 1.0"/>
+</material>
+</collision>
+<visual>
+<origin xyz="-0.0649519 0.0375 -0.013" rpy="0 -0 -5.05344e-18" />
+<geometry>
+<mesh filename="package://wheel.stl"/>
+</geometry>
+<material name="wheel_material">
+<color rgba="0.941176 0.87451 0.678431 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="0.00216506 -0.00125 1.43812e-09" rpy="0 0 0"/>
+<mass value="0.0192491" />
+<inertia ixx="1.19744e-05" ixy="-2.94324e-06"  ixz="-2.17358e-13" iyy="8.5758e-06" iyz="-4.22e-13" izz="6.87651e-06" />
+</inertial>
+</link>
+
+<link name="passivewheel_41">
+<collision>
+<origin xyz="-2.69552e-20 1.16973e-19 -0.002" rpy="-1.91851e-17 3.61287e-18 -1.19963e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-2.69552e-20 1.16973e-19 -0.002" rpy="-1.91851e-17 3.61287e-18 -1.19963e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.38112e-20 5.05758e-19 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-3.34064e-25"  ixz="-5.50915e-25" iyy="2.77473e-08" iyz="6.83206e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_1_passive" type="revolute">
+<origin xyz="-0.00458006 -0.0129329 0.0350466" rpy="-1.88959 -0.167828 2.67307" />
+<parent link="wheel_3" />
+<child link="passivewheel_41" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_42">
+<collision>
+<origin xyz="4.93038e-35 -3.46945e-18 0.002" rpy="6.23173e-32 -6.29859e-32 3.07307e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="4.93038e-35 -3.46945e-18 0.002" rpy="6.23173e-32 -6.29859e-32 3.07307e-32" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.3144e-20 -3.08066e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.03376e-39"  ixz="3.76891e-39" iyy="2.77473e-08" iyz="3.05214e-39" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_2_passive" type="revolute">
+<origin xyz="0.00116506 -0.00298205 0.0375" rpy="1.5708 4.67156e-16 2.61799" />
+<parent link="wheel_3" />
+<child link="passivewheel_42" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_43">
+<collision>
+<origin xyz="1.38746e-17 3.45419e-20 0.002" rpy="6.15473e-17 2.91504e-18 2.5086e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38746e-17 3.45419e-20 0.002" rpy="6.15473e-17 2.91504e-18 2.5086e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.38877e-17 4.23327e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-2.80018e-25"  ixz="-1.87586e-25" iyy="2.77473e-08" iyz="3.49365e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_3_passive" type="revolute">
+<origin xyz="0.00700808 0.00713834 0.0362827" rpy="1.88959 0.167828 2.67307" />
+<parent link="wheel_3" />
+<child link="passivewheel_43" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_44">
+<collision>
+<origin xyz="1.39272e-17 3.28188e-18 0.002" rpy="1.00696e-16 -1.87309e-17 -4.71991e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.39272e-17 3.28188e-18 0.002" rpy="1.00696e-16 -1.87309e-17 -4.71991e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.39403e-17 3.67067e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-2.7038e-24"  ixz="1.60299e-24" iyy="2.77473e-08" iyz="3.83379e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_4_passive" type="revolute">
+<origin xyz="0.012377 0.0164376 0.0315137" rpy="2.22524 0.263005 2.81488" />
+<parent link="wheel_3" />
+<child link="passivewheel_44" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_45">
+<collision>
+<origin xyz="-1.37807e-17 1.42261e-18 0.002" rpy="9.63926e-17 -1.2152e-17 2.30227e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.37807e-17 1.42261e-18 0.002" rpy="9.63926e-17 -1.2152e-17 2.30227e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.37675e-17 1.8114e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.36382e-24"  ixz="1.94254e-24" iyy="2.77473e-08" iyz="3.90948e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_5_passive" type="revolute">
+<origin xyz="0.0167463 0.0240055 0.02366" rpy="2.55942 0.251389 2.97929" />
+<parent link="wheel_3" />
+<child link="passivewheel_45" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_46">
+<collision>
+<origin xyz="1.39015e-17 1.6233e-18 0.002" rpy="-1.6755e-17 -1.35448e-17 -1.68154e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.39015e-17 1.6233e-18 0.002" rpy="-1.6755e-17 -1.35448e-17 -1.68154e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.39146e-17 2.01208e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-2.08795e-24"  ixz="9.91854e-25" iyy="2.77473e-08" iyz="-2.36652e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_6_passive" type="revolute">
+<origin xyz="0.0196884 0.0291012 0.0134903" rpy="2.86413 0.149286 3.09926" />
+<parent link="wheel_3" />
+<child link="passivewheel_46" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_47">
+<collision>
+<origin xyz="3.27718e-34 -6.93889e-18 -0.002" rpy="1.7081e-31 -1.19638e-31 -2.11228e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="3.27718e-34 -6.93889e-18 -0.002" rpy="1.7081e-31 -1.19638e-31 -2.11228e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.3144e-20 -6.55011e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-2.11687e-24"  ixz="1.04062e-38" iyy="2.77473e-08" iyz="3.62632e-39" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_7_passive" type="revolute">
+<origin xyz="0.0209151 0.031226 0.002" rpy="4.83587e-15 -7.90364e-17 -2.48749" />
+<parent link="wheel_3" />
+<child link="passivewheel_47" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_48">
+<collision>
+<origin xyz="-1.38098e-17 5.72839e-18 -0.002" rpy="-8.01367e-17 -1.91493e-17 -5.63415e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.38098e-17 5.72839e-18 -0.002" rpy="-8.01367e-17 -1.91493e-17 -5.63415e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.37967e-17 6.11718e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="4.14666e-25"  ixz="1.88091e-24" iyy="2.77473e-08" iyz="-2.66878e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_8_passive" type="revolute">
+<origin xyz="0.0203064 0.0301717 -0.00968602" rpy="0.277462 -0.149286 3.09926" />
+<parent link="wheel_3" />
+<child link="passivewheel_48" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_49">
+<collision>
+<origin xyz="-1.39844e-17 6.72681e-19 -0.002" rpy="1.96125e-17 -3.90327e-17 8.81124e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.39844e-17 6.72681e-19 -0.002" rpy="1.96125e-17 -3.90327e-17 8.81124e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.39712e-17 1.06147e-18 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.60884e-24"  ixz="4.32707e-25" iyy="2.77473e-08" iyz="-1.74037e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_9_passive" type="revolute">
+<origin xyz="0.0179219 0.0260417 -0.0204239" rpy="0.58217 -0.251389 2.97929" />
+<parent link="wheel_3" />
+<child link="passivewheel_49" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_50">
+<collision>
+<origin xyz="1.38576e-17 -3.54939e-18 0.002" rpy="2.78819e-17 -2.06225e-17 1.86451e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38576e-17 -3.54939e-18 0.002" rpy="2.78819e-17 -2.06225e-17 1.86451e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.38708e-17 -3.1606e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.12203e-24"  ixz="7.30231e-25" iyy="2.77473e-08" iyz="2.56538e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_10_passive" type="revolute">
+<origin xyz="0.0139951 0.0192401 -0.0291626" rpy="-2.22524 -0.263005 2.81488" />
+<parent link="wheel_3" />
+<child link="passivewheel_50" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_51">
+<collision>
+<origin xyz="-1.39274e-17 7.16693e-18 0.002" rpy="-2.62603e-17 -1.21496e-17 -3.76168e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.39274e-17 7.16693e-18 0.002" rpy="-2.62603e-17 -1.21496e-17 -3.76168e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.39143e-17 7.55572e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-7.01407e-25"  ixz="-9.36086e-26" iyy="2.77473e-08" iyz="1.87758e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_11_passive" type="revolute">
+<origin xyz="0.00891019 0.0104329 -0.0350466" rpy="-1.88959 -0.167828 2.67307" />
+<parent link="wheel_3" />
+<child link="passivewheel_51" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_52">
+<collision>
+<origin xyz="-3.94666e-35 0 0.002" rpy="0 1.30441e-32 0" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-3.94666e-35 0 0.002" rpy="0 1.30441e-32 0" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.3144e-20 3.88785e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="0"  ixz="-1.18641e-39" iyy="2.77473e-08" iyz="0" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_12_passive" type="revolute">
+<origin xyz="0.00316506 0.000482051 -0.0375" rpy="-1.5708 -7.50935e-17 2.61799" />
+<parent link="wheel_3" />
+<child link="passivewheel_52" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_53">
+<collision>
+<origin xyz="-1.38872e-17 -1.39736e-17 0.002" rpy="6.05681e-17 2.11488e-18 3.54817e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.38872e-17 -1.39736e-17 0.002" rpy="6.05681e-17 2.11488e-18 3.54817e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.38741e-17 -1.35848e-17 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="5.20219e-25"  ixz="-2.34368e-25" iyy="2.77473e-08" iyz="1.63687e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_13_passive" type="revolute">
+<origin xyz="-0.00267795 -0.00963834 -0.0362827" rpy="-1.252 0.167828 2.67307" />
+<parent link="wheel_3" />
+<child link="passivewheel_53" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_54">
+<collision>
+<origin xyz="1.38468e-17 1.69505e-19 -0.002" rpy="9.70534e-17 3.71693e-17 -6.85477e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38468e-17 1.69505e-19 -0.002" rpy="9.70534e-17 3.71693e-17 -6.85477e-18" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.386e-17 5.5829e-19 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.10988e-24"  ixz="-2.24969e-24" iyy="2.77473e-08" iyz="7.10507e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_14_passive" type="revolute">
+<origin xyz="-0.00804689 -0.0189376 -0.0315137" rpy="2.22524 0.263005 2.81488" />
+<parent link="wheel_3" />
+<child link="passivewheel_54" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_55">
+<collision>
+<origin xyz="1.38404e-17 -1.38558e-17 -0.002" rpy="-2.60893e-17 2.93652e-17 2.31619e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="1.38404e-17 -1.38558e-17 -0.002" rpy="-2.60893e-17 2.93652e-17 2.31619e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="1.38536e-17 -1.3467e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="9.57489e-25"  ixz="-1.95682e-24" iyy="2.77473e-08" iyz="-9.731e-25" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_15_passive" type="revolute">
+<origin xyz="-0.0124162 -0.0265055 -0.02366" rpy="2.55942 0.251389 2.97929" />
+<parent link="wheel_3" />
+<child link="passivewheel_55" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_56">
+<collision>
+<origin xyz="2.08297e-20 1.36977e-17 -0.002" rpy="-2.92645e-17 5.10645e-18 3.79591e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="2.08297e-20 1.36977e-17 -0.002" rpy="-2.92645e-17 5.10645e-18 3.79591e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="3.39737e-20 1.40864e-17 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="8.66896e-25"  ixz="3.88835e-26" iyy="2.77473e-08" iyz="-3.9323e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_16_passive" type="revolute">
+<origin xyz="-0.0153582 -0.0316012 -0.0134903" rpy="2.86413 0.149286 3.09926" />
+<parent link="wheel_3" />
+<child link="passivewheel_56" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_57">
+<collision>
+<origin xyz="-8.67362e-19 -1.75533e-36 -0.002" rpy="-4.84261e-32 -2.40657e-32 -2.84666e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-8.67362e-19 -1.75533e-36 -0.002" rpy="-4.84261e-32 -2.40657e-32 -2.84666e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-8.54218e-19 3.88785e-19 -0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-2.17764e-24"  ixz="3.24701e-39" iyy="2.77473e-08" iyz="-2.39614e-39" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_17_passive" type="revolute">
+<origin xyz="-0.0165849 -0.033726 -0.002" rpy="3.14159 -2.4914e-16 -2.48749" />
+<parent link="wheel_3" />
+<child link="passivewheel_57" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_58">
+<collision>
+<origin xyz="-2.15269e-20 1.4105e-19 0.002" rpy="-3.87372e-17 3.5547e-17 7.78379e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-2.15269e-20 1.4105e-19 0.002" rpy="-3.87372e-17 3.5547e-17 7.78379e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-8.38285e-21 5.29835e-19 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="3.16948e-24"  ixz="-2.03965e-24" iyy="2.77473e-08" iyz="5.96288e-26" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_18_passive" type="revolute">
+<origin xyz="-0.0159763 -0.0326717 0.00968602" rpy="0.277462 -0.149286 3.09926" />
+<parent link="wheel_3" />
+<child link="passivewheel_58" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_59">
+<collision>
+<origin xyz="-1.38839e-17 -6.90429e-18 0.002" rpy="-3.05014e-17 2.40461e-17 1.08034e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-1.38839e-17 -6.90429e-18 0.002" rpy="-3.05014e-17 2.40461e-17 1.08034e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-1.38707e-17 -6.51551e-18 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="-1.04758e-24"  ixz="-1.26217e-24" iyy="2.77473e-08" iyz="-1.01387e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_19_passive" type="revolute">
+<origin xyz="-0.0135918 -0.0285417 0.0204239" rpy="0.58217 -0.251389 2.97929" />
+<parent link="wheel_3" />
+<child link="passivewheel_59" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<link name="passivewheel_60">
+<collision>
+<origin xyz="-2.77908e-17 -1.3725e-17 0.002" rpy="-2.23749e-17 -2.53155e-17 8.38958e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+</collision>
+<visual>
+<origin xyz="-2.77908e-17 -1.3725e-17 0.002" rpy="-2.23749e-17 -2.53155e-17 8.38958e-17" />
+<geometry>
+<cylinder length="0.003" radius="0.006" />
+</geometry>
+<material name="passivewheel_material">
+<color rgba="0.301961 0.290196 0.262745 1.0"/>
+</material>
+</visual>
+<inertial>
+<origin xyz="-2.77776e-17 -1.33363e-17 0.002" rpy="0 0 0"/>
+<mass value="0.00285906" />
+<inertia ixx="2.77473e-08" ixy="1.33618e-24"  ixz="7.51508e-25" iyy="2.77473e-08" iyz="1.02332e-24" izz="4.89774e-08" />
+</inertial>
+</link>
+
+<joint name="w2_20_passive" type="revolute">
+<origin xyz="-0.00966493 -0.0217401 0.0291626" rpy="0.916354 -0.263005 2.81488" />
+<parent link="wheel_3" />
+<child link="passivewheel_60" />
+<axis xyz="0 0 -1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="wheel2_speed" type="revolute">
+<origin xyz="-6.79647e-17 0.08 0.013" rpy="3.14159 -0 1.0472" />
+<parent link="body_1" />
+<child link="wheel_3" />
+<axis xyz="-0.866025 0.5 0"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>
