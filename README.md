@@ -121,10 +121,11 @@ and [MX-106](http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/), since it is p
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-field.png" width=256>
 </a>
 
+Description: This is not actually a robot, but an environment that is designed in Onshape and can be converted into an URDF file
+
 * Give it a try: `onshape-to-robot-bullet field`
 * [Onshape design](https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9)
 * [config.json](field/config.json)
-* This is not actually a robot, but an environment that is designed in Onshape and can be converted into an URDF file
 * Note that the `noDynamics` is set to `true` in the configuration, making it a static environment
 * This is a model of RoboCup humanoid soccer kid-size (2019) 6 x 9 m field
 
