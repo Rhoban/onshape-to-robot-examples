@@ -35,6 +35,18 @@ This will open a windows like the following one, including sliders to change the
 * **Note2: here, `wheel2` has the `_inv` suffix, which changes its direction making both wheels spin in same direction
   when same sign of order is given**
 
+## Adjustable height arm
+
+<a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-adjustable_height_arm.png">
+<img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-adjustable_height_arm.png" width=256>
+</a>
+
+* Give it a try: `onshape-to-robot-bullet -f adjustable_height_arm` (note that `-f` is passed to fix the base to the ground)
+* [Onshape design](https://cad.onshape.com/documents/6a6e5b10ef079339c2ddde84/w/207da6d79692e0bbf50113f2/e/9f3edd12689fa0c486a7d0d7)
+* [config.json](adjustable_height_arm/config.json)
+* Robot with 4 degrees of freedom, one prismatic (linear) joint and 3 rotations
+* There is one frame (`frame_tip`) attached to the tip of the arm
+
 ## Omnidirectional
 
 <a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-omnidirectional.png">
