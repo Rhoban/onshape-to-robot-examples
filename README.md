@@ -98,6 +98,12 @@ and [MX-106](http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/), since it is p
 Read the instructions from the [onshape-to-robot repository](https://github.com/Rhoban/onshape-to-robot), especially
 be sure to have the API key registered and set as environment variable before running `onshape-to-robot`.
 
+To get the same results, you might need `openscad` and `meshlab` installed.
+
+    sudo apt-get install openscad meshlab
+
+Else, pure shape approximation and meshes simplification might be disabled.
+
 ### Why do I get `ERROR (403) while using OnShape API` ?
 
 If you want to export the robots yourself, you need to have the rights to access to the assembly. Thus, if you want to
