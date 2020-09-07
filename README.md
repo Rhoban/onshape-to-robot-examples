@@ -128,6 +128,7 @@ Description: This is not actually a robot, but an environment that is designed i
 * [config.json](field/config.json)
 * Note that the `noDynamics` is set to `true` in the configuration, making it a static environment
 * This is a model of RoboCup humanoid soccer kid-size (2019) 6 x 9 m field
+* The `useFixedLinks` option is set to `true` so that the colors of different sub-part are kept
 
 ## Re-running the imports yourself
 
