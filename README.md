@@ -3,7 +3,7 @@
 Here you will find several examples of robots that were design to be exported properly using the
 [onshape-to-robot](https://github.com/Rhoban/onshape-to-robot) tool.
 
-Have a look at the [design-time considerations](https://github.com/Rhoban/onshape-to-robot#design-time-considerations)
+Have a look at the [design-time considerations](https://onshape-to-robot.readthedocs.io/en/latest/design.html)
 to understand better the constraints to export your robots to URDF/SDF.
 
 Before testing, in a nutshell, you need `onshape-to-robot`:
