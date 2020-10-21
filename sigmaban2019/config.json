@@ -3,7 +3,7 @@
     "outputFormat": "urdf",
     "drawFrames": false,
     "drawCollisions": true,
-    "mergeSTLs": true,
+    "mergeSTLs": "visual",
     "simplifySTLs": true,
     "maxSTLSize": 3,
     "useScads": true,

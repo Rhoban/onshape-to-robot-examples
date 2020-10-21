@@ -4,5 +4,5 @@
     "drawFrames": false,
     "drawCollisions": false,
     "useScads": true,
-    "mergeSTLs": true
+    "mergeSTLs": "visual"
 }
