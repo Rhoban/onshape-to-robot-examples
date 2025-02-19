@@ -1,0 +1,14 @@
+{
+	"document_id": "04b05c47de7576f35c0e99b3",
+	"output_format": "mujoco",
+	"freejoint": false,
+
+	"joint_properties": {
+		"passive1": {
+			"actuated": false
+		},
+		"passive2": {
+			"actuated": false
+		}
+	}
+}

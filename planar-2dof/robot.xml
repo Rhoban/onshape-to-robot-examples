@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape document_id: 04b05c47de7576f35c0e99b3 -->
+<mujoco model="onshape">
+    <compiler angle="radian" meshdir="." autolimits="true"/>
+    <option noslip_iterations="1"/>
+    <default>
+        <joint frictionloss="0.1" armature="0.005"/>
+        <position kp="50" kv="5"/>
+        <default class="visual">
+            <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+        </default>
+        <default class="collision">
+            <geom group="3"/>
+        </default>
+    </default>
+    <worldbody>
+        <!-- Link base -->
+        <body name="base" pos="0 0 0" quat="1 0 0 0">
+            <inertial pos="0.00067387932128801404652 0 0.035858035995898429604" mass="1.0125175723561230523" fullinertia="0.0050063948833493346 0.00047974770084012235884 0.0046068750516161591224 -4.4318894654038958393e-19 -6.2376960104677783286e-06 7.6774970815902717099e-19"/>
+            <!-- Part base -->
+            <!-- Mesh base -->
+            <geom type="mesh" class="visual" pos="-0.010000000000000000208 -0.125 1.3877787807814456755e-17" quat="0.49999999999999994449 0.49999999999999983347 0.50000000000000011102 0.49999999999999988898" mesh="base" material="base_material"/>
+            <!-- Mesh base -->
+            <geom type="mesh" class="collision" pos="-0.010000000000000000208 -0.125 1.3877787807814456755e-17" quat="0.49999999999999994449 0.49999999999999983347 0.50000000000000011102 0.49999999999999988898" mesh="base" material="base_material"/>
+            <!-- Link branch1 -->
+            <body name="branch1" pos="0.014999999999999995975 -0.059999999999999970024 0.044999999999999991396" quat="0.34641016151377557186 -0.61644140029689742377 -0.3464101615137752388 0.61644140029689764582">
+                <!-- Joint from base to branch1 -->
+                <joint name="motor1" type="hinge"/>
+                <inertial pos="-0.032500000000000146827 -0.053385391260156685178 -0.0050000000000000009714" mass="0.12390066204820480988" fullinertia="0.00017070305209466315956 6.953149454569647705e-05 0.00023816953560622293679 -9.7859346890542020275e-05 -1.0161215258064404808e-36 -2.1345602358676737123e-36"/>
+                <!-- Part branch1 -->
+                <!-- Mesh branch1 -->
+                <geom type="mesh" class="visual" pos="-0.065000000000000016098 0.045000000000000019151 0.025000000000000001388" quat="0 1 0 0" mesh="branch1" material="branch1_material"/>
+                <!-- Mesh branch1 -->
+                <geom type="mesh" class="collision" pos="-0.065000000000000016098 0.045000000000000019151 0.025000000000000001388" quat="0 1 0 0" mesh="branch1" material="branch1_material"/>
+                <!-- Link branch2 -->
+                <body name="branch2" pos="-0.065000000000000210387 -0.1067707825203129679 0" quat="5.1884078698655499953e-17 0.95370656975113077269 -0.30073872183929267754 4.4043164517792630948e-17">
+                    <!-- Joint from branch1 to branch2 -->
+                    <joint name="passive1" type="hinge"/>
+                    <inertial pos="0.035328974076700020435 0.041304147573957609996 -0.0043471598284538538748" mass="0.11287599307230634926" fullinertia="9.4366527777012561133e-05 7.1533964619042975422e-05 0.00016313290830430931199 -7.2763288808187767871e-05 -2.186457386408537913e-06 -2.5562519408665347491e-06"/>
+                    <!-- Part branch2 -->
+                    <!-- Mesh branch2 -->
+                    <geom type="mesh" class="visual" pos="1.3877787807814456755e-17 -0.15177078252031314665 -0.025000000000000001388" quat="0.99999999999999988898 0 -6.363052265890746543e-19 -7.2163082677134576043e-33" mesh="branch2" material="branch2_material"/>
+                    <!-- Mesh branch2 -->
+                    <geom type="mesh" class="collision" pos="1.3877787807814456755e-17 -0.15177078252031314665 -0.025000000000000001388" quat="0.99999999999999988898 0 -6.363052265890746543e-19 -7.2163082677134576043e-33" mesh="branch2" material="branch2_material"/>
+                    <!-- Frame closing_effector_1 (dummy link + fixed joint) -->
+                    <site name="closing_effector_1" pos="0.065000000000000016098 0.075993420767853286923 0.0050000000000000027062" quat="0.99999999999999988898 0 -6.363052265890746543e-19 -7.2163082677134576043e-33"/>
+                </body>
+            </body>
+            <!-- Link branch1_2 -->
+            <body name="branch1_2" pos="0.014999999999999999445 0.059999999999999983902 0.044999999999999991396" quat="0.34641016151377529431 0.61644140029689775684 -0.34641016151377512777 -0.61644140029689753479">
+                <!-- Joint from base to branch1_2 -->
+                <joint name="motor2" type="hinge"/>
+                <inertial pos="-0.032500000000000139888 0.053385391260156726811 -0.0050000000000000079103" mass="0.12390066204820480988" fullinertia="0.00017070305209466321377 6.9531494545696504155e-05 0.00023816953560622293679 9.785934689054204738e-05 2.7465013975902173369e-36 1.7757138151657554891e-36"/>
+                <!-- Part branch1_2 -->
+                <!-- Mesh branch1_2 -->
+                <geom type="mesh" class="visual" pos="-0.06500000000000000222 -0.045000000000000019151 -0.03500000000000001027" quat="1 0 0 2.7186417092828613266e-32" mesh="branch1" material="branch1_material"/>
+                <!-- Mesh branch1_2 -->
+                <geom type="mesh" class="collision" pos="-0.06500000000000000222 -0.045000000000000019151 -0.03500000000000001027" quat="1 0 0 2.7186417092828613266e-32" mesh="branch1" material="branch1_material"/>
+                <!-- Link branch2_2 -->
+                <body name="branch2_2" pos="-0.065000000000000224265 0.10677078252031299566 -0.010000000000000003678" quat="0.95370656975113243803 -1.2951070295457336077e-16 -0 0.30073872183928768154">
+                    <!-- Joint from branch1_2 to branch2_2 -->
+                    <joint name="passive2" type="hinge"/>
+                    <inertial pos="0.035328974076700013496 0.041304147573957609996 -0.0043471598284538573442" mass="0.11287599307230634926" fullinertia="9.4366527777012534028e-05 7.1533964619042975422e-05 0.00016313290830430931199 -7.2763288808187754318e-05 -2.1864573864085374895e-06 -2.5562519408665347491e-06"/>
+                    <!-- Part branch2_2 -->
+                    <!-- Mesh branch2_2 -->
+                    <geom type="mesh" class="visual" pos="6.9388939039072283776e-18 -0.15177078252031314665 -0.025000000000000004857" quat="0.99999999999999988898 0 9.2670333445976679427e-18 -1.1102230246251558009e-16" mesh="branch2" material="branch2_material"/>
+                    <!-- Mesh branch2_2 -->
+                    <geom type="mesh" class="collision" pos="6.9388939039072283776e-18 -0.15177078252031314665 -0.025000000000000004857" quat="0.99999999999999988898 0 9.2670333445976679427e-18 -1.1102230246251558009e-16" mesh="branch2" material="branch2_material"/>
+                    <!-- Frame closing_effector_2 (dummy link + fixed joint) -->
+                    <site name="closing_effector_2" pos="0.06500000000000000222 0.075993420767853286923 0.0050000000000000009714" quat="5.1834876587393831344e-33 -0.70710678118654746172 -0.70710678118654746172 5.6856505953161280148e-33"/>
+                    <!-- Frame effector (dummy link + fixed joint) -->
+                    <site name="effector" pos="0.06500000000000000222 0.075993420767853342435 -0.0099999999999999984734" quat="5.4793627067794525391e-16 -1 -1.9143652909598556222e-17 -4.6487172950315413482e-17"/>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    <asset>
+        <mesh file="branch1.stl"/>
+        <mesh file="base.stl"/>
+        <mesh file="branch2.stl"/>
+        <material name="base_material" rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1"/>
+        <material name="branch1_material" rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1"/>
+        <material name="branch2_material" rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1"/>
+    </asset>
+    <actuator>
+        <position name="motor1" joint="motor1"/>
+        <position name="motor2" joint="motor2"/>
+    </actuator>
+    <equality>
+        <connect site1="closing_effector_1" site2="closing_effector_2"/>
+    </equality>
+</mujoco>
