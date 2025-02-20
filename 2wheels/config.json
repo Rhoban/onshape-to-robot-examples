@@ -1,4 +1,8 @@
 {
     "documentId": "862948a6ea6d38343e1d3272",
-    "outputFormat": "urdf"
+    "outputFormat": "urdf",
+
+    "joint_properties": {
+	    "default": {"type": "continuous"}
+    }
 }
