@@ -57,8 +57,6 @@ Description: Robot with 4 degrees of freedom, one prismatic (linear) joint and 3
     * [mujoco](adjustable_height_arm_mujoco/config.json)
 * **Notes**:
     * The robot is fixed using a "fixed" Onshape feature
-    * Since it is a static environment, `no_dynamics` is passed
-    * There are multiple root nodes in this robot. Thus, `add_dummy_base_link` option is added in URDF to ensure there is only one root node.
     * There is one frame (`frame_tip`) attached to the tip of the arm
     * Collisions mesh are ignored using `collisions_no_mesh`
 
@@ -158,7 +156,8 @@ Description: This is not actually a robot, but an environment that is designed i
 * [Onshape design](https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9)
 * [config.json](field/config.json)
 * **Notes:**
-    * Note that the `no_dynamics` is set to `true` in the configuration, making it a static environment
+    * Since it is a static environment, `no_dynamics` is passed
+    * There are multiple root nodes in this robot. Thus, `add_dummy_base_link` option is added in URDF to ensure there is only one root node.
     * This is a model of RoboCup humanoid soccer kid-size (2019) 6 x 9 m field
     * In URDF, the `use_fixed_links` option is set to `true` so that the colors of different sub-part are kept
 
