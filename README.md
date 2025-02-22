@@ -23,8 +23,8 @@ This will open a windows like the following one, including sliders to change the
 
 ### 2 wheels
 
-<a href="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-2wheels.png">
-<img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-2wheels.png" width=256>
+<a href=".imgs/robot-2wheels.png">
+<img src=".imgs/robot-2wheels.png" width=256>
 </a>
 
 Description: Very simple design and minimalistic configuration
@@ -100,7 +100,7 @@ Description: 12 DOF dog robot, made for fun with [MX-64](http://emanual.robotis.
 <img src="https://github.com/Rhoban/onshape-to-robot-examples/raw/master/.imgs/robot-sigmaban2019.png" width=256>
 </a>
 
-Description: 20 DOF humanoid robot, snapshot of 2019 Sigmaban model from team [Rhoban][https://www.youtube.com/watch?v=tF0cr0PYjsk),
+Description: 20 DOF humanoid robot, snapshot of 2019 Sigmaban model from team [Rhoban](https://www.youtube.com/watch?v=tF0cr0PYjsk),
 used at RoboCup kid size
 
 * Give it a try: `onshape-to-robot-bullet sigmaban2019`
