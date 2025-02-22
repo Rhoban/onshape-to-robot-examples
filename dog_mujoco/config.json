@@ -1,0 +1,10 @@
+{
+  "url": "https://cad.onshape.com/documents/adaeaba919da3242f78691a7/w/d80460ae3edd273c69c822a5/e/c8ebe3aba51c8ed2734fad87",
+    "outputFormat": "mujoco",
+
+    "joint_properties": {
+      "default": {
+	"limits": [-3, 3]
+      }
+    }
+}

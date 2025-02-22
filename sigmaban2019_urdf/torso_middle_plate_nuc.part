@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "1ec864f57a007c53c96ce773",
+    "documentMicroversion": "4fcb7a98c3c0c53455c7865e",
+    "documentVersion": "024b3257a8d70d5eb48cf6a1",
+    "elementId": "4c611697b7ad37a3b6815a2a",
+    "fullConfiguration": "default",
+    "id": "MRP3QyxY3C9uwTGsX",
+    "isStandardContent": false,
+    "name": "torso_middle_plate_nuc <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

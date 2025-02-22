@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "c5b1156bcac18427d02e756c",
+    "documentMicroversion": "d25f8573f3dc89911918a995",
+    "documentVersion": "3358af3126ca3f0d04b707f0",
+    "elementId": "a55d1b1209994d10a5e3d27e",
+    "fullConfiguration": "default",
+    "id": "MHDJ0IVkJBrYPwpVr",
+    "isStandardContent": false,
+    "name": "lipo_4s_2800mah <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

@@ -1,0 +1,652 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<robot name="onshape">
+    <!-- Link base_link -->
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <!-- Link myTable -->
+    <link name="myTable">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table2 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table2.stl"/>
+            </geometry>
+            <material name="table2_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table2.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part goalsopponent -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponent.stl"/>
+            </geometry>
+            <material name="goalsopponent_material">
+                <color rgba="0.88235294117647056211 0.57254901960784310155 0.47843137254901962896 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponent.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part goalsallyback -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsallyback.stl"/>
+            </geometry>
+            <material name="goalsallyback_material">
+                <color rgba="0 0.35686274509803922461 0.32941176470588234837 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsallyback.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part penaltyally -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyally.stl"/>
+            </geometry>
+            <material name="penaltyally_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyally.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part table4 -->
+        <visual>
+            <origin xyz="2.0271517956058215937 4.3227955039657031122 -0.29331357030447902101" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+            <material name="table4_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.0271517956058215937 4.3227955039657031122 -0.29331357030447902101" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part goalsally -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsally.stl"/>
+            </geometry>
+            <material name="goalsally_material">
+                <color rgba="0.73725490196078435901 0.9372549019607843146 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsally.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part goalsopponentback -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponentback.stl"/>
+            </geometry>
+            <material name="goalsopponentback_material">
+                <color rgba="0.45882352941176468564 0.10588235294117646912 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponentback.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part penaltyopponent -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyopponent.stl"/>
+            </geometry>
+            <material name="penaltyopponent_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyopponent.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part field -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://field.stl"/>
+            </geometry>
+            <material name="field_material">
+                <color rgba="0.37254901960784314596 0.65490196078431373028 0.23921568627450981448 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://field.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part table3 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table3.stl"/>
+            </geometry>
+            <material name="table3_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table3.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part table -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table.stl"/>
+            </geometry>
+            <material name="table_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part lines -->
+        <visual>
+            <origin xyz="-3.0666376691431150233e-16 -6.3732495064892325058e-14 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://lines.stl"/>
+            </geometry>
+            <material name="lines_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.0666376691431150233e-16 -6.3732495064892325058e-14 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://lines.stl"/>
+            </geometry>
+        </collision>
+        <!-- Part table4_2 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+            <material name="table4_2_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link myTable_table2 -->
+    <link name="myTable_table2">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table2 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table2.stl"/>
+            </geometry>
+            <material name="table2_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table2.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_table2 -->
+    <joint name="myTable_table2_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_table2"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_goalsopponent -->
+    <link name="myTable_goalsopponent">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsopponent -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponent.stl"/>
+            </geometry>
+            <material name="goalsopponent_material">
+                <color rgba="0.88235294117647056211 0.57254901960784310155 0.47843137254901962896 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponent.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_goalsopponent -->
+    <joint name="myTable_goalsopponent_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_goalsopponent"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_goalsallyback -->
+    <link name="myTable_goalsallyback">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsallyback -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsallyback.stl"/>
+            </geometry>
+            <material name="goalsallyback_material">
+                <color rgba="0 0.35686274509803922461 0.32941176470588234837 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsallyback.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_goalsallyback -->
+    <joint name="myTable_goalsallyback_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_goalsallyback"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_penaltyally -->
+    <link name="myTable_penaltyally">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part penaltyally -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyally.stl"/>
+            </geometry>
+            <material name="penaltyally_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyally.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_penaltyally -->
+    <joint name="myTable_penaltyally_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_penaltyally"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_table4 -->
+    <link name="myTable_table4">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table4 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+            <material name="table4_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_table4 -->
+    <joint name="myTable_table4_fixed" type="fixed">
+        <origin xyz="2.0271517956058215937 4.3227955039657031122 -0.29331357030447902101" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_table4"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_goalsally -->
+    <link name="myTable_goalsally">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsally -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsally.stl"/>
+            </geometry>
+            <material name="goalsally_material">
+                <color rgba="0.73725490196078435901 0.9372549019607843146 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsally.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_goalsally -->
+    <joint name="myTable_goalsally_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_goalsally"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_goalsopponentback -->
+    <link name="myTable_goalsopponentback">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsopponentback -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponentback.stl"/>
+            </geometry>
+            <material name="goalsopponentback_material">
+                <color rgba="0.45882352941176468564 0.10588235294117646912 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponentback.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_goalsopponentback -->
+    <joint name="myTable_goalsopponentback_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_goalsopponentback"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_penaltyopponent -->
+    <link name="myTable_penaltyopponent">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part penaltyopponent -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyopponent.stl"/>
+            </geometry>
+            <material name="penaltyopponent_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyopponent.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_penaltyopponent -->
+    <joint name="myTable_penaltyopponent_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_penaltyopponent"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_field -->
+    <link name="myTable_field">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part field -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://field.stl"/>
+            </geometry>
+            <material name="field_material">
+                <color rgba="0.37254901960784314596 0.65490196078431373028 0.23921568627450981448 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://field.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_field -->
+    <joint name="myTable_field_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_field"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_table3 -->
+    <link name="myTable_table3">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table3 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table3.stl"/>
+            </geometry>
+            <material name="table3_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table3.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_table3 -->
+    <joint name="myTable_table3_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_table3"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_table -->
+    <link name="myTable_table">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table.stl"/>
+            </geometry>
+            <material name="table_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_table -->
+    <joint name="myTable_table_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_table"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_lines -->
+    <link name="myTable_lines">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part lines -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://lines.stl"/>
+            </geometry>
+            <material name="lines_material">
+                <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://lines.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_lines -->
+    <joint name="myTable_lines_fixed" type="fixed">
+        <origin xyz="-3.0666376691431150233e-16 -6.3732495064892325058e-14 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_lines"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Link myTable_table4_2 -->
+    <link name="myTable_table4_2">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table4_2 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+            <material name="table4_2_material">
+                <color rgba="0.44705882352941178626 0.24313725490196078094 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from myTable to myTable_table4_2 -->
+    <joint name="myTable_table4_2_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="myTable"/>
+        <child link="myTable_table4_2"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+    <!-- Joint from base_link to myTable -->
+    <joint name="base_link_to_base" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="base_link"/>
+        <child link="myTable"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+</robot>

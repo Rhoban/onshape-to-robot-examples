@@ -1,0 +1,397 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9 -->
+<robot name="onshape-to-robot-examples">
+    <!-- Link field -->
+    <link name="field">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <!-- Link field_table2 -->
+    <link name="field_table2">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table2 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table2.stl"/>
+            </geometry>
+            <material name="table2_material">
+                <color rgba="0.447059 0.243137 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table2.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_table2 -->
+    <joint name="field_table2_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_table2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_goalsopponent -->
+    <link name="field_goalsopponent">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsopponent -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponent.stl"/>
+            </geometry>
+            <material name="goalsopponent_material">
+                <color rgba="0.882353 0.572549 0.478431 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponent.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_goalsopponent -->
+    <joint name="field_goalsopponent_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_goalsopponent"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_goalsallyback -->
+    <link name="field_goalsallyback">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsallyback -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsallyback.stl"/>
+            </geometry>
+            <material name="goalsallyback_material">
+                <color rgba="0 0.356863 0.329412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsallyback.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_goalsallyback -->
+    <joint name="field_goalsallyback_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_goalsallyback"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_penaltyally -->
+    <link name="field_penaltyally">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part penaltyally -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyally.stl"/>
+            </geometry>
+            <material name="penaltyally_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyally.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_penaltyally -->
+    <joint name="field_penaltyally_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_penaltyally"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_goalsally -->
+    <link name="field_goalsally">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsally -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsally.stl"/>
+            </geometry>
+            <material name="goalsally_material">
+                <color rgba="0.737255 0.937255 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsally.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_goalsally -->
+    <joint name="field_goalsally_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_goalsally"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_goalsopponentback -->
+    <link name="field_goalsopponentback">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part goalsopponentback -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponentback.stl"/>
+            </geometry>
+            <material name="goalsopponentback_material">
+                <color rgba="0.458824 0.105882 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://goalsopponentback.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_goalsopponentback -->
+    <joint name="field_goalsopponentback_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_goalsopponentback"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_penaltyopponent -->
+    <link name="field_penaltyopponent">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part penaltyopponent -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyopponent.stl"/>
+            </geometry>
+            <material name="penaltyopponent_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://penaltyopponent.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_penaltyopponent -->
+    <joint name="field_penaltyopponent_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_penaltyopponent"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_field -->
+    <link name="field_field">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part field -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://field.stl"/>
+            </geometry>
+            <material name="field_material">
+                <color rgba="0.372549 0.654902 0.239216 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://field.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_field -->
+    <joint name="field_field_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_field"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_table3 -->
+    <link name="field_table3">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table3 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table3.stl"/>
+            </geometry>
+            <material name="table3_material">
+                <color rgba="0.447059 0.243137 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table3.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_table3 -->
+    <joint name="field_table3_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_table3"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_table -->
+    <link name="field_table">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table.stl"/>
+            </geometry>
+            <material name="table_material">
+                <color rgba="0.447059 0.243137 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_table -->
+    <joint name="field_table_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_table"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_lines -->
+    <link name="field_lines">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part lines -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://lines.stl"/>
+            </geometry>
+            <material name="lines_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://lines.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_lines -->
+    <joint name="field_lines_fixed" type="fixed">
+        <origin xyz="-3.06664e-16 -6.37325e-14 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_lines"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+    <!-- Link field_table4 -->
+    <link name="field_table4">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+        <!-- Part table4 -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+            <material name="table4_material">
+                <color rgba="0.447059 0.243137 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://table4.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from field to field_table4 -->
+    <joint name="field_table4_fixed" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <parent link="field"/>
+        <child link="field_table4"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10"/>
+    </joint>
+</robot>

@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9 -->
+<mujoco model="onshape-to-robot-examples">
+    <compiler angle="radian" meshdir="." autolimits="true"/>
+    <option noslip_iterations="1"/>
+    <default>
+        <joint frictionloss="0.1" armature="0.005"/>
+        <position kp="50" kv="5"/>
+        <velocity kv="5"/>
+        <default class="visual">
+            <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+        </default>
+        <default class="collision">
+            <geom group="3"/>
+        </default>
+    </default>
+    <worldbody>
+        <!-- Link field -->
+        <body name="field" pos="0 0 0" quat="1 0 0 0">
+            <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+            <!-- Part table2 -->
+            <!-- Mesh table2 -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="table2" material="table2_material"/>
+            <!-- Mesh table2 -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="table2" material="table2_material"/>
+            <!-- Part goalsopponent -->
+            <!-- Mesh goalsopponent -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="goalsopponent" material="goalsopponent_material"/>
+            <!-- Mesh goalsopponent -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="goalsopponent" material="goalsopponent_material"/>
+            <!-- Part goalsallyback -->
+            <!-- Mesh goalsallyback -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="goalsallyback" material="goalsallyback_material"/>
+            <!-- Mesh goalsallyback -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="goalsallyback" material="goalsallyback_material"/>
+            <!-- Part penaltyally -->
+            <!-- Mesh penaltyally -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="penaltyally" material="penaltyally_material"/>
+            <!-- Mesh penaltyally -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="penaltyally" material="penaltyally_material"/>
+            <!-- Part goalsally -->
+            <!-- Mesh goalsally -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="goalsally" material="goalsally_material"/>
+            <!-- Mesh goalsally -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="goalsally" material="goalsally_material"/>
+            <!-- Part goalsopponentback -->
+            <!-- Mesh goalsopponentback -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="goalsopponentback" material="goalsopponentback_material"/>
+            <!-- Mesh goalsopponentback -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="goalsopponentback" material="goalsopponentback_material"/>
+            <!-- Part penaltyopponent -->
+            <!-- Mesh penaltyopponent -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="penaltyopponent" material="penaltyopponent_material"/>
+            <!-- Mesh penaltyopponent -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="penaltyopponent" material="penaltyopponent_material"/>
+            <!-- Part field -->
+            <!-- Mesh field -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="field" material="field_material"/>
+            <!-- Mesh field -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="field" material="field_material"/>
+            <!-- Part table3 -->
+            <!-- Mesh table3 -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="table3" material="table3_material"/>
+            <!-- Mesh table3 -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="table3" material="table3_material"/>
+            <!-- Part table -->
+            <!-- Mesh table -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="table" material="table_material"/>
+            <!-- Mesh table -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="table" material="table_material"/>
+            <!-- Part lines -->
+            <!-- Mesh lines -->
+            <geom type="mesh" class="visual" pos="-3.06664e-16 -6.37325e-14 0" quat="1 0 0 0" mesh="lines" material="lines_material"/>
+            <!-- Mesh lines -->
+            <geom type="mesh" class="collision" pos="-3.06664e-16 -6.37325e-14 0" quat="1 0 0 0" mesh="lines" material="lines_material"/>
+            <!-- Part table4 -->
+            <!-- Mesh table4 -->
+            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="table4" material="table4_material"/>
+            <!-- Mesh table4 -->
+            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="table4" material="table4_material"/>
+        </body>
+    </worldbody>
+    <asset>
+        <mesh file="field.stl"/>
+        <mesh file="goalsopponentback.stl"/>
+        <mesh file="lines.stl"/>
+        <mesh file="penaltyally.stl"/>
+        <mesh file="table3.stl"/>
+        <mesh file="goalsally.stl"/>
+        <mesh file="goalsallyback.stl"/>
+        <mesh file="penaltyopponent.stl"/>
+        <mesh file="table4.stl"/>
+        <mesh file="table2.stl"/>
+        <mesh file="table.stl"/>
+        <mesh file="goalsopponent.stl"/>
+        <material name="table2_material" rgba="0.447059 0.243137 0 1"/>
+        <material name="goalsopponent_material" rgba="0.882353 0.572549 0.478431 1"/>
+        <material name="goalsallyback_material" rgba="0 0.356863 0.329412 1"/>
+        <material name="penaltyally_material" rgba="0.917647 0.917647 0.917647 1"/>
+        <material name="goalsally_material" rgba="0.737255 0.937255 0.917647 1"/>
+        <material name="goalsopponentback_material" rgba="0.458824 0.105882 0 1"/>
+        <material name="penaltyopponent_material" rgba="0.917647 0.917647 0.917647 1"/>
+        <material name="field_material" rgba="0.372549 0.654902 0.239216 1"/>
+        <material name="table3_material" rgba="0.447059 0.243137 0 1"/>
+        <material name="table_material" rgba="0.447059 0.243137 0 1"/>
+        <material name="lines_material" rgba="0.917647 0.917647 0.917647 1"/>
+        <material name="table4_material" rgba="0.447059 0.243137 0 1"/>
+    </asset>
+    <actuator/>
+    <equality/>
+</mujoco>

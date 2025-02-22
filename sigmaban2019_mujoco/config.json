@@ -1,0 +1,13 @@
+{
+	"url": "https://cad.onshape.com/documents/41654e89e61a392d020b728c/w/d555ceec170d351622b789de/e/4c9a04a707c36ac7ad2ca0f8",
+	"output_format": "mujoco",
+    "use_scads": true,
+ 
+	"collisions_no_mesh": true,
+
+	"joint_properties": {
+		"default": {
+			"forcerange": 10
+		}
+	}
+}

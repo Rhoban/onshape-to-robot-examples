@@ -1,0 +1,602 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50 -->
+<robot name="quadruped_urdf">
+    <!-- Link body -->
+    <link name="body">
+        <inertial>
+            <origin xyz="-2.68123e-18 7.95593e-19 0.0143384" rpy="0 0 0"/>
+            <mass value="0.0808736"/>
+            <inertia ixx="7.37408e-05" ixy="-7.58445e-21" ixz="-2.2764e-21" iyy="7.37408e-05" iyz="1.71779e-21" izz="0.000135878"/>
+        </inertial>
+        <!-- Part body -->
+        <visual>
+            <origin xyz="-4.02184e-18 1.95168e-18 0.0143384" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://body.stl"/>
+            </geometry>
+            <material name="body_material">
+                <color rgba="0.546445 0.490703 0.424602 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 3.46945e-18 0.0275" rpy="3.14159 -0 0"/>
+            <geometry>
+                <box size="0.03 0.03 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 0 0.0011" rpy="0 -0 0"/>
+            <geometry>
+                <box size="0.03 0.03 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-2.48001e-18 -0.0405 0.0143" rpy="0 -0 -3.14159"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.0405 8.66205e-18 0.0143" rpy="0 -0 -1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-2.87964e-18 0.0405 0.0143" rpy="0 -0 8.32667e-16"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0405 -2.24473e-18 0.0143" rpy="1.45547e-17 3.61151e-16 1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link doubleu -->
+    <link name="doubleu">
+        <inertial>
+            <origin xyz="4.20868e-19 -0.0203 -0.01615" rpy="0 0 0"/>
+            <mass value="0.00830698"/>
+            <inertia ixx="2.78361e-06" ixy="-3.98268e-22" ixz="-3.70822e-22" iyy="1.9255e-06" iyz="1.87309e-22" izz="2.78361e-06"/>
+        </inertial>
+        <!-- Part doubleu -->
+        <visual>
+            <origin xyz="4.20868e-19 -0.0203 -0.01615" rpy="-3.14159 1.53921e-15 1.5708"/>
+            <geometry>
+                <mesh filename="package://doubleu.stl"/>
+            </geometry>
+            <material name="doubleu_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-2.25526e-31 -0.0191 -0.01615" rpy="1.5708 -1.84604e-32 4.13365e-30"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-4.23155e-18 -0.0215 -0.01615" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link platesblock -->
+    <link name="platesblock">
+        <inertial>
+            <origin xyz="5.09544e-15 -0.0315 0.0150372" rpy="0 0 0"/>
+            <mass value="0.0417755"/>
+            <inertia ixx="2.98279e-05" ixy="-2.99773e-12" ixz="-9.43397e-21" iyy="4.6241e-06" iyz="2.38053e-19" izz="2.99828e-05"/>
+        </inertial>
+        <!-- Part platesblock -->
+        <visual>
+            <origin xyz="5.09835e-15 -0.0315 0.0150372" rpy="-1.5708 -8.04912e-14 1.5708"/>
+            <geometry>
+                <mesh filename="package://platesblock.stl"/>
+            </geometry>
+            <material name="platesblock_material">
+                <color rgba="0.5601 0.491944 0.411121 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0131 -0.0315 0.015" rpy="1.5708 -1.26802e-14 -1.5708"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0132 -0.0315 0.015" rpy="1.5708 2.39183e-16 -1.5708"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.32467e-15 -0.008 0.015" rpy="5.55112e-17 -5.55112e-17 1.32212e-13"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="8.87894e-15 -0.055 0.015" rpy="1.07507e-14 5.55112e-17 -3.14159"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link leg -->
+    <link name="leg">
+        <inertial>
+            <origin xyz="-1.68362e-17 0.0533786 0.015" rpy="0 0 0"/>
+            <mass value="0.0154162"/>
+            <inertia ixx="2.13816e-05" ixy="5.18659e-34" ixz="1.18621e-36" iyy="3.58407e-06" iyz="1.10982e-34" izz="1.88204e-05"/>
+        </inertial>
+        <!-- Part leg -->
+        <visual>
+            <origin xyz="-1.73472e-17 0.0533786 0.015" rpy="-1.5708 -9.12418e-14 -1.5708"/>
+            <geometry>
+                <mesh filename="package://leg.stl"/>
+            </geometry>
+            <material name="leg_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="1.18955e-18 0.035 -0.001" rpy="1.5708 -2.25116e-32 3.79639e-30"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.08167e-18 0.035 0.031" rpy="1.5708 -2.25116e-32 3.79639e-30"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.69072e-18 0.09 0.015" rpy="1.5708 -2.25116e-32 3.79639e-30"/>
+            <geometry>
+                <sphere radius="0.015"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from platesblock to leg -->
+    <joint name="leg1_c" type="revolute">
+        <origin xyz="9.9365e-15 -0.063 5.75928e-16" rpy="1.07507e-14 5.55112e-17 3.14159"/>
+        <parent link="platesblock"/>
+        <child link="leg"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from doubleu to platesblock -->
+    <joint name="leg1_b" type="revolute">
+        <origin xyz="0.015 -0.0406 -0.01615" rpy="-1.11022e-16 -1.5708 0"/>
+        <parent link="doubleu"/>
+        <child link="platesblock"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from body to doubleu -->
+    <joint name="leg1_a" type="revolute">
+        <origin xyz="-0.0485 -8.5303e-18 -0.0007" rpy="-3.14159 3.05183e-16 1.5708"/>
+        <parent link="body"/>
+        <child link="doubleu"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Link doubleu_2 -->
+    <link name="doubleu_2">
+        <inertial>
+            <origin xyz="-2.11219e-17 -0.0203 -0.015" rpy="0 0 0"/>
+            <mass value="0.00830698"/>
+            <inertia ixx="2.78361e-06" ixy="-2.00168e-21" ixz="-2.69222e-22" iyy="1.9255e-06" iyz="9.24504e-21" izz="2.78361e-06"/>
+        </inertial>
+        <!-- Part doubleu_2 -->
+        <visual>
+            <origin xyz="-2.11219e-17 -0.0203 -0.015" rpy="3.14159 -1.8612e-16 -3.14159"/>
+            <geometry>
+                <mesh filename="package://doubleu_2.stl"/>
+            </geometry>
+            <material name="doubleu_2_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-4.7317e-17 -0.0215 -0.015" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="6.16298e-33 -0.0191 -0.015" rpy="1.5708 1.44282e-33 -2.03131e-32"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link platesblock_2 -->
+    <link name="platesblock_2">
+        <inertial>
+            <origin xyz="-0.0315 -3.93756e-16 0.0150372" rpy="0 0 0"/>
+            <mass value="0.0417755"/>
+            <inertia ixx="4.6241e-06" ixy="2.99773e-12" ixz="1.27996e-20" iyy="2.98279e-05" iyz="-5.0039e-21" izz="2.99828e-05"/>
+        </inertial>
+        <!-- Part platesblock_2 -->
+        <visual>
+            <origin xyz="-0.0315 -3.95517e-16 0.0150372" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://platesblock_2.stl"/>
+            </geometry>
+            <material name="platesblock_2_material">
+                <color rgba="0.5601 0.491944 0.411121 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0315 -0.0131 0.015" rpy="1.5708 -1.34152e-16 -3.14159"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0315 0.0132 0.015" rpy="1.5708 7.63278e-16 -3.14159"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.008 3.4288e-16 0.015" rpy="-1.11022e-16 -1.11022e-16 -1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.055 -1.12171e-15 0.015" rpy="-2.33469e-15 1.11022e-16 1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link leg_2 -->
+    <link name="leg_2">
+        <inertial>
+            <origin xyz="-1.72851e-17 0.0533786 0.015" rpy="0 0 0"/>
+            <mass value="0.0154162"/>
+            <inertia ixx="2.13816e-05" ixy="1.37976e-34" ixz="6.14915e-36" iyy="3.58407e-06" iyz="-4.08223e-36" izz="1.88204e-05"/>
+        </inertial>
+        <!-- Part leg_2 -->
+        <visual>
+            <origin xyz="-1.73472e-17 0.0533786 0.015" rpy="3.14159 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://leg_2.stl"/>
+            </geometry>
+            <material name="leg_2_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="1.28349e-18 0.035 -0.001" rpy="1.5708 -3.9289e-32 4.93038e-32"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="3.67559e-19 0.035 0.031" rpy="1.5708 -3.9289e-32 4.93038e-32"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.10308e-18 0.09 0.015" rpy="1.5708 -3.9289e-32 4.93038e-32"/>
+            <geometry>
+                <sphere radius="0.015"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from platesblock_2 to leg_2 -->
+    <joint name="leg2_c" type="revolute">
+        <origin xyz="-0.063 -1.14492e-15 -2.60209e-17" rpy="-2.05714e-15 3.88578e-16 1.5708"/>
+        <parent link="platesblock_2"/>
+        <child link="leg_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from doubleu_2 to platesblock_2 -->
+    <joint name="leg2_b" type="revolute">
+        <origin xyz="0.015 -0.0406 -0.015" rpy="-1.5708 -5.77316e-15 1.5708"/>
+        <parent link="doubleu_2"/>
+        <child link="platesblock_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from body to doubleu_2 -->
+    <joint name="leg2_a" type="revolute">
+        <origin xyz="-4.75344e-19 -0.0485 -0.0007" rpy="3.14159 1.8612e-16 -3.14159"/>
+        <parent link="body"/>
+        <child link="doubleu_2"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Link doubleu_3 -->
+    <link name="doubleu_3">
+        <inertial>
+            <origin xyz="-5.56769e-19 0.0203 -0.01615" rpy="0 0 0"/>
+            <mass value="0.00830698"/>
+            <inertia ixx="2.78361e-06" ixy="1.84599e-21" ixz="-2.19179e-21" iyy="1.9255e-06" iyz="-3.30468e-21" izz="2.78361e-06"/>
+        </inertial>
+        <!-- Part doubleu_3 -->
+        <visual>
+            <origin xyz="-5.56769e-19 0.0203 -0.01615" rpy="-3.14159 8.88178e-16 1.5708"/>
+            <geometry>
+                <mesh filename="package://doubleu_3.stl"/>
+            </geometry>
+            <material name="doubleu_3_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-6.18683e-18 0.0215 -0.01615" rpy="1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.16519e-32 0.0191 -0.01615" rpy="-1.5708 7.39557e-32 -1.14631e-30"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link platesblock_3 -->
+    <link name="platesblock_3">
+        <inertial>
+            <origin xyz="-0.0315 -1.26282e-15 0.0150372" rpy="0 0 0"/>
+            <mass value="0.0417755"/>
+            <inertia ixx="4.6241e-06" ixy="2.99773e-12" ixz="1.21343e-20" iyy="2.98279e-05" iyz="-2.02021e-21" izz="2.99828e-05"/>
+        </inertial>
+        <!-- Part platesblock_3 -->
+        <visual>
+            <origin xyz="-0.0315 -1.26288e-15 0.0150372" rpy="1.5708 7.52731e-14 -3.14159"/>
+            <geometry>
+                <mesh filename="package://platesblock_3.stl"/>
+            </geometry>
+            <material name="platesblock_3_material">
+                <color rgba="0.5601 0.491944 0.411121 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0315 -0.0131 0.015" rpy="1.5708 1.24904e-15 -3.14159"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0315 0.0132 0.015" rpy="1.5708 -1.79949e-15 -3.14159"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.008 -1.00186e-16 0.015" rpy="6.48131e-29 3.33067e-16 -1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.055 -2.43769e-15 0.015" rpy="-4.49001e-15 -3.33067e-16 1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link leg_3 -->
+    <link name="leg_3">
+        <inertial>
+            <origin xyz="-1.68795e-17 0.0533786 0.015" rpy="0 0 0"/>
+            <mass value="0.0154162"/>
+            <inertia ixx="2.13816e-05" ixy="3.68123e-35" ixz="6.16462e-36" iyy="3.58407e-06" iyz="-2.58096e-34" izz="1.88204e-05"/>
+        </inertial>
+        <!-- Part leg_3 -->
+        <visual>
+            <origin xyz="-1.73472e-17 0.0533786 0.015" rpy="1.5708 7.57236e-14 1.5708"/>
+            <geometry>
+                <mesh filename="package://leg_3.stl"/>
+            </geometry>
+            <material name="leg_3_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.12482e-18 0.035 -0.001" rpy="1.5708 -0 0"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.65589e-18 0.035 0.031" rpy="1.5708 -0 0"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="1.71688e-18 0.09 0.015" rpy="1.5708 -0 0"/>
+            <geometry>
+                <sphere radius="0.015"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Frame leg_tip (dummy link + fixed joint) -->
+    <link name="leg_tip">
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="1e-9"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <joint name="leg_tip_frame" type="fixed">
+        <origin xyz="-3.64292e-17 0.1053 0.015" rpy="1.5708 -0 -3.14159"/>
+        <parent link="leg_3"/>
+        <child link="leg_tip"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <!-- Joint from platesblock_3 to leg_3 -->
+    <joint name="leg3_c" type="revolute">
+        <origin xyz="-0.063 -2.5431e-15 6.41848e-17" rpy="4.50478e-16 -5.01649e-15 1.5708"/>
+        <parent link="platesblock_3"/>
+        <child link="leg_3"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from doubleu_3 to platesblock_3 -->
+    <joint name="leg3_b" type="revolute">
+        <origin xyz="-0.015 0.0406 -0.01615" rpy="-1.5708 -4.08007e-15 -1.5708"/>
+        <parent link="doubleu_3"/>
+        <child link="platesblock_3"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from body to doubleu_3 -->
+    <joint name="leg3_a" type="revolute">
+        <origin xyz="0.0485 3.19754e-17 -0.0007" rpy="-3.14159 1.88738e-15 1.5708"/>
+        <parent link="body"/>
+        <child link="doubleu_3"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Link doubleu_4 -->
+    <link name="doubleu_4">
+        <inertial>
+            <origin xyz="-4.61075e-17 0.0203 -0.01615" rpy="0 0 0"/>
+            <mass value="0.00830698"/>
+            <inertia ixx="2.78361e-06" ixy="4.31663e-21" ixz="1.74197e-22" iyy="1.9255e-06" iyz="-3.17881e-20" izz="2.78361e-06"/>
+        </inertial>
+        <!-- Part doubleu_4 -->
+        <visual>
+            <origin xyz="-4.61075e-17 0.0203 -0.01615" rpy="-3.14159 2.63142e-29 -3.14159"/>
+            <geometry>
+                <mesh filename="package://doubleu_4.stl"/>
+            </geometry>
+            <material name="doubleu_4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-9.72883e-17 0.0215 -0.01615" rpy="1.5708 1.5708 0"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 0.0191 -0.01615" rpy="-1.5708 -2.49606e-45 -1.17576e-32"/>
+            <geometry>
+                <box size="0.02 0.03 0.002"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link platesblock_4 -->
+    <link name="platesblock_4">
+        <inertial>
+            <origin xyz="-0.0315 -5.44238e-16 0.0135372" rpy="0 0 0"/>
+            <mass value="0.0417755"/>
+            <inertia ixx="4.6241e-06" ixy="2.99773e-12" ixz="-6.82938e-20" iyy="2.98279e-05" iyz="8.10969e-21" izz="2.99828e-05"/>
+        </inertial>
+        <!-- Part platesblock_4 -->
+        <visual>
+            <origin xyz="-0.0315 -5.46438e-16 0.0135372" rpy="-1.5708 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://platesblock_4.stl"/>
+            </geometry>
+            <material name="platesblock_4_material">
+                <color rgba="0.5601 0.491944 0.411121 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0315 -0.0131 0.0135" rpy="1.5708 2.45263e-15 -3.14159"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.0315 0.0132 0.0135" rpy="1.5708 7.59235e-16 -3.14159"/>
+            <geometry>
+                <box size="0.073 0.015 0.002"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.008 2.01842e-16 0.0135" rpy="6.39267e-16 6.08214e-15 -1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-0.055 -1.27734e-15 0.0135" rpy="-3.02239e-15 -5.18777e-15 1.5708"/>
+            <geometry>
+                <box size="0.02 0.03 0.022"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link leg_4 -->
+    <link name="leg_4">
+        <inertial>
+            <origin xyz="-1.83109e-17 -0.0533786 0.015" rpy="0 0 0"/>
+            <mass value="0.0154162"/>
+            <inertia ixx="2.13816e-05" ixy="2.07075e-34" ixz="-1.18725e-35" iyy="3.58407e-06" iyz="-1.43223e-36" izz="1.88204e-05"/>
+        </inertial>
+        <!-- Part leg_4 -->
+        <visual>
+            <origin xyz="-1.9082e-17 -0.0533786 0.015" rpy="3.14159 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://leg_4.stl"/>
+            </geometry>
+            <material name="leg_4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.18025e-20 -0.035 0.031" rpy="-1.5708 -3.57453e-31 4.11687e-30"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="5.49158e-19 -0.035 -0.001" rpy="-1.5708 -3.57453e-31 4.11687e-30"/>
+            <geometry>
+                <box size="0.02 0.002 0.09"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="-4.08409e-19 -0.09 0.015" rpy="-1.5708 -3.57453e-31 4.11687e-30"/>
+            <geometry>
+                <sphere radius="0.015"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joint from platesblock_4 to leg_4 -->
+    <joint name="leg4_c" type="revolute">
+        <origin xyz="-0.063 -1.22471e-15 -0.0015" rpy="2.88406e-15 5.735e-15 -1.5708"/>
+        <parent link="platesblock_4"/>
+        <child link="leg_4"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from doubleu_4 to platesblock_4 -->
+    <joint name="leg4_b" type="revolute">
+        <origin xyz="-0.015 0.0406 -0.01615" rpy="-1.5708 -9.65894e-15 -1.5708"/>
+        <parent link="doubleu_4"/>
+        <child link="platesblock_4"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+    <!-- Joint from body to doubleu_4 -->
+    <joint name="leg4_a" type="revolute">
+        <origin xyz="3.81639e-17 0.0485 -0.0007" rpy="-3.14159 -2.93851e-29 -3.14159"/>
+        <parent link="body"/>
+        <child link="doubleu_4"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    </joint>
+</robot>

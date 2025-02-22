@@ -1,0 +1,18 @@
+{
+	"url": "https://cad.onshape.com/documents/11c3398e78edfadf952cbdbc/w/4428506b5bb6358b44ff6764/e/975412fdc0fd0ba9ca2cf7b6",
+	"outputFormat": "mujoco",
+	"use_scads": true,
+
+	"joint_properties": {
+		"default": {
+			"actuated": false,
+			"type": "velocity",
+			"limits": [-10, 10],
+			"frictionloss": 0.0,
+			"kv": 5
+		},
+		"wheel1_speed": {"actuated": true},
+		"wheel2_speed": {"actuated": true},
+		"wheel3_speed": {"actuated": true}
+	}
+}

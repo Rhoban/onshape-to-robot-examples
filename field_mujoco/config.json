@@ -1,0 +1,6 @@
+{
+    "url": "https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9",
+    "output_format": "mujoco",
+    "no_dynamics": true,
+    "freejoint": false
+}
