@@ -56,7 +56,9 @@ Description: Robot with 4 degrees of freedom, one prismatic (linear) joint and 3
     * [urdf](adjustable_height_arm_urdf/config.json)
     * [mujoco](adjustable_height_arm_mujoco/config.json)
 * **Notes**:
-    * The robot is fixed. In MuJoCo, `freejoint` is set to `false` to fix the base to the ground
+    * The robot is fixed using a "fixed" Onshape feature
+    * Since it is a static environment, `no_dynamics` is passed
+    * There are multiple root nodes in this robot. Thus, `add_dummy_base_link` option is added in URDF to ensure there is only one root node.
     * There is one frame (`frame_tip`) attached to the tip of the arm
     * Collisions mesh are ignored using `collisions_no_mesh`
 
