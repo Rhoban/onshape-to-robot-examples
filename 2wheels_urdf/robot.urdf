@@ -13,7 +13,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://body.stl"/>
+                <mesh filename="package://assets/body.stl"/>
             </geometry>
             <material name="body_material">
                 <color rgba="0.8 0.8 0.8 1.0"/>
@@ -22,7 +22,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://body.stl"/>
+                <mesh filename="package://assets/body.stl"/>
             </geometry>
         </collision>
     </link>
@@ -37,7 +37,7 @@
         <visual>
             <origin xyz="-0.0325 0.025 -0.02" rpy="1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://wheel.stl"/>
+                <mesh filename="package://assets/wheel.stl"/>
             </geometry>
             <material name="wheel_material">
                 <color rgba="0.262745 0.282353 0.301961 1.0"/>
@@ -46,7 +46,7 @@
         <collision>
             <origin xyz="-0.0325 0.025 -0.02" rpy="1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://wheel.stl"/>
+                <mesh filename="package://assets/wheel.stl"/>
             </geometry>
         </collision>
     </link>
@@ -69,7 +69,7 @@
         <visual>
             <origin xyz="-0.0325 0.025 -0.012" rpy="1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://wheel.stl"/>
+                <mesh filename="package://assets/wheel.stl"/>
             </geometry>
             <material name="wheel_2_material">
                 <color rgba="0.262745 0.282353 0.301961 1.0"/>
@@ -78,7 +78,7 @@
         <collision>
             <origin xyz="-0.0325 0.025 -0.012" rpy="1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://wheel.stl"/>
+                <mesh filename="package://assets/wheel.stl"/>
             </geometry>
         </collision>
     </link>

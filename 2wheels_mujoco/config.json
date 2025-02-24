@@ -5,7 +5,8 @@
     "joint_properties": {
         "default": {
             "type": "velocity",
-            "limits": [-10, 10]
+            "limits": [-10, 10],
+	    "kv": 5
         }
     }
 }

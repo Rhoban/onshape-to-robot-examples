@@ -1,24 +1,25 @@
 <?xml version="1.0" ?>
 <!-- Generated using onshape-to-robot -->
 <!-- OnShape https://cad.onshape.com/documents/862948a6ea6d38343e1d3272/w/98cee18311a3b8d7c10abc42/e/9332fc5299824befd8ebf702 -->
-<mujoco model="onshape-to-robot-examples">
-    <compiler angle="radian" meshdir="." autolimits="true"/>
+<mujoco model="2wheels_mujoco">
+    <compiler angle="radian" meshdir="assets" autolimits="true"/>
     <option noslip_iterations="1"/>
     <default>
-        <joint frictionloss="0.1" armature="0.005"/>
-        <position kp="50" kv="5"/>
-        <velocity kv="5"/>
-        <default class="visual">
-            <geom type="mesh" contype="0" conaffinity="0" group="2"/>
-        </default>
-        <default class="collision">
-            <geom group="3"/>
+        <default class="2wheels_mujoco">
+            <joint frictionloss="0.1" armature="0.005"/>
+            <position kp="50" dampratio="1"/>
+            <default class="visual">
+                <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+            </default>
+            <default class="collision">
+                <geom group="3"/>
+            </default>
         </default>
     </default>
     <worldbody>
         <!-- Link body -->
-        <body name="body" pos="0 0 0" quat="1 0 0 0">
-            <freejoint name="root"/>
+        <body name="body" pos="0 0 0" quat="1 0 0 0" childclass="2wheels_mujoco">
+            <freejoint name="body_freejoint"/>
             <inertial pos="0.0375 0.0253843 0.0225241" mass="2.23874" fullinertia="0.00206023 0.00150691 0.00254354 4.48497e-10 6.47006e-11 -0.00028761"/>
             <!-- Part body -->
             <!-- Mesh body -->
@@ -56,8 +57,8 @@
         <material name="wheel_material" rgba="0.262745 0.282353 0.301961 1"/>
     </asset>
     <actuator>
-        <velocity name="wheel1_speed" joint="wheel1_speed" ctrlrange="-10 10"/>
-        <velocity name="wheel2_speed" joint="wheel2_speed" ctrlrange="-10 10"/>
+        <velocity class="2wheels_mujoco" name="wheel1_speed" joint="wheel1_speed" kv="5" ctrlrange="-10 10"/>
+        <velocity class="2wheels_mujoco" name="wheel2_speed" joint="wheel2_speed" kv="5" ctrlrange="-10 10"/>
     </actuator>
     <equality/>
 </mujoco>
