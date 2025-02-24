@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "7a58c98bbf2343681e73fd76",
+    "documentMicroversion": "c60951989db4b01a3c78cd7a",
+    "documentVersion": "b71a3f7abbdd538d0e57f520",
+    "elementId": "994ed9800da9f9c21eaeaa39",
+    "fullConfiguration": "default",
+    "id": "MTWfVsKCbuRX14zR0",
+    "isStandardContent": false,
+    "name": "U_side_femur_mir <1>",
+    "partId": "RLBD",
+    "suppressed": false,
+    "type": "Part"
+}

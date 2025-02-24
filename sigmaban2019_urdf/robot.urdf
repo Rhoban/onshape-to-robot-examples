@@ -13,7 +13,7 @@
         <visual>
             <origin xyz="0.000280866 0.00434829 0.0901186" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://tronc.stl"/>
+                <mesh filename="package://assets/merged/tronc.stl"/>
             </geometry>
             <material name="tronc_material">
                 <color rgba="0.330193 0.345021 0.337569 1.0"/>
@@ -175,7 +175,7 @@
         <visual>
             <origin xyz="-0.00607049 -2.12569e-09 -0.0117654" rpy="-1.79413e-24 1.64794e-16 -1.5708"/>
             <geometry>
-                <mesh filename="package://u_block.stl"/>
+                <mesh filename="package://assets/merged/u_block.stl"/>
             </geometry>
             <material name="u_block_material">
                 <color rgba="0.301961 0.301961 0.301961 1.0"/>
@@ -211,7 +211,7 @@
         <visual>
             <origin xyz="0.000708644 -0.0149916 0.004996" rpy="-1.5708 -5.40601e-13 2.89492e-13"/>
             <geometry>
-                <mesh filename="package://mx106_block_mir.stl"/>
+                <mesh filename="package://assets/merged/mx106_block_mir.stl"/>
             </geometry>
             <material name="mx106_block_mir_material">
                 <color rgba="0.491153 0.482215 0.458379 1.0"/>
@@ -241,7 +241,7 @@
         <visual>
             <origin xyz="0.000188839 -0.092394 0.0273957" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://right_knee.stl"/>
+                <mesh filename="package://assets/merged/right_knee.stl"/>
             </geometry>
             <material name="right_knee_material">
                 <color rgba="0.388865 0.38476 0.373811 1.0"/>
@@ -283,7 +283,7 @@
         <visual>
             <origin xyz="-0.00342169 0.0646068 0.026" rpy="1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://tibia.stl"/>
+                <mesh filename="package://assets/merged/tibia.stl"/>
             </geometry>
             <material name="tibia_material">
                 <color rgba="0.301961 0.301961 0.301961 1.0"/>
@@ -313,7 +313,7 @@
         <visual>
             <origin xyz="0.0184063 0.0149916 0.027049" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://mx106_block.stl"/>
+                <mesh filename="package://assets/merged/mx106_block.stl"/>
             </geometry>
             <material name="mx106_block_material">
                 <color rgba="0.491153 0.482215 0.458379 1.0"/>
@@ -343,7 +343,7 @@
         <visual>
             <origin xyz="-0.00468466 -0.0365779 0.0511529" rpy="-1.5708 -5.42073e-13 -4.08558e-15"/>
             <geometry>
-                <mesh filename="package://right_foot_cleat_back_left.stl"/>
+                <mesh filename="package://assets/merged/right_foot_cleat_back_left.stl"/>
             </geometry>
             <material name="right_foot_cleat_back_left_material">
                 <color rgba="0.3811 0.375396 0.359887 1.0"/>
@@ -478,7 +478,7 @@
         <visual>
             <origin xyz="-0.00607049 -2.12569e-09 -0.0117654" rpy="-3.13509e-16 -2.2682e-16 -1.5708"/>
             <geometry>
-                <mesh filename="package://u_block_2.stl"/>
+                <mesh filename="package://assets/merged/u_block_2.stl"/>
             </geometry>
             <material name="u_block_2_material">
                 <color rgba="0.301961 0.301961 0.301961 1.0"/>
@@ -514,7 +514,7 @@
         <visual>
             <origin xyz="-0.00104898 -0.0149916 0.00499375" rpy="-1.5708 -8.6382e-14 2.88507e-13"/>
             <geometry>
-                <mesh filename="package://mx106_block_2.stl"/>
+                <mesh filename="package://assets/merged/mx106_block_2.stl"/>
             </geometry>
             <material name="mx106_block_2_material">
                 <color rgba="0.491153 0.482215 0.458379 1.0"/>
@@ -544,7 +544,7 @@
         <visual>
             <origin xyz="-0.000185582 0.092394 -0.0271483" rpy="1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://left_knee.stl"/>
+                <mesh filename="package://assets/merged/left_knee.stl"/>
             </geometry>
             <material name="left_knee_material">
                 <color rgba="0.388865 0.38476 0.373811 1.0"/>
@@ -586,7 +586,7 @@
         <visual>
             <origin xyz="-0.00342169 0.0646068 -0.026" rpy="1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://tibia_2.stl"/>
+                <mesh filename="package://assets/merged/tibia_2.stl"/>
             </geometry>
             <material name="tibia_2_material">
                 <color rgba="0.301961 0.301961 0.301961 1.0"/>
@@ -616,7 +616,7 @@
         <visual>
             <origin xyz="-0.018404 -0.0149916 -0.0267086" rpy="1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://mx106_block_mir_2.stl"/>
+                <mesh filename="package://assets/merged/mx106_block_mir_2.stl"/>
             </geometry>
             <material name="mx106_block_mir_2_material">
                 <color rgba="0.491153 0.482215 0.458379 1.0"/>
@@ -646,7 +646,7 @@
         <visual>
             <origin xyz="0.00468466 -0.0365779 0.0511529" rpy="-1.5708 -8.5963e-14 6.06172e-15"/>
             <geometry>
-                <mesh filename="package://left_foot_cleat_front_right.stl"/>
+                <mesh filename="package://assets/merged/left_foot_cleat_front_right.stl"/>
             </geometry>
             <material name="left_foot_cleat_front_right_material">
                 <color rgba="0.3811 0.375396 0.359887 1.0"/>
@@ -773,26 +773,20 @@
     <!-- Link u_shoulder -->
     <link name="u_shoulder">
         <inertial>
-            <origin xyz="-5.83004e-18 0.00486029 0.0167829" rpy="0 0 0"/>
+            <origin xyz="-9.73075e-18 0.00486029 0.0167829" rpy="0 0 0"/>
             <mass value="0.042898"/>
-            <inertia ixx="1.57991e-05" ixy="1.54072e-20" ixz="-9.73269e-21" iyy="2.84983e-05" iyz="-3.76137e-06" izz="2.50037e-05"/>
+            <inertia ixx="1.57991e-05" ixy="1.55549e-20" ixz="-9.89815e-21" iyy="2.84983e-05" iyz="-3.76137e-06" izz="2.50037e-05"/>
         </inertial>
         <!-- Part u_shoulder -->
         <visual>
-            <origin xyz="0 0.00486029 0.0167829" rpy="1.5708 -1.5708 0"/>
+            <origin xyz="-1.38778e-17 0.00486029 0.0167829" rpy="1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://u_shoulder.stl"/>
+                <mesh filename="package://assets/merged/u_shoulder.stl"/>
             </geometry>
             <material name="u_shoulder_material">
                 <color rgba="0.301961 0.301961 0.301961 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="-3.86491e-18 -2.60209e-17 0.003" rpy="-7.22126e-40 4.46115e-31 1.76672e-31"/>
-            <geometry>
-                <box size="0.047 0.0275 0.006"/>
-            </geometry>
-        </collision>
     </link>
     <!-- Link left_humerus -->
     <link name="left_humerus">
@@ -805,7 +799,7 @@
         <visual>
             <origin xyz="-0.00126251 -0.0436099 -0.0264304" rpy="-1.5708 -8.66163e-14 5.82834e-17"/>
             <geometry>
-                <mesh filename="package://left_humerus.stl"/>
+                <mesh filename="package://assets/merged/left_humerus.stl"/>
             </geometry>
             <material name="left_humerus_material">
                 <color rgba="0.413637 0.406669 0.387489 1.0"/>
@@ -841,7 +835,7 @@
         <visual>
             <origin xyz="0.00327966 -0.0430868 -0.0251932" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://left_radius.stl"/>
+                <mesh filename="package://assets/merged/left_radius.stl"/>
             </geometry>
             <material name="left_radius_material">
                 <color rgba="0.371948 0.366528 0.352073 1.0"/>
@@ -876,7 +870,7 @@
     </joint>
     <!-- Joint from u_shoulder to left_humerus -->
     <joint name="left_shoulder_roll" type="revolute">
-        <origin xyz="0.0225 0.03 0.035" rpy="-3.14159 -1.5708 0"/>
+        <origin xyz="0.0225 0.03 0.035" rpy="3.14159 -1.5708 0"/>
         <parent link="u_shoulder"/>
         <child link="left_humerus"/>
         <axis xyz="0 0 1"/>
@@ -884,7 +878,7 @@
     </joint>
     <!-- Joint from tronc to u_shoulder -->
     <joint name="left_shoulder_pitch" type="revolute">
-        <origin xyz="0.0735 -0.032127 0.1609" rpy="-1.5708 -4.55145e-13 -1.5708"/>
+        <origin xyz="0.0735 -0.032127 0.1609" rpy="-1.5708 -5.08852e-16 -1.5708"/>
         <parent link="tronc"/>
         <child link="u_shoulder"/>
         <axis xyz="0 0 1"/>
@@ -901,18 +895,12 @@
         <visual>
             <origin xyz="0 -0.00486029 -0.0167829" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://u_shoulder_2.stl"/>
+                <mesh filename="package://assets/merged/u_shoulder_2.stl"/>
             </geometry>
             <material name="u_shoulder_2_material">
                 <color rgba="0.301961 0.301961 0.301961 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="-2.43968e-18 -3.46945e-18 -0.003" rpy="-3.14159 6.15323e-30 -3.0697e-32"/>
-            <geometry>
-                <box size="0.047 0.0275 0.006"/>
-            </geometry>
-        </collision>
     </link>
     <!-- Link right_humerus -->
     <link name="right_humerus">
@@ -925,7 +913,7 @@
         <visual>
             <origin xyz="0.00126251 -0.0436099 -0.0271147" rpy="-1.5708 -8.54838e-14 -1.8792e-17"/>
             <geometry>
-                <mesh filename="package://right_humerus.stl"/>
+                <mesh filename="package://assets/merged/right_humerus.stl"/>
             </geometry>
             <material name="right_humerus_material">
                 <color rgba="0.413637 0.406669 0.387489 1.0"/>
@@ -961,7 +949,7 @@
         <visual>
             <origin xyz="-0.00327966 0.0430868 0.0248666" rpy="1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://right_radius.stl"/>
+                <mesh filename="package://assets/merged/right_radius.stl"/>
             </geometry>
             <material name="right_radius_material">
                 <color rgba="0.371948 0.366528 0.352073 1.0"/>
@@ -1021,7 +1009,7 @@
         <visual>
             <origin xyz="-2.35581e-17 -1.249e-16 0.0128918" rpy="1.12133e-14 -2.28241e-15 3.14159"/>
             <geometry>
-                <mesh filename="package://u_neck.stl"/>
+                <mesh filename="package://assets/merged/u_neck.stl"/>
             </geometry>
             <material name="u_neck_material">
                 <color rgba="0.301961 0.301961 0.301961 1.0"/>
@@ -1031,12 +1019,6 @@
             <origin xyz="-0.025 -2.71223e-16 0.023" rpy="1.5708 -3.29254e-16 1.5708"/>
             <geometry>
                 <box size="0.025 0.044 0.003"/>
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="3.47592e-30 3.34723e-26 0.003" rpy="-2.95823e-31 8.24478e-32 -3.20328e-30"/>
-            <geometry>
-                <box size="0.047 0.0275 0.006"/>
             </geometry>
         </collision>
         <collision>
@@ -1057,7 +1039,7 @@
         <visual>
             <origin xyz="0.00154487 -0.0388417 -0.0248279" rpy="1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://head.stl"/>
+                <mesh filename="package://assets/merged/head.stl"/>
             </geometry>
             <material name="head_material">
                 <color rgba="0.437668 0.429692 0.406184 1.0"/>
