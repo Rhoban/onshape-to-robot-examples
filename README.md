@@ -202,7 +202,7 @@ this is quite simple because it is just about clicking on that button on top lef
 
 ![make a copy](.imgs/make-copy.png)
 
-Then, change the `documentId` in `config.json` of the robot to match the new document created where you own the robot
+Then, update the `url` parameter in `config.json` of the robot to match the new document created where you own the robot
 design.
 
 ### Why the colors are looking weird in pyBullet ?
