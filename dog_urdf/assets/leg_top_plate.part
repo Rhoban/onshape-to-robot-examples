@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "d3f149faaa394c3edc20bc71",
+    "documentMicroversion": "dca2dc44ea56d3d6b59f27b8",
+    "documentVersion": "d43a4d386bcd3de8ba09ab59",
+    "elementId": "3e5fab7ef85c99682e8fafc9",
+    "fullConfiguration": "default",
+    "id": "MxuVxpGngMu4YYSB8",
+    "isStandardContent": false,
+    "name": "leg_top_plate <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

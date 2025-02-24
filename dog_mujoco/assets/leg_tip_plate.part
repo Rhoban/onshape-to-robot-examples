@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "8505040dfbf63bf005b60b6f",
+    "documentMicroversion": "460261b3a52c49e7019dba01",
+    "documentVersion": "920cbd5e9749f533f6fd7af4",
+    "elementId": "bb2a610e782084d9460ff0d0",
+    "fullConfiguration": "default",
+    "id": "Mph5xSMUUWtQ3Nbab",
+    "isStandardContent": false,
+    "name": "leg_tip_plate <1>",
+    "partId": "JOD",
+    "suppressed": false,
+    "type": "Part"
+}
