@@ -1,19 +1,19 @@
 <?xml version="1.0" ?>
 <!-- Generated using onshape-to-robot -->
-<!-- OnShape document_id: 6a6e5b10ef079339c2ddde84 -->
+<!-- OnShape https://cad.onshape.com/documents/6a6e5b10ef079339c2ddde84/w/207da6d79692e0bbf50113f2/e/9f3edd12689fa0c486a7d0d7 -->
 <robot name="adjustable_height_arm_urdf">
     <!-- Link base -->
     <link name="base">
         <inertial>
-            <origin xyz="-6.03445e-19 3.12383e-18 0.020169" rpy="0 0 0"/>
-            <mass value="0.39382"/>
-            <inertia ixx="0.000177195" ixy="0" ixz="0" iyy="0.000177195" iyz="0" izz="0.000123463"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
         </inertial>
         <!-- Part base -->
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://base.stl"/>
+                <mesh filename="package://assets/base.stl"/>
             </geometry>
             <material name="base_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -31,7 +31,7 @@
         <visual>
             <origin xyz="0 -4.65366e-18 -0.053" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://part1.stl"/>
+                <mesh filename="package://assets/part1.stl"/>
             </geometry>
             <material name="part1_material">
                 <color rgba="0.866667 0.321569 0.156863 1.0"/>
@@ -49,7 +49,7 @@
         <visual>
             <origin xyz="2.82344e-18 1.22153e-17 0.106" rpy="3.14159 -0 -8.41403e-56"/>
             <geometry>
-                <mesh filename="package://part2.stl"/>
+                <mesh filename="package://assets/part2.stl"/>
             </geometry>
             <material name="part2_material">
                 <color rgba="0.372549 0.654902 0.239216 1.0"/>
@@ -67,7 +67,7 @@
         <visual>
             <origin xyz="0 0.131 -0.02" rpy="1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://part3.stl"/>
+                <mesh filename="package://assets/part3.stl"/>
             </geometry>
             <material name="part3_material">
                 <color rgba="0.0862745 0.317647 0.690196 1.0"/>
@@ -85,7 +85,7 @@
         <visual>
             <origin xyz="0 0.2285 -0.02" rpy="1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://part4.stl"/>
+                <mesh filename="package://assets/part4.stl"/>
             </geometry>
             <material name="part4_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>

@@ -1,7 +1,6 @@
 {
     "url": "https://cad.onshape.com/documents/6a6e5b10ef079339c2ddde84/w/207da6d79692e0bbf50113f2/e/9f3edd12689fa0c486a7d0d7",
     "output_format": "mujoco",
-    "freejoint": false,
     
     "collisions_no_mesh": true,
 
@@ -9,8 +8,6 @@
         "slider": {
             "forcerange": 50,
             "kp": 10000,
-            "kv": 1,
-            "damping": 5,
             "frictionloss": 5
         }
     }
