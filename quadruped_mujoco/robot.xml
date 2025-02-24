@@ -2,7 +2,7 @@
 <!-- Generated using onshape-to-robot -->
 <!-- OnShape https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50 -->
 <mujoco model="quadruped_mujoco">
-    <compiler angle="radian" meshdir="." autolimits="true"/>
+    <compiler angle="radian" meshdir="assets" autolimits="true"/>
     <option noslip_iterations="1"/>
     <default>
         <default class="quadruped_mujoco">
@@ -19,95 +19,50 @@
     <worldbody>
         <!-- Link body -->
         <body name="body" pos="0 0 0" quat="1 0 0 0" childclass="quadruped_mujoco">
-            <freejoint name="root"/>
-            <inertial pos="-4.02184e-18 1.95168e-18 0.0143384" mass="0.0808736" fullinertia="7.37408e-05 7.37408e-05 0.000135878 -7.58445e-21 -2.11758e-21 1.66497e-21"/>
+            <freejoint name="body_freejoint"/>
+            <inertial pos="-2.68123e-18 7.95593e-19 0.0143384" mass="0.0808736" fullinertia="7.37408e-05 7.37408e-05 0.000135878 -7.58445e-21 -2.2764e-21 1.71779e-21"/>
             <!-- Part body -->
             <!-- Mesh body -->
-            <geom type="mesh" class="visual" pos="0 3.46945e-18 0.0286" quat="0 1 0 0" mesh="body" material="body_material"/>
+            <geom type="mesh" class="visual" pos="-4.02184e-18 1.95168e-18 0.0143384" quat="1 0 0 0" mesh="body" material="body_material"/>
             <geom class="collision" pos="0 3.46945e-18 0.0275" quat="0 1 0 0" type="box" size="0.015 0.015 0.001"/>
-            <!-- Part body_2 -->
-            <!-- Mesh body_2 -->
-            <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="body" material="body_material"/>
             <geom class="collision" pos="0 0 0.0011" quat="1 0 0 0" type="box" size="0.015 0.015 0.001"/>
-            <!-- Part horn -->
-            <!-- Mesh horn -->
-            <geom type="mesh" class="visual" pos="-2.212e-18 -0.0485 0.0143" quat="0.733883 0 -5.56738e-17 0.679276" mesh="horn" material="horn_material"/>
-            <!-- Part motor -->
-            <!-- Mesh motor -->
-            <geom type="mesh" class="visual" pos="-1.99015e-18 -0.0485 0.0143" quat="0 0 0 1" mesh="motor" material="motor_material"/>
             <geom class="collision" pos="-2.48001e-18 -0.0405 0.0143" quat="0 0 0 1" type="box" size="0.01 0.015 0.011"/>
-            <!-- Part horn_2 -->
-            <!-- Mesh horn_2 -->
-            <geom type="mesh" class="visual" pos="0.0485 1.76924e-17 0.0143" quat="0.747744 -0 -1.11022e-16 0.663988" mesh="horn" material="horn_material"/>
-            <!-- Part motor_2 -->
-            <!-- Mesh motor_2 -->
-            <geom type="mesh" class="visual" pos="0.0485 1.06975e-17 0.0143" quat="0.707107 0 0 -0.707107" mesh="motor" material="motor_material"/>
             <geom class="collision" pos="0.0405 8.66205e-18 0.0143" quat="0.707107 0 0 -0.707107" type="box" size="0.01 0.015 0.011"/>
-            <!-- Part horn_3 -->
-            <!-- Mesh horn_3 -->
-            <geom type="mesh" class="visual" pos="1.36171e-17 0.0485 0.0143" quat="0.733883 0 0 0.679276" mesh="horn" material="horn_material"/>
-            <!-- Part motor_3 -->
-            <!-- Mesh motor_3 -->
-            <geom type="mesh" class="visual" pos="-9.54098e-18 0.0485 0.0143" quat="1 0 0 4.16334e-16" mesh="motor" material="motor_material"/>
             <geom class="collision" pos="-2.87964e-18 0.0405 0.0143" quat="1 0 0 4.16334e-16" type="box" size="0.01 0.015 0.011"/>
-            <!-- Part horn_4 -->
-            <!-- Mesh horn_4 -->
-            <geom type="mesh" class="visual" pos="-0.0485 2.40122e-18 0.0143" quat="0.733883 4.13823e-16 6.66134e-16 0.679276" mesh="horn" material="horn_material"/>
-            <!-- Part motor_4 -->
-            <!-- Mesh motor_4 -->
-            <geom type="mesh" class="visual" pos="-0.0485 -3.61401e-18 0.0143" quat="0.707107 -2.77556e-16 -1.11022e-16 0.707107" mesh="motor" material="motor_material"/>
             <geom class="collision" pos="-0.0405 -2.24473e-18 0.0143" quat="0.707107 -2.77556e-16 -1.11022e-16 0.707107" type="box" size="0.01 0.015 0.011"/>
             <!-- Link doubleu -->
             <body name="doubleu" pos="-0.0485 -8.5303e-18 -0.0007" quat="3.98474e-16 -0.707107 -0.707107 5.80555e-16">
                 <!-- Joint from body to doubleu -->
                 <joint name="leg1_a" type="hinge"/>
-                <inertial pos="4.20868e-19 -0.0203 -0.01615" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 -2.9184e-22 -2.64394e-22 1.7062e-22"/>
-                <!-- Part u -->
-                <!-- Mesh u -->
-                <geom type="mesh" class="visual" pos="0 -0.018 -0.01615" quat="0.707107 0.707107 -0 -1.95559e-30" mesh="u" material="u_material"/>
-                <geom class="collision" pos="-6.10468e-33 -0.0191 -0.01615" quat="0.707107 0.707107 -0 -1.95559e-30" type="box" size="0.01 0.015 0.001"/>
-                <!-- Part u_2 -->
-                <!-- Mesh u_2 -->
-                <geom type="mesh" class="visual" pos="-4.23155e-18 -0.0226 -0.01615" quat="0.5 -0.5 -0.5 -0.5" mesh="u" material="u_material"/>
+                <inertial pos="4.20868e-19 -0.0203 -0.01615" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 -3.98268e-22 -3.70822e-22 1.87309e-22"/>
+                <!-- Part doubleu -->
+                <!-- Mesh doubleu -->
+                <geom type="mesh" class="visual" pos="4.20868e-19 -0.0203 -0.01615" quat="4.75548e-16 0.707107 0.707107 -6.12841e-16" mesh="doubleu" material="doubleu_material"/>
+                <geom class="collision" pos="-2.25526e-31 -0.0191 -0.01615" quat="0.707107 0.707107 -0 -1.95559e-30" type="box" size="0.01 0.015 0.001"/>
                 <geom class="collision" pos="-4.23155e-18 -0.0215 -0.01615" quat="0.5 -0.5 -0.5 -0.5" type="box" size="0.01 0.015 0.001"/>
                 <!-- Link platesblock -->
                 <body name="platesblock" pos="0.015 -0.0406 -0.01615" quat="0.707107 5.10529e-15 -0.707107 -5.14085e-15">
                     <!-- Joint from doubleu to platesblock -->
                     <joint name="leg1_b" type="hinge"/>
-                    <inertial pos="5.09559e-15 -0.0315 0.0150372" mass="0.0417755" fullinertia="2.98279e-05 4.6241e-06 2.99828e-05 -2.99773e-12 -9.40927e-21 2.38016e-19"/>
-                    <!-- Part plate -->
-                    <!-- Mesh plate -->
-                    <geom type="mesh" class="visual" pos="0.0143 0.006 0.015" quat="0.5 0.5 -0.5 -0.5" mesh="plate" material="plate_material"/>
+                    <inertial pos="5.09544e-15 -0.0315 0.0150372" mass="0.0417755" fullinertia="2.98279e-05 4.6241e-06 2.99828e-05 -2.99773e-12 -9.43397e-21 2.38053e-19"/>
+                    <!-- Part platesblock -->
+                    <!-- Mesh platesblock -->
+                    <geom type="mesh" class="visual" pos="5.09835e-15 -0.0315 0.0150372" quat="0.5 -0.5 -0.5 0.5" mesh="platesblock" material="platesblock_material"/>
                     <geom class="collision" pos="0.0131 -0.0315 0.015" quat="0.5 0.5 -0.5 -0.5" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part plate_2 -->
-                    <!-- Mesh plate_2 -->
-                    <geom type="mesh" class="visual" pos="-0.012 0.006 0.015" quat="0.5 0.5 -0.5 -0.5" mesh="plate" material="plate_material"/>
                     <geom class="collision" pos="-0.0132 -0.0315 0.015" quat="0.5 0.5 -0.5 -0.5" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part horn_5 -->
-                    <!-- Mesh horn_5 -->
-                    <geom type="mesh" class="visual" pos="0 0 0.015" quat="1 -0 -0 -0" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_5 -->
-                    <!-- Mesh motor_5 -->
-                    <geom type="mesh" class="visual" pos="2.67147e-16 4.71845e-16 0.015" quat="1 1.38778e-17 1.11022e-16 6.60305e-14" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="1.32529e-15 -0.008 0.015" quat="1 1.38778e-17 1.11022e-16 6.60305e-14" type="box" size="0.01 0.015 0.011"/>
-                    <!-- Part horn_6 -->
-                    <!-- Mesh horn_6 -->
-                    <geom type="mesh" class="visual" pos="9.93476e-15 -0.063 0.015" quat="0.287808 -1.53783e-15 -4.996e-15 -0.957688" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_6 -->
-                    <!-- Mesh motor_6 -->
-                    <geom type="mesh" class="visual" pos="9.9365e-15 -0.063 0.015" quat="6.61062e-14 0 -5.32907e-15 -1" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="8.8788e-15 -0.055 0.015" quat="6.61062e-14 0 -5.32907e-15 -1" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="1.32467e-15 -0.008 0.015" quat="1 1.38778e-17 1.11022e-16 6.60305e-14" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="8.87894e-15 -0.055 0.015" quat="6.61062e-14 0 -5.32907e-15 -1" type="box" size="0.01 0.015 0.011"/>
                     <!-- Link leg -->
                     <body name="leg" pos="9.9365e-15 -0.063 5.75928e-16" quat="5.75726e-14 -2.77556e-17 5.32907e-15 1">
                         <!-- Joint from platesblock to leg -->
                         <joint name="leg1_c" type="hinge"/>
-                        <inertial pos="-1.82494e-17 0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 6.70364e-35 5.76574e-38 -1.62049e-35"/>
+                        <inertial pos="-1.68362e-17 0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 5.18659e-34 1.18621e-36 -3.34624e-35"/>
                         <!-- Part leg -->
                         <!-- Mesh leg -->
-                        <geom type="mesh" class="visual" pos="0 0 0.015" quat="0.707107 0.707107 -0 1.40248e-30" mesh="leg" material="leg_material"/>
-                        <geom class="collision" pos="-1.3769e-31 0.035 -0.001" quat="0.707107 0.707107 -0 1.40248e-30" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="-1.38411e-31 0.035 0.031" quat="0.707107 0.707107 -0 1.40248e-30" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="-3.54987e-31 0.09 0.015" quat="0.707107 0.707107 -0 1.40248e-30" type="sphere" size="0.015"/>
+                        <geom type="mesh" class="visual" pos="-1.73472e-17 0.0533786 0.015" quat="0.5 -0.5 0.5 -0.5" mesh="leg" material="leg_material"/>
+                        <geom class="collision" pos="1.18955e-18 0.035 -0.001" quat="0.707107 0.707107 -0 1.40248e-30" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="1.08167e-18 0.035 0.031" quat="0.707107 0.707107 -0 1.40248e-30" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="1.69072e-18 0.09 0.015" quat="0.707107 0.707107 -0 1.40248e-30" type="sphere" size="0.015"/>
                     </body>
                 </body>
             </body>
@@ -115,53 +70,35 @@
             <body name="doubleu_2" pos="-4.75344e-19 -0.0485 -0.0007" quat="3.33067e-16 -1.64508e-15 1 -1.39654e-16">
                 <!-- Joint from body to doubleu_2 -->
                 <joint name="leg2_a" type="hinge"/>
-                <inertial pos="-2.11219e-17 -0.0203 -0.015" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 -2.13471e-21 -2.69222e-22 5.45198e-21"/>
-                <!-- Part u_3 -->
-                <!-- Mesh u_3 -->
-                <geom type="mesh" class="visual" pos="-4.7317e-17 -0.0226 -0.015" quat="0.5 -0.5 -0.5 -0.5" mesh="u" material="u_material"/>
+                <inertial pos="-2.11219e-17 -0.0203 -0.015" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 -2.00168e-21 -2.69222e-22 9.24504e-21"/>
+                <!-- Part doubleu_2 -->
+                <!-- Mesh doubleu_2 -->
+                <geom type="mesh" class="visual" pos="-2.11219e-17 -0.0203 -0.015" quat="2.22045e-16 -1.50248e-15 1 -2.76539e-17" mesh="doubleu_2" material="doubleu_2_material"/>
                 <geom class="collision" pos="-4.7317e-17 -0.0215 -0.015" quat="0.5 -0.5 -0.5 -0.5" type="box" size="0.01 0.015 0.001"/>
-                <!-- Part u_4 -->
-                <!-- Mesh u_4 -->
-                <geom type="mesh" class="visual" pos="2.46519e-32 -0.018 -0.015" quat="0.707107 0.707107 0 2.78124e-32" mesh="u" material="u_material"/>
-                <geom class="collision" pos="2.474e-32 -0.0191 -0.015" quat="0.707107 0.707107 0 2.78124e-32" type="box" size="0.01 0.015 0.001"/>
+                <geom class="collision" pos="6.16298e-33 -0.0191 -0.015" quat="0.707107 0.707107 0 2.78124e-32" type="box" size="0.01 0.015 0.001"/>
                 <!-- Link platesblock_2 -->
                 <body name="platesblock_2" pos="0.015 -0.0406 -0.015" quat="0.5 -0.5 -0.5 0.5">
                     <!-- Joint from doubleu_2 to platesblock_2 -->
                     <joint name="leg2_b" type="hinge"/>
-                    <inertial pos="-0.0315 -3.94677e-16 0.0150372" mass="0.0417755" fullinertia="4.6241e-06 2.98279e-05 2.99828e-05 2.99773e-12 1.58289e-20 -2.40142e-21"/>
-                    <!-- Part plate_3 -->
-                    <!-- Mesh plate_3 -->
-                    <geom type="mesh" class="visual" pos="0.006 -0.0143 0.015" quat="9.99201e-16 9.33878e-16 -0.707107 -0.707107" mesh="plate" material="plate_material"/>
+                    <inertial pos="-0.0315 -3.93756e-16 0.0150372" mass="0.0417755" fullinertia="4.6241e-06 2.98279e-05 2.99828e-05 2.99773e-12 1.27996e-20 -5.0039e-21"/>
+                    <!-- Part platesblock_2 -->
+                    <!-- Mesh platesblock_2 -->
+                    <geom type="mesh" class="visual" pos="-0.0315 -3.95517e-16 0.0150372" quat="0.5 -0.5 -0.5 -0.5" mesh="platesblock_2" material="platesblock_2_material"/>
                     <geom class="collision" pos="-0.0315 -0.0131 0.015" quat="9.99201e-16 9.33878e-16 -0.707107 -0.707107" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part plate_4 -->
-                    <!-- Mesh plate_4 -->
-                    <geom type="mesh" class="visual" pos="0.006 0.012 0.015" quat="6.72223e-16 1.25117e-15 -0.707107 -0.707107" mesh="plate" material="plate_material"/>
                     <geom class="collision" pos="-0.0315 0.0132 0.015" quat="6.72223e-16 1.25117e-15 -0.707107 -0.707107" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part horn_7 -->
-                    <!-- Mesh horn_7 -->
-                    <geom type="mesh" class="visual" pos="0 0 0.015" quat="1 0 2.22045e-16 1.52656e-16" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_7 -->
-                    <!-- Mesh motor_7 -->
-                    <geom type="mesh" class="visual" pos="-8.74301e-16 3.62557e-16 0.015" quat="0.707107 0 0 -0.707107" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="-0.008 3.41241e-16 0.015" quat="0.707107 0 0 -0.707107" type="box" size="0.01 0.015 0.011"/>
-                    <!-- Part horn_8 -->
-                    <!-- Mesh horn_8 -->
-                    <geom type="mesh" class="visual" pos="-0.063 -1.14492e-15 0.015" quat="0.591665 -2.63921e-15 7.77156e-16 0.806184" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_8 -->
-                    <!-- Mesh motor_8 -->
-                    <geom type="mesh" class="visual" pos="-0.063 -1.14318e-15 0.015" quat="0.707107 -8.88178e-16 -1.11022e-15 0.707107" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="-0.055 -1.12187e-15 0.015" quat="0.707107 -8.88178e-16 -1.11022e-15 0.707107" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="-0.008 3.4288e-16 0.015" quat="0.707107 0 0 -0.707107" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="-0.055 -1.12171e-15 0.015" quat="0.707107 -8.88178e-16 -1.11022e-15 0.707107" type="box" size="0.01 0.015 0.011"/>
                     <!-- Link leg_2 -->
                     <body name="leg_2" pos="-0.063 -1.14492e-15 -2.60209e-17" quat="0.707107 -9.25028e-16 -7.77156e-16 0.707107">
                         <!-- Joint from platesblock_2 to leg_2 -->
                         <joint name="leg2_c" type="hinge"/>
-                        <inertial pos="-1.82494e-17 0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 7.00778e-37 1.26052e-36 -8.71439e-37"/>
+                        <inertial pos="-1.72851e-17 0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 1.37976e-34 6.14915e-36 -4.08223e-36"/>
                         <!-- Part leg_2 -->
                         <!-- Mesh leg_2 -->
-                        <geom type="mesh" class="visual" pos="0 0 0.015" quat="0.707107 0.707107 -0 4.87538e-32" mesh="leg" material="leg_material"/>
-                        <geom class="collision" pos="-3.80872e-33 0.035 -0.001" quat="0.707107 0.707107 -0 4.87538e-32" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="-3.09381e-33 0.035 0.031" quat="0.707107 0.707107 -0 4.87538e-32" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="-8.87469e-33 0.09 0.015" quat="0.707107 0.707107 -0 4.87538e-32" type="sphere" size="0.015"/>
+                        <geom type="mesh" class="visual" pos="-1.73472e-17 0.0533786 0.015" quat="2.02369e-14 0.707107 -1.96509e-14 0.707107" mesh="leg_2" material="leg_2_material"/>
+                        <geom class="collision" pos="1.28349e-18 0.035 -0.001" quat="0.707107 0.707107 -0 4.87538e-32" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="3.67559e-19 0.035 0.031" quat="0.707107 0.707107 -0 4.87538e-32" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="1.10308e-18 0.09 0.015" quat="0.707107 0.707107 -0 4.87538e-32" type="sphere" size="0.015"/>
                     </body>
                 </body>
             </body>
@@ -169,53 +106,35 @@
             <body name="doubleu_3" pos="0.0485 3.19754e-17 -0.0007" quat="3.90397e-16 0.707107 0.707107 -4.17101e-16">
                 <!-- Joint from body to doubleu_3 -->
                 <joint name="leg3_a" type="hinge"/>
-                <inertial pos="-5.56769e-19 0.0203 -0.01615" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 8.88133e-22 -5.95365e-22 -1.77514e-21"/>
-                <!-- Part u_5 -->
-                <!-- Mesh u_5 -->
-                <geom type="mesh" class="visual" pos="-6.18683e-18 0.0226 -0.01615" quat="0.5 0.5 0.5 -0.5" mesh="u" material="u_material"/>
+                <inertial pos="-5.56769e-19 0.0203 -0.01615" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 1.84599e-21 -2.19179e-21 -3.30468e-21"/>
+                <!-- Part doubleu_3 -->
+                <!-- Mesh doubleu_3 -->
+                <geom type="mesh" class="visual" pos="-5.56769e-19 0.0203 -0.01615" quat="3.66569e-16 -0.707107 -0.707107 5.18459e-16" mesh="doubleu_3" material="doubleu_3_material"/>
                 <geom class="collision" pos="-6.18683e-18 0.0215 -0.01615" quat="0.5 0.5 0.5 -0.5" type="box" size="0.01 0.015 0.001"/>
-                <!-- Part u_6 -->
-                <!-- Mesh u_6 -->
-                <geom type="mesh" class="visual" pos="0 0.018 -0.01615" quat="0.707107 -0.707107 -0 -1.656e-31" mesh="u" material="u_material"/>
-                <geom class="collision" pos="5.96576e-34 0.0191 -0.01615" quat="0.707107 -0.707107 -0 -1.656e-31" type="box" size="0.01 0.015 0.001"/>
+                <geom class="collision" pos="1.16519e-32 0.0191 -0.01615" quat="0.707107 -0.707107 -0 -1.656e-31" type="box" size="0.01 0.015 0.001"/>
                 <!-- Link platesblock_3 -->
                 <body name="platesblock_3" pos="-0.015 0.0406 -0.01615" quat="0.5 -0.5 0.5 -0.5">
                     <!-- Joint from doubleu_3 to platesblock_3 -->
                     <joint name="leg3_b" type="hinge"/>
-                    <inertial pos="-0.0315 -1.26292e-15 0.0150372" mass="0.0417755" fullinertia="4.6241e-06 2.98279e-05 2.99828e-05 2.99773e-12 1.26526e-20 -9.77407e-21"/>
-                    <!-- Part plate_5 -->
-                    <!-- Mesh plate_5 -->
-                    <geom type="mesh" class="visual" pos="0.006 -0.0143 0.015" quat="6.11317e-15 7.40046e-15 -0.707107 -0.707107" mesh="plate" material="plate_material"/>
+                    <inertial pos="-0.0315 -1.26282e-15 0.0150372" mass="0.0417755" fullinertia="4.6241e-06 2.98279e-05 2.99828e-05 2.99773e-12 1.21343e-20 -2.02021e-21"/>
+                    <!-- Part platesblock_3 -->
+                    <!-- Mesh platesblock_3 -->
+                    <geom type="mesh" class="visual" pos="-0.0315 -1.26288e-15 0.0150372" quat="2.54853e-14 -2.77416e-14 0.707107 0.707107" mesh="platesblock_3" material="platesblock_3_material"/>
                     <geom class="collision" pos="-0.0315 -0.0131 0.015" quat="6.11317e-15 7.40046e-15 -0.707107 -0.707107" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part plate_6 -->
-                    <!-- Mesh plate_6 -->
-                    <geom type="mesh" class="visual" pos="0.006 0.012 0.015" quat="7.42612e-15 6.14462e-15 -0.707107 -0.707107" mesh="plate" material="plate_material"/>
                     <geom class="collision" pos="-0.0315 0.0132 0.015" quat="7.42612e-15 6.14462e-15 -0.707107 -0.707107" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part horn_9 -->
-                    <!-- Mesh horn_9 -->
-                    <geom type="mesh" class="visual" pos="0 0 0.015" quat="1 -0 4.12864e-16 -1.73472e-17" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_9 -->
-                    <!-- Mesh motor_9 -->
-                    <geom type="mesh" class="visual" pos="-1.15186e-15 5.37764e-17 0.015" quat="0.707107 -1.02668e-18 2.22045e-16 -0.707107" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="-0.008 -9.96564e-17 0.015" quat="0.707107 -1.02668e-18 2.22045e-16 -0.707107" type="box" size="0.01 0.015 0.011"/>
-                    <!-- Part horn_10 -->
-                    <!-- Mesh horn_10 -->
-                    <geom type="mesh" class="visual" pos="-0.063 -2.61423e-15 0.015" quat="0.0386127 3.02832e-16 -2.33147e-15 0.999254" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_10 -->
-                    <!-- Mesh motor_10 -->
-                    <geom type="mesh" class="visual" pos="-0.063 -2.61423e-15 0.015" quat="0.707107 1.72703e-16 -1.52656e-15 0.707107" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="-0.055 -2.43859e-15 0.015" quat="0.707107 1.72703e-16 -1.52656e-15 0.707107" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="-0.008 -1.00186e-16 0.015" quat="0.707107 -1.02668e-18 2.22045e-16 -0.707107" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="-0.055 -2.43769e-15 0.015" quat="0.707107 1.72703e-16 -1.55431e-15 0.707107" type="box" size="0.01 0.015 0.011"/>
                     <!-- Link leg_3 -->
-                    <body name="leg_3" pos="-0.063 -2.5431e-15 6.41848e-17" quat="0.707107 1.87399e-15 -1.33227e-15 0.707107">
+                    <body name="leg_3" pos="-0.063 -2.5431e-15 6.41848e-17" quat="0.707107 1.87399e-15 -1.66533e-15 0.707107">
                         <!-- Joint from platesblock_3 to leg_3 -->
                         <joint name="leg3_c" type="hinge"/>
-                        <inertial pos="-1.82494e-17 0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 0 0 -1.35045e-34"/>
+                        <inertial pos="-1.68795e-17 0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 3.68123e-35 6.16462e-36 -2.58096e-34"/>
                         <!-- Part leg_3 -->
                         <!-- Mesh leg_3 -->
-                        <geom type="mesh" class="visual" pos="0 0 0.015" quat="0.707107 0.707107 -0 -0" mesh="leg" material="leg_material"/>
-                        <geom class="collision" pos="0 0.035 -0.001" quat="0.707107 0.707107 -0 -0" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="0 0.035 0.031" quat="0.707107 0.707107 -0 -0" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="0 0.09 0.015" quat="0.707107 0.707107 -0 -0" type="sphere" size="0.015"/>
+                        <geom type="mesh" class="visual" pos="-1.73472e-17 0.0533786 0.015" quat="0.5 0.5 0.5 0.5" mesh="leg_3" material="leg_3_material"/>
+                        <geom class="collision" pos="2.12482e-18 0.035 -0.001" quat="0.707107 0.707107 -0 -0" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="1.65589e-18 0.035 0.031" quat="0.707107 0.707107 -0 -0" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="1.71688e-18 0.09 0.015" quat="0.707107 0.707107 -0 -0" type="sphere" size="0.015"/>
                         <!-- Frame leg_tip (dummy link + fixed joint) -->
                         <site name="leg_tip" pos="-3.64292e-17 0.1053 0.015" quat="2.85151e-17 1.33078e-16 -0.707107 -0.707107"/>
                     </body>
@@ -225,71 +144,67 @@
             <body name="doubleu_4" pos="3.81639e-17 0.0485 -0.0007" quat="1.11022e-16 1.0542e-16 -1 3.76491e-15">
                 <!-- Joint from body to doubleu_4 -->
                 <joint name="leg4_a" type="hinge"/>
-                <inertial pos="-4.61075e-17 0.0203 -0.01615" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 4.31663e-21 1.74197e-22 -1.84249e-20"/>
-                <!-- Part u_7 -->
-                <!-- Mesh u_7 -->
-                <geom type="mesh" class="visual" pos="-9.72883e-17 0.0226 -0.01615" quat="0.5 0.5 0.5 -0.5" mesh="u" material="u_material"/>
+                <inertial pos="-4.61075e-17 0.0203 -0.01615" mass="0.00830698" fullinertia="2.78361e-06 1.9255e-06 2.78361e-06 4.31663e-21 1.74197e-22 -3.17881e-20"/>
+                <!-- Part doubleu_4 -->
+                <!-- Mesh doubleu_4 -->
+                <geom type="mesh" class="visual" pos="-4.61075e-17 0.0203 -0.01615" quat="0 1.09762e-16 -1 3.55993e-15" mesh="doubleu_4" material="doubleu_4_material"/>
                 <geom class="collision" pos="-9.72883e-17 0.0215 -0.01615" quat="0.5 0.5 0.5 -0.5" type="box" size="0.01 0.015 0.001"/>
-                <!-- Part u_8 -->
-                <!-- Mesh u_8 -->
-                <geom type="mesh" class="visual" pos="0 0.018 -0.01615" quat="0.707107 -0.707107 -0 -4.15692e-33" mesh="u" material="u_material"/>
-                <geom class="collision" pos="1.29333e-35 0.0191 -0.01615" quat="0.707107 -0.707107 -0 -4.15692e-33" type="box" size="0.01 0.015 0.001"/>
+                <geom class="collision" pos="0 0.0191 -0.01615" quat="0.707107 -0.707107 -0 -4.15692e-33" type="box" size="0.01 0.015 0.001"/>
                 <!-- Link platesblock_4 -->
                 <body name="platesblock_4" pos="-0.015 0.0406 -0.01615" quat="0.5 -0.5 0.5 -0.5">
                     <!-- Joint from doubleu_4 to platesblock_4 -->
                     <joint name="leg4_b" type="hinge"/>
-                    <inertial pos="-0.0315 -5.43176e-16 0.0135372" mass="0.0417755" fullinertia="4.6241e-06 2.98279e-05 2.99828e-05 2.99773e-12 -6.49039e-20 5.54562e-21"/>
-                    <!-- Part plate_7 -->
-                    <!-- Mesh plate_7 -->
-                    <geom type="mesh" class="visual" pos="0.006 -0.0143 0.0135" quat="3.33067e-16 2.1654e-15 -0.707107 -0.707107" mesh="plate" material="plate_material"/>
+                    <inertial pos="-0.0315 -5.44238e-16 0.0135372" mass="0.0417755" fullinertia="4.6241e-06 2.98279e-05 2.99828e-05 2.99773e-12 -6.82938e-20 8.10969e-21"/>
+                    <!-- Part platesblock_4 -->
+                    <!-- Mesh platesblock_4 -->
+                    <geom type="mesh" class="visual" pos="-0.0315 -5.46438e-16 0.0135372" quat="0.5 -0.5 0.5 0.5" mesh="platesblock_4" material="platesblock_4_material"/>
                     <geom class="collision" pos="-0.0315 -0.0131 0.0135" quat="3.33067e-16 2.1654e-15 -0.707107 -0.707107" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part plate_8 -->
-                    <!-- Mesh plate_8 -->
-                    <geom type="mesh" class="visual" pos="0.006 0.012 0.0135" quat="9.4369e-16 1.33227e-15 -0.707107 -0.707107" mesh="plate" material="plate_material"/>
                     <geom class="collision" pos="-0.0315 0.0132 0.0135" quat="9.4369e-16 1.33227e-15 -0.707107 -0.707107" type="box" size="0.0365 0.0075 0.001"/>
-                    <!-- Part horn_11 -->
-                    <!-- Mesh horn_11 -->
-                    <geom type="mesh" class="visual" pos="0 1.73472e-18 0.0135" quat="1 0 0 0" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_11 -->
-                    <!-- Mesh motor_11 -->
-                    <geom type="mesh" class="visual" pos="9.71445e-17 2.25514e-16 0.0135" quat="0.707107 1.27974e-15 1.66533e-15 -0.707107" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="-0.008 2.02199e-16 0.0135" quat="0.707107 1.27974e-15 1.66533e-15 -0.707107" type="box" size="0.01 0.015 0.011"/>
-                    <!-- Part horn_12 -->
-                    <!-- Mesh horn_12 -->
-                    <geom type="mesh" class="visual" pos="-0.063 -1.31319e-15 0.0135" quat="0.608446 2.91552e-15 1.33227e-15 -0.793595" mesh="horn" material="horn_material"/>
-                    <!-- Part motor_12 -->
-                    <!-- Mesh motor_12 -->
-                    <geom type="mesh" class="visual" pos="-0.063 -1.30278e-15 0.0135" quat="0.707107 7.49401e-16 -2.55351e-15 0.707107" mesh="motor" material="motor_material"/>
-                    <geom class="collision" pos="-0.055 -1.27724e-15 0.0135" quat="0.707107 7.49401e-16 -2.55351e-15 0.707107" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="-0.008 2.01842e-16 0.0135" quat="0.707107 1.27974e-15 1.66533e-15 -0.707107" type="box" size="0.01 0.015 0.011"/>
+                    <geom class="collision" pos="-0.055 -1.27734e-15 0.0135" quat="0.707107 7.49401e-16 -2.55351e-15 0.707107" type="box" size="0.01 0.015 0.011"/>
                     <!-- Link leg_4 -->
                     <body name="leg_4" pos="-0.063 -1.22471e-15 -0.0015" quat="0.707107 3.10617e-15 8.88178e-16 -0.707107">
                         <!-- Joint from platesblock_4 to leg_4 -->
                         <joint name="leg4_c" type="hinge"/>
-                        <inertial pos="-1.82494e-17 -0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 7.31818e-35 1.50662e-35 -7.25752e-36"/>
+                        <inertial pos="-1.83109e-17 -0.0533786 0.015" mass="0.0154162" fullinertia="2.13816e-05 3.58407e-06 1.88204e-05 2.07075e-34 -1.18725e-35 -1.43223e-36"/>
                         <!-- Part leg_4 -->
                         <!-- Mesh leg_4 -->
-                        <geom type="mesh" class="visual" pos="0 0 0.015" quat="0.707107 -0.707107 0 1.33787e-30" mesh="leg" material="leg_material"/>
-                        <geom class="collision" pos="1.51264e-31 -0.035 0.031" quat="0.707107 -0.707107 0 1.33787e-30" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="1.38642e-31 -0.035 -0.001" quat="0.707107 -0.707107 0 1.33787e-30" type="box" size="0.01 0.001 0.045"/>
-                        <geom class="collision" pos="3.72737e-31 -0.09 0.015" quat="0.707107 -0.707107 0 1.33787e-30" type="sphere" size="0.015"/>
+                        <geom type="mesh" class="visual" pos="-1.9082e-17 -0.0533786 0.015" quat="2.76434e-14 0.707107 2.58682e-14 -0.707107" mesh="leg_4" material="leg_4_material"/>
+                        <geom class="collision" pos="2.18025e-20 -0.035 0.031" quat="0.707107 -0.707107 0 1.33787e-30" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="5.49158e-19 -0.035 -0.001" quat="0.707107 -0.707107 0 1.33787e-30" type="box" size="0.01 0.001 0.045"/>
+                        <geom class="collision" pos="-4.08409e-19 -0.09 0.015" quat="0.707107 -0.707107 0 1.33787e-30" type="sphere" size="0.015"/>
                     </body>
                 </body>
             </body>
         </body>
     </worldbody>
     <asset>
-        <mesh file="motor.stl"/>
-        <mesh file="horn.stl"/>
-        <mesh file="plate.stl"/>
-        <mesh file="u.stl"/>
-        <mesh file="body.stl"/>
-        <mesh file="leg.stl"/>
-        <material name="body_material" rgba="0.972549 0.529412 0.00392157 1"/>
-        <material name="horn_material" rgba="0.917647 0.917647 0.917647 1"/>
-        <material name="motor_material" rgba="0.470588 0.470588 0.470588 1"/>
-        <material name="u_material" rgba="0.972549 0.529412 0.00392157 1"/>
-        <material name="plate_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <mesh file="merged/platesblock_4.stl"/>
+        <mesh file="merged/platesblock_3.stl"/>
+        <mesh file="merged/leg_3.stl"/>
+        <mesh file="merged/leg_4.stl"/>
+        <mesh file="merged/platesblock_2.stl"/>
+        <mesh file="merged/doubleu_2.stl"/>
+        <mesh file="merged/doubleu_4.stl"/>
+        <mesh file="merged/leg.stl"/>
+        <mesh file="merged/doubleu_3.stl"/>
+        <mesh file="merged/platesblock.stl"/>
+        <mesh file="merged/leg_2.stl"/>
+        <mesh file="merged/body.stl"/>
+        <mesh file="merged/doubleu.stl"/>
+        <material name="body_material" rgba="0.546445 0.490703 0.424602 1"/>
+        <material name="doubleu_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <material name="platesblock_material" rgba="0.5601 0.491944 0.411121 1"/>
         <material name="leg_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <material name="doubleu_2_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <material name="platesblock_2_material" rgba="0.5601 0.491944 0.411121 1"/>
+        <material name="leg_2_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <material name="doubleu_3_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <material name="platesblock_3_material" rgba="0.5601 0.491944 0.411121 1"/>
+        <material name="leg_3_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <material name="doubleu_4_material" rgba="0.972549 0.529412 0.00392157 1"/>
+        <material name="platesblock_4_material" rgba="0.5601 0.491944 0.411121 1"/>
+        <material name="leg_4_material" rgba="0.972549 0.529412 0.00392157 1"/>
     </asset>
     <actuator>
         <position class="quadruped_mujoco" name="leg1_c" joint="leg1_c" forcerange="-1 1" ctrlrange="-3 3"/>

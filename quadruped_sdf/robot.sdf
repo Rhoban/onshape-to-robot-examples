@@ -1,0 +1,930 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape https://cad.onshape.com/documents/11a7f59e37f711d732274fca/w/7807518dc67487ad405722c8/e/5233c6445c575366a6cc0d50 -->
+<sdf version="1.7">
+    <model name="quadruped_sdf">
+        <!-- Link body -->
+        <link name="body">
+            <inertial>
+                <pose relative_to="body">-2.68123e-18 7.95593e-19 0.0143384 0 0 0</pose>
+                <mass>0.0808736</mass>
+                <inertia>
+                    <ixx>7.37408e-05</ixx>
+                    <ixy>-7.58445e-21</ixy>
+                    <ixz>-2.2764e-21</ixz>
+                    <iyy>7.37408e-05</iyy>
+                    <iyz>1.71779e-21</iyz>
+                    <izz>0.000135878</izz>
+                </inertia>
+            </inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <!-- Part body -->
+            <visual name="body_visual_mesh">
+                <pose relative_to="body">-4.02184e-18 1.95168e-18 0.0143384 0 -0 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/body.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.546445 0.490703 0.424602 1.0</ambient>
+                    <diffuse>0.546445 0.490703 0.424602 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="body_collision_shapes_1">
+                <pose relative_to="body">0 3.46945e-18 0.0275 3.14159 -0 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.03 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="body_collision_shapes_2">
+                <pose relative_to="body">0 0 0.0011 0 -0 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.03 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="body_collision_shapes_3">
+                <pose relative_to="body">-2.48001e-18 -0.0405 0.0143 0 -0 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="body_collision_shapes_4">
+                <pose relative_to="body">0.0405 8.66205e-18 0.0143 0 -0 -1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="body_collision_shapes_5">
+                <pose relative_to="body">-2.87964e-18 0.0405 0.0143 0 -0 8.32667e-16</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="body_collision_shapes_6">
+                <pose relative_to="body">-0.0405 -2.24473e-18 0.0143 1.45547e-17 3.61151e-16 1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link doubleu -->
+        <link name="doubleu">
+            <inertial>
+                <pose relative_to="doubleu">4.20868e-19 -0.0203 -0.01615 0 0 0</pose>
+                <mass>0.00830698</mass>
+                <inertia>
+                    <ixx>2.78361e-06</ixx>
+                    <ixy>-3.98268e-22</ixy>
+                    <ixz>-3.70822e-22</ixz>
+                    <iyy>1.9255e-06</iyy>
+                    <iyz>1.87309e-22</iyz>
+                    <izz>2.78361e-06</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg1_a">0 0 0 0 -0 0</pose>
+            <!-- Part doubleu -->
+            <visual name="doubleu_visual_mesh">
+                <pose relative_to="doubleu">4.20868e-19 -0.0203 -0.01615 -3.14159 1.53921e-15 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/doubleu.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="doubleu_collision_shapes_1">
+                <pose relative_to="doubleu">-2.25526e-31 -0.0191 -0.01615 1.5708 -1.84604e-32 4.13365e-30</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="doubleu_collision_shapes_2">
+                <pose relative_to="doubleu">-4.23155e-18 -0.0215 -0.01615 -1.5708 -1.5708 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link platesblock -->
+        <link name="platesblock">
+            <inertial>
+                <pose relative_to="platesblock">5.09544e-15 -0.0315 0.0150372 0 0 0</pose>
+                <mass>0.0417755</mass>
+                <inertia>
+                    <ixx>2.98279e-05</ixx>
+                    <ixy>-2.99773e-12</ixy>
+                    <ixz>-9.43397e-21</ixz>
+                    <iyy>4.6241e-06</iyy>
+                    <iyz>2.38053e-19</iyz>
+                    <izz>2.99828e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg1_b">0 0 0 0 -0 0</pose>
+            <!-- Part platesblock -->
+            <visual name="platesblock_visual_mesh">
+                <pose relative_to="platesblock">5.09835e-15 -0.0315 0.0150372 -1.5708 -8.04912e-14 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/platesblock.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.5601 0.491944 0.411121 1.0</ambient>
+                    <diffuse>0.5601 0.491944 0.411121 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="platesblock_collision_shapes_1">
+                <pose relative_to="platesblock">0.0131 -0.0315 0.015 1.5708 -1.26802e-14 -1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_collision_shapes_2">
+                <pose relative_to="platesblock">-0.0132 -0.0315 0.015 1.5708 2.39183e-16 -1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_collision_shapes_3">
+                <pose relative_to="platesblock">1.32467e-15 -0.008 0.015 5.55112e-17 -5.55112e-17 1.32212e-13</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_collision_shapes_4">
+                <pose relative_to="platesblock">8.87894e-15 -0.055 0.015 1.07507e-14 5.55112e-17 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link leg -->
+        <link name="leg">
+            <inertial>
+                <pose relative_to="leg">-1.68362e-17 0.0533786 0.015 0 0 0</pose>
+                <mass>0.0154162</mass>
+                <inertia>
+                    <ixx>2.13816e-05</ixx>
+                    <ixy>5.18659e-34</ixy>
+                    <ixz>1.18621e-36</ixz>
+                    <iyy>3.58407e-06</iyy>
+                    <iyz>1.10982e-34</iyz>
+                    <izz>1.88204e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg1_c">0 0 0 0 -0 0</pose>
+            <!-- Part leg -->
+            <visual name="leg_visual_mesh">
+                <pose relative_to="leg">-1.73472e-17 0.0533786 0.015 -1.5708 -9.12418e-14 -1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/leg.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="leg_collision_shapes_1">
+                <pose relative_to="leg">1.18955e-18 0.035 -0.001 1.5708 -2.25116e-32 3.79639e-30</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_collision_shapes_2">
+                <pose relative_to="leg">1.08167e-18 0.035 0.031 1.5708 -2.25116e-32 3.79639e-30</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_collision_shapes_3">
+                <pose relative_to="leg">1.69072e-18 0.09 0.015 1.5708 -2.25116e-32 3.79639e-30</pose>
+                <geometry>
+                    <sphere>
+                        <radius>0.015</radius>
+                    </sphere>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Joint from platesblock to leg -->
+        <joint name="leg1_c" type="revolute">
+            <pose relative_to="platesblock">9.9365e-15 -0.063 5.75928e-16 1.07507e-14 5.55112e-17 3.14159</pose>
+            <parent>platesblock</parent>
+            <child>leg</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from doubleu to platesblock -->
+        <joint name="leg1_b" type="revolute">
+            <pose relative_to="doubleu">0.015 -0.0406 -0.01615 -1.11022e-16 -1.5708 0</pose>
+            <parent>doubleu</parent>
+            <child>platesblock</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from body to doubleu -->
+        <joint name="leg1_a" type="revolute">
+            <pose relative_to="body">-0.0485 -8.5303e-18 -0.0007 -3.14159 3.05183e-16 1.5708</pose>
+            <parent>body</parent>
+            <child>doubleu</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Link doubleu_2 -->
+        <link name="doubleu_2">
+            <inertial>
+                <pose relative_to="doubleu_2">-2.11219e-17 -0.0203 -0.015 0 0 0</pose>
+                <mass>0.00830698</mass>
+                <inertia>
+                    <ixx>2.78361e-06</ixx>
+                    <ixy>-2.00168e-21</ixy>
+                    <ixz>-2.69222e-22</ixz>
+                    <iyy>1.9255e-06</iyy>
+                    <iyz>9.24504e-21</iyz>
+                    <izz>2.78361e-06</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg2_a">0 0 0 0 -0 0</pose>
+            <!-- Part doubleu_2 -->
+            <visual name="doubleu_2_visual_mesh">
+                <pose relative_to="doubleu_2">-2.11219e-17 -0.0203 -0.015 3.14159 -1.8612e-16 -3.14159</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/doubleu_2.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="doubleu_2_collision_shapes_1">
+                <pose relative_to="doubleu_2">-4.7317e-17 -0.0215 -0.015 -1.5708 -1.5708 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="doubleu_2_collision_shapes_2">
+                <pose relative_to="doubleu_2">6.16298e-33 -0.0191 -0.015 1.5708 1.44282e-33 -2.03131e-32</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link platesblock_2 -->
+        <link name="platesblock_2">
+            <inertial>
+                <pose relative_to="platesblock_2">-0.0315 -3.93756e-16 0.0150372 0 0 0</pose>
+                <mass>0.0417755</mass>
+                <inertia>
+                    <ixx>4.6241e-06</ixx>
+                    <ixy>2.99773e-12</ixy>
+                    <ixz>1.27996e-20</ixz>
+                    <iyy>2.98279e-05</iyy>
+                    <iyz>-5.0039e-21</iyz>
+                    <izz>2.99828e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg2_b">0 0 0 0 -0 0</pose>
+            <!-- Part platesblock_2 -->
+            <visual name="platesblock_2_visual_mesh">
+                <pose relative_to="platesblock_2">-0.0315 -3.95517e-16 0.0150372 -1.5708 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/platesblock_2.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.5601 0.491944 0.411121 1.0</ambient>
+                    <diffuse>0.5601 0.491944 0.411121 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="platesblock_2_collision_shapes_1">
+                <pose relative_to="platesblock_2">-0.0315 -0.0131 0.015 1.5708 -1.34152e-16 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_2_collision_shapes_2">
+                <pose relative_to="platesblock_2">-0.0315 0.0132 0.015 1.5708 7.63278e-16 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_2_collision_shapes_3">
+                <pose relative_to="platesblock_2">-0.008 3.4288e-16 0.015 -1.11022e-16 -1.11022e-16 -1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_2_collision_shapes_4">
+                <pose relative_to="platesblock_2">-0.055 -1.12171e-15 0.015 -2.33469e-15 1.11022e-16 1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link leg_2 -->
+        <link name="leg_2">
+            <inertial>
+                <pose relative_to="leg_2">-1.72851e-17 0.0533786 0.015 0 0 0</pose>
+                <mass>0.0154162</mass>
+                <inertia>
+                    <ixx>2.13816e-05</ixx>
+                    <ixy>1.37976e-34</ixy>
+                    <ixz>6.14915e-36</ixz>
+                    <iyy>3.58407e-06</iyy>
+                    <iyz>-4.08223e-36</iyz>
+                    <izz>1.88204e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg2_c">0 0 0 0 -0 0</pose>
+            <!-- Part leg_2 -->
+            <visual name="leg_2_visual_mesh">
+                <pose relative_to="leg_2">-1.73472e-17 0.0533786 0.015 3.14159 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/leg_2.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="leg_2_collision_shapes_1">
+                <pose relative_to="leg_2">1.28349e-18 0.035 -0.001 1.5708 -3.9289e-32 4.93038e-32</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_2_collision_shapes_2">
+                <pose relative_to="leg_2">3.67559e-19 0.035 0.031 1.5708 -3.9289e-32 4.93038e-32</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_2_collision_shapes_3">
+                <pose relative_to="leg_2">1.10308e-18 0.09 0.015 1.5708 -3.9289e-32 4.93038e-32</pose>
+                <geometry>
+                    <sphere>
+                        <radius>0.015</radius>
+                    </sphere>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Joint from platesblock_2 to leg_2 -->
+        <joint name="leg2_c" type="revolute">
+            <pose relative_to="platesblock_2">-0.063 -1.14492e-15 -2.60209e-17 -2.05714e-15 3.88578e-16 1.5708</pose>
+            <parent>platesblock_2</parent>
+            <child>leg_2</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from doubleu_2 to platesblock_2 -->
+        <joint name="leg2_b" type="revolute">
+            <pose relative_to="doubleu_2">0.015 -0.0406 -0.015 -1.5708 -5.77316e-15 1.5708</pose>
+            <parent>doubleu_2</parent>
+            <child>platesblock_2</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from body to doubleu_2 -->
+        <joint name="leg2_a" type="revolute">
+            <pose relative_to="body">-4.75344e-19 -0.0485 -0.0007 3.14159 1.8612e-16 -3.14159</pose>
+            <parent>body</parent>
+            <child>doubleu_2</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Link doubleu_3 -->
+        <link name="doubleu_3">
+            <inertial>
+                <pose relative_to="doubleu_3">-5.56769e-19 0.0203 -0.01615 0 0 0</pose>
+                <mass>0.00830698</mass>
+                <inertia>
+                    <ixx>2.78361e-06</ixx>
+                    <ixy>1.84599e-21</ixy>
+                    <ixz>-2.19179e-21</ixz>
+                    <iyy>1.9255e-06</iyy>
+                    <iyz>-3.30468e-21</iyz>
+                    <izz>2.78361e-06</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg3_a">0 0 0 0 -0 0</pose>
+            <!-- Part doubleu_3 -->
+            <visual name="doubleu_3_visual_mesh">
+                <pose relative_to="doubleu_3">-5.56769e-19 0.0203 -0.01615 -3.14159 8.88178e-16 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/doubleu_3.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="doubleu_3_collision_shapes_1">
+                <pose relative_to="doubleu_3">-6.18683e-18 0.0215 -0.01615 1.5708 1.5708 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="doubleu_3_collision_shapes_2">
+                <pose relative_to="doubleu_3">1.16519e-32 0.0191 -0.01615 -1.5708 7.39557e-32 -1.14631e-30</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link platesblock_3 -->
+        <link name="platesblock_3">
+            <inertial>
+                <pose relative_to="platesblock_3">-0.0315 -1.26282e-15 0.0150372 0 0 0</pose>
+                <mass>0.0417755</mass>
+                <inertia>
+                    <ixx>4.6241e-06</ixx>
+                    <ixy>2.99773e-12</ixy>
+                    <ixz>1.21343e-20</ixz>
+                    <iyy>2.98279e-05</iyy>
+                    <iyz>-2.02021e-21</iyz>
+                    <izz>2.99828e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg3_b">0 0 0 0 -0 0</pose>
+            <!-- Part platesblock_3 -->
+            <visual name="platesblock_3_visual_mesh">
+                <pose relative_to="platesblock_3">-0.0315 -1.26288e-15 0.0150372 1.5708 7.52731e-14 -3.14159</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/platesblock_3.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.5601 0.491944 0.411121 1.0</ambient>
+                    <diffuse>0.5601 0.491944 0.411121 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="platesblock_3_collision_shapes_1">
+                <pose relative_to="platesblock_3">-0.0315 -0.0131 0.015 1.5708 1.24904e-15 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_3_collision_shapes_2">
+                <pose relative_to="platesblock_3">-0.0315 0.0132 0.015 1.5708 -1.79949e-15 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_3_collision_shapes_3">
+                <pose relative_to="platesblock_3">-0.008 -1.00186e-16 0.015 6.48131e-29 3.33067e-16 -1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_3_collision_shapes_4">
+                <pose relative_to="platesblock_3">-0.055 -2.43769e-15 0.015 -4.49001e-15 -3.33067e-16 1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link leg_3 -->
+        <link name="leg_3">
+            <inertial>
+                <pose relative_to="leg_3">-1.68795e-17 0.0533786 0.015 0 0 0</pose>
+                <mass>0.0154162</mass>
+                <inertia>
+                    <ixx>2.13816e-05</ixx>
+                    <ixy>3.68123e-35</ixy>
+                    <ixz>6.16462e-36</ixz>
+                    <iyy>3.58407e-06</iyy>
+                    <iyz>-2.58096e-34</iyz>
+                    <izz>1.88204e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg3_c">0 0 0 0 -0 0</pose>
+            <!-- Part leg_3 -->
+            <visual name="leg_3_visual_mesh">
+                <pose relative_to="leg_3">-1.73472e-17 0.0533786 0.015 1.5708 7.57236e-14 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/leg_3.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="leg_3_collision_shapes_1">
+                <pose relative_to="leg_3">2.12482e-18 0.035 -0.001 1.5708 -0 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_3_collision_shapes_2">
+                <pose relative_to="leg_3">1.65589e-18 0.035 0.031 1.5708 -0 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_3_collision_shapes_3">
+                <pose relative_to="leg_3">1.71688e-18 0.09 0.015 1.5708 -0 0</pose>
+                <geometry>
+                    <sphere>
+                        <radius>0.015</radius>
+                    </sphere>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Frame leg_tip (dummy link + fixed joint) -->
+        <frame name="leg_tip">
+            <pose relative_to="leg_3">-3.64292e-17 0.1053 0.015 1.5708 -0 -3.14159</pose>
+        </frame>
+        <!-- Joint from platesblock_3 to leg_3 -->
+        <joint name="leg3_c" type="revolute">
+            <pose relative_to="platesblock_3">-0.063 -2.5431e-15 6.41848e-17 4.50478e-16 -5.01649e-15 1.5708</pose>
+            <parent>platesblock_3</parent>
+            <child>leg_3</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from doubleu_3 to platesblock_3 -->
+        <joint name="leg3_b" type="revolute">
+            <pose relative_to="doubleu_3">-0.015 0.0406 -0.01615 -1.5708 -4.08007e-15 -1.5708</pose>
+            <parent>doubleu_3</parent>
+            <child>platesblock_3</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from body to doubleu_3 -->
+        <joint name="leg3_a" type="revolute">
+            <pose relative_to="body">0.0485 3.19754e-17 -0.0007 -3.14159 1.88738e-15 1.5708</pose>
+            <parent>body</parent>
+            <child>doubleu_3</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Link doubleu_4 -->
+        <link name="doubleu_4">
+            <inertial>
+                <pose relative_to="doubleu_4">-4.61075e-17 0.0203 -0.01615 0 0 0</pose>
+                <mass>0.00830698</mass>
+                <inertia>
+                    <ixx>2.78361e-06</ixx>
+                    <ixy>4.31663e-21</ixy>
+                    <ixz>1.74197e-22</ixz>
+                    <iyy>1.9255e-06</iyy>
+                    <iyz>-3.17881e-20</iyz>
+                    <izz>2.78361e-06</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg4_a">0 0 0 0 -0 0</pose>
+            <!-- Part doubleu_4 -->
+            <visual name="doubleu_4_visual_mesh">
+                <pose relative_to="doubleu_4">-4.61075e-17 0.0203 -0.01615 -3.14159 2.63142e-29 -3.14159</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/doubleu_4.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="doubleu_4_collision_shapes_1">
+                <pose relative_to="doubleu_4">-9.72883e-17 0.0215 -0.01615 1.5708 1.5708 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="doubleu_4_collision_shapes_2">
+                <pose relative_to="doubleu_4">0 0.0191 -0.01615 -1.5708 -2.49606e-45 -1.17576e-32</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link platesblock_4 -->
+        <link name="platesblock_4">
+            <inertial>
+                <pose relative_to="platesblock_4">-0.0315 -5.44238e-16 0.0135372 0 0 0</pose>
+                <mass>0.0417755</mass>
+                <inertia>
+                    <ixx>4.6241e-06</ixx>
+                    <ixy>2.99773e-12</ixy>
+                    <ixz>-6.82938e-20</ixz>
+                    <iyy>2.98279e-05</iyy>
+                    <iyz>8.10969e-21</iyz>
+                    <izz>2.99828e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg4_b">0 0 0 0 -0 0</pose>
+            <!-- Part platesblock_4 -->
+            <visual name="platesblock_4_visual_mesh">
+                <pose relative_to="platesblock_4">-0.0315 -5.46438e-16 0.0135372 -1.5708 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/platesblock_4.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.5601 0.491944 0.411121 1.0</ambient>
+                    <diffuse>0.5601 0.491944 0.411121 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="platesblock_4_collision_shapes_1">
+                <pose relative_to="platesblock_4">-0.0315 -0.0131 0.0135 1.5708 2.45263e-15 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_4_collision_shapes_2">
+                <pose relative_to="platesblock_4">-0.0315 0.0132 0.0135 1.5708 7.59235e-16 -3.14159</pose>
+                <geometry>
+                    <box>
+                        <size>0.073 0.015 0.002</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_4_collision_shapes_3">
+                <pose relative_to="platesblock_4">-0.008 2.01842e-16 0.0135 6.39267e-16 6.08214e-15 -1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="platesblock_4_collision_shapes_4">
+                <pose relative_to="platesblock_4">-0.055 -1.27734e-15 0.0135 -3.02239e-15 -5.18777e-15 1.5708</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.03 0.022</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Link leg_4 -->
+        <link name="leg_4">
+            <inertial>
+                <pose relative_to="leg_4">-1.83109e-17 -0.0533786 0.015 0 0 0</pose>
+                <mass>0.0154162</mass>
+                <inertia>
+                    <ixx>2.13816e-05</ixx>
+                    <ixy>2.07075e-34</ixy>
+                    <ixz>-1.18725e-35</ixz>
+                    <iyy>3.58407e-06</iyy>
+                    <iyz>-1.43223e-36</iyz>
+                    <izz>1.88204e-05</izz>
+                </inertia>
+            </inertial>
+            <pose relative_to="leg4_c">0 0 0 0 -0 0</pose>
+            <!-- Part leg_4 -->
+            <visual name="leg_4_visual_mesh">
+                <pose relative_to="leg_4">-1.9082e-17 -0.0533786 0.015 3.14159 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://quadruped_sdf/leg_4.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.972549 0.529412 0.00392157 1.0</ambient>
+                    <diffuse>0.972549 0.529412 0.00392157 1.0</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="leg_4_collision_shapes_1">
+                <pose relative_to="leg_4">2.18025e-20 -0.035 0.031 -1.5708 -3.57453e-31 4.11687e-30</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_4_collision_shapes_2">
+                <pose relative_to="leg_4">5.49158e-19 -0.035 -0.001 -1.5708 -3.57453e-31 4.11687e-30</pose>
+                <geometry>
+                    <box>
+                        <size>0.02 0.002 0.09</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="leg_4_collision_shapes_3">
+                <pose relative_to="leg_4">-4.08409e-19 -0.09 0.015 -1.5708 -3.57453e-31 4.11687e-30</pose>
+                <geometry>
+                    <sphere>
+                        <radius>0.015</radius>
+                    </sphere>
+                </geometry>
+            </collision>
+        </link>
+        <!-- Joint from platesblock_4 to leg_4 -->
+        <joint name="leg4_c" type="revolute">
+            <pose relative_to="platesblock_4">-0.063 -1.22471e-15 -0.0015 2.88406e-15 5.735e-15 -1.5708</pose>
+            <parent>platesblock_4</parent>
+            <child>leg_4</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from doubleu_4 to platesblock_4 -->
+        <joint name="leg4_b" type="revolute">
+            <pose relative_to="doubleu_4">-0.015 0.0406 -0.01615 -1.5708 -9.65894e-15 -1.5708</pose>
+            <parent>doubleu_4</parent>
+            <child>platesblock_4</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+        <!-- Joint from body to doubleu_4 -->
+        <joint name="leg4_a" type="revolute">
+            <pose relative_to="body">3.81639e-17 0.0485 -0.0007 -3.14159 -2.93851e-29 -3.14159</pose>
+            <parent>body</parent>
+            <child>doubleu_4</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>10</effort>
+                    <velocity>10</velocity>
+                </limit>
+                <lower>-3.141592653589793</lower>
+                <upper>3.141592653589793</upper>
+            </axis>
+        </joint>
+    </model>
+</sdf>

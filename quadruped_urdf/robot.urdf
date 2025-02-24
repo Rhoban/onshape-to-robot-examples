@@ -13,7 +13,7 @@
         <visual>
             <origin xyz="-4.02184e-18 1.95168e-18 0.0143384" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://body.stl"/>
+                <mesh filename="package://assets/merged/body.stl"/>
             </geometry>
             <material name="body_material">
                 <color rgba="0.546445 0.490703 0.424602 1.0"/>
@@ -67,7 +67,7 @@
         <visual>
             <origin xyz="4.20868e-19 -0.0203 -0.01615" rpy="-3.14159 1.53921e-15 1.5708"/>
             <geometry>
-                <mesh filename="package://doubleu.stl"/>
+                <mesh filename="package://assets/merged/doubleu.stl"/>
             </geometry>
             <material name="doubleu_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
@@ -97,7 +97,7 @@
         <visual>
             <origin xyz="5.09835e-15 -0.0315 0.0150372" rpy="-1.5708 -8.04912e-14 1.5708"/>
             <geometry>
-                <mesh filename="package://platesblock.stl"/>
+                <mesh filename="package://assets/merged/platesblock.stl"/>
             </geometry>
             <material name="platesblock_material">
                 <color rgba="0.5601 0.491944 0.411121 1.0"/>
@@ -133,13 +133,13 @@
         <inertial>
             <origin xyz="-1.68362e-17 0.0533786 0.015" rpy="0 0 0"/>
             <mass value="0.0154162"/>
-            <inertia ixx="2.13816e-05" ixy="5.18659e-34" ixz="1.18621e-36" iyy="3.58407e-06" iyz="1.10982e-34" izz="1.88204e-05"/>
+            <inertia ixx="2.13816e-05" ixy="5.18659e-34" ixz="1.18621e-36" iyy="3.58407e-06" iyz="-3.34624e-35" izz="1.88204e-05"/>
         </inertial>
         <!-- Part leg -->
         <visual>
             <origin xyz="-1.73472e-17 0.0533786 0.015" rpy="-1.5708 -9.12418e-14 -1.5708"/>
             <geometry>
-                <mesh filename="package://leg.stl"/>
+                <mesh filename="package://assets/merged/leg.stl"/>
             </geometry>
             <material name="leg_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
@@ -199,7 +199,7 @@
         <visual>
             <origin xyz="-2.11219e-17 -0.0203 -0.015" rpy="3.14159 -1.8612e-16 -3.14159"/>
             <geometry>
-                <mesh filename="package://doubleu_2.stl"/>
+                <mesh filename="package://assets/merged/doubleu_2.stl"/>
             </geometry>
             <material name="doubleu_2_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
@@ -229,7 +229,7 @@
         <visual>
             <origin xyz="-0.0315 -3.95517e-16 0.0150372" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://platesblock_2.stl"/>
+                <mesh filename="package://assets/merged/platesblock_2.stl"/>
             </geometry>
             <material name="platesblock_2_material">
                 <color rgba="0.5601 0.491944 0.411121 1.0"/>
@@ -271,7 +271,7 @@
         <visual>
             <origin xyz="-1.73472e-17 0.0533786 0.015" rpy="3.14159 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://leg_2.stl"/>
+                <mesh filename="package://assets/merged/leg_2.stl"/>
             </geometry>
             <material name="leg_2_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
@@ -331,7 +331,7 @@
         <visual>
             <origin xyz="-5.56769e-19 0.0203 -0.01615" rpy="-3.14159 8.88178e-16 1.5708"/>
             <geometry>
-                <mesh filename="package://doubleu_3.stl"/>
+                <mesh filename="package://assets/merged/doubleu_3.stl"/>
             </geometry>
             <material name="doubleu_3_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
@@ -361,7 +361,7 @@
         <visual>
             <origin xyz="-0.0315 -1.26288e-15 0.0150372" rpy="1.5708 7.52731e-14 -3.14159"/>
             <geometry>
-                <mesh filename="package://platesblock_3.stl"/>
+                <mesh filename="package://assets/merged/platesblock_3.stl"/>
             </geometry>
             <material name="platesblock_3_material">
                 <color rgba="0.5601 0.491944 0.411121 1.0"/>
@@ -403,7 +403,7 @@
         <visual>
             <origin xyz="-1.73472e-17 0.0533786 0.015" rpy="1.5708 7.57236e-14 1.5708"/>
             <geometry>
-                <mesh filename="package://leg_3.stl"/>
+                <mesh filename="package://assets/merged/leg_3.stl"/>
             </geometry>
             <material name="leg_3_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
@@ -478,7 +478,7 @@
         <visual>
             <origin xyz="-4.61075e-17 0.0203 -0.01615" rpy="-3.14159 2.63142e-29 -3.14159"/>
             <geometry>
-                <mesh filename="package://doubleu_4.stl"/>
+                <mesh filename="package://assets/merged/doubleu_4.stl"/>
             </geometry>
             <material name="doubleu_4_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
@@ -508,7 +508,7 @@
         <visual>
             <origin xyz="-0.0315 -5.46438e-16 0.0135372" rpy="-1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://platesblock_4.stl"/>
+                <mesh filename="package://assets/merged/platesblock_4.stl"/>
             </geometry>
             <material name="platesblock_4_material">
                 <color rgba="0.5601 0.491944 0.411121 1.0"/>
@@ -550,7 +550,7 @@
         <visual>
             <origin xyz="-1.9082e-17 -0.0533786 0.015" rpy="3.14159 1.5708 0"/>
             <geometry>
-                <mesh filename="package://leg_4.stl"/>
+                <mesh filename="package://assets/merged/leg_4.stl"/>
             </geometry>
             <material name="leg_4_material">
                 <color rgba="0.972549 0.529412 0.00392157 1.0"/>
