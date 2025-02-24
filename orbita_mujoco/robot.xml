@@ -2,7 +2,7 @@
 <!-- Generated using onshape-to-robot -->
 <!-- OnShape https://cad.onshape.com/documents/38fc7348876da4041a20509c/w/bce45e5d7d8fe5e1a5ca0706/e/8fac25f2212dc9936ef3196b -->
 <mujoco model="orbita_mujoco">
-    <compiler angle="radian" meshdir="." autolimits="true"/>
+    <compiler angle="radian" meshdir="assets" autolimits="true"/>
     <option noslip_iterations="1"/>
     <default>
         <default class="orbita_mujoco">
@@ -101,12 +101,12 @@
         </body>
     </worldbody>
     <asset>
-        <mesh file="branch.stl"/>
         <mesh file="ring2.stl"/>
-        <mesh file="ring3.stl"/>
-        <mesh file="platform.stl"/>
-        <mesh file="ring1.stl"/>
         <mesh file="bottom.stl"/>
+        <mesh file="ring3.stl"/>
+        <mesh file="ring1.stl"/>
+        <mesh file="branch.stl"/>
+        <mesh file="platform.stl"/>
         <material name="bottom_material" rgba="0.501961 0.501961 0.501961 1"/>
         <material name="ring2_material" rgba="0.513725 0.737255 0.407843 1"/>
         <material name="branch_material" rgba="0.647059 0.647059 0.647059 1"/>
