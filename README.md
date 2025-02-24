@@ -152,7 +152,7 @@ Description: Orbita is a type of spherical parallel manipulator with 3 DOFs.
 
 * Give it a try:
     * `onshape-to-robot-mujoco field_mujoco`
-* [Onshape design](https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9)
+* [Onshape design](https://cad.onshape.com/documents/38fc7348876da4041a20509c/w/bce45e5d7d8fe5e1a5ca0706/e/8fac25f2212dc9936ef3196b)
 * `config.json`
     * [mujoco](orbita_mujoco/config.json)
 * **Notes:**
