@@ -2,7 +2,7 @@
 <!-- Generated using onshape-to-robot -->
 <!-- OnShape https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9 -->
 <mujoco model="field_mujoco">
-    <compiler angle="radian" meshdir="." autolimits="true"/>
+    <compiler angle="radian" meshdir="assets" autolimits="true"/>
     <option noslip_iterations="1"/>
     <default>
         <default class="field_mujoco">
@@ -127,18 +127,18 @@
         </body>
     </worldbody>
     <asset>
-        <mesh file="field.stl"/>
-        <mesh file="goalsally.stl"/>
-        <mesh file="penaltyally.stl"/>
-        <mesh file="penaltyopponent.stl"/>
-        <mesh file="table.stl"/>
-        <mesh file="table3.stl"/>
-        <mesh file="table4.stl"/>
-        <mesh file="goalsallyback.stl"/>
-        <mesh file="table2.stl"/>
-        <mesh file="lines.stl"/>
         <mesh file="goalsopponentback.stl"/>
         <mesh file="goalsopponent.stl"/>
+        <mesh file="field.stl"/>
+        <mesh file="goalsally.stl"/>
+        <mesh file="goalsallyback.stl"/>
+        <mesh file="penaltyopponent.stl"/>
+        <mesh file="table2.stl"/>
+        <mesh file="penaltyally.stl"/>
+        <mesh file="lines.stl"/>
+        <mesh file="table3.stl"/>
+        <mesh file="table4.stl"/>
+        <mesh file="table.stl"/>
         <material name="field_material" rgba="0.372549 0.654902 0.239216 1"/>
         <material name="goalsally_material" rgba="0.737255 0.937255 0.917647 1"/>
         <material name="goalsallyback_material" rgba="0 0.356863 0.329412 1"/>
