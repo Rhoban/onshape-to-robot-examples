@@ -142,6 +142,24 @@ used at RoboCup kid size
     (`vive_frame`).
     * In the URDF format, STLs are merged and simplified
 
+### Orbita SPM
+
+<a href=".imgs/robot-orbita.png">
+<img src=".imgs/robot-orbita.png" width=256>
+</a>
+
+Description: Orbita is a type of spherical parallel manipulator with 3 DOFs.
+
+* Give it a try:
+    * `onshape-to-robot-mujoco field_mujoco`
+* [Onshape design](https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9)
+* `config.json`
+    * [mujoco](orbita_mujoco/config.json)
+* **Notes:**
+    * The based is fixed using a fixed constraint
+    * Two loop closures are used here in order to ensure the mechanism is fully constrained
+    * Collisions are disabled in this example
+
 ### Field
 
 <a href=".imgs/robot-field.png">
@@ -154,7 +172,9 @@ Description: This is not actually a robot, but an environment that is designed i
     * `onshape-to-robot-bullet field_urdf`
     * `onshape-to-robot-mujoco field_mujoco`
 * [Onshape design](https://cad.onshape.com/documents/7c9b2b33f4117af700005b74/w/eec38b17995152d190f4b18a/e/82b08cac68e6478dadc7fda9)
-* [config.json](field/config.json)
+* `config.json`
+    * [urdf](field_urdf/config.json)
+    * [mujoco](field_mujoco/config.json)
 * **Notes:**
     * Since it is a static environment, `no_dynamics` is passed
     * There are multiple root nodes in this robot. Thus, `add_dummy_base_link` option is added in URDF to ensure there is only one root node.

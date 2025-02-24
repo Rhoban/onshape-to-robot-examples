@@ -1,0 +1,12 @@
+{
+	"url": "https://cad.onshape.com/documents/38fc7348876da4041a20509c/w/bce45e5d7d8fe5e1a5ca0706/e/8fac25f2212dc9936ef3196b",
+	"output_format": "mujoco",
+	"collisions_no_mesh": true,
+
+	"joint_properties": {
+		"ring1_br1": {"actuated": false},
+		"ring1_br2": {"actuated": false},
+		"ring2_br1": {"actuated": false},
+		"ring3_br1": {"actuated": false}
+	}
+}

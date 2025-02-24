@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- OnShape https://cad.onshape.com/documents/38fc7348876da4041a20509c/w/bce45e5d7d8fe5e1a5ca0706/e/8fac25f2212dc9936ef3196b -->
+<mujoco model="orbita_mujoco">
+    <compiler angle="radian" meshdir="." autolimits="true"/>
+    <option noslip_iterations="1"/>
+    <default>
+        <default class="orbita_mujoco">
+            <joint frictionloss="0.1" armature="0.005"/>
+            <position kp="50" dampratio="1"/>
+            <default class="visual">
+                <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+            </default>
+            <default class="collision">
+                <geom group="3"/>
+            </default>
+        </default>
+    </default>
+    <worldbody>
+        <!-- Link bottom -->
+        <body name="bottom" pos="0 0 0" quat="1 0 0 0" childclass="orbita_mujoco">
+            <inertial pos="-1.30697e-17 -1.56523e-17 0.0140985" mass="1.67515" fullinertia="0.00291976 0.00291976 0.00559097 -9.67545e-47 -7.96436e-19 0"/>
+            <!-- Part bottom -->
+            <!-- Mesh bottom -->
+            <geom type="mesh" class="visual" pos="1.44139e-17 -2.23828e-17 0.09" quat="1 0 -5.55112e-17 -1.11022e-16" mesh="bottom" material="bottom_material"/>
+            <!-- Frame base (dummy link + fixed joint) -->
+            <site name="base" pos="3.37024e-19 -1.53081e-19 0.102" quat="1 0 0 0"/>
+            <!-- Link ring2 -->
+            <body name="ring2" pos="-1.60904e-17 -2.23828e-17 0.03" quat="6.66741e-24 -1 5.36247e-15 7.95089e-23">
+                <!-- Joint from bottom to ring2 -->
+                <joint name="ring1" type="hinge"/>
+                <inertial pos="-0.00223555 0.00387209 -0.0144385" mass="1.24789" fullinertia="0.00222303 0.00200912 0.00374646 0.000185255 -0.000115174 0.000199488"/>
+                <!-- Part ring2 -->
+                <!-- Mesh ring2 -->
+                <geom type="mesh" class="visual" pos="4.78946e-17 0 -0.06" quat="1.46937e-39 -1 1.97215e-31 1.49078e-16" mesh="ring2" material="ring2_material"/>
+                <!-- Link branch -->
+                <body name="branch" pos="-0.0350018 0.0606249 -0.099169" quat="0.892399 -0.369644 -0.0990458 0.239118">
+                    <!-- Joint from ring2 to branch -->
+                    <joint name="ring2_br1" type="hinge"/>
+                    <inertial pos="0.0563091 1.59541e-17 -0.0426909" mass="0.0820329" fullinertia="8.38675e-05 0.000165393 8.38675e-05 -1.51024e-10 7.28802e-05 1.51024e-10"/>
+                    <!-- Part branch -->
+                    <!-- Mesh branch -->
+                    <geom type="mesh" class="visual" pos="-0.0771967 2.77556e-17 -0.0218033" quat="7.59875e-18 0.92388 -5.55112e-17 0.382683" mesh="branch" material="branch_material"/>
+                    <!-- Frame closing_ring2_br2_2 (dummy link + fixed joint) -->
+                    <site name="closing_ring2_br2_2" pos="0.081 2.77556e-17 -0.099" quat="0.5 -0.5 0.5 -0.5"/>
+                </body>
+            </body>
+            <!-- Link ring3 -->
+            <body name="ring3" pos="-3.32688e-17 -2.02591e-17 0.054" quat="1.65172e-29 -1 -6.61173e-15 1.02305e-29">
+                <!-- Joint from bottom to ring3 -->
+                <joint name="ring2" type="hinge"/>
+                <inertial pos="-0.0017605 -0.00304927 -0.0133819" mass="1.23288" fullinertia="0.00204466 0.001877 0.00365339 -0.000145195 -6.48302e-05 -0.000112289"/>
+                <!-- Part ring3 -->
+                <!-- Mesh ring3 -->
+                <geom type="mesh" class="visual" pos="4.78946e-17 0 -0.036" quat="2.8026e-45 -1 0 1.49078e-16" mesh="ring3" material="ring3_material"/>
+                <!-- Link branch_2 -->
+                <body name="branch_2" pos="-0.0350018 -0.0606249 -0.075169" quat="0.239118 -0.0990458 -0.369644 0.892399">
+                    <!-- Joint from ring3 to branch_2 -->
+                    <joint name="ring3_br1" type="hinge"/>
+                    <inertial pos="0.0563091 -2.37854e-17 -0.0426909" mass="0.0820329" fullinertia="8.38675e-05 0.000165393 8.38675e-05 -1.51024e-10 7.28802e-05 1.51024e-10"/>
+                    <!-- Part branch_2 -->
+                    <!-- Mesh branch_2 -->
+                    <geom type="mesh" class="visual" pos="-0.0771967 -2.77556e-17 -0.0218033" quat="2.03422e-17 0.92388 0 0.382683" mesh="branch" material="branch_material"/>
+                    <!-- Frame closing_ring3_br2_2 (dummy link + fixed joint) -->
+                    <site name="closing_ring3_br2_2" pos="0.081 -2.77556e-17 -0.099" quat="0.5 0.5 0.5 0.5"/>
+                </body>
+            </body>
+            <!-- Link ring1 -->
+            <body name="ring1" pos="-3.48632e-17 -2.23828e-17 0.078" quat="3.86423e-29 -1 -1.1016e-14 -1.49637e-29">
+                <!-- Joint from bottom to ring1 -->
+                <joint name="ring3" type="hinge"/>
+                <inertial pos="0.00260742 3.82527e-21 -0.0124691" mass="1.2023" fullinertia="0.00169208 0.00193469 0.00347396 -3.09887e-47 5.59484e-05 -3.99483e-47"/>
+                <!-- Part ring1 -->
+                <!-- Mesh ring1 -->
+                <geom type="mesh" class="visual" pos="5.56358e-17 3.08149e-33 -0.012" quat="2.8026e-45 -1 0 -1.73472e-16" mesh="ring1" material="ring1_material"/>
+                <!-- Link branch_3 -->
+                <body name="branch_3" pos="0.0700036 -2.04972e-17 -0.051169" quat="0.653281 -0.270598 0.270598 -0.653281">
+                    <!-- Joint from ring1 to branch_3 -->
+                    <joint name="ring1_br1" type="hinge"/>
+                    <inertial pos="0.0563091 1.28664e-18 -0.0426909" mass="0.0820329" fullinertia="8.38675e-05 0.000165393 8.38675e-05 -1.51024e-10 7.28802e-05 1.51024e-10"/>
+                    <!-- Part branch_3 -->
+                    <!-- Mesh branch_3 -->
+                    <geom type="mesh" class="visual" pos="-0.0771967 0 -0.0218033" quat="5.57998e-18 0.92388 -0 0.382683" mesh="branch" material="branch_material"/>
+                    <!-- Link platform -->
+                    <body name="platform" pos="0.081 -1.08247e-15 -0.099" quat="0.653281 -0.270598 0.653281 -0.270598">
+                        <!-- Joint from branch_3 to platform -->
+                        <joint name="ring1_br2" type="hinge"/>
+                        <inertial pos="1.0108e-08 8.83346e-10 -0.0810001" mass="1.15601" fullinertia="0.0016525 0.00319848 0.00165251 4.08397e-11 -7.69677e-10 2.19085e-11"/>
+                        <!-- Part platform -->
+                        <!-- Mesh platform -->
+                        <geom type="mesh" class="visual" pos="0 -0.109173 -0.081" quat="0.5 -0.5 -0.5 -0.5" mesh="platform" material="platform_material"/>
+                        <!-- Frame closing_ring3_br2_1 (dummy link + fixed joint) -->
+                        <site name="closing_ring3_br2_1" pos="0.0701481 3.05311e-16 -0.1215" quat="1.85471e-15 -0.866025 -6.66134e-16 -0.5"/>
+                        <!-- Frame closing_ring2_br2_1 (dummy link + fixed joint) -->
+                        <site name="closing_ring2_br2_1" pos="-0.0701481 3.05311e-16 -0.1215" quat="0.5 -6.4249e-16 -0.866025 -1.85471e-15"/>
+                        <!-- Frame effector (dummy link + fixed joint) -->
+                        <site name="effector" pos="-3.37024e-19 0.012 -0.081" quat="1.11022e-16 5.55112e-17 0.707107 0.707107"/>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    <asset>
+        <mesh file="branch.stl"/>
+        <mesh file="ring2.stl"/>
+        <mesh file="ring3.stl"/>
+        <mesh file="platform.stl"/>
+        <mesh file="ring1.stl"/>
+        <mesh file="bottom.stl"/>
+        <material name="bottom_material" rgba="0.501961 0.501961 0.501961 1"/>
+        <material name="ring2_material" rgba="0.513725 0.737255 0.407843 1"/>
+        <material name="branch_material" rgba="0.647059 0.647059 0.647059 1"/>
+        <material name="ring3_material" rgba="0.913725 0.647059 0.329412 1"/>
+        <material name="ring1_material" rgba="0.513725 0.415686 0.733333 1"/>
+        <material name="platform_material" rgba="0.541176 0.682353 0.839216 1"/>
+    </asset>
+    <actuator>
+        <position class="orbita_mujoco" name="ring1" joint="ring1"/>
+        <position class="orbita_mujoco" name="ring2" joint="ring2"/>
+        <position class="orbita_mujoco" name="ring3" joint="ring3"/>
+    </actuator>
+    <equality>
+        <connect site1="closing_ring3_br2_1" site2="closing_ring3_br2_2"/>
+        <connect site1="closing_ring2_br2_1" site2="closing_ring2_br2_2"/>
+    </equality>
+</mujoco>
