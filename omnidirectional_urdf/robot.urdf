@@ -13,82 +13,52 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://plate.stl"/>
+                <mesh filename="package://assets/plate.stl"/>
             </geometry>
             <material name="plate_material">
                 <color rgba="0.682353 0.333333 0.737255 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="0 0 0" rpy="0 -0 0"/>
-            <geometry>
-                <mesh filename="package://plate.stl"/>
-            </geometry>
-        </collision>
         <!-- Part plate_2 -->
         <visual>
             <origin xyz="0 0 0.023" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://plate.stl"/>
+                <mesh filename="package://assets/plate.stl"/>
             </geometry>
             <material name="plate_2_material">
                 <color rgba="0.682353 0.333333 0.737255 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="0 0 0.023" rpy="0 -0 0"/>
-            <geometry>
-                <mesh filename="package://plate.stl"/>
-            </geometry>
-        </collision>
         <!-- Part motor -->
         <visual>
             <origin xyz="0 6.93889e-18 0" rpy="0 -0 -2.0944"/>
             <geometry>
-                <mesh filename="package://motor.stl"/>
+                <mesh filename="package://assets/motor.stl"/>
             </geometry>
             <material name="motor_material">
                 <color rgba="0.647059 0.647059 0.647059 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="0 6.93889e-18 0" rpy="0 -0 -2.0944"/>
-            <geometry>
-                <mesh filename="package://motor.stl"/>
-            </geometry>
-        </collision>
         <!-- Part motor_2 -->
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://motor.stl"/>
+                <mesh filename="package://assets/motor.stl"/>
             </geometry>
             <material name="motor_2_material">
                 <color rgba="0.647059 0.647059 0.647059 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="0 0 0" rpy="0 -0 0"/>
-            <geometry>
-                <mesh filename="package://motor.stl"/>
-            </geometry>
-        </collision>
         <!-- Part motor_3 -->
         <visual>
             <origin xyz="-1.73472e-18 -6.93889e-18 2.60209e-18" rpy="0 -0 2.0944"/>
             <geometry>
-                <mesh filename="package://motor.stl"/>
+                <mesh filename="package://assets/motor.stl"/>
             </geometry>
             <material name="motor_3_material">
                 <color rgba="0.647059 0.647059 0.647059 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="-1.73472e-18 -6.93889e-18 2.60209e-18" rpy="0 -0 2.0944"/>
-            <geometry>
-                <mesh filename="package://motor.stl"/>
-            </geometry>
-        </collision>
     </link>
     <!-- Frame body (dummy link + fixed joint) -->
     <link name="body">
@@ -116,18 +86,12 @@
         <visual>
             <origin xyz="-1.08731e-17 0.013 0.075" rpy="1.5708 1.0472 0"/>
             <geometry>
-                <mesh filename="package://wheel.stl"/>
+                <mesh filename="package://assets/wheel.stl"/>
             </geometry>
             <material name="wheel_material">
                 <color rgba="0.941176 0.87451 0.678431 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="-1.08731e-17 0.013 0.075" rpy="1.5708 1.0472 0"/>
-            <geometry>
-                <mesh filename="package://wheel.stl"/>
-            </geometry>
-        </collision>
     </link>
     <!-- Link passivewheel -->
     <link name="passivewheel">
@@ -140,7 +104,7 @@
         <visual>
             <origin xyz="0 1.38778e-17 0.004" rpy="3.14159 2.24259e-18 -1.48478e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -172,7 +136,7 @@
         <visual>
             <origin xyz="-1.38778e-17 0 -2.1684e-18" rpy="-3.14159 6.45501e-17 7.99795e-32"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_2_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -204,7 +168,7 @@
         <visual>
             <origin xyz="1.38778e-17 0 -6.93889e-18" rpy="1.06058e-17 -2.2972e-17 5.57501e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_3_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -236,7 +200,7 @@
         <visual>
             <origin xyz="-1.38778e-17 3.46945e-18 -1.73472e-18" rpy="3.14159 -9.26482e-18 5.8578e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_4_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -268,7 +232,7 @@
         <visual>
             <origin xyz="0 1.73472e-18 0" rpy="3.14159 -1.34564e-17 8.80755e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_5_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -300,7 +264,7 @@
         <visual>
             <origin xyz="0 -8.67362e-19 1.73472e-18" rpy="-3.14159 -1.31438e-17 3.67268e-19"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_6_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -332,7 +296,7 @@
         <visual>
             <origin xyz="0 -1.73472e-18 -0.004" rpy="-1.97215e-31 -9.86076e-32 2.15704e-32"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_7_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -364,7 +328,7 @@
         <visual>
             <origin xyz="-1.38778e-17 1.73472e-18 0.004" rpy="-3.14159 5.42635e-18 9.08807e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_8_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -396,7 +360,7 @@
         <visual>
             <origin xyz="0 1.73472e-18 -0.004" rpy="-9.81892e-18 5.3587e-17 3.65203e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_9_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -428,7 +392,7 @@
         <visual>
             <origin xyz="2.77556e-17 2.05998e-18 1.73472e-18" rpy="-3.14159 4.15246e-17 -8.09012e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_10_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -460,7 +424,7 @@
         <visual>
             <origin xyz="0 3.46945e-18 7.80626e-18" rpy="3.14159 -4.98371e-17 2.49231e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_11_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -492,7 +456,7 @@
         <visual>
             <origin xyz="2.77556e-17 0 -4.77049e-18" rpy="3.14159 1.48742e-17 -3.08149e-33"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_12_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -524,7 +488,7 @@
         <visual>
             <origin xyz="0 0 -1.30104e-18" rpy="3.14159 7.60053e-17 3.40008e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_13_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -556,7 +520,7 @@
         <visual>
             <origin xyz="0 -6.93889e-18 -0.004" rpy="3.53392e-17 1.28571e-16 3.49542e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_14_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -588,7 +552,7 @@
         <visual>
             <origin xyz="0 1.38778e-17 -0.004" rpy="2.59376e-17 9.30841e-18 -2.04356e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_15_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -620,7 +584,7 @@
         <visual>
             <origin xyz="6.93889e-18 -1.38778e-17 -0.004" rpy="2.08155e-17 2.33252e-17 -9.41875e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_16_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -652,7 +616,7 @@
         <visual>
             <origin xyz="0 1.38778e-17 0.004" rpy="-3.14159 5.69278e-46 1.54074e-33"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_17_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -684,7 +648,7 @@
         <visual>
             <origin xyz="6.93889e-18 -1.38778e-17 1.73472e-18" rpy="3.14159 1.51043e-17 -2.07291e-19"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_18_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -716,7 +680,7 @@
         <visual>
             <origin xyz="-6.93889e-18 0 5.20417e-18" rpy="-3.14159 1.34964e-18 1.25099e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_19_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -748,7 +712,7 @@
         <visual>
             <origin xyz="0 1.38778e-17 6.07153e-18" rpy="-3.14159 -2.76633e-17 1.32691e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_20_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -788,18 +752,12 @@
         <visual>
             <origin xyz="-2.13199e-17 -0.013 -0.08" rpy="-1.5708 -1.0472 0"/>
             <geometry>
-                <mesh filename="package://wheel.stl"/>
+                <mesh filename="package://assets/wheel.stl"/>
             </geometry>
             <material name="wheel_2_material">
                 <color rgba="0.941176 0.87451 0.678431 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="-2.13199e-17 -0.013 -0.08" rpy="-1.5708 -1.0472 0"/>
-            <geometry>
-                <mesh filename="package://wheel.stl"/>
-            </geometry>
-        </collision>
     </link>
     <!-- Link passivewheel_21 -->
     <link name="passivewheel_21">
@@ -812,7 +770,7 @@
         <visual>
             <origin xyz="1.38778e-17 1.38778e-17 0.004" rpy="3.14159 1.58884e-17 -2.11441e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_21_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -844,7 +802,7 @@
         <visual>
             <origin xyz="0 0 -1.30104e-18" rpy="-3.14159 8.75281e-18 6.02378e-33"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_22_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -876,7 +834,7 @@
         <visual>
             <origin xyz="-2.77556e-17 1.38778e-17 8.67362e-19" rpy="2.48674e-17 -6.04595e-17 -5.28499e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_23_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -908,7 +866,7 @@
         <visual>
             <origin xyz="0 3.46945e-18 3.46945e-18" rpy="3.14159 1.18157e-17 -2.34424e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_24_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -940,7 +898,7 @@
         <visual>
             <origin xyz="0 -8.67362e-19 -1.73472e-18" rpy="3.14159 1.26864e-17 -2.45234e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_25_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -972,7 +930,7 @@
         <visual>
             <origin xyz="-1.38778e-17 -8.67362e-19 -1.73472e-18" rpy="-3.14159 -1.0626e-17 3.26263e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_26_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1004,7 +962,7 @@
         <visual>
             <origin xyz="0 -3.46945e-18 -0.004" rpy="-1.97215e-31 -9.86076e-32 2.15704e-32"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_27_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1036,7 +994,7 @@
         <visual>
             <origin xyz="1.38778e-17 0 0.004" rpy="3.14159 -4.88249e-18 4.78549e-19"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_28_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1068,7 +1026,7 @@
         <visual>
             <origin xyz="1.38778e-17 -1.73472e-18 -0.004" rpy="2.34669e-17 2.68506e-17 3.3256e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_29_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1100,7 +1058,7 @@
         <visual>
             <origin xyz="0 3.36103e-18 0" rpy="-3.14159 4.82682e-17 -4.62289e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_30_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1132,7 +1090,7 @@
         <visual>
             <origin xyz="1.38778e-17 3.46945e-18 4.33681e-18" rpy="3.14159 3.76321e-17 -9.30769e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_31_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1164,7 +1122,7 @@
         <visual>
             <origin xyz="1.38778e-17 0 -7.37257e-18" rpy="3.14159 -2.17773e-17 0"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_32_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1196,7 +1154,7 @@
         <visual>
             <origin xyz="-1.38778e-17 0 -4.77049e-18" rpy="3.14159 -4.36875e-17 -1.12479e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_33_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1228,7 +1186,7 @@
         <visual>
             <origin xyz="0 -6.93889e-18 -0.004" rpy="-6.29321e-17 -4.77752e-17 -1.73308e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_34_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1260,7 +1218,7 @@
         <visual>
             <origin xyz="0 1.38778e-17 -0.004" rpy="9.78364e-17 4.00891e-18 -2.57516e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_35_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1292,7 +1250,7 @@
         <visual>
             <origin xyz="0 0 -0.004" rpy="-3.11229e-17 5.76895e-17 -1.37229e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_36_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1324,7 +1282,7 @@
         <visual>
             <origin xyz="0 1.38778e-17 0.004" rpy="-3.14159 5.69278e-46 1.54074e-33"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_37_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1356,7 +1314,7 @@
         <visual>
             <origin xyz="0 0 3.46945e-18" rpy="-3.14159 2.55171e-17 3.24688e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_38_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1388,7 +1346,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="-3.14159 6.68594e-17 2.47558e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_39_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1420,7 +1378,7 @@
         <visual>
             <origin xyz="0 0 -4.33681e-18" rpy="3.14159 -2.70452e-17 2.41104e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_40_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1460,18 +1418,12 @@
         <visual>
             <origin xyz="-7.12482e-18 0.013 0.075" rpy="1.5708 1.0472 0"/>
             <geometry>
-                <mesh filename="package://wheel.stl"/>
+                <mesh filename="package://assets/wheel.stl"/>
             </geometry>
             <material name="wheel_3_material">
                 <color rgba="0.941176 0.87451 0.678431 1.0"/>
             </material>
         </visual>
-        <collision>
-            <origin xyz="-7.12482e-18 0.013 0.075" rpy="1.5708 1.0472 0"/>
-            <geometry>
-                <mesh filename="package://wheel.stl"/>
-            </geometry>
-        </collision>
     </link>
     <!-- Link passivewheel_41 -->
     <link name="passivewheel_41">
@@ -1484,7 +1436,7 @@
         <visual>
             <origin xyz="0 0 0.004" rpy="3.14159 -3.61287e-18 1.19963e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_41_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1516,7 +1468,7 @@
         <visual>
             <origin xyz="0 3.46945e-18 0" rpy="-3.14159 6.29859e-32 -3.07307e-32"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_42_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1548,7 +1500,7 @@
         <visual>
             <origin xyz="1.38778e-17 0 8.67362e-19" rpy="6.15473e-17 2.91504e-18 2.5086e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_43_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1580,7 +1532,7 @@
         <visual>
             <origin xyz="1.38778e-17 -3.36103e-18 4.33681e-18" rpy="-3.14159 1.87309e-17 4.71991e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_44_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1612,7 +1564,7 @@
         <visual>
             <origin xyz="-1.38778e-17 -1.73472e-18 0" rpy="-3.14159 1.2152e-17 -2.30227e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_45_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1644,7 +1596,7 @@
         <visual>
             <origin xyz="1.38778e-17 -1.73472e-18 0" rpy="3.14159 1.35448e-17 1.68154e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_46_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1676,7 +1628,7 @@
         <visual>
             <origin xyz="0 -6.93889e-18 -0.004" rpy="1.7081e-31 -1.19638e-31 -2.11228e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_47_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1708,7 +1660,7 @@
         <visual>
             <origin xyz="-1.38778e-17 -5.63785e-18 0.004" rpy="3.14159 1.91493e-17 5.63415e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_48_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1740,7 +1692,7 @@
         <visual>
             <origin xyz="-1.38778e-17 8.67362e-19 -0.004" rpy="1.96125e-17 -3.90327e-17 8.81124e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_49_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1772,7 +1724,7 @@
         <visual>
             <origin xyz="1.38778e-17 3.46945e-18 -8.67362e-19" rpy="-3.14159 2.06225e-17 -1.86451e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_50_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1804,7 +1756,7 @@
         <visual>
             <origin xyz="-1.38778e-17 -6.93889e-18 -8.67362e-19" rpy="3.14159 1.21496e-17 3.76168e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_51_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1836,7 +1788,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="3.14159 -1.30441e-32 0"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_52_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1868,7 +1820,7 @@
         <visual>
             <origin xyz="-1.38778e-17 1.38778e-17 -3.46945e-18" rpy="-3.14159 -2.11488e-18 -3.54817e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_53_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1900,7 +1852,7 @@
         <visual>
             <origin xyz="1.38778e-17 0 -0.004" rpy="9.70534e-17 3.71693e-17 -6.85477e-18"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_54_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1932,7 +1884,7 @@
         <visual>
             <origin xyz="1.38778e-17 -1.38778e-17 -0.004" rpy="-2.60893e-17 2.93652e-17 2.31619e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_55_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1964,7 +1916,7 @@
         <visual>
             <origin xyz="0 1.38778e-17 -0.004" rpy="-2.92645e-17 5.10645e-18 3.79591e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_56_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -1996,7 +1948,7 @@
         <visual>
             <origin xyz="-8.67362e-19 0 0.004" rpy="3.14159 2.40657e-32 2.84666e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_57_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -2028,7 +1980,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="3.14159 -3.5547e-17 -7.78379e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_58_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -2060,7 +2012,7 @@
         <visual>
             <origin xyz="-1.38778e-17 6.93889e-18 -5.20417e-18" rpy="3.14159 -2.40461e-17 -1.08034e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_59_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>
@@ -2092,7 +2044,7 @@
         <visual>
             <origin xyz="-2.77556e-17 1.38778e-17 -1.73472e-18" rpy="3.14159 2.53155e-17 -8.38958e-17"/>
             <geometry>
-                <mesh filename="package://passivewheel.stl"/>
+                <mesh filename="package://assets/passivewheel.stl"/>
             </geometry>
             <material name="passivewheel_60_material">
                 <color rgba="0.301961 0.290196 0.262745 1.0"/>

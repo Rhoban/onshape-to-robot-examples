@@ -2,7 +2,7 @@
 <!-- Generated using onshape-to-robot -->
 <!-- OnShape https://cad.onshape.com/documents/11c3398e78edfadf952cbdbc/w/4428506b5bb6358b44ff6764/e/975412fdc0fd0ba9ca2cf7b6 -->
 <mujoco model="omnidirectional_mujoco">
-    <compiler angle="radian" meshdir="." autolimits="true"/>
+    <compiler angle="radian" meshdir="assets" autolimits="true"/>
     <option noslip_iterations="1"/>
     <default>
         <default class="omnidirectional_mujoco">
@@ -19,33 +19,23 @@
     <worldbody>
         <!-- Link body_2 -->
         <body name="body_2" pos="0 0 0" quat="1 0 0 0" childclass="omnidirectional_mujoco">
-            <freejoint name="root"/>
+            <freejoint name="body_2_freejoint"/>
             <inertial pos="0.000413137 0.000238525 0.0129604" mass="0.55184" fullinertia="0.000615732 0.000620978 0.00118941 -4.54339e-06 -9.03686e-09 -5.21743e-09"/>
             <!-- Part plate -->
             <!-- Mesh plate -->
             <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="plate" material="plate_material"/>
-            <!-- Mesh plate -->
-            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="plate" material="plate_material"/>
             <!-- Part plate_2 -->
             <!-- Mesh plate_2 -->
             <geom type="mesh" class="visual" pos="0 0 0.023" quat="1 0 0 0" mesh="plate" material="plate_material"/>
-            <!-- Mesh plate_2 -->
-            <geom type="mesh" class="collision" pos="0 0 0.023" quat="1 0 0 0" mesh="plate" material="plate_material"/>
             <!-- Part motor -->
             <!-- Mesh motor -->
             <geom type="mesh" class="visual" pos="0 6.93889e-18 0" quat="0.5 0 0 -0.866025" mesh="motor" material="motor_material"/>
-            <!-- Mesh motor -->
-            <geom type="mesh" class="collision" pos="0 6.93889e-18 0" quat="0.5 0 0 -0.866025" mesh="motor" material="motor_material"/>
             <!-- Part motor_2 -->
             <!-- Mesh motor_2 -->
             <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="motor" material="motor_material"/>
-            <!-- Mesh motor_2 -->
-            <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="motor" material="motor_material"/>
             <!-- Part motor_3 -->
             <!-- Mesh motor_3 -->
             <geom type="mesh" class="visual" pos="-1.73472e-18 -6.93889e-18 2.60209e-18" quat="0.5 0 0 0.866025" mesh="motor" material="motor_material"/>
-            <!-- Mesh motor_3 -->
-            <geom type="mesh" class="collision" pos="-1.73472e-18 -6.93889e-18 2.60209e-18" quat="0.5 0 0 0.866025" mesh="motor" material="motor_material"/>
             <!-- Frame body (dummy link + fixed joint) -->
             <site name="body" pos="0.00418699 0.00241736 0.0145" quat="0.965926 0 0 0.258819"/>
             <!-- Link wheel -->
@@ -56,8 +46,6 @@
                 <!-- Part wheel -->
                 <!-- Mesh wheel -->
                 <geom type="mesh" class="visual" pos="-1.08731e-17 0.013 0.075" quat="0.612372 0.612372 0.353553 -0.353553" mesh="wheel" material="wheel_material"/>
-                <!-- Mesh wheel -->
-                <geom type="mesh" class="collision" pos="-1.08731e-17 0.013 0.075" quat="0.612372 0.612372 0.353553 -0.353553" mesh="wheel" material="wheel_material"/>
                 <!-- Link passivewheel -->
                 <body name="passivewheel" pos="-0.0134903 -0.0350466 -0.0025" quat="0.705434 0.171758 0.68593 -0.0486126">
                     <!-- Joint from wheel to passivewheel -->
@@ -267,8 +255,6 @@
                 <!-- Part wheel_2 -->
                 <!-- Mesh wheel_2 -->
                 <geom type="mesh" class="visual" pos="-2.13199e-17 -0.013 -0.08" quat="0.612372 -0.612372 -0.353553 -0.353553" mesh="wheel" material="wheel_material"/>
-                <!-- Mesh wheel_2 -->
-                <geom type="mesh" class="collision" pos="-2.13199e-17 -0.013 -0.08" quat="0.612372 -0.612372 -0.353553 -0.353553" mesh="wheel" material="wheel_material"/>
                 <!-- Link passivewheel_21 -->
                 <body name="passivewheel_21" pos="-0.0134903 0.0350466 -0.0025" quat="0.0486126 -0.68593 -0.171758 -0.705434">
                     <!-- Joint from wheel_2 to passivewheel_21 -->
@@ -478,8 +464,6 @@
                 <!-- Part wheel_3 -->
                 <!-- Mesh wheel_3 -->
                 <geom type="mesh" class="visual" pos="-7.12482e-18 0.013 0.075" quat="0.612372 0.612372 0.353553 -0.353553" mesh="wheel" material="wheel_material"/>
-                <!-- Mesh wheel_3 -->
-                <geom type="mesh" class="collision" pos="-7.12482e-18 0.013 0.075" quat="0.612372 0.612372 0.353553 -0.353553" mesh="wheel" material="wheel_material"/>
                 <!-- Link passivewheel_41 -->
                 <body name="passivewheel_41" pos="-0.0134903 -0.0350466 -0.0025" quat="0.0486126 0.68593 -0.171758 0.705434">
                     <!-- Joint from wheel_3 to passivewheel_41 -->
@@ -684,10 +668,10 @@
         </body>
     </worldbody>
     <asset>
-        <mesh file="motor.stl"/>
         <mesh file="passivewheel.stl"/>
-        <mesh file="wheel.stl"/>
         <mesh file="plate.stl"/>
+        <mesh file="motor.stl"/>
+        <mesh file="wheel.stl"/>
         <material name="plate_material" rgba="0.682353 0.333333 0.737255 1"/>
         <material name="motor_material" rgba="0.647059 0.647059 0.647059 1"/>
         <material name="wheel_material" rgba="0.941176 0.87451 0.678431 1"/>

@@ -1,13 +1,13 @@
 {
     "configuration": "default",
     "documentId": "11c3398e78edfadf952cbdbc",
-    "documentMicroversion": "0be373e9f66fafec923a30de",
-    "elementId": "76de3773cde255be9bb38378",
+    "documentMicroversion": "25ed93cdb094d585960c90d8",
+    "elementId": "3c83bde5559d003221c4e10e",
     "fullConfiguration": "default",
-    "id": "MSad3BJygAltBcE0j",
+    "id": "MLvAURx12own9gSLA",
     "isStandardContent": false,
-    "name": "PassiveWheel <22>",
-    "partId": "JHD",
+    "name": "Wheel <2>",
+    "partId": "JdD",
     "suppressed": false,
     "type": "Part"
 }
