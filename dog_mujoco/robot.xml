@@ -1006,20 +1006,20 @@
         </body>
     </worldbody>
     <asset>
-        <mesh file="spacing_plate.stl"/>
-        <mesh file="mx64.stl"/>
-        <mesh file="leg_top_plate.stl"/>
         <mesh file="rx64_cap.stl"/>
+        <mesh file="mf128zz.stl"/>
+        <mesh file="mx64.stl"/>
         <mesh file="leg_middle_plate.stl"/>
+        <mesh file="leg_spacer.stl"/>
+        <mesh file="leg_top_plate.stl"/>
+        <mesh file="spacing_plate.stl"/>
         <mesh file="leg_tip_plate.stl"/>
-        <mesh file="body_plate.stl"/>
+        <mesh file="mounting_cube_25_30.stl"/>
+        <mesh file="leg_spacer_mid.stl"/>
         <mesh file="hn05_i101.stl"/>
+        <mesh file="body_plate.stl"/>
         <mesh file="body_back.stl"/>
         <mesh file="spacing_plate_extension.stl"/>
-        <mesh file="leg_spacer.stl"/>
-        <mesh file="mounting_cube_25_30.stl"/>
-        <mesh file="mf128zz.stl"/>
-        <mesh file="leg_spacer_mid.stl"/>
         <material name="body_plate_material" rgba="0.447059 0.243137 0 1"/>
         <material name="body_back_material" rgba="0.447059 0.243137 0 1"/>
         <material name="mounting_cube_25_30_material" rgba="0.8 0.8 0.8 1"/>

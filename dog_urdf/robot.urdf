@@ -13,7 +13,7 @@
         <visual>
             <origin xyz="0.0214807 0.174889 0.0251766" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/body.stl"/>
+                <mesh filename="package://assets/merged/body_visual.stl"/>
             </geometry>
             <material name="body_material">
                 <color rgba="0.378896 0.30823 0.221127 1.0"/>
@@ -22,7 +22,7 @@
         <collision>
             <origin xyz="0.0214807 0.174889 0.0251766" rpy="0 -0 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/body.stl"/>
+                <mesh filename="package://assets/merged/body_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -37,7 +37,7 @@
         <visual>
             <origin xyz="0.00232729 -0.0615551 0.0232841" rpy="-1.5708 -1.23434e-13 -8.25309e-13"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top.stl"/>
+                <mesh filename="package://assets/merged/leg_top_visual.stl"/>
             </geometry>
             <material name="leg_top_material">
                 <color rgba="0.363504 0.328376 0.28287 1.0"/>
@@ -46,7 +46,7 @@
         <collision>
             <origin xyz="0.00232729 -0.0615551 0.0232841" rpy="-1.5708 -1.23434e-13 -8.25309e-13"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top.stl"/>
+                <mesh filename="package://assets/merged/leg_top_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -61,7 +61,7 @@
         <visual>
             <origin xyz="0.039 -1.04083e-17 0.023505" rpy="1.66592e-15 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_visual.stl"/>
             </geometry>
             <material name="leg_middle_material">
                 <color rgba="0.546901 0.444779 0.323018 1.0"/>
@@ -70,7 +70,7 @@
         <collision>
             <origin xyz="0.039 -1.04083e-17 0.023505" rpy="1.66592e-15 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -85,7 +85,7 @@
         <visual>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_visual.stl"/>
             </geometry>
             <material name="leg_tip_material">
                 <color rgba="0.39292 0.363337 0.324854 1.0"/>
@@ -94,7 +94,7 @@
         <collision>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -133,7 +133,7 @@
         <visual>
             <origin xyz="0.00232729 0.0615551 0.0234359" rpy="-1.5708 -1.22505e-13 3.14159"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top_2.stl"/>
+                <mesh filename="package://assets/merged/leg_top_2_visual.stl"/>
             </geometry>
             <material name="leg_top_2_material">
                 <color rgba="0.363504 0.328376 0.28287 1.0"/>
@@ -142,7 +142,7 @@
         <collision>
             <origin xyz="0.00232729 0.0615551 0.0234359" rpy="-1.5708 -1.22505e-13 3.14159"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top_2.stl"/>
+                <mesh filename="package://assets/merged/leg_top_2_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -157,7 +157,7 @@
         <visual>
             <origin xyz="0.039 1.04083e-16 0.023505" rpy="-3.14159 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle_2.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_2_visual.stl"/>
             </geometry>
             <material name="leg_middle_2_material">
                 <color rgba="0.546901 0.444779 0.323018 1.0"/>
@@ -166,7 +166,7 @@
         <collision>
             <origin xyz="0.039 1.04083e-16 0.023505" rpy="-3.14159 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle_2.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_2_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -181,7 +181,7 @@
         <visual>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip_2.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_2_visual.stl"/>
             </geometry>
             <material name="leg_tip_2_material">
                 <color rgba="0.39292 0.363337 0.324854 1.0"/>
@@ -190,7 +190,7 @@
         <collision>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip_2.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_2_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -229,7 +229,7 @@
         <visual>
             <origin xyz="0.00232729 0.0615551 0.0234359" rpy="1.5708 1.25488e-13 -7.93087e-13"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top_3.stl"/>
+                <mesh filename="package://assets/merged/leg_top_3_visual.stl"/>
             </geometry>
             <material name="leg_top_3_material">
                 <color rgba="0.363504 0.328376 0.28287 1.0"/>
@@ -238,7 +238,7 @@
         <collision>
             <origin xyz="0.00232729 0.0615551 0.0234359" rpy="1.5708 1.25488e-13 -7.93087e-13"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top_3.stl"/>
+                <mesh filename="package://assets/merged/leg_top_3_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -253,7 +253,7 @@
         <visual>
             <origin xyz="0.039 5.55112e-17 0.023505" rpy="9.99201e-16 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle_3.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_3_visual.stl"/>
             </geometry>
             <material name="leg_middle_3_material">
                 <color rgba="0.546901 0.444779 0.323018 1.0"/>
@@ -262,7 +262,7 @@
         <collision>
             <origin xyz="0.039 5.55112e-17 0.023505" rpy="9.99201e-16 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle_3.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_3_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -277,7 +277,7 @@
         <visual>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip_3.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_3_visual.stl"/>
             </geometry>
             <material name="leg_tip_3_material">
                 <color rgba="0.39292 0.363337 0.324854 1.0"/>
@@ -286,7 +286,7 @@
         <collision>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip_3.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_3_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -325,7 +325,7 @@
         <visual>
             <origin xyz="0.00232729 -0.0615551 0.0232841" rpy="1.5708 1.27255e-13 3.14159"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top_4.stl"/>
+                <mesh filename="package://assets/merged/leg_top_4_visual.stl"/>
             </geometry>
             <material name="leg_top_4_material">
                 <color rgba="0.363504 0.328376 0.28287 1.0"/>
@@ -334,7 +334,7 @@
         <collision>
             <origin xyz="0.00232729 -0.0615551 0.0232841" rpy="1.5708 1.27255e-13 3.14159"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_top_4.stl"/>
+                <mesh filename="package://assets/merged/leg_top_4_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -349,7 +349,7 @@
         <visual>
             <origin xyz="0.039 -1.11022e-16 0.023505" rpy="3.14159 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle_4.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_4_visual.stl"/>
             </geometry>
             <material name="leg_middle_4_material">
                 <color rgba="0.546901 0.444779 0.323018 1.0"/>
@@ -358,7 +358,7 @@
         <collision>
             <origin xyz="0.039 -1.11022e-16 0.023505" rpy="3.14159 1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_middle_4.stl"/>
+                <mesh filename="package://assets/merged/leg_middle_4_collision.stl"/>
             </geometry>
         </collision>
     </link>
@@ -373,7 +373,7 @@
         <visual>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip_4.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_4_visual.stl"/>
             </geometry>
             <material name="leg_tip_4_material">
                 <color rgba="0.39292 0.363337 0.324854 1.0"/>
@@ -382,7 +382,7 @@
         <collision>
             <origin xyz="-7.07825e-10 -0.0411183 -0.0252857" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://assets/merged/leg_tip_4.stl"/>
+                <mesh filename="package://assets/merged/leg_tip_4_collision.stl"/>
             </geometry>
         </collision>
     </link>

@@ -52,9 +52,9 @@
                     <joint name="w1_1_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-7.33894e-20 1.33556e-17 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -4.48199e-25 2.05686e-24 2.65374e-24"/>
                     <!-- Part passivewheel -->
+                    <geom class="collision" pos="-8.65334e-20 1.37444e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel -->
                     <geom type="mesh" class="visual" pos="0 1.38778e-17 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-8.65334e-20 1.37444e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_2 -->
                 <body name="passivewheel_2" pos="-0.002 -0.0375 -0.0025" quat="0 0.707107 1.11022e-16 -0.707107">
@@ -62,9 +62,9 @@
                     <joint name="w1_2_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.38094e-17 -3.88785e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 3.7544e-39 -3.14348e-24 2.39064e-39"/>
                     <!-- Part passivewheel_2 -->
+                    <geom class="collision" pos="-1.38226e-17 -6.23173e-35 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_2 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 0 -2.1684e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.38226e-17 -6.23173e-35 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_3 -->
                 <body name="passivewheel_3" pos="0.00968602 -0.0362827 -0.0025" quat="0.705434 -0.171758 0.68593 0.0486126">
@@ -72,9 +72,9 @@
                     <joint name="w1_3_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.39053e-17 4.1565e-19 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -6.19881e-25 9.89486e-25 9.52171e-25"/>
                     <!-- Part passivewheel_3 -->
+                    <geom class="collision" pos="1.38922e-17 2.6865e-20 0.002" quat="1 0 2.77556e-17 4.85723e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_3 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 0 -6.93889e-18" quat="1 0 2.77556e-17 4.85723e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38922e-17 2.6865e-20 0.002" quat="1 0 2.77556e-17 4.85723e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_4 -->
                 <body name="passivewheel_4" pos="0.0204239 -0.0315137 -0.0025" quat="0.325109 0.699106 0.106073 -0.627936">
@@ -82,9 +82,9 @@
                     <joint name="w1_4_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.39492e-17 3.14241e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.50205e-25 2.32706e-24 -2.54013e-24"/>
                     <!-- Part passivewheel_4 -->
+                    <geom class="collision" pos="-1.39623e-17 3.53119e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_4 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 3.46945e-18 -1.73472e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.39623e-17 3.53119e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_5 -->
                 <body name="passivewheel_5" pos="0.0291626 -0.02366 -0.0025" quat="0.44995 0.68464 0.176827 -0.545477">
@@ -92,9 +92,9 @@
                     <joint name="w1_5_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.2573e-19 1.35251e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 8.92466e-25 -2.3837e-24 -1.42084e-24"/>
                     <!-- Part passivewheel_5 -->
+                    <geom class="collision" pos="1.12586e-19 1.7413e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_5 -->
                     <geom type="mesh" class="visual" pos="0 1.73472e-18 0" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.12586e-19 1.7413e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_6 -->
                 <body name="passivewheel_6" pos="0.0350466 -0.0134903 -0.0025" quat="0.544721 0.657385 0.26047 -0.450865">
@@ -102,9 +102,9 @@
                     <joint name="w1_6_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-7.85727e-21 -1.22e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.46704e-26 8.78998e-25 -3.12268e-25"/>
                     <!-- Part passivewheel_6 -->
+                    <geom class="collision" pos="-2.10013e-20 -8.31218e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_6 -->
                     <geom type="mesh" class="visual" pos="0 -8.67362e-19 1.73472e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-2.10013e-20 -8.31218e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_7 -->
                 <body name="passivewheel_7" pos="0.0375 -0.002 -0.0025" quat="0.612372 0.612372 0.353553 -0.353553">
@@ -112,9 +112,9 @@
                     <joint name="w1_7_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.3144e-20 -1.34594e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 2.56509e-39 -2.09345e-39 -1.51313e-38"/>
                     <!-- Part passivewheel_7 -->
+                    <geom class="collision" pos="-1.97215e-34 -1.73472e-18 -0.002" quat="1 0 -1.24049e-21 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_7 -->
                     <geom type="mesh" class="visual" pos="0 -1.73472e-18 -0.004" quat="1 0 -1.24049e-21 -1.11022e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.97215e-34 -1.73472e-18 -0.002" quat="1 0 -1.24049e-21 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_8 -->
                 <body name="passivewheel_8" pos="0.0362827 0.00968602 -0.0025" quat="0.544721 -0.657385 0.26047 0.450865">
@@ -122,9 +122,9 @@
                     <joint name="w1_8_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.39027e-17 1.37287e-18 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 3.02658e-25 7.81085e-25 -5.33888e-25"/>
                     <!-- Part passivewheel_8 -->
+                    <geom class="collision" pos="-1.39158e-17 1.76166e-18 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_8 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 1.73472e-18 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.39158e-17 1.76166e-18 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_9 -->
                 <body name="passivewheel_9" pos="0.0315137 0.0204239 -0.0025" quat="0.68464 0.44995 0.545477 -0.176827">
@@ -132,9 +132,9 @@
                     <joint name="w1_9_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-6.29107e-20 2.00403e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.81304e-24 -3.34937e-24 -3.1984e-24"/>
                     <!-- Part passivewheel_9 -->
+                    <geom class="collision" pos="-7.60547e-20 1.61524e-18 -0.002" quat="1 1.27569e-17 5.55112e-17 -1.38778e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_9 -->
                     <geom type="mesh" class="visual" pos="0 1.73472e-18 -0.004" quat="1 1.27569e-17 5.55112e-17 -1.38778e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-7.60547e-20 1.61524e-18 -0.002" quat="1 1.27569e-17 5.55112e-17 -1.38778e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_10 -->
                 <body name="passivewheel_10" pos="0.02366 0.0291626 -0.0025" quat="0.699106 0.325109 0.627936 -0.106073">
@@ -142,9 +142,9 @@
                     <joint name="w1_10_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="2.75667e-17 1.76333e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -9.51103e-25 3.7954e-24 -3.63174e-25"/>
                     <!-- Part passivewheel_10 -->
+                    <geom class="collision" pos="2.75535e-17 2.15212e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_10 -->
                     <geom type="mesh" class="visual" pos="2.77556e-17 2.05998e-18 1.73472e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="2.75535e-17 2.15212e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_11 -->
                 <body name="passivewheel_11" pos="0.0134903 0.0350466 -0.0025" quat="0.705434 0.171758 0.68593 -0.0486126">
@@ -152,9 +152,9 @@
                     <joint name="w1_11_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="5.49999e-20 3.04416e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 6.30044e-25 3.57847e-25 6.72405e-25"/>
                     <!-- Part passivewheel_11 -->
+                    <geom class="collision" pos="4.18559e-20 3.43295e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_11 -->
                     <geom type="mesh" class="visual" pos="0 3.46945e-18 7.80626e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="4.18559e-20 3.43295e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_12 -->
                 <body name="passivewheel_12" pos="0.002 0.0375 -0.0025" quat="0.707107 1.80742e-16 0.707107 -2.22045e-16">
@@ -162,9 +162,9 @@
                     <joint name="w1_12_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="2.75764e-17 -3.88785e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -8.55029e-41 4.29637e-24 -1.20739e-39"/>
                     <!-- Part passivewheel_12 -->
+                    <geom class="collision" pos="2.75633e-17 4.93038e-35 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_12 -->
                     <geom type="mesh" class="visual" pos="2.77556e-17 0 -4.77049e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="2.75633e-17 4.93038e-35 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_13 -->
                 <body name="passivewheel_13" pos="-0.00968602 0.0362827 -0.0025" quat="0.705434 -0.171758 0.68593 0.0486126">
@@ -172,9 +172,9 @@
                     <joint name="w1_13_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="8.53194e-20 -3.92688e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 8.22243e-25 -3.87642e-24 5.15763e-26"/>
                     <!-- Part passivewheel_13 -->
+                    <geom class="collision" pos="7.21753e-20 -3.90318e-21 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_13 -->
                     <geom type="mesh" class="visual" pos="0 0 -1.30104e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="7.21753e-20 -3.90318e-21 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_14 -->
                 <body name="passivewheel_14" pos="-0.0204239 0.0315137 -0.0025" quat="0.699106 -0.325109 0.627936 0.106073">
@@ -182,9 +182,9 @@
                     <joint name="w1_14_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="9.59088e-20 -6.26776e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.49204e-24 -1.54068e-24 7.89487e-24"/>
                     <!-- Part passivewheel_14 -->
+                    <geom class="collision" pos="8.27648e-20 -6.65655e-18 -0.002" quat="1 -2.64585e-17 2.22045e-16 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_14 -->
                     <geom type="mesh" class="visual" pos="0 -6.93889e-18 -0.004" quat="1 -2.64585e-17 2.22045e-16 -1.11022e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="8.27648e-20 -6.65655e-18 -0.002" quat="1 -2.64585e-17 2.22045e-16 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_15 -->
                 <body name="passivewheel_15" pos="-0.0291626 0.02366 -0.0025" quat="0.68464 -0.44995 0.545477 0.176827">
@@ -192,9 +192,9 @@
                     <joint name="w1_15_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="6.7241e-20 1.42897e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -9.19631e-27 1.06648e-24 1.28664e-24"/>
                     <!-- Part passivewheel_15 -->
+                    <geom class="collision" pos="5.4097e-20 1.39009e-17 -0.002" quat="1 0 0 1.66533e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_15 -->
                     <geom type="mesh" class="visual" pos="0 1.38778e-17 -0.004" quat="1 0 0 1.66533e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="5.4097e-20 1.39009e-17 -0.002" quat="1 0 0 1.66533e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_16 -->
                 <body name="passivewheel_16" pos="-0.0350466 0.0134903 -0.0025" quat="0.657385 -0.544721 0.450865 0.26047">
@@ -202,9 +202,9 @@
                     <joint name="w1_16_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="6.97313e-18 -1.33089e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.79804e-25 -1.30576e-25 4.98862e-24"/>
                     <!-- Part passivewheel_16 -->
+                    <geom class="collision" pos="6.95999e-18 -1.36977e-17 -0.002" quat="1 0 -2.22045e-16 -2.77556e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_16 -->
                     <geom type="mesh" class="visual" pos="6.93889e-18 -1.38778e-17 -0.004" quat="1 0 -2.22045e-16 -2.77556e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="6.95999e-18 -1.36977e-17 -0.002" quat="1 0 -2.22045e-16 -2.77556e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_17 -->
                 <body name="passivewheel_17" pos="-0.0375 0.002 -0.0025" quat="0.612372 0.612372 0.353553 -0.353553">
@@ -212,9 +212,9 @@
                     <joint name="w1_17_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.3144e-20 1.3489e-17 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 3.42012e-40 -7.15594e-53 1.89141e-39"/>
                     <!-- Part passivewheel_17 -->
+                    <geom class="collision" pos="2.27711e-48 1.38778e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_17 -->
                     <geom type="mesh" class="visual" pos="0 1.38778e-17 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="2.27711e-48 1.38778e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_18 -->
                 <body name="passivewheel_18" pos="-0.0362827 -0.00968602 -0.0025" quat="0.544721 -0.657385 0.26047 0.450865">
@@ -222,9 +222,9 @@
                     <joint name="w1_18_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="6.92841e-18 -1.41711e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -6.34976e-26 1.59423e-25 -2.5758e-24"/>
                     <!-- Part passivewheel_18 -->
+                    <geom class="collision" pos="6.91527e-18 -1.37823e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_18 -->
                     <geom type="mesh" class="visual" pos="6.93889e-18 -1.38778e-17 1.73472e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="6.91527e-18 -1.37823e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_19 -->
                 <body name="passivewheel_19" pos="-0.0315137 -0.0204239 -0.0025" quat="0.44995 -0.68464 0.176827 0.545477">
@@ -232,9 +232,9 @@
                     <joint name="w1_19_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-6.98422e-18 -4.67101e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.08884e-24 1.39429e-24 4.90038e-24"/>
                     <!-- Part passivewheel_19 -->
+                    <geom class="collision" pos="-6.99736e-18 -7.83154e-20 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_19 -->
                     <geom type="mesh" class="visual" pos="-6.93889e-18 0 5.20417e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-6.99736e-18 -7.83154e-20 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_20 -->
                 <body name="passivewheel_20" pos="-0.02366 -0.0291626 -0.0025" quat="0.325109 -0.699106 0.106073 0.627936">
@@ -242,9 +242,9 @@
                     <joint name="w1_20_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.71821e-20 1.32768e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 6.14637e-25 1.51023e-24 5.2908e-24"/>
                     <!-- Part passivewheel_20 -->
+                    <geom class="collision" pos="-3.03261e-20 1.36656e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_20 -->
                     <geom type="mesh" class="visual" pos="0 1.38778e-17 6.07153e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-3.03261e-20 1.36656e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
             </body>
             <!-- Link wheel_2 -->
@@ -261,9 +261,9 @@
                     <joint name="w3_1_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.38637e-17 1.36393e-17 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.6627e-25 2.25287e-25 -4.29771e-24"/>
                     <!-- Part passivewheel_21 -->
+                    <geom class="collision" pos="1.38506e-17 1.40281e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_21 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 1.38778e-17 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38506e-17 1.40281e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_22 -->
                 <body name="passivewheel_22" pos="-0.002 0.0375 -0.0025" quat="0.707107 3.69118e-16 -0.707107 5.55112e-17">
@@ -271,9 +271,9 @@
                     <joint name="w3_2_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.47359e-21 -3.88785e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -3.76985e-39 4.29266e-26 1.42929e-39"/>
                     <!-- Part passivewheel_22 -->
+                    <geom class="collision" pos="-1.16704e-20 1.22442e-35 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_22 -->
                     <geom type="mesh" class="visual" pos="0 0 -1.30104e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.16704e-20 1.22442e-35 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_23 -->
                 <body name="passivewheel_23" pos="0.00968602 0.0362827 -0.0025" quat="0.0486126 0.68593 -0.171758 0.705434">
@@ -281,9 +281,9 @@
                     <joint name="w3_3_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-2.80594e-17 1.42039e-17 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.05229e-24 -6.08561e-24 -8.45667e-25"/>
                     <!-- Part passivewheel_23 -->
+                    <geom class="collision" pos="-2.80726e-17 1.38151e-17 0.002" quat="1 1.40555e-17 -5.55112e-17 -2.77556e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_23 -->
                     <geom type="mesh" class="visual" pos="-2.77556e-17 1.38778e-17 8.67362e-19" quat="1 1.40555e-17 -5.55112e-17 -2.77556e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-2.80726e-17 1.38151e-17 0.002" quat="1 1.40555e-17 -5.55112e-17 -2.77556e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_24 -->
                 <body name="passivewheel_24" pos="0.0204239 0.0315137 -0.0025" quat="0.627936 -0.106073 -0.699106 -0.325109">
@@ -291,9 +291,9 @@
                     <joint name="w3_4_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="2.76409e-20 2.96171e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -5.45747e-25 -6.82864e-25 2.20299e-24"/>
                     <!-- Part passivewheel_24 -->
+                    <geom class="collision" pos="1.44968e-20 3.3505e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_24 -->
                     <geom type="mesh" class="visual" pos="0 3.46945e-18 3.46945e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.44968e-20 3.3505e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_25 -->
                 <body name="passivewheel_25" pos="0.0291626 0.02366 -0.0025" quat="0.545477 -0.176827 -0.68464 -0.44995">
@@ -301,9 +301,9 @@
                     <joint name="w3_5_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.10858e-21 -1.19309e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -3.78613e-25 -5.72825e-26 -1.75998e-24"/>
                     <!-- Part passivewheel_25 -->
+                    <geom class="collision" pos="-1.20354e-20 -8.04302e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_25 -->
                     <geom type="mesh" class="visual" pos="0 -8.67362e-19 -1.73472e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.20354e-20 -8.04302e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_26 -->
                 <body name="passivewheel_26" pos="0.0350466 0.0134903 -0.0025" quat="0.450865 -0.26047 -0.657385 -0.544721">
@@ -311,9 +311,9 @@
                     <joint name="w3_6_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.38989e-17 -1.25506e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 3.58631e-26 1.13295e-24 1.76078e-24"/>
                     <!-- Part passivewheel_26 -->
+                    <geom class="collision" pos="-1.3912e-17 -8.66279e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_26 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 -8.67362e-19 -1.73472e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.3912e-17 -8.66279e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_27 -->
                 <body name="passivewheel_27" pos="0.0375 0.002 -0.0025" quat="0.353553 -0.353553 -0.612372 -0.612372">
@@ -321,9 +321,9 @@
                     <joint name="w3_7_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.3144e-20 -3.08066e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 2.56509e-39 -2.09345e-39 -1.51313e-38"/>
                     <!-- Part passivewheel_27 -->
+                    <geom class="collision" pos="-1.97215e-34 -3.46945e-18 -0.002" quat="1 0 -1.24049e-21 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_27 -->
                     <geom type="mesh" class="visual" pos="0 -3.46945e-18 -0.004" quat="1 0 -1.24049e-21 -1.11022e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.97215e-34 -3.46945e-18 -0.002" quat="1 0 -1.24049e-21 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_28 -->
                 <body name="passivewheel_28" pos="0.0362827 -0.00968602 -0.0025" quat="0.450865 0.26047 -0.657385 0.544721">
@@ -331,9 +331,9 @@
                     <joint name="w3_8_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.38914e-17 -3.32822e-19 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.07718e-25 1.23908e-25 -1.51535e-24"/>
                     <!-- Part passivewheel_28 -->
+                    <geom class="collision" pos="1.38783e-17 5.59634e-20 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_28 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 0 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38783e-17 5.59634e-20 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_29 -->
                 <body name="passivewheel_29" pos="0.0315137 -0.0204239 -0.0025" quat="0.176827 -0.545477 -0.44995 -0.68464">
@@ -341,9 +341,9 @@
                     <joint name="w3_9_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.39343e-17 -1.31396e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.4048e-24 3.17155e-25 1.43427e-24"/>
                     <!-- Part passivewheel_29 -->
+                    <geom class="collision" pos="1.39212e-17 -1.70274e-18 -0.002" quat="1 0 2.77556e-17 -7.11237e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_29 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 -1.73472e-18 -0.004" quat="1 0 2.77556e-17 -7.11237e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.39212e-17 -1.70274e-18 -0.002" quat="1 0 2.77556e-17 -7.11237e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_30 -->
                 <body name="passivewheel_30" pos="0.02366 -0.0291626 -0.0025" quat="0.106073 -0.627936 -0.325109 -0.699106">
@@ -351,9 +351,9 @@
                     <joint name="w3_10_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-4.93237e-20 2.88017e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -5.53782e-25 1.90441e-25 3.35227e-24"/>
                     <!-- Part passivewheel_30 -->
+                    <geom class="collision" pos="-6.24677e-20 3.26896e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_30 -->
                     <geom type="mesh" class="visual" pos="0 3.36103e-18 0" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-6.24677e-20 3.26896e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_31 -->
                 <body name="passivewheel_31" pos="0.0134903 -0.0350466 -0.0025" quat="0.0486126 -0.68593 -0.171758 -0.705434">
@@ -361,9 +361,9 @@
                     <joint name="w3_11_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.38453e-17 3.05141e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -9.55002e-25 7.38011e-26 3.05475e-26"/>
                     <!-- Part passivewheel_31 -->
+                    <geom class="collision" pos="1.38321e-17 3.4402e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_31 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 3.46945e-18 4.33681e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38321e-17 3.4402e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_32 -->
                 <body name="passivewheel_32" pos="0.002 -0.0375 -0.0025" quat="1.99855e-17 -0.707107 0 -0.707107">
@@ -371,9 +371,9 @@
                     <joint name="w3_12_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.40615e-17 -3.88785e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.06879e-41 -3.57153e-24 -3.42012e-40"/>
                     <!-- Part passivewheel_32 -->
+                    <geom class="collision" pos="1.40483e-17 0 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_32 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 0 -7.37257e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.40483e-17 0 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_33 -->
                 <body name="passivewheel_33" pos="-0.00968602 -0.0362827 -0.0025" quat="0.0486126 0.68593 -0.171758 0.705434">
@@ -381,9 +381,9 @@
                     <joint name="w3_13_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.38828e-17 -2.88919e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -5.36201e-25 1.65647e-24 -2.97731e-24"/>
                     <!-- Part passivewheel_33 -->
+                    <geom class="collision" pos="-1.38959e-17 9.9866e-20 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_33 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 0 -4.77049e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.38959e-17 9.9866e-20 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_34 -->
                 <body name="passivewheel_34" pos="-0.0204239 -0.0315137 -0.0025" quat="0.106073 0.627936 -0.325109 0.699106">
@@ -391,9 +391,9 @@
                     <joint name="w3_14_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="5.01277e-21 -6.43766e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.6752e-24 1.12651e-24 1.00752e-24"/>
                     <!-- Part passivewheel_34 -->
+                    <geom class="collision" pos="-8.13123e-21 -6.82645e-18 -0.002" quat="1 -0 -0 -2.77556e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_34 -->
                     <geom type="mesh" class="visual" pos="0 -6.93889e-18 -0.004" quat="1 -0 -0 -2.77556e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-8.13123e-21 -6.82645e-18 -0.002" quat="1 -0 -0 -2.77556e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_35 -->
                 <body name="passivewheel_35" pos="-0.0291626 -0.02366 -0.0025" quat="0.176827 0.545477 -0.44995 0.68464">
@@ -401,9 +401,9 @@
                     <joint name="w3_15_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-9.43518e-20 1.40725e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.89727e-25 -2.74367e-24 -2.03776e-24"/>
                     <!-- Part passivewheel_35 -->
+                    <geom class="collision" pos="-1.07496e-19 1.36837e-17 -0.002" quat="1 1.52546e-16 -1.11022e-16 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_35 -->
                     <geom type="mesh" class="visual" pos="0 1.38778e-17 -0.004" quat="1 1.52546e-16 -1.11022e-16 -1.11022e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.07496e-19 1.36837e-17 -0.002" quat="1 1.52546e-16 -1.11022e-16 -1.11022e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_36 -->
                 <body name="passivewheel_36" pos="-0.0350466 -0.0134903 -0.0025" quat="0.26047 0.450865 -0.544721 0.657385">
@@ -411,9 +411,9 @@
                     <joint name="w3_16_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-7.01135e-20 2.61525e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -4.15318e-25 -3.63959e-24 -3.98001e-24"/>
                     <!-- Part passivewheel_36 -->
+                    <geom class="collision" pos="-8.32575e-20 -1.2726e-19 -0.002" quat="1 2.17038e-17 -5.55112e-17 2.77556e-16" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_36 -->
                     <geom type="mesh" class="visual" pos="0 0 -0.004" quat="1 2.17038e-17 -5.55112e-17 2.77556e-16" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-8.32575e-20 -1.2726e-19 -0.002" quat="1 2.17038e-17 -5.55112e-17 2.77556e-16" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_37 -->
                 <body name="passivewheel_37" pos="-0.0375 -0.002 -0.0025" quat="0.353553 -0.353553 -0.612372 -0.612372">
@@ -421,9 +421,9 @@
                     <joint name="w3_17_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.3144e-20 1.3489e-17 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 3.42012e-40 -7.15594e-53 1.89141e-39"/>
                     <!-- Part passivewheel_37 -->
+                    <geom class="collision" pos="2.27711e-48 1.38778e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_37 -->
                     <geom type="mesh" class="visual" pos="0 1.38778e-17 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="2.27711e-48 1.38778e-17 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_38 -->
                 <body name="passivewheel_38" pos="-0.0362827 0.00968602 -0.0025" quat="0.450865 0.26047 -0.657385 0.544721">
@@ -431,9 +431,9 @@
                     <joint name="w3_18_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="4.67192e-22 -1.92539e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.84005e-26 -3.97591e-25 -4.41725e-24"/>
                     <!-- Part passivewheel_38 -->
+                    <geom class="collision" pos="-1.26768e-20 1.96246e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_38 -->
                     <geom type="mesh" class="visual" pos="0 0 3.46945e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.26768e-20 1.96246e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_39 -->
                 <body name="passivewheel_39" pos="-0.0315137 0.0204239 -0.0025" quat="0.545477 0.176827 -0.68464 0.44995">
@@ -441,9 +441,9 @@
                     <joint name="w3_19_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.83256e-20 -4.19716e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 9.25127e-25 -1.08452e-24 1.78044e-24"/>
                     <!-- Part passivewheel_39 -->
+                    <geom class="collision" pos="-3.14697e-20 -3.09308e-20 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_39 -->
                     <geom type="mesh" class="visual" pos="0 0 0" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-3.14697e-20 -3.09308e-20 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_40 -->
                 <body name="passivewheel_40" pos="-0.02366 0.0291626 -0.0025" quat="0.627936 0.106073 -0.699106 0.325109">
@@ -451,9 +451,9 @@
                     <joint name="w3_20_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="4.88319e-20 -7.24087e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.90815e-24 -1.2352e-25 6.24828e-24"/>
                     <!-- Part passivewheel_40 -->
+                    <geom class="collision" pos="3.56879e-20 -3.35302e-19 -0.002" quat="5.95976e-17 1 -1.59867e-17 1.12223e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_40 -->
                     <geom type="mesh" class="visual" pos="0 0 -4.33681e-18" quat="5.95976e-17 1 -1.59867e-17 1.12223e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="3.56879e-20 -3.35302e-19 -0.002" quat="5.95976e-17 1 -1.59867e-17 1.12223e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
             </body>
             <!-- Link wheel_3 -->
@@ -470,9 +470,9 @@
                     <joint name="w2_1_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.38112e-20 -5.05758e-19 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 3.34064e-25 7.60345e-25 2.33218e-24"/>
                     <!-- Part passivewheel_41 -->
+                    <geom class="collision" pos="-2.69552e-20 -1.16973e-19 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_41 -->
                     <geom type="mesh" class="visual" pos="0 0 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-2.69552e-20 -1.16973e-19 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_42 -->
                 <body name="passivewheel_42" pos="-0.002 -0.0375 -0.0025" quat="0.707107 1.22536e-16 -0.707107 4.44089e-16">
@@ -480,9 +480,9 @@
                     <joint name="w2_2_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.3144e-20 3.08066e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.03376e-39 -2.95507e-39 1.72914e-39"/>
                     <!-- Part passivewheel_42 -->
+                    <geom class="collision" pos="4.93038e-35 3.46945e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_42 -->
                     <geom type="mesh" class="visual" pos="0 3.46945e-18 0" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="4.93038e-35 3.46945e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_43 -->
                 <body name="passivewheel_43" pos="0.00968602 -0.0362827 -0.0025" quat="0.0486126 -0.68593 -0.171758 -0.705434">
@@ -490,9 +490,9 @@
                     <joint name="w2_3_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.38877e-17 4.23327e-19 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -2.80018e-25 -1.59989e-25 2.55366e-24"/>
                     <!-- Part passivewheel_43 -->
+                    <geom class="collision" pos="1.38746e-17 3.45419e-20 0.002" quat="1 -0 1.11022e-16 1.38778e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_43 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 0 8.67362e-19" quat="1 -0 1.11022e-16 1.38778e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38746e-17 3.45419e-20 0.002" quat="1 -0 1.11022e-16 1.38778e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_44 -->
                 <body name="passivewheel_44" pos="0.0204239 -0.0315137 -0.0025" quat="0.627936 0.106073 -0.699106 0.325109">
@@ -500,9 +500,9 @@
                     <joint name="w2_4_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.39403e-17 -3.67067e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 2.7038e-24 -1.7299e-24 8.55883e-25"/>
                     <!-- Part passivewheel_44 -->
+                    <geom class="collision" pos="1.39272e-17 -3.28188e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_44 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 -3.36103e-18 4.33681e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.39272e-17 -3.28188e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_45 -->
                 <body name="passivewheel_45" pos="0.0291626 -0.02366 -0.0025" quat="0.545477 0.176827 -0.68464 0.44995">
@@ -510,9 +510,9 @@
                     <joint name="w2_5_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.37675e-17 -1.8114e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.36382e-24 -2.71545e-24 -4.96855e-24"/>
                     <!-- Part passivewheel_45 -->
+                    <geom class="collision" pos="-1.37807e-17 -1.42261e-18 -0.002" quat="6.31119e-17 -1 -7.76582e-19 -9.10162e-18" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_45 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 -1.73472e-18 0" quat="6.31119e-17 -1 -7.76582e-19 -9.10162e-18" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.37807e-17 -1.42261e-18 -0.002" quat="6.31119e-17 -1 -7.76582e-19 -9.10162e-18" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_46 -->
                 <body name="passivewheel_46" pos="0.0350466 -0.0134903 -0.0025" quat="0.450865 0.26047 -0.657385 0.544721">
@@ -520,9 +520,9 @@
                     <joint name="w2_6_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.39146e-17 -2.01208e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 2.08795e-24 -9.55614e-25 -3.19362e-24"/>
                     <!-- Part passivewheel_46 -->
+                    <geom class="collision" pos="1.39015e-17 -1.6233e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_46 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 -1.73472e-18 0" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.39015e-17 -1.6233e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_47 -->
                 <body name="passivewheel_47" pos="0.0375 -0.002 -0.0025" quat="0.138087 0.138087 -0.693493 0.693493">
@@ -530,9 +530,9 @@
                     <joint name="w2_7_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.3144e-20 -6.55011e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -2.11687e-24 1.1345e-38 -3.62632e-39"/>
                     <!-- Part passivewheel_47 -->
+                    <geom class="collision" pos="3.27718e-34 -6.93889e-18 -0.002" quat="1 0 2.26159e-18 8.3114e-30" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_47 -->
                     <geom type="mesh" class="visual" pos="0 -6.93889e-18 -0.004" quat="1 0 2.26159e-18 8.3114e-30" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="3.27718e-34 -6.93889e-18 -0.002" quat="1 0 2.26159e-18 8.3114e-30" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_48 -->
                 <body name="passivewheel_48" pos="0.0362827 0.00968602 -0.0025" quat="0.450865 -0.26047 -0.657385 -0.544721">
@@ -540,9 +540,9 @@
                     <joint name="w2_8_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.37967e-17 -6.11718e-18 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -4.14666e-25 -2.19591e-24 -6.38881e-27"/>
                     <!-- Part passivewheel_48 -->
+                    <geom class="collision" pos="-1.38098e-17 -5.72839e-18 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_48 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 -5.63785e-18 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.38098e-17 -5.72839e-18 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_49 -->
                 <body name="passivewheel_49" pos="0.0315137 0.0204239 -0.0025" quat="0.176827 0.545477 -0.44995 0.68464">
@@ -550,9 +550,9 @@
                     <joint name="w2_9_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.39712e-17 1.06147e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.60884e-24 -1.52759e-24 -4.22329e-24"/>
                     <!-- Part passivewheel_49 -->
+                    <geom class="collision" pos="-1.39844e-17 6.72681e-19 -0.002" quat="1 -0 -1.11022e-16 -8.32667e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_49 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 8.67362e-19 -0.004" quat="1 -0 -1.11022e-16 -8.32667e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.39844e-17 6.72681e-19 -0.002" quat="1 -0 -1.11022e-16 -8.32667e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_50 -->
                 <body name="passivewheel_50" pos="0.02366 0.0291626 -0.0025" quat="0.106073 0.627936 -0.325109 0.699106">
@@ -560,9 +560,9 @@
                     <joint name="w2_10_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.38708e-17 3.1606e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.12203e-24 -7.83282e-26 -1.18395e-24"/>
                     <!-- Part passivewheel_50 -->
+                    <geom class="collision" pos="1.38576e-17 3.54939e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_50 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 3.46945e-18 -8.67362e-19" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38576e-17 3.54939e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_51 -->
                 <body name="passivewheel_51" pos="0.0134903 0.0350466 -0.0025" quat="0.0486126 0.68593 -0.171758 0.705434">
@@ -570,9 +570,9 @@
                     <joint name="w2_11_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.39143e-17 -7.55572e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 7.01407e-25 8.7846e-25 4.85575e-24"/>
                     <!-- Part passivewheel_51 -->
+                    <geom class="collision" pos="-1.39274e-17 -7.16693e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_51 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 -6.93889e-18 -8.67362e-19" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.39274e-17 -7.16693e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_52 -->
                 <body name="passivewheel_52" pos="0.002 0.0375 -0.0025" quat="1.05961e-17 0.707107 -1.11022e-16 0.707107">
@@ -580,9 +580,9 @@
                     <joint name="w2_12_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.3144e-20 -3.88785e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 0 1.32842e-39 0"/>
                     <!-- Part passivewheel_52 -->
+                    <geom class="collision" pos="-3.94666e-35 0 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_52 -->
                     <geom type="mesh" class="visual" pos="0 0 0" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-3.94666e-35 0 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_53 -->
                 <body name="passivewheel_53" pos="-0.00968602 0.0362827 -0.0025" quat="0.0486126 -0.68593 -0.171758 -0.705434">
@@ -590,9 +590,9 @@
                     <joint name="w2_13_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.38741e-17 1.35848e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -5.20219e-25 2.89536e-25 -6.66309e-25"/>
                     <!-- Part passivewheel_53 -->
+                    <geom class="collision" pos="-1.38872e-17 1.39736e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_53 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 1.38778e-17 -3.46945e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.38872e-17 1.39736e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_54 -->
                 <body name="passivewheel_54" pos="-0.0204239 0.0315137 -0.0025" quat="0.106073 -0.627936 -0.325109 -0.699106">
@@ -600,9 +600,9 @@
                     <joint name="w2_14_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.386e-17 5.5829e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.10988e-24 -1.78899e-24 6.84392e-24"/>
                     <!-- Part passivewheel_54 -->
+                    <geom class="collision" pos="1.38468e-17 1.69505e-19 -0.002" quat="1 -0 1.11022e-16 5.55112e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_54 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 0 -0.004" quat="1 -0 1.11022e-16 5.55112e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38468e-17 1.69505e-19 -0.002" quat="1 -0 1.11022e-16 5.55112e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_55 -->
                 <body name="passivewheel_55" pos="-0.0291626 0.02366 -0.0025" quat="0.176827 -0.545477 -0.44995 -0.68464">
@@ -610,9 +610,9 @@
                     <joint name="w2_15_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="1.38536e-17 -1.3467e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 9.57489e-25 -1.73017e-24 -1.86096e-25"/>
                     <!-- Part passivewheel_55 -->
+                    <geom class="collision" pos="1.38404e-17 -1.38558e-17 -0.002" quat="1 -1.14434e-16 1.11022e-16 -8.32667e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_55 -->
                     <geom type="mesh" class="visual" pos="1.38778e-17 -1.38778e-17 -0.004" quat="1 -1.14434e-16 1.11022e-16 -8.32667e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="1.38404e-17 -1.38558e-17 -0.002" quat="1 -1.14434e-16 1.11022e-16 -8.32667e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_56 -->
                 <body name="passivewheel_56" pos="-0.0350466 0.0134903 -0.0025" quat="0.26047 -0.450865 -0.544721 -0.657385">
@@ -620,9 +620,9 @@
                     <joint name="w2_16_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="3.39737e-20 1.40864e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 8.66896e-25 3.68403e-25 -5.22306e-24"/>
                     <!-- Part passivewheel_56 -->
+                    <geom class="collision" pos="2.08297e-20 1.36977e-17 -0.002" quat="1 -0 -1.11022e-16 -2.08167e-17" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_56 -->
                     <geom type="mesh" class="visual" pos="0 1.38778e-17 -0.004" quat="1 -0 -1.11022e-16 -2.08167e-17" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="2.08297e-20 1.36977e-17 -0.002" quat="1 -0 -1.11022e-16 -2.08167e-17" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_57 -->
                 <body name="passivewheel_57" pos="-0.0375 0.002 -0.0025" quat="0.138087 0.138087 -0.693493 0.693493">
@@ -630,9 +630,9 @@
                     <joint name="w2_17_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-8.54218e-19 -3.88785e-19 0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 2.17764e-24 -4.31863e-39 -1.38668e-39"/>
                     <!-- Part passivewheel_57 -->
+                    <geom class="collision" pos="-8.67362e-19 1.75533e-36 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_57 -->
                     <geom type="mesh" class="visual" pos="-8.67362e-19 0 0.004" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-8.67362e-19 1.75533e-36 0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_58 -->
                 <body name="passivewheel_58" pos="-0.0362827 -0.00968602 -0.0025" quat="0.450865 -0.26047 -0.657385 -0.544721">
@@ -640,9 +640,9 @@
                     <joint name="w2_18_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-8.38285e-21 -5.29835e-19 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -3.16948e-24 1.5135e-24 2.37928e-24"/>
                     <!-- Part passivewheel_58 -->
+                    <geom class="collision" pos="-2.15269e-20 -1.4105e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_58 -->
                     <geom type="mesh" class="visual" pos="0 0 0" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-2.15269e-20 -1.4105e-19 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_59 -->
                 <body name="passivewheel_59" pos="-0.0315137 -0.0204239 -0.0025" quat="0.545477 -0.176827 -0.68464 -0.44995">
@@ -650,9 +650,9 @@
                     <joint name="w2_19_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-1.38707e-17 6.51551e-18 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 1.04758e-24 8.16286e-25 9.53599e-28"/>
                     <!-- Part passivewheel_59 -->
+                    <geom class="collision" pos="-1.38839e-17 6.90429e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_59 -->
                     <geom type="mesh" class="visual" pos="-1.38778e-17 6.93889e-18 -5.20417e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-1.38839e-17 6.90429e-18 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
                 <!-- Link passivewheel_60 -->
                 <body name="passivewheel_60" pos="-0.02366 -0.0291626 -0.0025" quat="0.627936 -0.106073 -0.699106 -0.325109">
@@ -660,18 +660,18 @@
                     <joint name="w2_20_passive" type="hinge" frictionloss="0.0"/>
                     <inertial pos="-2.77776e-17 1.33363e-17 -0.002" mass="0.00285906" fullinertia="2.77473e-08 2.77473e-08 4.89774e-08 -1.33618e-24 1.59617e-25 3.11977e-24"/>
                     <!-- Part passivewheel_60 -->
+                    <geom class="collision" pos="-2.77908e-17 1.3725e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                     <!-- Mesh passivewheel_60 -->
                     <geom type="mesh" class="visual" pos="-2.77556e-17 1.38778e-17 -1.73472e-18" quat="0 1 0 0" mesh="passivewheel" material="passivewheel_material"/>
-                    <geom class="collision" pos="-2.77908e-17 1.3725e-17 -0.002" quat="0 1 0 0" type="cylinder" size="0.006 0.0015"/>
                 </body>
             </body>
         </body>
     </worldbody>
     <asset>
-        <mesh file="passivewheel.stl"/>
-        <mesh file="plate.stl"/>
         <mesh file="motor.stl"/>
+        <mesh file="plate.stl"/>
         <mesh file="wheel.stl"/>
+        <mesh file="passivewheel.stl"/>
         <material name="plate_material" rgba="0.682353 0.333333 0.737255 1"/>
         <material name="motor_material" rgba="0.647059 0.647059 0.647059 1"/>
         <material name="wheel_material" rgba="0.941176 0.87451 0.678431 1"/>

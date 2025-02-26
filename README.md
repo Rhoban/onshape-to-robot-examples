@@ -58,7 +58,7 @@ Description: Robot with 4 degrees of freedom, one prismatic (linear) joint and 3
 * **Notes**:
     * The robot is fixed using a "fixed" Onshape feature
     * There is one frame (`frame_tip`) attached to the tip of the arm
-    * Collisions mesh are ignored using `collisions_no_mesh`
+    * Collisions mesh are ignored using `no_collision_meshes`
 
 ### Omnidirectional
 
