@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - '**' 
+      - "**"
 
 env:
   ONSHAPE_API: https://cad.onshape.com
@@ -12,6 +12,10 @@ env:
 
 jobs:
   imports:
+    strategy:
+      matrix:
+        model: [2wheels_urdf, 2wheels_mujoco]
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,13 +24,22 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install onshape-to-robot
+          python -m pip install onshape-to-robot pinocchio mujoco
 
       - name: Run imports
         run: |
-          onshape-to-robot 2wheels_urdf
+          onshape-to-robot ${{ matrix.model }}
+
+      - name: Checking the model
+        run: |
+          python test_loading.py ${{ matrix.model }}
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.model }}/robot.*
