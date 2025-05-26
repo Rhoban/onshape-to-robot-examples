@@ -28,6 +28,8 @@ if "urdf" in args.model_name:
         pinocchio.VISUAL,
         package_dirs=os.path.dirname(output_filename),
     )
+
+    print(model)
 elif "mujoco" in args.model_name:
     import mujoco
 
