@@ -14,6 +14,7 @@ jobs:
   imports:
     strategy:
       matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
         model:
           [
             2wheels_urdf,
@@ -41,7 +42,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: |
@@ -59,5 +60,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.model }}
+          name: ${{ matrix.model }}-${{ matrix.python-version }}
           path: ${{ matrix.model }}/robot.*
