@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - '**' 
+
+env:
+  ONSHAPE_API: https://cad.onshape.com
+  ONSHAPE_ACCESS_KEY: ${{ secrets.OnshapeAccessKey }}
+  ONSHAPE_SECRET_KEY: ${{ secrets.OnshapeSecretKey }}
+
+jobs:
+  imports:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install onshape-to-robot
+
+      - name: Run imports
+        run: |
+          onshape-to-robot 2wheels_urdf
