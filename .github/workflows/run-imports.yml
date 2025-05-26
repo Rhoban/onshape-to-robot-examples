@@ -37,7 +37,7 @@ jobs:
 
       - name: Checking the model
         run: |
-          python test_loading.py ${{ matrix.model }}
+          python check_model.py ${{ matrix.model }}
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
