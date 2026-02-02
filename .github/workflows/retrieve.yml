@@ -1,0 +1,24 @@
+name: retrieve
+on: [push]
+
+env:
+  AK: ${{ secrets.OnshapeAccessKey }}
+  SK: ${{ secrets.OnshapeSecretKey }}
+
+jobs:
+  debug:
+    name: Debug
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up secret file
+      run: |
+        echo $AK >> secrets.txt
+        echo $SK >> secrets.txt
+
+    - name: Run tmate
+      uses: mxschmitt/action-tmate@v2
+
