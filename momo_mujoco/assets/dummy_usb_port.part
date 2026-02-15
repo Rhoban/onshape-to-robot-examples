@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "977876b9b7c2dcc9ef9352e5",
+    "documentMicroversion": "8854d8d4357f9be19ff6235a",
+    "documentVersion": "5ec2455d0113e8bf181ed696",
+    "elementId": "40d1b6cc08eb9bdd6b7b8173",
+    "fullConfiguration": "default",
+    "id": "MmDQMAAnn++VDjMQz",
+    "isStandardContent": false,
+    "name": "dummy-usb-port <40>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

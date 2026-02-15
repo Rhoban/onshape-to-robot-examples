@@ -158,6 +158,25 @@ Description: Orbita is a type of spherical parallel manipulator with 3 DOFs.
     * Two loop closures are used here in order to ensure the mechanism is fully constrained
     * Collisions are disabled in this example
 
+### MoMo: An Open-Source Modular Mobile Robot Research Platform
+
+<a href=".imgs/momo.png">
+<img src=".imgs/momo.png" width=256>
+</a>
+
+Description: [MoMo](https://tuhh-itl.github.io/MoMo/) is a modular mobile robot research platform developed at the [Institut für Technische Logistik](https://www3.tuhh.de/itl/) - [TUHH](https://www.tuhh.de/tuhh/startseite).
+
+* Give it a try:
+    * `onshape-to-robot-bullet momo_urdf`
+    * `onshape-to-robot-mujoco momo_mujoco`
+* [Onshape design](https://cad.onshape.com/documents/0f7ba08d49760d832652e76c/w/f802382a554ac4e5d967eb06/e/176c79e9883e5c00c7190ba1)
+* `config.json`
+    * [urdf](momo_urdf/config.json)
+    * [mujoco](momo_mujoco/config.json)
+* **Notes:**
+    * Each wheel has 12 rollers, each of them is a degree of freedom
+    * Collisions are approximated using OpenScad manual approximation
+
 ### Field
 
 <a href=".imgs/robot-field.png">

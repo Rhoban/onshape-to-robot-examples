@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "e9bfc91292964932a3b8cf59",
+    "documentMicroversion": "8d97e229dc805744099f2975",
+    "documentVersion": "e92192222dc14c7f06b2827d",
+    "elementId": "3c697002355abd242d67b3cf",
+    "fullConfiguration": "default",
+    "id": "MopYmLscweeZR6s+O",
+    "isStandardContent": false,
+    "name": "dummy-etherCAT6 <38>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

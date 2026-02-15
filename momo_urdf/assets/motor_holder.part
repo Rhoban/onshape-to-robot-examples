@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "b350b06ad9b1ad44171134c8",
+    "documentMicroversion": "cdda3618b3b9a0152ad9b1ff",
+    "documentVersion": "19f0b494e8447cd6f223e98a",
+    "elementId": "48db604709e6bd00586134e4",
+    "fullConfiguration": "default",
+    "id": "MxuCXMwdUWuhaK+vh",
+    "isStandardContent": false,
+    "name": "motor_holder <35>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

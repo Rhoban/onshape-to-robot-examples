@@ -1,0 +1,18 @@
+{
+    "url": "https://cad.onshape.com/documents/0f7ba08d49760d832652e76c/w/f802382a554ac4e5d967eb06/e/176c79e9883e5c00c7190ba1",
+    "output_format": "mujoco",
+    "use_scads": true,
+
+    "joint_properties": {
+        "*": {
+                "actuated": false,
+                "range": false
+        },
+        "*_wheel": {
+           "actuated": true,
+           "type": "velocity",
+           "limits": [-16, 16],
+           "kv": 5.0
+        }
+    }
+}

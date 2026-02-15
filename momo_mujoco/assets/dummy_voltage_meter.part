@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "677a8f973dc17d55f6f58fd1",
+    "documentMicroversion": "0a8fc25f6fb5f6697dffeeaa",
+    "documentVersion": "7966adac9d6b70ff2fe17b09",
+    "elementId": "358e41abe9988f47c32652c3",
+    "fullConfiguration": "default",
+    "id": "MYbvx7b7Fos7YIe9I",
+    "isStandardContent": false,
+    "name": "dummy-voltage-meter <42>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "fd8a5cc91dd930bffae9318d",
+    "documentMicroversion": "e214a45018c7099e593969d1",
+    "documentVersion": "cb1d01065aa08033b0ad5742",
+    "elementId": "d4d5b2a275d5aa84cc96b62c",
+    "fullConfiguration": "default",
+    "id": "M07X1aqQXqNwiJ+pL",
+    "isStandardContent": false,
+    "name": "mecanum_wheel_2 <2>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

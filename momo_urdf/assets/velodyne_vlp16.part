@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "09389ac704fd38bc03a7f12f",
+    "documentMicroversion": "efb9e3b6af2bf864a2298056",
+    "documentVersion": "8e12247e0a5c04bf3d9cbbd3",
+    "elementId": "61a71f7b678196ef713bc858",
+    "fullConfiguration": "default",
+    "id": "MXQQfr7E1t3LeaytE",
+    "isStandardContent": false,
+    "name": "velodyne-vlp16 <1>",
+    "partId": "JFD",
+    "suppressed": false,
+    "type": "Part"
+}

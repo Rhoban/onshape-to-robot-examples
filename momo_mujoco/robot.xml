@@ -1,0 +1,1572 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/0f7ba08d49760d832652e76c/w/f802382a554ac4e5d967eb06/e/176c79e9883e5c00c7190ba1 -->
+<mujoco model="momo_mujoco">
+    <compiler angle="radian" meshdir="assets" autolimits="true"/>
+    <option noslip_iterations="1"/>
+    <default>
+        <default class="momo_mujoco">
+            <joint frictionloss="0.1" armature="0.005"/>
+            <position kp="50" dampratio="1"/>
+            <default class="visual">
+                <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+            </default>
+            <default class="collision">
+                <geom group="3"/>
+            </default>
+        </default>
+    </default>
+    <worldbody>
+        <!-- Link base_link -->
+        <body name="base_link" pos="0 0 0" quat="1 0 0 0" childclass="momo_mujoco">
+            <freejoint name="base_link_freejoint"/>
+            <inertial pos="-0.0143671 0.000390804 0.148205" mass="21.7918" fullinertia="1.00393 1.72995 1.89383 -0.00124035 0.0559784 -0.00112567"/>
+            <!-- Part connector -->
+            <!-- Mesh connector -->
+            <geom type="mesh" class="visual" pos="-0.3475 0.205 0.11" quat="0.707107 -1.15238e-14 -1.45439e-14 -0.707107" mesh="connector" material="connector_material"/>
+            <!-- Part connector_2 -->
+            <!-- Mesh connector_2 -->
+            <geom type="mesh" class="visual" pos="-0.3625 -0.19 0.11" quat="1 -2.41102e-14 -3.66374e-15 4.57967e-16" mesh="connector" material="connector_material"/>
+            <!-- Part aluminium_profile_380 -->
+            <!-- Mesh aluminium_profile_380 -->
+            <geom type="mesh" class="visual" pos="-0.3625 -0.425 0.02" quat="1 -1.85036e-14 -2.33147e-15 1.61329e-15" mesh="aluminium_profile_380" material="aluminium_profile_380_material"/>
+            <!-- Part dummy_usb_port -->
+            <!-- Mesh dummy_usb_port -->
+            <geom type="mesh" class="visual" pos="0.338099 -0.065 0.142201" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_usb_port" material="dummy_usb_port_material"/>
+            <!-- Part aluminium_profile_620 -->
+            <!-- Mesh aluminium_profile_620 -->
+            <geom type="mesh" class="visual" pos="0.2675 -0.205 0.210132" quat="0.707107 -1.43828e-14 7.54952e-15 0.707107" mesh="aluminium_profile_620" material="aluminium_profile_620_material"/>
+            <!-- Part dummy_usb_port_2 -->
+            <!-- Mesh dummy_usb_port_2 -->
+            <geom type="mesh" class="visual" pos="0.315109 -0.032 0.165874" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_usb_port" material="dummy_usb_port_material"/>
+            <!-- Part connector_3 -->
+            <!-- Mesh connector_3 -->
+            <geom type="mesh" class="visual" pos="0.2575 -0.19 0.210132" quat="0.707107 -7.23822e-15 -0.707107 9.85928e-15" mesh="connector" material="connector_material"/>
+            <!-- Part dummy_connectors -->
+            <!-- Mesh dummy_connectors -->
+            <geom type="mesh" class="visual" pos="0.349419 -0.135 0.147769" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_connectors" material="dummy_connectors_material"/>
+            <!-- Part cube_connector -->
+            <!-- Mesh cube_connector -->
+            <geom type="mesh" class="visual" pos="-0.3625 0.205 0.21" quat="0.5 0.5 -0.5 -0.5" mesh="cube_connector" material="cube_connector_material"/>
+            <!-- Part aluminium_profile_90 -->
+            <!-- Mesh aluminium_profile_90 -->
+            <geom type="mesh" class="visual" pos="0.3575 0.205 -0.55" quat="0.707107 0.707107 -3.33067e-16 2.77966e-15" mesh="aluminium_profile_90" material="aluminium_profile_90_material"/>
+            <!-- Part front_right_panel -->
+            <!-- Mesh front_right_panel -->
+            <geom type="mesh" class="visual" pos="0.3745 0.218 0.00313226" quat="0.5 0.5 -0.5 -0.5" mesh="front_right_panel" material="front_right_panel_material"/>
+            <!-- Part joint_30 -->
+            <!-- Mesh joint_30 -->
+            <geom type="mesh" class="visual" pos="0.2725 0.19 0.225132" quat="0.707107 -1.43992e-14 0.707107 -1.18031e-14" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part cube_connector_2 -->
+            <!-- Mesh cube_connector_2 -->
+            <geom type="mesh" class="visual" pos="0.3575 0.205 0.02" quat="2.23391e-15 -1.69786e-15 1 -1.853e-14" mesh="cube_connector" material="cube_connector_material"/>
+            <!-- Part aluminium_profile_380_2 -->
+            <!-- Mesh aluminium_profile_380_2 -->
+            <geom type="mesh" class="visual" pos="0.3575 -0.425 0.02" quat="1 -1.85302e-14 -2.10942e-15 1.69825e-15" mesh="aluminium_profile_380" material="aluminium_profile_380_material"/>
+            <!-- Part aluminium_profile_380_3 -->
+            <!-- Mesh aluminium_profile_380_3 -->
+            <geom type="mesh" class="visual" pos="0.1775 -0.425 0.02" quat="1 -1.85302e-14 -2.10942e-15 1.69825e-15" mesh="aluminium_profile_380" material="aluminium_profile_380_material"/>
+            <!-- Part aluminium_angle_bracket -->
+            <!-- Mesh aluminium_angle_bracket -->
+            <geom type="mesh" class="visual" pos="-0.1475 0.1725 0.0185" quat="0.707107 -1.48319e-14 -1.31006e-14 -0.707107" mesh="aluminium_angle_bracket" material="aluminium_angle_bracket_material"/>
+            <!-- Part aluminium_profile_380_4 -->
+            <!-- Mesh aluminium_profile_380_4 -->
+            <geom type="mesh" class="visual" pos="-0.3625 -0.425 0.21" quat="1 -1.84297e-14 -2.22045e-15 1.66924e-15" mesh="aluminium_profile_380" material="aluminium_profile_380_material"/>
+            <!-- Part motor_holder -->
+            <!-- Mesh motor_holder -->
+            <geom type="mesh" class="visual" pos="0.2685 0.19 0.065" quat="0.707107 0.707107 4.44089e-16 2.07525e-15" mesh="motor_holder" material="motor_holder_material"/>
+            <!-- Part motor_holder_2 -->
+            <!-- Mesh motor_holder_2 -->
+            <geom type="mesh" class="visual" pos="-0.2735 -0.19 0.065" quat="3.60822e-16 -2.7842e-15 0.707107 0.707107" mesh="motor_holder" material="motor_holder_material"/>
+            <!-- Part front_left_panel -->
+            <!-- Mesh front_left_panel -->
+            <geom type="mesh" class="visual" pos="0.3725 -0.218 0.00313226" quat="0.5 0.5 0.5 0.5" mesh="front_left_panel" material="front_left_panel_material"/>
+            <!-- Part joint_30_2 -->
+            <!-- Mesh joint_30_2 -->
+            <geom type="mesh" class="visual" pos="0.321789 0.22 0.204703" quat="8.74817e-15 0.382483 -1.65423e-14 -0.923962" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part back_cover -->
+            <!-- Mesh back_cover -->
+            <geom type="mesh" class="visual" pos="-0.3775 -0.2175 0.2225" quat="0.5 -0.5 -0.5 0.5" mesh="back_cover" material="back_cover_material"/>
+            <!-- Part aluminium_angle_bracket_2 -->
+            <!-- Mesh aluminium_angle_bracket_2 -->
+            <geom type="mesh" class="visual" pos="0.145 0.19 0.0185" quat="1.27676e-15 -2.95426e-15 -2.5091e-14 -1" mesh="aluminium_angle_bracket" material="aluminium_angle_bracket_material"/>
+            <!-- Part aluminium_profile_690 -->
+            <!-- Mesh aluminium_profile_690 -->
+            <geom type="mesh" class="visual" pos="0.2675 0.205 0.02" quat="0.707107 -1.46008e-14 1.14353e-14 0.707107" mesh="aluminium_profile_690" material="aluminium_profile_690_material"/>
+            <!-- Part dummy_screen_front -->
+            <!-- Mesh dummy_screen_front -->
+            <geom type="mesh" class="visual" pos="0.321988 0.095 0.173145" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_screen_front" material="dummy_screen_front_material"/>
+            <!-- Part back_wheel_cover -->
+            <!-- Mesh back_wheel_cover -->
+            <geom type="mesh" class="visual" pos="0.272422 -0.22 0.225" quat="0.707107 0.707107 -6.99441e-15 3.05841e-15" mesh="back_wheel_cover" material="back_wheel_cover_material"/>
+            <!-- Part connector_4 -->
+            <!-- Mesh connector_4 -->
+            <geom type="mesh" class="visual" pos="0.3425 -0.205 0.11" quat="0.707107 -1.46584e-14 1.15463e-14 0.707107" mesh="connector" material="connector_material"/>
+            <!-- Part joint_30_3 -->
+            <!-- Mesh joint_30_3 -->
+            <geom type="mesh" class="visual" pos="0.2725 -0.19 0.195132" quat="1.17712e-14 0.707107 1.44329e-14 0.707107" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part aluminium_profile_42_8 -->
+            <!-- Mesh aluminium_profile_42_8 -->
+            <geom type="mesh" class="visual" pos="0.28856 -0.205 0.216834" quat="0.653053 0.271148 0.271148 0.653053" mesh="aluminium_profile_42_8" material="aluminium_profile_42_8_material"/>
+            <!-- Part connector_5 -->
+            <!-- Mesh connector_5 -->
+            <geom type="mesh" class="visual" pos="0.3425 0.205 0.11" quat="0.707107 -1.46862e-14 1.13243e-14 0.707107" mesh="connector" material="connector_material"/>
+            <!-- Part aluminium_profile_354 -->
+            <!-- Mesh aluminium_profile_354 -->
+            <geom type="mesh" class="visual" pos="-0.3625 -0.4382 0.11" quat="1 -2.57758e-14 -2.10942e-15 1.76806e-15" mesh="aluminium_profile_354" material="aluminium_profile_354_material"/>
+            <!-- Part aluminium_profile_664 -->
+            <!-- Mesh aluminium_profile_664 -->
+            <geom type="mesh" class="visual" pos="0.2545 0.205 0.11" quat="0.707107 -1.46827e-14 1.15463e-14 0.707107" mesh="aluminium_profile_664" material="aluminium_profile_664_material"/>
+            <!-- Part connector_6 -->
+            <!-- Mesh connector_6 -->
+            <geom type="mesh" class="visual" pos="0.3575 -0.19 0.11" quat="1 -1.56448e-14 -2.22045e-15 1.83589e-15" mesh="connector" material="connector_material"/>
+            <!-- Part dummy_voltage_meter -->
+            <!-- Mesh dummy_voltage_meter -->
+            <geom type="mesh" class="visual" pos="0.300037 -0.0975 0.191442" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_voltage_meter" material="dummy_voltage_meter_material"/>
+            <!-- Part dummy_screen_back -->
+            <!-- Mesh dummy_screen_back -->
+            <geom type="mesh" class="visual" pos="0.321988 0.095 0.173145" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_screen_back" material="dummy_screen_back_material"/>
+            <!-- Part back_wheel_cover_2 -->
+            <!-- Mesh back_wheel_cover_2 -->
+            <geom type="mesh" class="visual" pos="0.272422 0.222 0.225" quat="0.707107 0.707107 -3.33067e-16 2.77966e-15" mesh="back_wheel_cover" material="back_wheel_cover_material"/>
+            <!-- Part aluminium_profile_42_8_2 -->
+            <!-- Mesh aluminium_profile_42_8_2 -->
+            <geom type="mesh" class="visual" pos="0.288418 0.205 0.21688" quat="0.65334 0.65334 -0.270456 0.270456" mesh="aluminium_profile_42_8" material="aluminium_profile_42_8_material"/>
+            <!-- Part base_link -->
+            <geom class="collision" pos="-2.80845e-16 3.73287e-16 0.1125" quat="1 -1.85591e-14 -2.22045e-15 1.69828e-15" type="box" size="0.3725 0.22 0.1125"/>
+            <!-- Mesh base_link -->
+            <geom type="mesh" class="visual" pos="2.22045e-16 -3.80251e-15 6.60409e-15" quat="1 -1.85591e-14 -2.22045e-15 1.69828e-15" mesh="base_link" material="base_link_material"/>
+            <!-- Part aluminium_profile_354_2 -->
+            <!-- Mesh aluminium_profile_354_2 -->
+            <geom type="mesh" class="visual" pos="0.3575 -0.438 0.11" quat="1 -1.85307e-14 -2.22045e-15 1.69829e-15" mesh="aluminium_profile_354" material="aluminium_profile_354_material"/>
+            <!-- Part aluminium_angle_bracket_3 -->
+            <!-- Mesh aluminium_angle_bracket_3 -->
+            <geom type="mesh" class="visual" pos="0.1625 -0.1725 0.0185" quat="0.707107 -1.78297e-14 9.54792e-15 0.707107" mesh="aluminium_angle_bracket" material="aluminium_angle_bracket_material"/>
+            <!-- Part joint_30_4 -->
+            <!-- Mesh joint_30_4 -->
+            <geom type="mesh" class="visual" pos="0.330817 0.22 0.153222" quat="1.63889e-14 0.923962 8.65974e-15 0.382483" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part cover_with_connections -->
+            <!-- Mesh cover_with_connections -->
+            <geom type="mesh" class="visual" pos="0.3725 -0.095 0.121132" quat="0.707107 0.707107 -5.55112e-16 3.0131e-15" mesh="cover_with_connections" material="cover_with_connections_material"/>
+            <!-- Part aluminium_profile_380_5 -->
+            <!-- Mesh aluminium_profile_380_5 -->
+            <geom type="mesh" class="visual" pos="-0.1625 -0.425 0.02" quat="1 -2.04003e-14 -2.22045e-15 1.61329e-15" mesh="aluminium_profile_380" material="aluminium_profile_380_material"/>
+            <!-- Part aluminium_profile_664_2 -->
+            <!-- Mesh aluminium_profile_664_2 -->
+            <geom type="mesh" class="visual" pos="0.2545 -0.205 0.11" quat="0.707107 -1.46584e-14 1.15463e-14 0.707107" mesh="aluminium_profile_664" material="aluminium_profile_664_material"/>
+            <!-- Part spacer -->
+            <!-- Mesh spacer -->
+            <geom type="mesh" class="visual" pos="0.2125 0.205 0.225132" quat="1 -1.85199e-14 -2.55351e-15 1.83335e-15" mesh="spacer" material="spacer_material"/>
+            <!-- Part joint_30_5 -->
+            <!-- Mesh joint_30_5 -->
+            <geom type="mesh" class="visual" pos="0.3425 0.19 0.125" quat="1 -1.85962e-14 -2.22045e-15 1.69828e-15" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part back_cover_2 -->
+            <!-- Mesh back_cover_2 -->
+            <geom type="mesh" class="visual" pos="-0.3775 0.2175 0.0075" quat="0.5 0.5 -0.5 -0.5" mesh="back_cover" material="back_cover_material"/>
+            <!-- Part connector_7 -->
+            <!-- Mesh connector_7 -->
+            <geom type="mesh" class="visual" pos="-0.3625 0.19 0.11" quat="1.66949e-15 2.23391e-15 -1.86517e-14 -1" mesh="connector" material="connector_material"/>
+            <!-- Part cube_connector_3 -->
+            <!-- Mesh cube_connector_3 -->
+            <geom type="mesh" class="visual" pos="-0.3625 0.205 0.02" quat="0.707107 -0.707107 -2.66454e-15 -3.98388e-16" mesh="cube_connector" material="cube_connector_material"/>
+            <!-- Part aluminium_profile_90_2 -->
+            <!-- Mesh aluminium_profile_90_2 -->
+            <geom type="mesh" class="visual" pos="0.3575 -0.205 -0.55" quat="0.707107 0.707107 -1.11022e-16 2.83247e-15" mesh="aluminium_profile_90" material="aluminium_profile_90_material"/>
+            <!-- Part connector_8 -->
+            <!-- Mesh connector_8 -->
+            <geom type="mesh" class="visual" pos="0.3575 0.19 0.11" quat="1.69829e-15 2.23391e-15 -1.85407e-14 -1" mesh="connector" material="connector_material"/>
+            <!-- Part spacer_2 -->
+            <!-- Mesh spacer_2 -->
+            <geom type="mesh" class="visual" pos="0.2125 -0.205 0.225132" quat="1 -1.53096e-14 -5.10703e-15 -1.63758e-15" mesh="spacer" material="spacer_material"/>
+            <!-- Part motor_holder_3 -->
+            <!-- Mesh motor_holder_3 -->
+            <geom type="mesh" class="visual" pos="-0.2735 0.19 0.065" quat="0.707107 0.707107 -1.22125e-15 3.84055e-15" mesh="motor_holder" material="motor_holder_material"/>
+            <!-- Part connector_9 -->
+            <!-- Mesh connector_9 -->
+            <geom type="mesh" class="visual" pos="-0.3475 -0.205 0.11" quat="0.707107 -1.15882e-14 -1.44329e-14 -0.707107" mesh="connector" material="connector_material"/>
+            <!-- Part cube_connector_4 -->
+            <!-- Mesh cube_connector_4 -->
+            <geom type="mesh" class="visual" pos="0.3575 -0.205 0.02" quat="2.72005e-15 3.78758e-16 0.707107 -0.707107" mesh="cube_connector" material="cube_connector_material"/>
+            <!-- Part joint_30_6 -->
+            <!-- Mesh joint_30_6 -->
+            <geom type="mesh" class="visual" pos="0.352128 -0.22 0.1743" quat="0.381905 -8.78457e-15 0.924201 -1.64512e-14" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part dummy_usb_port_3 -->
+            <!-- Mesh dummy_usb_port_3 -->
+            <geom type="mesh" class="visual" pos="0.338099 -0.032 0.142201" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_usb_port" material="dummy_usb_port_material"/>
+            <!-- Part joint_30_7 -->
+            <!-- Mesh joint_30_7 -->
+            <geom type="mesh" class="visual" pos="0.300666 -0.22 0.183438" quat="0.924201 -1.6456e-14 -0.381905 8.72913e-15" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part joint_30_8 -->
+            <!-- Mesh joint_30_8 -->
+            <geom type="mesh" class="visual" pos="0.3725 -0.19 0.125" quat="1.8359e-15 2.22045e-15 -1.84297e-14 -1" mesh="joint_30" material="joint_30_material"/>
+            <!-- Part aluminium_profile_690_2 -->
+            <!-- Mesh aluminium_profile_690_2 -->
+            <geom type="mesh" class="visual" pos="0.2675 -0.205 0.02" quat="0.707107 -1.47421e-14 1.15463e-14 0.707107" mesh="aluminium_profile_690" material="aluminium_profile_690_material"/>
+            <!-- Part dummy_ethercat6 -->
+            <!-- Mesh dummy_ethercat6 -->
+            <geom type="mesh" class="visual" pos="0.292118 -0.032 0.189548" quat="0.651284 0.275371 0.275371 0.651284" mesh="dummy_ethercat6" material="dummy_ethercat6_material"/>
+            <!-- Part aluminium_profile_160 -->
+            <!-- Mesh aluminium_profile_160 -->
+            <geom type="mesh" class="visual" pos="-0.3625 -0.205 -0.42" quat="0.707107 0.707107 -7.10543e-15 3.08524e-15" mesh="aluminium_profile_160" material="aluminium_profile_160_material"/>
+            <!-- Part cube_connector_5 -->
+            <!-- Mesh cube_connector_5 -->
+            <geom type="mesh" class="visual" pos="-0.3625 -0.205 0.02" quat="0.5 -0.5 -0.5 0.5" mesh="cube_connector" material="cube_connector_material"/>
+            <!-- Part aluminium_profile_620_2 -->
+            <!-- Mesh aluminium_profile_620_2 -->
+            <geom type="mesh" class="visual" pos="-0.3425 0.205 0.210132" quat="0.707107 -1.1503e-14 -1.4766e-14 -0.707107" mesh="aluminium_profile_620" material="aluminium_profile_620_material"/>
+            <!-- Part aluminium_profile_160_2 -->
+            <!-- Mesh aluminium_profile_160_2 -->
+            <geom type="mesh" class="visual" pos="-0.3625 0.205 0.65" quat="0.707107 -0.707107 -2.77556e-15 -3.78758e-16" mesh="aluminium_profile_160" material="aluminium_profile_160_material"/>
+            <!-- Part center_cover -->
+            <!-- Mesh center_cover -->
+            <geom type="mesh" class="visual" pos="-0.125 0.22 0.0075" quat="1 -2.43589e-14 -2.22045e-15 1.69824e-15" mesh="center_cover" material="center_cover_material"/>
+            <!-- Part front_wheel_cover -->
+            <!-- Mesh front_wheel_cover -->
+            <geom type="mesh" class="visual" pos="0.272422 -0.22 0.225" quat="0.707107 0.707107 -3.33067e-16 2.77966e-15" mesh="front_wheel_cover" material="front_wheel_cover_material"/>
+            <!-- Part connector_10 -->
+            <!-- Mesh connector_10 -->
+            <geom type="mesh" class="visual" pos="0.2575 0.19 0.210132" quat="1.17688e-14 0.707107 1.44329e-14 0.707107" mesh="connector" material="connector_material"/>
+            <!-- Part screen_holder -->
+            <!-- Mesh screen_holder -->
+            <geom type="mesh" class="visual" pos="0.3725 0.095 0.121132" quat="0.707107 0.707107 -5.55112e-16 2.96973e-15" mesh="screen_holder" material="screen_holder_material"/>
+            <!-- Part motor_holder_4 -->
+            <!-- Mesh motor_holder_4 -->
+            <geom type="mesh" class="visual" pos="0.2685 -0.19 0.065" quat="3.84022e-16 -2.80418e-15 0.707107 0.707107" mesh="motor_holder" material="motor_holder_material"/>
+            <!-- Part cube_connector_6 -->
+            <!-- Mesh cube_connector_6 -->
+            <geom type="mesh" class="visual" pos="-0.3625 -0.205 0.21" quat="0.707107 0.707107 -7.32747e-15 9.8885e-15" mesh="cube_connector" material="cube_connector_material"/>
+            <!-- Part center_cover_2 -->
+            <!-- Mesh center_cover_2 -->
+            <geom type="mesh" class="visual" pos="-0.125 -0.222 0.0075" quat="1 -1.56448e-14 -2.22045e-15 1.69831e-15" mesh="center_cover" material="center_cover_material"/>
+            <!-- Part aluminium_profile_354_3 -->
+            <!-- Mesh aluminium_profile_354_3 -->
+            <geom type="mesh" class="visual" pos="0.2575 -0.438 0.210132" quat="1 -1.2091e-14 -1.44329e-15 1.85339e-15" mesh="aluminium_profile_354" material="aluminium_profile_354_material"/>
+            <!-- Part aluminium_angle_bracket_4 -->
+            <!-- Mesh aluminium_angle_bracket_4 -->
+            <geom type="mesh" class="visual" pos="-0.13 -0.19 0.0185" quat="1 -2.04003e-14 -2.22045e-15 1.61329e-15" mesh="aluminium_angle_bracket" material="aluminium_angle_bracket_material"/>
+            <!-- Part front_wheel_cover_2 -->
+            <!-- Mesh front_wheel_cover_2 -->
+            <geom type="mesh" class="visual" pos="0.272422 0.222 0.225" quat="0.707107 0.707107 -3.33067e-16 2.77966e-15" mesh="front_wheel_cover" material="front_wheel_cover_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id38_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id38_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id38_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id38_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id26_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id26_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id26_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id26_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_2_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_2_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_2_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_2_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id16_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id16_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id16_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id16_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id48_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id48_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id48_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id48_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id43_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id43_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id43_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id43_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id11_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id11_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id11_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id11_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id21_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id21_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id21_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id21_x_t_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_xjz_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_xjz_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_xjz_stp_1_solid1" material="j19_371rgb_x_t_stp_1_xjz_stp_1_solid1_material"/>
+            <!-- Part j19_371rgb_x_t_stp_1_j19_272_id6_x_t_stp_1_solid1 -->
+            <!-- Mesh j19_371rgb_x_t_stp_1_j19_272_id6_x_t_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.298863 -0.160499 0.197538" quat="0.921055 -1.77623e-14 0.389433 -5.66892e-15" mesh="j19_371rgb_x_t_stp_1_j19_272_id6_x_t_stp_1_solid1" material="j19_371rgb_x_t_stp_1_j19_272_id6_x_t_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081112002_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081112002_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081112002_stp_1_solid1" material="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081112002_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_zpd20170912002_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_zpd20170912002_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_zpd20170912002_stp_1_solid1" material="las1_agq_tsb_stp_1_zpd20170912002_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081111002_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081111002_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081111002_stp_1_solid1" material="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081111002_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_20081118003_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_20081118003_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_20081118003_stp_1_solid1" material="las1_agq_tsb_stp_1_20081118003_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_prt0001_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_prt0001_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_prt0001_stp_1_solid1" material="las1_agq_tsb_stp_1_prt0001_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_20090724001_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_20090724001_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_20090724001_stp_1_solid1" material="las1_agq_tsb_stp_1_20090724001_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid1" material="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid1_material"/>
+            <!-- Part las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid2 -->
+            <!-- Mesh las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid2 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid2" material="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid2_material"/>
+            <!-- Part las1_agq_tsb_stp_1_zpd20170913001_stp_1_solid1 -->
+            <!-- Mesh las1_agq_tsb_stp_1_zpd20170913001_stp_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.331473 -0.1605 0.179525" quat="0.651284 0.651284 0.275371 -0.275371" mesh="las1_agq_tsb_stp_1_zpd20170913001_stp_1_solid1" material="las1_agq_tsb_stp_1_zpd20170913001_stp_1_solid1_material"/>
+            <!-- Part realsense_mounting_bracket -->
+            <!-- Mesh realsense_mounting_bracket -->
+            <geom type="mesh" class="visual" pos="0.165714 -0.03064 0.354216" quat="1.54662e-15 4.31539e-14 1 -9.75685e-15" mesh="realsense_mounting_bracket" material="realsense_mounting_bracket_material"/>
+            <!-- Part side_plate_2 -->
+            <!-- Mesh side_plate_2 -->
+            <geom type="mesh" class="visual" pos="0.455748 -0.197544 -0.169378" quat="0.707107 -6.26987e-15 -1.44329e-15 0.707107" mesh="side_plate_2" material="side_plate_2_material"/>
+            <!-- Part joint_30_9 -->
+            <!-- Mesh joint_30_9 -->
+            <geom type="mesh" class="visual" pos="0.25184 -0.2205 0.30843" quat="0.349542 3.68715e-14 0.936921 -2.4371e-14" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part joint_30_10 -->
+            <!-- Mesh joint_30_10 -->
+            <geom type="mesh" class="visual" pos="-0.272896 0.22 0.376129" quat="2.37184e-14 -0.707107 3.74145e-14 0.707107" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part joint_30_11 -->
+            <!-- Mesh joint_30_11 -->
+            <geom type="mesh" class="visual" pos="0.25184 0.1895 0.30843" quat="0.349542 3.67224e-14 0.936921 -2.42876e-14" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part joint_30_12 -->
+            <!-- Mesh joint_30_12 -->
+            <geom type="mesh" class="visual" pos="-0.34965 0.22 0.258815" quat="4.11875e-14 -6.72611e-15 1.4877e-14 1" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part velodyne_mount -->
+            <!-- Mesh velodyne_mount -->
+            <geom type="mesh" class="visual" pos="-0.00693293 1.75362e-07 0.384129" quat="0.707107 0.707107 -3.19744e-14 -2.00002e-14" mesh="velodyne_mount" material="velodyne_mount_material"/>
+            <!-- Part realsense_d435i -->
+            <!-- Mesh realsense_d435i -->
+            <geom type="mesh" class="visual" pos="-0.381177 -1.35417e-13 0.31717" quat="0.5 0.5 -0.5 -0.5" mesh="realsense_d435i" material="realsense_d435i_material"/>
+            <!-- Part aluminium_profile_380_6 -->
+            <!-- Mesh aluminium_profile_380_6 -->
+            <geom type="mesh" class="visual" pos="-0.257896 0.425 0.361129" quat="3.61066e-14 0.707107 -2.498e-14 0.707107" mesh="aluminium_profile_380__2" material="aluminium_profile_380__2_material"/>
+            <!-- Part joint_30_13 -->
+            <!-- Mesh joint_30_13 -->
+            <geom type="mesh" class="visual" pos="0.27035 0.22 0.258815" quat="4.11875e-14 -6.72611e-15 1.4877e-14 1" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part cube_connector_7 -->
+            <!-- Mesh cube_connector_7 -->
+            <geom type="mesh" class="visual" pos="0.25535 -0.205 0.243815" quat="2.9938e-14 -3.23812e-14 -0.707107 0.707107" mesh="cube_connector__2" material="cube_connector__2_material"/>
+            <!-- Part side_plate_1 -->
+            <!-- Mesh side_plate_1 -->
+            <geom type="mesh" class="visual" pos="0.455748 -0.197544 -0.169378" quat="0.707107 -6.283e-15 3.77476e-15 0.707107" mesh="side_plate_1" material="side_plate_1_material"/>
+            <!-- Part angle_5_20 -->
+            <!-- Mesh angle_5_20 -->
+            <geom type="mesh" class="visual" pos="0.18385 0.014 0.256815" quat="0.707107 -0.707107 3.14193e-14 -3.35535e-14" mesh="angle_5_20" material="angle_5_20_material"/>
+            <!-- Part back_plate_right -->
+            <!-- Mesh back_plate_right -->
+            <geom type="mesh" class="visual" pos="0.458416 -0.19752 -0.16999" quat="0.707107 -6.283e-15 3.77476e-15 0.707107" mesh="back_plate_right" material="back_plate_right_material"/>
+            <!-- Part joint_30_14 -->
+            <!-- Mesh joint_30_14 -->
+            <geom type="mesh" class="visual" pos="-0.34965 -0.19 0.258815" quat="4.31546e-14 -1.49072e-15 9.54792e-15 1" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part aluminium_profile_380_7 -->
+            <!-- Mesh aluminium_profile_380_7 -->
+            <geom type="mesh" class="visual" pos="0.25535 0.425 0.243815" quat="3.61066e-14 0.707107 -2.498e-14 0.707107" mesh="aluminium_profile_380__2" material="aluminium_profile_380__2_material"/>
+            <!-- Part side_plate_3 -->
+            <!-- Mesh side_plate_3 -->
+            <geom type="mesh" class="visual" pos="-0.570118 0.197544 -0.169378" quat="0.707107 -1.03615e-14 -1.28786e-14 -0.707107" mesh="side_plate_3" material="side_plate_3_material"/>
+            <!-- Part realsense_mounting_bracket_2 -->
+            <!-- Mesh realsense_mounting_bracket_2 -->
+            <geom type="mesh" class="visual" pos="-0.364248 0.0171053 0.334827" quat="0.707107 2.70166e-14 0.707107 -3.43158e-14" mesh="realsense_mounting_bracket" material="realsense_mounting_bracket_material"/>
+            <!-- Part joint_30_15 -->
+            <!-- Mesh joint_30_15 -->
+            <geom type="mesh" class="visual" pos="-0.272896 -0.19 0.376129" quat="2.36022e-14 -0.707107 3.74145e-14 0.707107" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part aluminium_profile_60 -->
+            <!-- Mesh aluminium_profile_60 -->
+            <geom type="mesh" class="visual" pos="0.623672 0.2045 -0.143444" quat="0.643231 0.293689 0.293689 0.643231" mesh="aluminium_profile_60" material="aluminium_profile_60_material"/>
+            <!-- Part aluminium_angle_bracket_5 -->
+            <!-- Mesh aluminium_angle_bracket_5 -->
+            <geom type="mesh" class="visual" pos="0.116067 -0.19 0.362129" quat="6.81632e-15 4.30723e-14 1 -9.82902e-15" mesh="aluminium_angle_bracket__2" material="aluminium_angle_bracket__2_material"/>
+            <!-- Part joint_30_16 -->
+            <!-- Mesh joint_30_16 -->
+            <geom type="mesh" class="visual" pos="0.163567 0.22 0.346129" quat="3.73206e-14 0.707107 -2.37588e-14 0.707107" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part realsense_mounting_bracket_3 -->
+            <!-- Mesh realsense_mounting_bracket_3 -->
+            <geom type="mesh" class="visual" pos="0.165714 0.01936 0.354216" quat="6.72611e-15 4.30342e-14 1 -8.04493e-15" mesh="realsense_mounting_bracket" material="realsense_mounting_bracket_material"/>
+            <!-- Part logitech_c920 -->
+            <!-- Mesh logitech_c920 -->
+            <geom type="mesh" class="visual" pos="0.150217 -4.44369e-05 0.408129" quat="0.5 -0.5 0.5 -0.5" mesh="logitech_c920" material="logitech_c920_material"/>
+            <!-- Part aluminium_profile_60_2 -->
+            <!-- Mesh aluminium_profile_60_2 -->
+            <geom type="mesh" class="visual" pos="-0.733285 0.2045 -0.14301" quat="0.293417 0.643355 0.643355 0.293417" mesh="aluminium_profile_60" material="aluminium_profile_60_material"/>
+            <!-- Part mount_harting_connector -->
+            <!-- Mesh mount_harting_connector -->
+            <geom type="mesh" class="visual" pos="0.21285 0.1605 0.253815" quat="0.707107 0.707107 -3.29736e-14 -2.38077e-14" mesh="mount_harting_connector" material="mount_harting_connector_material"/>
+            <!-- Part joint_30_17 -->
+            <!-- Mesh joint_30_17 -->
+            <geom type="mesh" class="visual" pos="0.189871 0.1895 0.334119" quat="0.936921 -2.42678e-14 -0.349542 -3.67366e-14" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part joint_30_18 -->
+            <!-- Mesh joint_30_18 -->
+            <geom type="mesh" class="visual" pos="-0.338418 0.1895 0.288882" quat="0.349938 -4.38803e-14 -0.936773 -5.92535e-15" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part front_plate_left -->
+            <!-- Mesh front_plate_left -->
+            <geom type="mesh" class="visual" pos="0.458288 -0.197472 -0.169084" quat="0.707107 -6.283e-15 3.77476e-15 0.707107" mesh="front_plate_left" material="front_plate_left_material"/>
+            <!-- Part ifm_o3r222 -->
+            <!-- Mesh ifm_o3r222 -->
+            <geom type="mesh" class="visual" pos="0.272346 -0.00448413 0.28884" quat="0.5 -0.5 -0.5 0.5" mesh="ifm_o3r222" material="ifm_o3r222_material"/>
+            <!-- Part aluminium_profile_436 -->
+            <!-- Mesh aluminium_profile_436 -->
+            <geom type="mesh" class="visual" pos="-0.451433 -0.205 0.361129" quat="6.30856e-15 0.707107 0.707107 -3.59806e-15" mesh="aluminium_profile_436" material="aluminium_profile_436_material"/>
+            <!-- Part aluminium_profile_60_3 -->
+            <!-- Mesh aluminium_profile_60_3 -->
+            <geom type="mesh" class="visual" pos="-0.733285 -0.2055 -0.14301" quat="0.293417 0.643355 0.643355 0.293417" mesh="aluminium_profile_60" material="aluminium_profile_60_material"/>
+            <!-- Part top_plate_localization_module -->
+            <!-- Mesh top_plate_localization_module -->
+            <geom type="mesh" class="visual" pos="-0.0544328 -1.30981e-13 0.379129" quat="1.32177e-15 -0.707107 0.707107 -1.11773e-14" mesh="top_plate_localization_module" material="top_plate_localization_module_material"/>
+            <!-- Part aluminium_profile_620_3 -->
+            <!-- Mesh aluminium_profile_620_3 -->
+            <geom type="mesh" class="visual" pos="-0.37465 0.205 0.243815" quat="8.73872e-15 0.707107 0.707107 -1.11678e-15" mesh="aluminium_profile_620__2" material="aluminium_profile_620__2_material"/>
+            <!-- Part aluminium_profile_620_4 -->
+            <!-- Mesh aluminium_profile_620_4 -->
+            <geom type="mesh" class="visual" pos="-0.37465 -0.205 0.243815" quat="6.21888e-15 0.707107 0.707107 -3.57331e-15" mesh="aluminium_profile_620__2" material="aluminium_profile_620__2_material"/>
+            <!-- Part joint_30_19 -->
+            <!-- Mesh joint_30_19 -->
+            <geom type="mesh" class="visual" pos="0.163567 -0.19 0.346129" quat="3.72839e-14 0.707107 -2.36478e-14 0.707107" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part side_plate_3_2 -->
+            <!-- Mesh side_plate_3_2 -->
+            <geom type="mesh" class="visual" pos="0.456757 -0.197544 -0.169378" quat="0.707107 -6.283e-15 3.77476e-15 0.707107" mesh="side_plate_3" material="side_plate_3_material"/>
+            <!-- Part side_plate_1_2 -->
+            <!-- Mesh side_plate_1_2 -->
+            <geom type="mesh" class="visual" pos="-0.569109 0.197544 -0.169378" quat="0.707107 -1.15484e-14 -1.13243e-14 -0.707107" mesh="side_plate_1" material="side_plate_1_material"/>
+            <!-- Part logitech_c920_2 -->
+            <!-- Mesh logitech_c920_2 -->
+            <geom type="mesh" class="visual" pos="-0.00697719 -0.20665 0.408129" quat="3.03286e-14 -3.17158e-14 -0.707107 0.707107" mesh="logitech_c920" material="logitech_c920_material"/>
+            <!-- Part aluminium_angle_bracket_6 -->
+            <!-- Mesh aluminium_angle_bracket_6 -->
+            <geom type="mesh" class="visual" pos="0.133567 0.1725 0.362129" quat="3.54973e-15 0.707107 -0.707107 6.10418e-15" mesh="aluminium_angle_bracket__2" material="aluminium_angle_bracket__2_material"/>
+            <!-- Part velodyne_vlp16 -->
+            <!-- Mesh velodyne_vlp16 -->
+            <geom type="mesh" class="visual" pos="-0.00737893 1.75362e-07 0.429129" quat="3.17816e-14 1.99944e-14 0.707107 0.707107" mesh="velodyne_vlp16" material="velodyne_vlp16_material"/>
+            <!-- Part aluminium_angle_bracket_7 -->
+            <!-- Mesh aluminium_angle_bracket_7 -->
+            <geom type="mesh" class="visual" pos="-0.242896 -0.1725 0.362129" quat="9.95554e-15 0.707107 0.707107 5.09763e-17" mesh="aluminium_angle_bracket__2" material="aluminium_angle_bracket__2_material"/>
+            <!-- Part aluminium_profile_380_8 -->
+            <!-- Mesh aluminium_profile_380_8 -->
+            <geom type="mesh" class="visual" pos="0.148567 0.425 0.361129" quat="3.61066e-14 0.707107 -2.498e-14 0.707107" mesh="aluminium_profile_380__2" material="aluminium_profile_380__2_material"/>
+            <!-- Part joint_30_20 -->
+            <!-- Mesh joint_30_20 -->
+            <geom type="mesh" class="visual" pos="0.27035 -0.19 0.258815" quat="4.31171e-14 -1.58786e-15 9.76996e-15 1" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part logitech_c920_3 -->
+            <!-- Mesh logitech_c920_3 -->
+            <geom type="mesh" class="visual" pos="-0.00688832 0.20665 0.408129" quat="0.707107 -0.707107 3.11973e-14 -3.35731e-14" mesh="logitech_c920" material="logitech_c920_material"/>
+            <!-- Part logitech_c920_4 -->
+            <!-- Mesh logitech_c920_4 -->
+            <geom type="mesh" class="visual" pos="-0.259083 4.44369e-05 0.408129" quat="0.5 -0.5 -0.5 0.5" mesh="logitech_c920" material="logitech_c920_material"/>
+            <!-- Part aluminium_profile_60_4 -->
+            <!-- Mesh aluminium_profile_60_4 -->
+            <geom type="mesh" class="visual" pos="0.623672 -0.2055 -0.143444" quat="0.643231 0.293689 0.293689 0.643231" mesh="aluminium_profile_60" material="aluminium_profile_60_material"/>
+            <!-- Part realsense_mounting_bracket_4 -->
+            <!-- Mesh realsense_mounting_bracket_4 -->
+            <geom type="mesh" class="visual" pos="0.273497 -0.0379 0.250728" quat="4.30342e-14 -8.50795e-15 7.77156e-15 1" mesh="realsense_mounting_bracket" material="realsense_mounting_bracket_material"/>
+            <!-- Part side_plate_2_2 -->
+            <!-- Mesh side_plate_2_2 -->
+            <geom type="mesh" class="visual" pos="-0.569109 0.197544 -0.169378" quat="0.707107 -1.27372e-14 -1.02141e-14 -0.707107" mesh="side_plate_2" material="side_plate_2_material"/>
+            <!-- Part aluminium_profile_380_9 -->
+            <!-- Mesh aluminium_profile_380_9 -->
+            <geom type="mesh" class="visual" pos="-0.36465 0.425 0.243815" quat="3.72016e-14 0.707107 -2.35367e-14 0.707107" mesh="aluminium_profile_380__2" material="aluminium_profile_380__2_material"/>
+            <!-- Part angle_5_20_2 -->
+            <!-- Mesh angle_5_20_2 -->
+            <geom type="mesh" class="visual" pos="0.18385 0.143 0.256815" quat="0.707107 -0.707107 2.76446e-14 -3.72162e-14" mesh="angle_5_20" material="angle_5_20_material"/>
+            <!-- Part base_plate_localization_module -->
+            <geom class="collision" pos="-0.0546499 -1.4351e-13 0.363815" quat="0.707107 -6.283e-15 3.77476e-15 0.707107" type="box" size="0.2175 0.3225 0.138"/>
+            <!-- Mesh base_plate_localization_module -->
+            <geom type="mesh" class="visual" pos="-0.0546499 -1.45433e-13 0.225815" quat="0.707107 -6.283e-15 3.77476e-15 0.707107" mesh="base_plate_localization_module" material="base_plate_localization_module_material"/>
+            <!-- Part aluminium_profile_436_2 -->
+            <!-- Mesh aluminium_profile_436_2 -->
+            <geom type="mesh" class="visual" pos="-0.451433 0.205 0.361129" quat="8.86935e-15 0.707107 0.707107 -1.24741e-15" mesh="aluminium_profile_436" material="aluminium_profile_436_material"/>
+            <!-- Part mounting_bracket -->
+            <!-- Mesh mounting_bracket -->
+            <geom type="mesh" class="visual" pos="0.17835 0.143 0.248815" quat="3.46744e-14 2.49505e-14 0.707107 0.707107" mesh="mounting_bracket" material="mounting_bracket_material"/>
+            <!-- Part cube_connector_8 -->
+            <!-- Mesh cube_connector_8 -->
+            <geom type="mesh" class="visual" pos="0.25535 0.205 0.243815" quat="0.5 -0.5 0.5 -0.5" mesh="cube_connector__2" material="cube_connector__2_material"/>
+            <!-- Part cover_top_plate -->
+            <!-- Mesh cover_top_plate -->
+            <geom type="mesh" class="visual" pos="-0.119433 -1.25515e-13 0.383129" quat="1.11773e-14 0.707107 0.707107 1.32177e-15" mesh="cover_top_plate" material="cover_top_plate_material"/>
+            <!-- Part joint_30_21 -->
+            <!-- Mesh joint_30_21 -->
+            <geom type="mesh" class="visual" pos="0.189871 -0.2205 0.334119" quat="0.936921 -2.42948e-14 -0.349542 -3.68715e-14" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part back_plate_left -->
+            <!-- Mesh back_plate_left -->
+            <geom type="mesh" class="visual" pos="0.458416 -0.19752 -0.16999" quat="0.707107 -6.283e-15 3.77476e-15 0.707107" mesh="back_plate_left" material="back_plate_left_material"/>
+            <!-- Part realsense_mounting_bracket_5 -->
+            <!-- Mesh realsense_mounting_bracket_5 -->
+            <geom type="mesh" class="visual" pos="0.273497 0.0455 0.250728" quat="4.30342e-14 -8.50795e-15 7.77156e-15 1" mesh="realsense_mounting_bracket" material="realsense_mounting_bracket_material"/>
+            <!-- Part joint_30_22 -->
+            <!-- Mesh joint_30_22 -->
+            <geom type="mesh" class="visual" pos="-0.321733 0.1895 0.353856" quat="0.936773 5.95187e-15 0.349938 -4.3784e-14" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part front_plate_right -->
+            <!-- Mesh front_plate_right -->
+            <geom type="mesh" class="visual" pos="0.458288 -0.197472 -0.169084" quat="0.707107 -1.12219e-14 8.54872e-15 0.707107" mesh="front_plate_right" material="front_plate_right_material"/>
+            <!-- Part mounting_bracket_2 -->
+            <!-- Mesh mounting_bracket_2 -->
+            <geom type="mesh" class="visual" pos="0.17835 0.014 0.248815" quat="3.21328e-14 2.99873e-14 0.707107 0.707107" mesh="mounting_bracket" material="mounting_bracket_material"/>
+            <!-- Part realsense_mounting_bracket_6 -->
+            <!-- Mesh realsense_mounting_bracket_6 -->
+            <geom type="mesh" class="visual" pos="-0.364248 -0.0278947 0.334827" quat="0.707107 2.39015e-14 0.707107 -3.74621e-14" mesh="realsense_mounting_bracket" material="realsense_mounting_bracket_material"/>
+            <!-- Part realsense_t265 -->
+            <!-- Mesh realsense_t265 -->
+            <geom type="mesh" class="visual" pos="0.272296 -0.00478981 0.31864" quat="0.5 0.5 -0.5 -0.5" mesh="realsense_t265" material="realsense_t265_material"/>
+            <!-- Part mount_harting_connector_2 -->
+            <!-- Mesh mount_harting_connector_2 -->
+            <geom type="mesh" class="visual" pos="0.21285 0.0315 0.253815" quat="0.707107 0.707107 -3.29736e-14 -2.38077e-14" mesh="mount_harting_connector" material="mount_harting_connector_material"/>
+            <!-- Part joint_30_23 -->
+            <!-- Mesh joint_30_23 -->
+            <geom type="mesh" class="visual" pos="-0.321733 -0.2205 0.353856" quat="0.936773 5.88418e-15 0.349938 -4.38896e-14" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part joint_30_24 -->
+            <!-- Mesh joint_30_24 -->
+            <geom type="mesh" class="visual" pos="-0.338418 -0.2205 0.288882" quat="0.349938 -4.38359e-14 -0.936773 -5.91598e-15" mesh="joint_30__2" material="joint_30__2_material"/>
+            <!-- Part aluminium_angle_bracket_8 -->
+            <!-- Mesh aluminium_angle_bracket_8 -->
+            <geom type="mesh" class="visual" pos="-0.225396 0.19 0.362129" quat="9.82815e-15 1 -4.31539e-14 1.50459e-15" mesh="aluminium_angle_bracket__2" material="aluminium_angle_bracket__2_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid2 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid2 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid2" material="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid2_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid3 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid3 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid3" material="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid3_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid2 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid2 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid2" material="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid2_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_2_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_2_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_2_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_2_solid1_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_1_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_1_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_1_solid1_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid5 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid5 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid5" material="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid5_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_1_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_1_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_1_solid1_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_1_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_1_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_1_solid1_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_2_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_2_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_2_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_2_solid1_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid4 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid4 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid4" material="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid4_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid3 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid3 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid3" material="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid3_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_2_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_2_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_2_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_2_solid1_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid1_material"/>
+            <!-- Part harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid1 -->
+            <!-- Mesh harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid1 -->
+            <geom type="mesh" class="visual" pos="0.21277 0.088495 0.226315" quat="0.707107 -8.68771e-15 -9.99201e-16 0.707107" mesh="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid1" material="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid1_material"/>
+            <!-- Frame velodyne_frame (dummy link + fixed joint) -->
+            <site group="0" name="velodyne_frame" pos="-0.00693293 1.75362e-07 0.467529" quat="0.707107 2.31321e-14 1.11022e-14 -0.707107"/>
+            <!-- Frame front_logitech_frame (dummy link + fixed joint) -->
+            <site group="0" name="front_logitech_frame" pos="0.150217 -1.41843e-05 0.408222" quat="0.5 -0.5 0.5 -0.5"/>
+            <!-- Frame left_logitech_frame (dummy link + fixed joint) -->
+            <site group="0" name="left_logitech_frame" pos="-0.00691857 0.20665 0.408222" quat="0.707107 -0.707107 3.11973e-14 -3.35731e-14"/>
+            <!-- Frame right_logitech_frame (dummy link + fixed joint) -->
+            <site group="0" name="right_logitech_frame" pos="-0.00694694 -0.20665 0.408222" quat="3.0328e-14 -3.17158e-14 -0.707107 0.707107"/>
+            <!-- Frame back_logitech_frame (dummy link + fixed joint) -->
+            <site group="0" name="back_logitech_frame" pos="-0.259083 1.41843e-05 0.408222" quat="0.5 -0.5 -0.5 0.5"/>
+            <!-- Frame front_realsense_frame (dummy link + fixed joint) -->
+            <site group="0" name="front_realsense_frame" pos="0.272296 -0.00478981 0.31864" quat="0.5 -0.5 0.5 -0.5"/>
+            <!-- Frame back_realsense_frame (dummy link + fixed joint) -->
+            <site group="0" name="back_realsense_frame" pos="-0.381177 0.000689294 0.31717" quat="0.5 -0.5 -0.5 0.5"/>
+            <!-- Link front_right_wheel -->
+            <body name="front_right_wheel" pos="0.2685 -0.24 0.065" quat="1.75554e-15 -4.17461e-15 0.707107 0.707107">
+                <!-- Joint from base_link to front_right_wheel -->
+                <joint name="front_right_wheel"/>
+                <inertial pos="3.47093e-06 -2.04554e-05 -0.039002" mass="0.942157" fullinertia="0.00202095 0.00202623 0.00255146 -9.2256e-07 -8.13728e-12 2.75701e-11"/>
+                <!-- Part mecanum_wheel -->
+                <!-- Mesh mecanum_wheel -->
+                <geom type="mesh" class="visual" pos="-0.0256419 -0.532045 0.200202" quat="0.5 -0.5 -0.5 -0.5" mesh="mecanum_wheel" material="mecanum_wheel_material"/>
+                <!-- Link roller -->
+                <body name="roller" pos="-0.0143011 0.0872364 -0.0394963" quat="0.334175 0.578832 -0.720074 -0.186477">
+                    <!-- Joint from front_right_wheel to roller -->
+                    <joint name="frw_r1" type="hinge"/>
+                    <inertial pos="1.46025e-16 -1.25769e-16 -3.44313e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -1.05363e-21 1.71455e-21 -7.06707e-22"/>
+                    <!-- Part roller -->
+                    <geom class="collision" pos="-2.77556e-17 1.38778e-17 -1.11022e-16" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.76961e-17 1.70889e-17 0.0085" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.7815e-17 1.06667e-17 -0.0085" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.76402e-17 2.01111e-17 0.0165" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.7871e-17 7.64449e-18 -0.0165" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.75912e-17 2.27555e-17 0.0235" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-2.79199e-17 5.00006e-18 -0.0235" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller -->
+                    <geom type="mesh" class="visual" pos="-2.77556e-17 1.38778e-17 -1.11022e-16" quat="1 -1.33309e-16 1.11022e-16 2.77556e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_2 -->
+                <body name="roller_2" pos="-0.0560033 0.0683983 -0.0394963" quat="0.371052 0.745478 -0.545725 -0.0936316">
+                    <!-- Joint from front_right_wheel to roller_2 -->
+                    <joint name="frw_r2" type="hinge"/>
+                    <inertial pos="1.18269e-16 -1.1883e-16 -4.55335e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -1.8887e-21 4.67863e-22 -1.02506e-21"/>
+                    <!-- Part roller_2 -->
+                    <geom class="collision" pos="-5.55112e-17 2.08167e-17 -2.22045e-16" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.66794e-17 2.18744e-17 0.0085" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.43429e-17 1.97589e-17 -0.0085" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.7779e-17 2.28699e-17 0.0165" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.32434e-17 1.87634e-17 -0.0165" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.8741e-17 2.3741e-17 0.0235" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-5.22813e-17 1.78924e-17 -0.0235" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_2 -->
+                    <geom type="mesh" class="visual" pos="-5.55112e-17 2.08167e-17 -2.22045e-16" quat="1 -5.45311e-17 1.11022e-16 -2.77556e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_3 -->
+                <body name="roller_3" pos="-0.0806228 0.0299326 -0.039" quat="0.382643 0.86132 -0.334186 0.00559414">
+                    <!-- Joint from front_right_wheel to roller_3 -->
+                    <joint name="frw_r3" type="hinge"/>
+                    <inertial pos="7.24695e-18 -1.98627e-16 -4.55335e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -2.7331e-21 1.47272e-21 -2.99997e-21"/>
+                    <!-- Part roller_3 -->
+                    <geom class="collision" pos="-1.66533e-16 -5.89806e-17 -2.22045e-16" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.66979e-16 -5.7717e-17 0.0085" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.66088e-16 -6.02442e-17 -0.0085" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.67398e-16 -5.65277e-17 0.0165" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.65669e-16 -6.14335e-17 -0.0165" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.67764e-16 -5.5487e-17 0.0235" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.65302e-16 -6.24742e-17 -0.0235" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_3 -->
+                    <geom type="mesh" class="visual" pos="-1.66533e-16 -5.89806e-17 -2.22045e-16" quat="1 -8.89416e-17 -3.33067e-16 2.77556e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_4 -->
+                <body name="roller_4" pos="-0.0847877 -0.014389 -0.039" quat="0.186477 0.578832 -0.720074 0.334175">
+                    <!-- Joint from front_right_wheel to roller_4 -->
+                    <joint name="frw_r4" type="hinge"/>
+                    <inertial pos="1.18269e-16 -1.95158e-16 -4.13702e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 9.05995e-22 3.22321e-21 -3.03642e-21"/>
+                    <!-- Part roller_4 -->
+                    <geom class="collision" pos="-5.55112e-17 -5.55112e-17 -1.80411e-16" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.61209e-17 -5.32922e-17 0.0085" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.49014e-17 -5.77301e-17 -0.0085" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.66949e-17 -5.12039e-17 0.0165" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.43274e-17 -5.98185e-17 -0.0165" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.7197e-17 -4.93765e-17 0.0235" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-5.38253e-17 -6.16458e-17 -0.0235" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_4 -->
+                    <geom type="mesh" class="visual" pos="-5.55112e-17 -5.55112e-17 -1.80411e-16" quat="1 -2.36664e-17 -2.22045e-16 -1.66533e-16" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_5 -->
+                <body name="roller_5" pos="-0.0662338 -0.0548551 -0.039" quat="0.0936316 0.745478 -0.545725 0.371052">
+                    <!-- Joint from front_right_wheel to roller_5 -->
+                    <joint name="frw_r5" type="hinge"/>
+                    <inertial pos="2.01536e-16 -1.95158e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 4.73865e-22 7.02033e-22 -3.28396e-21"/>
+                    <!-- Part roller_5 -->
+                    <geom class="collision" pos="2.77556e-17 -5.55112e-17 -1.66533e-16" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.57466e-17 -5.27494e-17 0.0085" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.97646e-17 -5.82729e-17 -0.0085" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.38558e-17 -5.01501e-17 0.0165" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="3.16554e-17 -6.08722e-17 -0.0165" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="2.22013e-17 -4.78757e-17 0.0235" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="3.33099e-17 -6.31466e-17 -0.0235" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_5 -->
+                    <geom type="mesh" class="visual" pos="2.77556e-17 -5.55112e-17 -1.66533e-16" quat="1 -4.93634e-17 2.22045e-16 -5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_6 -->
+                <body name="roller_6" pos="-0.0299326 -0.0806228 -0.039" quat="0.00559414 -0.86132 0.334186 -0.382643">
+                    <!-- Joint from front_right_wheel to roller_6 -->
+                    <joint name="frw_r6" type="hinge"/>
+                    <inertial pos="1.18269e-16 -1.39647e-16 -4.10232e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 1.15503e-21 1.93031e-21 -1.56799e-21"/>
+                    <!-- Part roller_6 -->
+                    <geom class="collision" pos="-5.55112e-17 0 -1.76942e-16" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.53543e-17 1.65955e-18 0.0085" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.5668e-17 -1.65955e-18 -0.0085" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.52067e-17 3.22149e-18 0.0165" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.58156e-17 -3.22149e-18 -0.0165" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.50775e-17 4.58818e-18 0.0235" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-5.59448e-17 -4.58818e-18 -0.0235" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_6 -->
+                    <geom type="mesh" class="visual" pos="-5.55112e-17 0 -1.76942e-16" quat="1 -9.77627e-17 -3.33067e-16 -5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_7 -->
+                <body name="roller_7" pos="0.014389 -0.0847877 -0.039" quat="0.368156 0.099873 0.918465 0.104439">
+                    <!-- Joint from front_right_wheel to roller_7 -->
+                    <joint name="frw_r7" type="hinge"/>
+                    <inertial pos="1.18269e-16 -1.25769e-16 -4.41457e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -3.97665e-22 1.84798e-21 -3.12056e-21"/>
+                    <!-- Part roller_7 -->
+                    <geom class="collision" pos="-5.55112e-17 1.38778e-17 -2.08167e-16" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.57135e-17 1.55147e-17 0.0085" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.53088e-17 1.22408e-17 -0.0085" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.59039e-17 1.70554e-17 0.0165" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.51184e-17 1.07002e-17 -0.0165" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.60705e-17 1.84034e-17 0.0235" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-5.49518e-17 9.35213e-18 -0.0235" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_7 -->
+                    <geom type="mesh" class="visual" pos="-5.55112e-17 1.38778e-17 -2.08167e-16" quat="1 -6.3934e-17 -2.22045e-16 5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_8 -->
+                <body name="roller_8" pos="0.0548551 -0.0662338 -0.039" quat="0.328581 -0.141246 0.913019 0.196166">
+                    <!-- Joint from front_right_wheel to roller_8 -->
+                    <joint name="frw_r8" type="hinge"/>
+                    <inertial pos="2.29292e-16 -1.30106e-16 -4.27579e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -5.09914e-22 6.44455e-22 -4.32898e-21"/>
+                    <!-- Part roller_8 -->
+                    <geom class="collision" pos="5.55112e-17 9.54098e-18 -1.94289e-16" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.4979e-17 1.10839e-17 0.0085" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.60433e-17 7.99808e-18 -0.0085" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.44781e-17 1.2536e-17 0.0165" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.65442e-17 6.54594e-18 -0.0165" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.40398e-17 1.38066e-17 0.0235" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="5.69825e-17 5.27532e-18 -0.0235" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_8 -->
+                    <geom type="mesh" class="visual" pos="5.55112e-17 9.54098e-18 -1.94289e-16" quat="1 -1.17525e-16 1.11022e-16 5.20417e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_9 -->
+                <body name="roller_9" pos="0.0806228 -0.0299326 -0.039" quat="0.266613 -0.37274 0.845351 0.274525">
+                    <!-- Joint from front_right_wheel to roller_9 -->
+                    <joint name="frw_r9" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.25769e-16 -4.27579e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -1.99545e-21 5.08383e-22 -2.35636e-21"/>
+                    <!-- Part roller_9 -->
+                    <geom class="collision" pos="0 1.38778e-17 -1.94289e-16" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-8.88972e-19 1.44629e-17 0.0085" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="8.88972e-19 1.32927e-17 -0.0085" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.72565e-18 1.50136e-17 0.0165" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.72565e-18 1.2742e-17 -0.0165" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.45774e-18 1.54954e-17 0.0235" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="2.45774e-18 1.22602e-17 -0.0235" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_9 -->
+                    <geom type="mesh" class="visual" pos="0 1.38778e-17 -1.94289e-16" quat="1 -1.09472e-16 1.11022e-16 1.38778e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_10 -->
+                <body name="roller_10" pos="0.0847877 0.014389 -0.039" quat="0.186477 -0.578832 0.720074 0.334175">
+                    <!-- Joint from front_right_wheel to roller_10 -->
+                    <joint name="frw_r10" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.39647e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 5.08507e-22 3.94198e-21 -3.1666e-21"/>
+                    <!-- Part roller_10 -->
+                    <geom class="collision" pos="0 0 -1.66533e-16" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.02643e-18 1.64091e-18 0.0085" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.02643e-18 -1.64091e-18 -0.0085" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.99247e-18 3.1853e-18 0.0165" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.99247e-18 -3.1853e-18 -0.0165" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.83777e-18 4.53664e-18 0.0235" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="2.83777e-18 -4.53664e-18 -0.0235" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_10 -->
+                    <geom type="mesh" class="visual" pos="0 0 -1.66533e-16" quat="1 -2.77042e-16 1.11022e-16 5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_11 -->
+                <body name="roller_11" pos="0.0662338 0.0548551 -0.039" quat="0.196166 0.141246 -0.913019 -0.328581">
+                    <!-- Joint from front_right_wheel to roller_11 -->
+                    <joint name="frw_r11" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.25769e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -2.93578e-21 4.06809e-22 -1.8426e-21"/>
+                    <!-- Part roller_11 -->
+                    <geom class="collision" pos="0 1.38778e-17 -1.66533e-16" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-3.25334e-19 1.62958e-17 0.0085" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="3.25334e-19 1.14598e-17 -0.0085" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-6.31531e-19 1.85716e-17 0.0165" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="6.31531e-19 9.18399e-18 -0.0165" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-8.99453e-19 2.05629e-17 0.0235" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="8.99453e-19 7.19269e-18 -0.0235" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_11 -->
+                    <geom type="mesh" class="visual" pos="0 1.38778e-17 -1.66533e-16" quat="1 -2.05298e-17 -2.22045e-16 4.68375e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_12 -->
+                <body name="roller_12" pos="0.0299326 0.0806228 -0.039" quat="0.274525 0.37274 -0.845351 -0.266613">
+                    <!-- Joint from front_right_wheel to roller_12 -->
+                    <joint name="frw_r12" type="hinge"/>
+                    <inertial pos="1.66842e-16 -1.91688e-16 -3.44313e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -4.8388e-22 1.25052e-21 -1.72222e-21"/>
+                    <!-- Part roller_12 -->
+                    <geom class="collision" pos="-6.93889e-18 -5.20417e-17 -1.11022e-16" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-6.70217e-18 -4.90703e-17 0.0085" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-7.17562e-18 -5.50131e-17 -0.0085" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-6.47937e-18 -4.62737e-17 0.0165" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-7.39842e-18 -5.78097e-17 -0.0165" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-6.28442e-18 -4.38267e-17 0.0235" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-7.59337e-18 -6.02567e-17 -0.0235" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_12 -->
+                    <geom type="mesh" class="visual" pos="-6.93889e-18 -5.20417e-17 -1.11022e-16" quat="1 -1.37676e-16 -1.11022e-16 5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+            </body>
+            <!-- Link back_left_wheel -->
+            <body name="back_left_wheel" pos="-0.2735 0.24 0.065" quat="1.38778e-15 -3.9897e-15 0.707107 0.707107">
+                <!-- Joint from base_link to back_left_wheel -->
+                <joint name="back_left_wheel"/>
+                <inertial pos="2.30268e-06 -1.35714e-05 0.038998" mass="0.942157" fullinertia="0.00202095 0.00202623 0.00255146 -9.2256e-07 -8.13728e-12 2.75701e-11"/>
+                <!-- Part mecanum_wheel_2 -->
+                <!-- Mesh mecanum_wheel_2 -->
+                <geom type="mesh" class="visual" pos="-0.025643 -0.532038 0.278202" quat="0.5 -0.5 -0.5 -0.5" mesh="mecanum_wheel" material="mecanum_wheel_material"/>
+                <!-- Link roller_13 -->
+                <body name="roller_13" pos="0.0299314 0.0806297 0.039" quat="0.274525 0.37274 -0.845351 -0.266613">
+                    <!-- Joint from back_left_wheel to roller_13 -->
+                    <joint name="blw_r1" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.67402e-16 -3.44313e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 2.96844e-22 -1.95643e-22 -2.39822e-21"/>
+                    <!-- Part roller_13 -->
+                    <geom class="collision" pos="0 -2.77556e-17 -1.11022e-16" quat="1 -1.11022e-16 2.22045e-16 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.70898e-19 -2.57108e-17 0.0085" quat="1 -1.11022e-16 2.22045e-16 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.70898e-19 -2.98003e-17 -0.0085" quat="1 -1.11022e-16 2.22045e-16 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-3.31744e-19 -2.37864e-17 0.0165" quat="1 -1.11022e-16 2.22045e-16 -0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="3.31744e-19 -3.17248e-17 -0.0165" quat="1 -1.11022e-16 2.22045e-16 -0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-4.72484e-19 -2.21025e-17 0.0235" quat="1 -1.11022e-16 2.22045e-16 -0" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="4.72484e-19 -3.34087e-17 -0.0235" quat="1 -1.11022e-16 2.22045e-16 -0" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_13 -->
+                    <geom type="mesh" class="visual" pos="0 -2.77556e-17 -1.11022e-16" quat="1 -1.11022e-16 2.22045e-16 -0" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_14 -->
+                <body name="roller_14" pos="0.0662326 0.054862 0.039" quat="0.196166 0.141246 -0.913019 -0.328581">
+                    <!-- Joint from back_left_wheel to roller_14 -->
+                    <joint name="blw_r2" type="hinge"/>
+                    <inertial pos="1.7378e-16 -8.41356e-17 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 1.28084e-21 1.04969e-22 -7.96832e-22"/>
+                    <!-- Part roller_14 -->
+                    <geom class="collision" pos="0 5.55112e-17 -1.66533e-16" quat="1 -2.22045e-16 0 3.46945e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.62494e-19 5.76048e-17 0.0085" quat="1 -2.22045e-16 0 3.46945e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.62494e-19 5.34175e-17 -0.0085" quat="1 -2.22045e-16 0 3.46945e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-3.15429e-19 5.95753e-17 0.0165" quat="1 -2.22045e-16 0 3.46945e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="3.15429e-19 5.1447e-17 -0.0165" quat="1 -2.22045e-16 0 3.46945e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-4.49248e-19 6.12994e-17 0.0235" quat="1 -2.22045e-16 0 3.46945e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="4.49248e-19 4.97229e-17 -0.0235" quat="1 -2.22045e-16 0 3.46945e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_14 -->
+                    <geom type="mesh" class="visual" pos="0 5.55112e-17 -1.66533e-16" quat="1 -2.22045e-16 0 3.46945e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_15 -->
+                <body name="roller_15" pos="0.0847865 0.0143959 0.039" quat="0.186477 -0.578832 0.720074 0.334175">
+                    <!-- Joint from back_left_wheel to roller_15 -->
+                    <joint name="blw_r3" type="hinge"/>
+                    <inertial pos="1.18269e-16 -1.39647e-16 -4.27579e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 2.27641e-22 2.81132e-21 -2.15874e-21"/>
+                    <!-- Part roller_15 -->
+                    <geom class="collision" pos="-5.55112e-17 0 -1.94289e-16" quat="1 -5.55112e-17 -1.11022e-16 0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.64772e-17 1.86378e-18 0.0085" quat="1 -5.55112e-17 -1.11022e-16 0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.45451e-17 -1.86378e-18 -0.0085" quat="1 -5.55112e-17 -1.11022e-16 0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.73864e-17 3.61792e-18 0.0165" quat="1 -5.55112e-17 -1.11022e-16 0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.36359e-17 -3.61792e-18 -0.0165" quat="1 -5.55112e-17 -1.11022e-16 0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.81819e-17 5.1528e-18 0.0235" quat="1 -5.55112e-17 -1.11022e-16 0" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-5.28404e-17 -5.1528e-18 -0.0235" quat="1 -5.55112e-17 -1.11022e-16 0" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_15 -->
+                    <geom type="mesh" class="visual" pos="-5.55112e-17 0 -1.94289e-16" quat="1 -5.55112e-17 -1.11022e-16 0" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_16 -->
+                <body name="roller_16" pos="0.0806217 -0.0299257 0.039" quat="0.266613 -0.37274 0.845351 0.274525">
+                    <!-- Joint from back_left_wheel to roller_16 -->
+                    <joint name="blw_r4" type="hinge"/>
+                    <inertial pos="2.29292e-16 -8.41356e-17 -3.72068e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -2.61114e-21 1.30092e-21 -1.66045e-21"/>
+                    <!-- Part roller_16 -->
+                    <geom class="collision" pos="5.55112e-17 5.55112e-17 -1.38778e-16" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.50689e-17 5.85236e-17 0.0085" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.59534e-17 5.24987e-17 -0.0085" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.46526e-17 6.13589e-17 0.0165" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.63697e-17 4.96634e-17 -0.0165" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.42884e-17 6.38398e-17 0.0235" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="5.67339e-17 4.71825e-17 -0.0235" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_16 -->
+                    <geom type="mesh" class="visual" pos="5.55112e-17 5.55112e-17 -1.38778e-16" quat="1 -2.78368e-17 -1.11022e-16 6.93889e-18" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_17 -->
+                <body name="roller_17" pos="0.0548539 -0.0662269 0.039" quat="0.328581 -0.141246 0.913019 0.196166">
+                    <!-- Joint from back_left_wheel to roller_17 -->
+                    <joint name="blw_r5" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.53525e-16 -4.2064e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 7.25595e-22 6.2996e-22 -2.05041e-21"/>
+                    <!-- Part roller_17 -->
+                    <geom class="collision" pos="0 -1.38778e-17 -1.8735e-16" quat="1 -1.38778e-16 0 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.73316e-18 -1.1778e-17 0.0085" quat="1 -1.38778e-16 0 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.73316e-18 -1.59776e-17 -0.0085" quat="1 -1.38778e-16 0 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-3.36437e-18 -9.80177e-18 0.0165" quat="1 -1.38778e-16 0 -2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="3.36437e-18 -1.79538e-17 -0.0165" quat="1 -1.38778e-16 0 -2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-4.79167e-18 -8.07254e-18 0.0235" quat="1 -1.38778e-16 0 -2.77556e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="4.79167e-18 -1.9683e-17 -0.0235" quat="1 -1.38778e-16 0 -2.77556e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_17 -->
+                    <geom type="mesh" class="visual" pos="0 -1.38778e-17 -1.8735e-16" quat="1 -1.38778e-16 0 -2.77556e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_18 -->
+                <body name="roller_18" pos="0.0143878 -0.0847808 0.039" quat="0.186477 0.720074 0.578832 0.334175">
+                    <!-- Joint from back_left_wheel to roller_18 -->
+                    <joint name="blw_r6" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.39647e-16 -3.68165e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 4.40212e-22 7.62278e-22 9.3149e-23"/>
+                    <!-- Part roller_18 -->
+                    <geom class="collision" pos="0 0 -1.34875e-16" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-4.09801e-19 2.17993e-18 0.0085" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="4.09801e-19 -2.17993e-18 -0.0085" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-7.95495e-19 4.23163e-18 0.0165" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="7.95495e-19 -4.23163e-18 -0.0165" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.13298e-18 6.02686e-18 0.0235" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="1.13298e-18 -6.02686e-18 -0.0235" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_18 -->
+                    <geom type="mesh" class="visual" pos="0 0 -1.34875e-16" quat="1 -2.22045e-16 3.33067e-16 2.42861e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_19 -->
+                <body name="roller_19" pos="-0.0299338 -0.0806159 0.039" quat="0.00559414 -0.86132 0.334186 -0.382643">
+                    <!-- Joint from back_left_wheel to roller_19 -->
+                    <joint name="blw_r7" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.11891e-16 -4.06763e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 1.04049e-21 1.50653e-21 -2.26974e-21"/>
+                    <!-- Part roller_19 -->
+                    <geom class="collision" pos="0 2.77556e-17 -1.73472e-16" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.05823e-18 2.91556e-17 0.0085" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.05823e-18 2.63555e-17 -0.0085" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.05422e-18 3.04734e-17 0.0165" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="2.05422e-18 2.50378e-17 -0.0165" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.92571e-18 3.16264e-17 0.0235" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="2.92571e-18 2.38848e-17 -0.0235" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_19 -->
+                    <geom type="mesh" class="visual" pos="0 2.77556e-17 -1.73472e-16" quat="1 -9.71445e-17 -4.44089e-16 -2.08167e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_20 -->
+                <body name="roller_20" pos="-0.0143902 0.0847946 0.039" quat="0.334175 0.578832 -0.720074 -0.186477">
+                    <!-- Joint from back_left_wheel to roller_20 -->
+                    <joint name="blw_r8" type="hinge"/>
+                    <inertial pos="1.87658e-16 -1.39647e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 1.16058e-21 1.48304e-22 -2.11441e-21"/>
+                    <!-- Part roller_20 -->
+                    <geom class="collision" pos="1.38778e-17 0 -1.66533e-16" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.25464e-17 7.57509e-19 0.0085" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.52092e-17 -7.57509e-19 -0.0085" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.12933e-17 1.47046e-18 0.0165" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.64623e-17 -1.47046e-18 -0.0165" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.01968e-17 2.09429e-18 0.0235" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="1.75587e-17 -2.09429e-18 -0.0235" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_20 -->
+                    <geom type="mesh" class="visual" pos="1.38778e-17 0 -1.66533e-16" quat="1 -1.85923e-16 -2.22045e-16 5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_21 -->
+                <body name="roller_21" pos="-0.0548563 0.0662407 0.039" quat="0.371052 0.745478 -0.545725 -0.0936316">
+                    <!-- Joint from back_left_wheel to roller_21 -->
+                    <joint name="blw_r9" type="hinge"/>
+                    <inertial pos="1.52964e-16 -1.36177e-16 -3.44313e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 4.77126e-23 3.37861e-22 -3.05287e-21"/>
+                    <!-- Part roller_21 -->
+                    <geom class="collision" pos="-2.08167e-17 3.46945e-18 -1.11022e-16" quat="1 -1.66533e-16 0 -6.93889e-18" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.13778e-17 5.93914e-18 0.0085" quat="1 -1.66533e-16 0 -6.93889e-18" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.02555e-17 9.99758e-19 -0.0085" quat="1 -1.66533e-16 0 -6.93889e-18" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.1906e-17 8.26355e-18 0.0165" quat="1 -1.66533e-16 0 -6.93889e-18" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.97274e-17 -1.32466e-18 -0.0165" quat="1 -1.66533e-16 0 -6.93889e-18" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.23681e-17 1.02974e-17 0.0235" quat="1 -1.66533e-16 0 -6.93889e-18" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.92653e-17 -3.35852e-18 -0.0235" quat="1 -1.66533e-16 0 -6.93889e-18" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_21 -->
+                    <geom type="mesh" class="visual" pos="-2.08167e-17 3.46945e-18 -1.11022e-16" quat="1 -1.66533e-16 0 -6.93889e-18" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_22 -->
+                <body name="roller_22" pos="-0.080624 0.0299395 0.039" quat="0.382643 0.86132 -0.334186 0.00559414">
+                    <!-- Joint from back_left_wheel to roller_22 -->
+                    <joint name="blw_r10" type="hinge"/>
+                    <inertial pos="1.46025e-16 -1.43116e-16 -4.55335e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -4.04375e-21 -5.43683e-22 -8.40848e-22"/>
+                    <!-- Part roller_22 -->
+                    <geom class="collision" pos="-2.77556e-17 -3.46945e-18 -2.22045e-16" quat="1 -1.87554e-16 -0 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.8154e-17 -1.22444e-18 0.0085" quat="1 -1.87554e-16 -0 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.73571e-17 -5.71446e-18 -0.0085" quat="1 -1.87554e-16 -0 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.85291e-17 8.88516e-19 0.0165" quat="1 -1.87554e-16 -0 -1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.69821e-17 -7.82741e-18 -0.0165" quat="1 -1.87554e-16 -0 -1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.88572e-17 2.73735e-18 0.0235" quat="1 -1.87554e-16 -0 -1.38778e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-2.66539e-17 -9.67624e-18 -0.0235" quat="1 -1.87554e-16 -0 -1.38778e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_22 -->
+                    <geom type="mesh" class="visual" pos="-2.77556e-17 -3.46945e-18 -2.22045e-16" quat="1 -1.87554e-16 -0 -1.38778e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_23 -->
+                <body name="roller_23" pos="-0.0847889 -0.0143821 0.039" quat="0.186477 0.578832 -0.720074 0.334175">
+                    <!-- Joint from back_left_wheel to roller_23 -->
+                    <joint name="blw_r11" type="hinge"/>
+                    <inertial pos="1.59903e-16 -1.39647e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -2.76253e-22 3.23505e-21 -2.67586e-21"/>
+                    <!-- Part roller_23 -->
+                    <geom class="collision" pos="-1.38778e-17 0 -1.66533e-16" quat="1 -1.02759e-16 0 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.40689e-17 1.73456e-18 0.0085" quat="1 -1.02759e-16 0 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.36867e-17 -1.73456e-18 -0.0085" quat="1 -1.02759e-16 0 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.42487e-17 3.3671e-18 0.0165" quat="1 -1.02759e-16 0 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.35069e-17 -3.3671e-18 -0.0165" quat="1 -1.02759e-16 0 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.4406e-17 4.79556e-18 0.0235" quat="1 -1.02759e-16 0 -5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.33495e-17 -4.79556e-18 -0.0235" quat="1 -1.02759e-16 0 -5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_23 -->
+                    <geom type="mesh" class="visual" pos="-1.38778e-17 0 -1.66533e-16" quat="1 -1.02759e-16 0 -5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_24 -->
+                <body name="roller_24" pos="-0.066235 -0.0548482 0.039" quat="0.0936316 0.745478 -0.545725 0.371052">
+                    <!-- Joint from back_left_wheel to roller_24 -->
+                    <joint name="blw_r12" type="hinge"/>
+                    <inertial pos="2.01536e-16 -8.41356e-17 -4.13702e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 5.47975e-22 1.60411e-22 -3.48044e-21"/>
+                    <!-- Part roller_24 -->
+                    <geom class="collision" pos="2.77556e-17 5.55112e-17 -1.80411e-16" quat="1 -1.19087e-16 -0 -1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.6116e-17 5.73895e-17 0.0085" quat="1 -1.19087e-16 -0 -1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.93951e-17 5.36328e-17 -0.0085" quat="1 -1.19087e-16 -0 -1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.45729e-17 5.91573e-17 0.0165" quat="1 -1.19087e-16 -0 -1.38778e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="3.09382e-17 5.1865e-17 -0.0165" quat="1 -1.19087e-16 -0 -1.38778e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="2.32227e-17 6.07041e-17 0.0235" quat="1 -1.19087e-16 -0 -1.38778e-16" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="3.22884e-17 5.03182e-17 -0.0235" quat="1 -1.19087e-16 -0 -1.38778e-16" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_24 -->
+                    <geom type="mesh" class="visual" pos="2.77556e-17 5.55112e-17 -1.80411e-16" quat="1 -1.19087e-16 -0 -1.38778e-16" mesh="roller" material="roller_material"/>
+                </body>
+            </body>
+            <!-- Link front_left_wheel -->
+            <body name="front_left_wheel" pos="0.2685 0.24 0.065" quat="1.51268e-15 1.06859e-15 -0.707107 -0.707107">
+                <!-- Joint from base_link to front_left_wheel -->
+                <joint name="front_left_wheel"/>
+                <inertial pos="3.47124e-06 -2.04529e-05 0.039002" mass="0.942157" fullinertia="0.00202095 0.00202623 0.00255146 -9.22565e-07 7.0304e-12 -7.62497e-11"/>
+                <!-- Part mecanum_wheel_2 -->
+                <!-- Mesh mecanum_wheel_2 -->
+                <geom type="mesh" class="visual" pos="-0.0256419 -0.532045 0.366202" quat="0.5 -0.5 -0.5 -0.5" mesh="mecanum_wheel_2" material="mecanum_wheel_2_material"/>
+                <!-- Link roller_25 -->
+                <body name="roller_25" pos="-0.014389 0.0847877 0.039" quat="0.368156 0.099873 0.918465 0.104439">
+                    <!-- Joint from front_left_wheel to roller_25 -->
+                    <joint name="flw_r1" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.67402e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 7.8352e-23 3.47759e-21 -2.37718e-21"/>
+                    <!-- Part roller_25 -->
+                    <geom class="collision" pos="0 -2.77556e-17 -1.66533e-16" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.40014e-19 -2.51111e-17 0.0085" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.40014e-19 -3.04001e-17 -0.0085" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.04826e-18 -2.26221e-17 0.0165" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.04826e-18 -3.28891e-17 -0.0165" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.49298e-18 -2.04442e-17 0.0235" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="1.49298e-18 -3.50669e-17 -0.0235" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_25 -->
+                    <geom type="mesh" class="visual" pos="0 -2.77556e-17 -1.66533e-16" quat="1 -1.38778e-16 -1.11022e-16 8.32667e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_26 -->
+                <body name="roller_26" pos="0.0299326 0.0806228 0.039" quat="0.00559414 -0.86132 0.334186 -0.382643">
+                    <!-- Joint from front_left_wheel to roller_26 -->
+                    <joint name="flw_r2" type="hinge"/>
+                    <inertial pos="1.59903e-16 -1.88219e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 1.56591e-23 1.24317e-21 -3.31031e-21"/>
+                    <!-- Part roller_26 -->
+                    <geom class="collision" pos="-1.38778e-17 -4.85723e-17 -1.66533e-16" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.50862e-17 -4.71809e-17 0.0085" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.26694e-17 -4.99636e-17 -0.0085" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.62236e-17 -4.58714e-17 0.0165" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.1532e-17 -5.12731e-17 -0.0165" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.72188e-17 -4.47256e-17 0.0235" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.05368e-17 -5.24189e-17 -0.0235" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_26 -->
+                    <geom type="mesh" class="visual" pos="-1.38778e-17 -4.85723e-17 -1.66533e-16" quat="1 -5.55112e-17 -1.11022e-16 1.38778e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_27 -->
+                <body name="roller_27" pos="0.0662338 0.0548551 0.039" quat="0.0936316 0.745478 -0.545725 0.371052">
+                    <!-- Joint from front_left_wheel to roller_27 -->
+                    <joint name="flw_r3" type="hinge"/>
+                    <inertial pos="1.59903e-16 -1.1883e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 9.38042e-22 1.94174e-21 -6.04886e-21"/>
+                    <!-- Part roller_27 -->
+                    <geom class="collision" pos="-1.38778e-17 2.08167e-17 -1.66533e-16" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.43176e-17 2.23502e-17 0.0085" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.3438e-17 1.92832e-17 -0.0085" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.47316e-17 2.37935e-17 0.0165" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.3024e-17 1.78398e-17 -0.0165" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.50938e-17 2.50564e-17 0.0235" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.26618e-17 1.65769e-17 -0.0235" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_27 -->
+                    <geom type="mesh" class="visual" pos="-1.38778e-17 2.08167e-17 -1.66533e-16" quat="1 -1.66533e-16 -4.44089e-16 -1.38778e-16" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_28 -->
+                <body name="roller_28" pos="0.0847877 0.014389 0.039" quat="0.186477 0.578832 -0.720074 0.334175">
+                    <!-- Joint from front_left_wheel to roller_28 -->
+                    <joint name="flw_r4" type="hinge"/>
+                    <inertial pos="1.46025e-16 -1.8128e-16 -4.55335e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -1.3933e-21 2.5225e-21 -2.77213e-21"/>
+                    <!-- Part roller_28 -->
+                    <geom class="collision" pos="-2.77556e-17 -4.16334e-17 -2.22045e-16" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.83051e-17 -3.90904e-17 0.0085" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.7206e-17 -4.41763e-17 -0.0085" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.88223e-17 -3.6697e-17 0.0165" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.66888e-17 -4.65697e-17 -0.0165" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.92749e-17 -3.46029e-17 0.0235" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-2.62363e-17 -4.86639e-17 -0.0235" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_28 -->
+                    <geom type="mesh" class="visual" pos="-2.77556e-17 -4.16334e-17 -2.22045e-16" quat="1 -1.35225e-16 1.11022e-16 -1.11022e-16" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_29 -->
+                <body name="roller_29" pos="0.0806228 -0.0299326 0.039" quat="0.382643 0.86132 -0.334186 0.00559414">
+                    <!-- Joint from front_left_wheel to roller_29 -->
+                    <joint name="flw_r5" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.95158e-16 -4.27579e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -7.09147e-22 1.45095e-21 -7.51376e-22"/>
+                    <!-- Part roller_29 -->
+                    <geom class="collision" pos="0 -5.55112e-17 -1.94289e-16" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.46062e-19 -5.33617e-17 0.0085" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.46062e-19 -5.76606e-17 -0.0085" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.83532e-19 -5.13387e-17 0.0165" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="2.83532e-19 -5.96836e-17 -0.0165" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-4.03818e-19 -4.95686e-17 0.0235" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="4.03818e-19 -6.14537e-17 -0.0235" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_29 -->
+                    <geom type="mesh" class="visual" pos="0 -5.55112e-17 -1.94289e-16" quat="1 -8.14642e-17 -1.11022e-16 2.77556e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_30 -->
+                <body name="roller_30" pos="0.0548551 -0.0662338 0.039" quat="0.371052 0.745478 -0.545725 -0.0936316">
+                    <!-- Joint from front_left_wheel to roller_30 -->
+                    <joint name="flw_r6" type="hinge"/>
+                    <inertial pos="1.59903e-16 -1.95158e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 4.54326e-22 1.88958e-23 -2.05282e-21"/>
+                    <!-- Part roller_30 -->
+                    <geom class="collision" pos="-1.38778e-17 -5.55112e-17 -1.66533e-16" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.44309e-17 -5.47754e-17 0.0085" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.33247e-17 -5.62469e-17 -0.0085" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.49515e-17 -5.4083e-17 0.0165" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.28041e-17 -5.69394e-17 -0.0165" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.5407e-17 -5.3477e-17 0.0235" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.23485e-17 -5.75453e-17 -0.0235" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_30 -->
+                    <geom type="mesh" class="visual" pos="-1.38778e-17 -5.55112e-17 -1.66533e-16" quat="1 1.00573e-16 -1.11022e-16 1.38778e-16" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_31 -->
+                <body name="roller_31" pos="0.014389 -0.0847877 0.039" quat="0.334175 0.578832 -0.720074 -0.186477">
+                    <!-- Joint from front_left_wheel to roller_31 -->
+                    <joint name="flw_r7" type="hinge"/>
+                    <inertial pos="1.59903e-16 -1.39647e-16 -3.5819e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 6.14777e-22 7.98566e-22 -2.20534e-21"/>
+                    <!-- Part roller_31 -->
+                    <geom class="collision" pos="-1.38778e-17 0 -1.249e-16" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.47077e-17 1.40623e-18 0.0085" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.30479e-17 -1.40623e-18 -0.0085" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.54888e-17 2.72974e-18 0.0165" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.22668e-17 -2.72974e-18 -0.0165" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.61722e-17 3.88782e-18 0.0235" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.15834e-17 -3.88782e-18 -0.0235" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_31 -->
+                    <geom type="mesh" class="visual" pos="-1.38778e-17 0 -1.249e-16" quat="1 -8.37906e-17 -3.33067e-16 6.93889e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_32 -->
+                <body name="roller_32" pos="-0.0299326 -0.0806228 0.039" quat="0.274525 0.37274 -0.845351 -0.266613">
+                    <!-- Joint from front_left_wheel to roller_32 -->
+                    <joint name="flw_r8" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.39647e-16 -3.82477e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -4.14823e-21 3.99239e-22 -3.52093e-21"/>
+                    <!-- Part roller_32 -->
+                    <geom class="collision" pos="0 0 -1.49186e-16" quat="1 -1.5025e-16 -0 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-6.43538e-19 2.67231e-18 0.0085" quat="1 -1.5025e-16 -0 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="6.43538e-19 -2.67231e-18 -0.0085" quat="1 -1.5025e-16 -0 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.24922e-18 5.18742e-18 0.0165" quat="1 -1.5025e-16 -0 -0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.24922e-18 -5.18742e-18 -0.0165" quat="1 -1.5025e-16 -0 -0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.77919e-18 7.38814e-18 0.0235" quat="1 -1.5025e-16 -0 -0" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="1.77919e-18 -7.38814e-18 -0.0235" quat="1 -1.5025e-16 -0 -0" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_32 -->
+                    <geom type="mesh" class="visual" pos="0 0 -1.49186e-16" quat="1 -1.5025e-16 -0 -0" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_33 -->
+                <body name="roller_33" pos="-0.0662338 -0.0548551 0.039" quat="0.196166 0.141246 -0.913019 -0.328581">
+                    <!-- Joint from front_left_wheel to roller_33 -->
+                    <joint name="flw_r9" type="hinge"/>
+                    <inertial pos="2.29292e-16 -1.95158e-16 -3.79007e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 2.17656e-22 1.53415e-21 -2.78204e-21"/>
+                    <!-- Part roller_33 -->
+                    <geom class="collision" pos="5.55112e-17 -5.55112e-17 -1.45717e-16" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.49779e-17 -5.41378e-17 0.0085" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.60444e-17 -5.68845e-17 -0.0085" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.44759e-17 -5.28453e-17 0.0165" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.65464e-17 -5.8177e-17 -0.0165" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.40368e-17 -5.17143e-17 0.0235" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="5.69855e-17 -5.9308e-17 -0.0235" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_33 -->
+                    <geom type="mesh" class="visual" pos="5.55112e-17 -5.55112e-17 -1.45717e-16" quat="1 -1.66533e-16 2.22045e-16 9.71445e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_34 -->
+                <body name="roller_34" pos="-0.0847877 -0.014389 0.039" quat="0.186477 -0.578832 0.720074 0.334175">
+                    <!-- Joint from front_left_wheel to roller_34 -->
+                    <joint name="flw_r10" type="hinge"/>
+                    <inertial pos="2.01536e-16 -8.41356e-17 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -6.21231e-22 2.58026e-21 -2.72279e-21"/>
+                    <!-- Part roller_34 -->
+                    <geom class="collision" pos="2.77556e-17 5.55112e-17 -1.66533e-16" quat="1 -1.05737e-16 -3.33067e-16 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.62509e-17 5.73066e-17 0.0085" quat="1 -1.05737e-16 -3.33067e-16 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.92602e-17 5.37157e-17 -0.0085" quat="1 -1.05737e-16 -3.33067e-16 -0" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.48348e-17 5.89965e-17 0.0165" quat="1 -1.05737e-16 -3.33067e-16 -0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="3.06764e-17 5.20259e-17 -0.0165" quat="1 -1.05737e-16 -3.33067e-16 -0" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="2.35957e-17 6.04751e-17 0.0235" quat="1 -1.05737e-16 -3.33067e-16 -0" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="3.19155e-17 5.05472e-17 -0.0235" quat="1 -1.05737e-16 -3.33067e-16 -0" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_34 -->
+                    <geom type="mesh" class="visual" pos="2.77556e-17 5.55112e-17 -1.66533e-16" quat="1 -1.05737e-16 -3.33067e-16 -0" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_35 -->
+                <body name="roller_35" pos="-0.0806228 0.0299326 0.039" quat="0.266613 -0.37274 0.845351 0.274525">
+                    <!-- Joint from front_left_wheel to roller_35 -->
+                    <joint name="flw_r11" type="hinge"/>
+                    <inertial pos="1.46025e-16 -8.41356e-17 -3.44313e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -3.7213e-21 -1.09381e-21 -6.28015e-22"/>
+                    <!-- Part roller_35 -->
+                    <geom class="collision" pos="-2.77556e-17 5.55112e-17 -1.11022e-16" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.956e-17 5.79472e-17 0.0085" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.59512e-17 5.30751e-17 -0.0085" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-3.12582e-17 6.02399e-17 0.0165" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.42529e-17 5.07824e-17 -0.0165" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-3.27442e-17 6.22461e-17 0.0235" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-2.2767e-17 4.87762e-17 -0.0235" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_35 -->
+                    <geom type="mesh" class="visual" pos="-2.77556e-17 5.55112e-17 -1.11022e-16" quat="1 -6.84705e-17 -2.22045e-16 -5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_36 -->
+                <body name="roller_36" pos="-0.0548551 0.0662338 0.039" quat="0.328581 -0.141246 0.913019 0.196166">
+                    <!-- Joint from front_left_wheel to roller_36 -->
+                    <joint name="flw_r12" type="hinge"/>
+                    <inertial pos="1.66842e-16 -8.41356e-17 -4.55335e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -1.65665e-21 1.10309e-21 -4.19565e-21"/>
+                    <!-- Part roller_36 -->
+                    <geom class="collision" pos="-6.93889e-18 5.55112e-17 -2.22045e-16" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-7.54211e-18 5.75155e-17 0.0085" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-6.33567e-18 5.35068e-17 -0.0085" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-8.10985e-18 5.9402e-17 0.0165" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-5.76794e-18 5.16203e-17 -0.0165" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-8.60662e-18 6.10527e-17 0.0235" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-5.27117e-18 4.99696e-17 -0.0235" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_36 -->
+                    <geom type="mesh" class="visual" pos="-6.93889e-18 5.55112e-17 -2.22045e-16" quat="1 -1.11022e-16 -1.11022e-16 -1.04083e-17" mesh="roller" material="roller_material"/>
+                </body>
+            </body>
+            <!-- Link back_right_wheel -->
+            <body name="back_right_wheel" pos="-0.2735 -0.24 0.065" quat="5.55112e-16 -3.0361e-15 0.707107 0.707107">
+                <!-- Joint from base_link to back_right_wheel -->
+                <joint name="back_right_wheel"/>
+                <inertial pos="3.47124e-06 -2.04529e-05 -0.038998" mass="0.942157" fullinertia="0.00202095 0.00202623 0.00255146 -9.22565e-07 7.0304e-12 -7.62497e-11"/>
+                <!-- Part mecanum_wheel_2_2 -->
+                <!-- Mesh mecanum_wheel_2_2 -->
+                <geom type="mesh" class="visual" pos="-0.0256419 -0.532045 0.288202" quat="0.5 -0.5 -0.5 -0.5" mesh="mecanum_wheel_2" material="mecanum_wheel_2_material"/>
+                <!-- Link roller_37 -->
+                <body name="roller_37" pos="0.0662338 0.0548551 -0.039" quat="0.196166 -0.141246 0.913019 -0.328581">
+                    <!-- Joint from back_right_wheel to roller_37 -->
+                    <joint name="brw_r1" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.67402e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -4.57014e-22 1.36595e-21 -1.66145e-21"/>
+                    <!-- Part roller_37 -->
+                    <geom class="collision" pos="0 -2.77556e-17 -1.66533e-16" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-5.42055e-19 -2.49867e-17 0.0085" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.42055e-19 -3.05244e-17 -0.0085" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.05222e-18 -2.23807e-17 0.0165" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.05222e-18 -3.31304e-17 -0.0165" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.49862e-18 -2.01005e-17 0.0235" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="1.49862e-18 -3.54107e-17 -0.0235" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_37 -->
+                    <geom type="mesh" class="visual" pos="0 -2.77556e-17 -1.66533e-16" quat="1 3.14976e-17 -1.11022e-16 -5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_38 -->
+                <body name="roller_38" pos="0.0847877 0.014389 -0.039" quat="0.186477 0.578832 -0.720074 0.334175">
+                    <!-- Joint from back_right_wheel to roller_38 -->
+                    <joint name="brw_r2" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.95158e-16 -3.72068e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 2.41007e-22 4.24258e-21 -2.6047e-21"/>
+                    <!-- Part roller_38 -->
+                    <geom class="collision" pos="0 -5.55112e-17 -1.38778e-16" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-8.4466e-19 -5.37924e-17 0.0085" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="8.4466e-19 -5.72299e-17 -0.0085" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.63963e-18 -5.21748e-17 0.0165" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.63963e-18 -5.88475e-17 -0.0165" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.33524e-18 -5.07593e-17 0.0235" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="2.33524e-18 -6.0263e-17 -0.0235" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_38 -->
+                    <geom type="mesh" class="visual" pos="0 -5.55112e-17 -1.38778e-16" quat="1 -1.66533e-16 -3.33067e-16 -5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_39 -->
+                <body name="roller_39" pos="0.0806228 -0.0299326 -0.039" quat="0.266613 0.37274 -0.845351 0.274525">
+                    <!-- Joint from back_right_wheel to roller_39 -->
+                    <joint name="brw_r3" type="hinge"/>
+                    <inertial pos="2.29292e-16 -1.11891e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 2.83941e-21 1.1483e-21 -2.4894e-21"/>
+                    <!-- Part roller_39 -->
+                    <geom class="collision" pos="5.55112e-17 2.77556e-17 -1.66533e-16" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.44488e-17 2.8996e-17 0.0085" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.65735e-17 2.65152e-17 -0.0085" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="5.34489e-17 3.01634e-17 0.0165" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.75734e-17 2.53478e-17 -0.0165" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="5.25741e-17 3.11849e-17 0.0235" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="5.84482e-17 2.43263e-17 -0.0235" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_39 -->
+                    <geom type="mesh" class="visual" pos="5.55112e-17 2.77556e-17 -1.66533e-16" quat="1 -8.12019e-17 -1.11022e-16 -2.77556e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_40 -->
+                <body name="roller_40" pos="0.0548551 -0.0662338 -0.039" quat="0.328581 0.141246 -0.913019 0.196166">
+                    <!-- Joint from back_right_wheel to roller_40 -->
+                    <joint name="brw_r4" type="hinge"/>
+                    <inertial pos="6.27581e-17 -1.1883e-16 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -2.02518e-21 8.08512e-22 -1.3019e-21"/>
+                    <!-- Part roller_40 -->
+                    <geom class="collision" pos="-1.11022e-16 2.08167e-17 -1.66533e-16" quat="1 -9.2212e-19 0 8.32667e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.13092e-16 2.30195e-17 0.0085" quat="1 -9.2212e-19 0 8.32667e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.08953e-16 1.86138e-17 -0.0085" quat="1 -9.2212e-19 0 8.32667e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.15039e-16 2.50928e-17 0.0165" quat="1 -9.2212e-19 0 8.32667e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.07005e-16 1.65405e-17 -0.0165" quat="1 -9.2212e-19 0 8.32667e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.16743e-16 2.6907e-17 0.0235" quat="1 -9.2212e-19 0 8.32667e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.05301e-16 1.47264e-17 -0.0235" quat="1 -9.2212e-19 0 8.32667e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_40 -->
+                    <geom type="mesh" class="visual" pos="-1.11022e-16 2.08167e-17 -1.66533e-16" quat="1 -9.2212e-19 0 8.32667e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_41 -->
+                <body name="roller_41" pos="0.014389 -0.0847877 -0.039" quat="0.334175 0.578832 -0.720074 -0.186477">
+                    <!-- Joint from back_right_wheel to roller_41 -->
+                    <joint name="brw_r5" type="hinge"/>
+                    <inertial pos="1.87658e-16 -1.39647e-16 -4.30832e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -1.05604e-22 7.87525e-22 -1.84236e-21"/>
+                    <!-- Part roller_41 -->
+                    <geom class="collision" pos="1.38778e-17 0 -1.97542e-16" quat="1 -1.66533e-16 -0 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.31549e-17 1.58224e-18 0.0085" quat="1 -1.66533e-16 -0 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.46007e-17 -1.58224e-18 -0.0085" quat="1 -1.66533e-16 -0 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.24746e-17 3.0714e-18 0.0165" quat="1 -1.66533e-16 -0 -1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.5281e-17 -3.0714e-18 -0.0165" quat="1 -1.66533e-16 -0 -1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.18793e-17 4.37442e-18 0.0235" quat="1 -1.66533e-16 -0 -1.38778e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="1.58763e-17 -4.37442e-18 -0.0235" quat="1 -1.66533e-16 -0 -1.38778e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_41 -->
+                    <geom type="mesh" class="visual" pos="1.38778e-17 0 -1.97542e-16" quat="1 -1.66533e-16 -0 -1.38778e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_42 -->
+                <body name="roller_42" pos="-0.0299326 -0.0806228 -0.039" quat="0.274525 0.37274 -0.845351 -0.266613">
+                    <!-- Joint from back_right_wheel to roller_42 -->
+                    <joint name="brw_r6" type="hinge"/>
+                    <inertial pos="1.46025e-16 -1.95158e-16 -4.06763e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -6.8028e-22 8.77697e-22 -2.08877e-21"/>
+                    <!-- Part roller_42 -->
+                    <geom class="collision" pos="-2.77556e-17 -5.55112e-17 -1.73472e-16" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.84919e-17 -5.37201e-17 0.0085" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.70192e-17 -5.73022e-17 -0.0085" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.9185e-17 -5.20343e-17 0.0165" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.63262e-17 -5.8988e-17 -0.0165" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.97914e-17 -5.05593e-17 0.0235" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-2.57198e-17 -6.0463e-17 -0.0235" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_42 -->
+                    <geom type="mesh" class="visual" pos="-2.77556e-17 -5.55112e-17 -1.73472e-16" quat="1 -9.70707e-17 -1.11022e-16 -1.38778e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_43 -->
+                <body name="roller_43" pos="-0.0662338 -0.0548551 -0.039" quat="0.196166 0.141246 -0.913019 -0.328581">
+                    <!-- Joint from back_right_wheel to roller_43 -->
+                    <joint name="brw_r7" type="hinge"/>
+                    <inertial pos="1.7378e-16 -1.39647e-16 -4.27579e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -2.22582e-21 6.91753e-22 -1.12625e-21"/>
+                    <!-- Part roller_43 -->
+                    <geom class="collision" pos="0 0 -1.94289e-16" quat="1 -7.72557e-17 -0 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.00073e-18 1.61181e-18 0.0085" quat="1 -7.72557e-17 -0 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.00073e-18 -1.61181e-18 -0.0085" quat="1 -7.72557e-17 -0 -5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.94259e-18 3.12882e-18 0.0165" quat="1 -7.72557e-17 -0 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.94259e-18 -3.12882e-18 -0.0165" quat="1 -7.72557e-17 -0 -5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.76672e-18 4.45619e-18 0.0235" quat="1 -7.72557e-17 -0 -5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="2.76672e-18 -4.45619e-18 -0.0235" quat="1 -7.72557e-17 -0 -5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_43 -->
+                    <geom type="mesh" class="visual" pos="0 0 -1.94289e-16" quat="1 -7.72557e-17 -0 -5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_44 -->
+                <body name="roller_44" pos="-0.0847877 -0.014389 -0.039" quat="0.104439 -0.099873 -0.918465 -0.368156">
+                    <!-- Joint from back_right_wheel to roller_44 -->
+                    <joint name="brw_r8" type="hinge"/>
+                    <inertial pos="1.46025e-16 -9.80134e-17 -3.99824e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -6.44801e-22 8.25502e-22 -5.64976e-22"/>
+                    <!-- Part roller_44 -->
+                    <geom class="collision" pos="-2.77556e-17 4.16334e-17 -1.66533e-16" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.86565e-17 4.39068e-17 0.0085" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.68546e-17 3.93599e-17 -0.0085" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.95045e-17 4.60466e-17 0.0165" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.60067e-17 3.72202e-17 -0.0165" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-3.02464e-17 4.79188e-17 0.0235" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-2.52647e-17 3.53479e-17 -0.0235" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_44 -->
+                    <geom type="mesh" class="visual" pos="-2.77556e-17 4.16334e-17 -1.66533e-16" quat="1 -9.52496e-17 1.11022e-16 4.16334e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_45 -->
+                <body name="roller_45" pos="-0.0806228 0.0299326 -0.039" quat="0.00559414 -0.334186 -0.86132 -0.382643">
+                    <!-- Joint from back_right_wheel to roller_45 -->
+                    <joint name="brw_r9" type="hinge"/>
+                    <inertial pos="2.01536e-16 -1.1883e-16 -4.55335e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -4.42247e-21 1.30114e-21 -6.58111e-22"/>
+                    <!-- Part roller_45 -->
+                    <geom class="collision" pos="2.77556e-17 2.08167e-17 -2.22045e-16" quat="1 -1.46472e-16 0 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.86746e-17 2.45237e-17 0.0085" quat="1 -1.46472e-16 0 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.68365e-17 1.71097e-17 -0.0085" quat="1 -1.46472e-16 0 5.55112e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.95396e-17 2.80127e-17 0.0165" quat="1 -1.46472e-16 0 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="2.59715e-17 1.36207e-17 -0.0165" quat="1 -1.46472e-16 0 5.55112e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="3.02965e-17 3.10655e-17 0.0235" quat="1 -1.46472e-16 0 5.55112e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="2.52147e-17 1.05678e-17 -0.0235" quat="1 -1.46472e-16 0 5.55112e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_45 -->
+                    <geom type="mesh" class="visual" pos="2.77556e-17 2.08167e-17 -2.22045e-16" quat="1 -1.46472e-16 0 5.55112e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_46 -->
+                <body name="roller_46" pos="0.0299326 0.0806228 -0.039" quat="0.382643 0.334186 0.86132 0.00559414">
+                    <!-- Joint from back_right_wheel to roller_46 -->
+                    <joint name="brw_r10" type="hinge"/>
+                    <inertial pos="1.7378e-16 -2.86244e-17 -3.44313e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 2.98087e-21 6.89335e-22 -2.92058e-21"/>
+                    <!-- Part roller_46 -->
+                    <geom class="collision" pos="0 1.11022e-16 -1.11022e-16" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.53856e-18 1.13704e-16 0.0085" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="2.53856e-18 1.08341e-16 -0.0085" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-4.92779e-18 1.16227e-16 0.0165" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="4.92779e-18 1.05818e-16 -0.0165" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-7.01836e-18 1.18435e-16 0.0235" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="7.01836e-18 1.0361e-16 -0.0235" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_46 -->
+                    <geom type="mesh" class="visual" pos="0 1.11022e-16 -1.11022e-16" quat="1 -1.54584e-16 -2.22045e-16 1.11022e-16" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_47 -->
+                <body name="roller_47" pos="-0.014389 0.0847877 -0.039" quat="0.368156 0.099873 0.918465 0.104439">
+                    <!-- Joint from back_right_wheel to roller_47 -->
+                    <joint name="brw_r11" type="hinge"/>
+                    <inertial pos="1.52964e-16 -1.53525e-16 -4.55335e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 2.51933e-22 3.61199e-21 -3.14772e-21"/>
+                    <!-- Part roller_47 -->
+                    <geom class="collision" pos="-2.08167e-17 -1.38778e-17 -2.22045e-16" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.16528e-17 -1.18111e-17 0.0085" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-1.99805e-17 -1.59444e-17 -0.0085" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="-2.24398e-17 -9.86608e-18 0.0165" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-1.91936e-17 -1.78895e-17 -0.0165" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="-2.31284e-17 -8.16414e-18 0.0235" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="-1.8505e-17 -1.95914e-17 -0.0235" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_47 -->
+                    <geom type="mesh" class="visual" pos="-2.08167e-17 -1.38778e-17 -2.22045e-16" quat="1 5.55112e-17 2.22045e-16 2.77556e-17" mesh="roller" material="roller_material"/>
+                </body>
+                <!-- Link roller_48 -->
+                <body name="roller_48" pos="-0.0548551 0.0662338 -0.039" quat="0.328581 -0.141246 0.913019 0.196166">
+                    <!-- Joint from back_right_wheel to roller_48 -->
+                    <joint name="brw_r12" type="hinge"/>
+                    <inertial pos="2.97379e-16 -1.8128e-16 -3.44313e-16" mass="0.0493467" fullinertia="1.86522e-05 1.86522e-05 5.80503e-06 -4.26634e-22 7.17219e-23 -4.53951e-21"/>
+                    <!-- Part roller_48 -->
+                    <geom class="collision" pos="1.23599e-16 -4.16334e-17 -1.11022e-16" quat="1 -1.31532e-16 0 6.93889e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.22989e-16 -3.98004e-17 0.0085" quat="1 -1.31532e-16 0 6.93889e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.2421e-16 -4.34663e-17 -0.0085" quat="1 -1.31532e-16 0 6.93889e-17" type="sphere" size="0.0155"/>
+                    <geom class="collision" pos="1.22414e-16 -3.80753e-17 0.0165" quat="1 -1.31532e-16 0 6.93889e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.24784e-16 -4.51914e-17 -0.0165" quat="1 -1.31532e-16 0 6.93889e-17" type="sphere" size="0.015"/>
+                    <geom class="collision" pos="1.21911e-16 -3.65659e-17 0.0235" quat="1 -1.31532e-16 0 6.93889e-17" type="sphere" size="0.014"/>
+                    <geom class="collision" pos="1.25287e-16 -4.67009e-17 -0.0235" quat="1 -1.31532e-16 0 6.93889e-17" type="sphere" size="0.014"/>
+                    <!-- Mesh roller_48 -->
+                    <geom type="mesh" class="visual" pos="1.23599e-16 -4.16334e-17 -1.11022e-16" quat="1 -1.31532e-16 0 6.93889e-17" mesh="roller" material="roller_material"/>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    <asset>
+        <mesh file="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid1.stl"/>
+        <mesh file="back_wheel_cover.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_zpd20170913001_stp_1_solid1.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_prt0001_stp_1_solid1.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_2_solid1.stl"/>
+        <mesh file="aluminium_profile_436.stl"/>
+        <mesh file="aluminium_profile_60.stl"/>
+        <mesh file="motor_holder.stl"/>
+        <mesh file="aluminium_profile_354.stl"/>
+        <mesh file="logitech_c920.stl"/>
+        <mesh file="mecanum_wheel.stl"/>
+        <mesh file="aluminium_profile_90.stl"/>
+        <mesh file="front_right_panel.stl"/>
+        <mesh file="aluminium_profile_620.stl"/>
+        <mesh file="cover_top_plate.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id43_x_t_stp_1_solid1.stl"/>
+        <mesh file="velodyne_vlp16.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid5.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid2.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid1.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid2.stl"/>
+        <mesh file="spacer.stl"/>
+        <mesh file="dummy_ethercat6.stl"/>
+        <mesh file="back_plate_left.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_1_solid1.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_zpd20170912002_stp_1_solid1.stl"/>
+        <mesh file="roller.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_2_solid1.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id48_x_t_stp_1_solid1.stl"/>
+        <mesh file="cube_connector.stl"/>
+        <mesh file="front_left_panel.stl"/>
+        <mesh file="velodyne_mount.stl"/>
+        <mesh file="connector.stl"/>
+        <mesh file="realsense_d435i.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_1_solid1.stl"/>
+        <mesh file="side_plate_2.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_2_solid1.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid1.stl"/>
+        <mesh file="aluminium_profile_690.stl"/>
+        <mesh file="joint_30.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_1_solid1.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081111002_stp_1_solid1.stl"/>
+        <mesh file="cube_connector__2.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id38_x_t_stp_1_solid1.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081112002_stp_1_solid1.stl"/>
+        <mesh file="aluminium_angle_bracket.stl"/>
+        <mesh file="base_link.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id6_x_t_stp_1_solid1.stl"/>
+        <mesh file="center_cover.stl"/>
+        <mesh file="realsense_t265.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id21_x_t_stp_1_solid1.stl"/>
+        <mesh file="front_wheel_cover.stl"/>
+        <mesh file="base_plate_localization_module.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid3.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id16_x_t_stp_1_solid1.stl"/>
+        <mesh file="joint_30__2.stl"/>
+        <mesh file="aluminium_profile_380.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_20090724001_stp_1_solid1.stl"/>
+        <mesh file="front_plate_right.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id11_x_t_stp_1_solid1.stl"/>
+        <mesh file="dummy_screen_back.stl"/>
+        <mesh file="ifm_o3r222.stl"/>
+        <mesh file="screen_holder.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_2_solid1.stl"/>
+        <mesh file="angle_5_20.stl"/>
+        <mesh file="aluminium_angle_bracket__2.stl"/>
+        <mesh file="aluminium_profile_620__2.stl"/>
+        <mesh file="aluminium_profile_160.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_1_solid1.stl"/>
+        <mesh file="top_plate_localization_module.stl"/>
+        <mesh file="mounting_bracket.stl"/>
+        <mesh file="back_plate_right.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_j19_272_id26_x_t_stp_1_solid1.stl"/>
+        <mesh file="dummy_connectors.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid3.stl"/>
+        <mesh file="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid4.stl"/>
+        <mesh file="aluminium_profile_380__2.stl"/>
+        <mesh file="mount_harting_connector.stl"/>
+        <mesh file="back_cover.stl"/>
+        <mesh file="dummy_screen_front.stl"/>
+        <mesh file="side_plate_3.stl"/>
+        <mesh file="j19_371rgb_x_t_stp_1_xjz_stp_1_solid1.stl"/>
+        <mesh file="realsense_mounting_bracket.stl"/>
+        <mesh file="cover_with_connections.stl"/>
+        <mesh file="aluminium_profile_664.stl"/>
+        <mesh file="dummy_usb_port.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid2.stl"/>
+        <mesh file="front_plate_left.stl"/>
+        <mesh file="las1_agq_tsb_stp_1_20081118003_stp_1_solid1.stl"/>
+        <mesh file="dummy_voltage_meter.stl"/>
+        <mesh file="aluminium_profile_42_8.stl"/>
+        <mesh file="mecanum_wheel_2.stl"/>
+        <mesh file="side_plate_1.stl"/>
+        <material name="connector_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="aluminium_profile_380_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="dummy_usb_port_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="aluminium_profile_620_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="dummy_connectors_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="cube_connector_material" rgba="0.901961 0.901961 0.901961 1"/>
+        <material name="aluminium_profile_90_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="front_right_panel_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="joint_30_material" rgba="0.752941 0.752941 0.752941 1"/>
+        <material name="aluminium_angle_bracket_material" rgba="0.866667 0.909804 1 1"/>
+        <material name="motor_holder_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="front_left_panel_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="back_cover_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="aluminium_profile_690_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="dummy_screen_front_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="back_wheel_cover_material" rgba="0.74902 0.74902 0.74902 1"/>
+        <material name="aluminium_profile_42_8_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="aluminium_profile_354_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="aluminium_profile_664_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="dummy_voltage_meter_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="dummy_screen_back_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="base_link_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="cover_with_connections_material" rgba="0.74902 0.74902 0.74902 1"/>
+        <material name="spacer_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="dummy_ethercat6_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="aluminium_profile_160_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="center_cover_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="front_wheel_cover_material" rgba="0.74902 0.74902 0.74902 1"/>
+        <material name="screen_holder_material" rgba="0.74902 0.74902 0.74902 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id38_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id26_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id31_x_t_stp_2_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id16_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id48_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id43_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id11_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id21_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_xjz_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="j19_371rgb_x_t_stp_1_j19_272_id6_x_t_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081112002_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_zpd20170912002_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_asm081117001_asm_stp_1_20081111002_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_20081118003_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_prt0001_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_20090724001_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_asm081119001_asm_stp_1_20081115002_stp_1_solid2_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="las1_agq_tsb_stp_1_zpd20170913001_stp_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="realsense_mounting_bracket_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="side_plate_2_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="joint_30__2_material" rgba="0.752941 0.752941 0.752941 1"/>
+        <material name="velodyne_mount_material" rgba="0.25098 0.25098 0.25098 1"/>
+        <material name="realsense_d435i_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="aluminium_profile_380__2_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="cube_connector__2_material" rgba="0.901961 0.901961 0.901961 1"/>
+        <material name="side_plate_1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="angle_5_20_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="back_plate_right_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="side_plate_3_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="aluminium_profile_60_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="aluminium_angle_bracket__2_material" rgba="0.866667 0.909804 1 1"/>
+        <material name="logitech_c920_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="mount_harting_connector_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="front_plate_left_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="ifm_o3r222_material" rgba="0.290196 0.290196 0.290196 1"/>
+        <material name="aluminium_profile_436_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="top_plate_localization_module_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="aluminium_profile_620__2_material" rgba="0.976471 0.976471 0.976471 1"/>
+        <material name="velodyne_vlp16_material" rgba="0.74902 0.74902 0.74902 1"/>
+        <material name="base_plate_localization_module_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="mounting_bracket_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="cover_top_plate_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="back_plate_left_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="front_plate_right_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="realsense_t265_material" rgba="0.627451 0.627451 0.627451 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid2_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid3_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid2_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_2_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid5_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140082733_100195253ugm000_e_step_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140014703_100576875ugm000_c_step_2_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid4_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid3_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140014721_100212145ugm000_f_step_2_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09300241704_100651600ugm000_f_step_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="harting_modular_connector_upper_part_v2_step_1_md_09140240371_100659802ugm000_g_step_1_solid1_material" rgba="0.796078 0.823529 0.937255 1"/>
+        <material name="mecanum_wheel_material" rgba="0.792157 0.819608 0.933333 1"/>
+        <material name="roller_material" rgba="0.752941 0.752941 0.752941 1"/>
+        <material name="mecanum_wheel_2_material" rgba="0.792157 0.819608 0.933333 1"/>
+    </asset>
+    <actuator>
+        <velocity class="momo_mujoco" name="front_right_wheel" joint="front_right_wheel" kv="5.0" ctrlrange="-16 16"/>
+        <velocity class="momo_mujoco" name="back_left_wheel" joint="back_left_wheel" kv="5.0" ctrlrange="-16 16"/>
+        <velocity class="momo_mujoco" name="front_left_wheel" joint="front_left_wheel" kv="5.0" ctrlrange="-16 16"/>
+        <velocity class="momo_mujoco" name="back_right_wheel" joint="back_right_wheel" kv="5.0" ctrlrange="-16 16"/>
+    </actuator>
+    <equality/>
+</mujoco>
